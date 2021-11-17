@@ -12,6 +12,7 @@
 
   .list-manage-type {
     row-gap: 20px;
+
     .icn {
       font-size: 24px;
       margin-right: 16px;
@@ -24,6 +25,7 @@
   span {
     display: block;
   }
+
   .icn {
 
   }
@@ -49,11 +51,13 @@
     position: relative;
     width: 9rem;
     margin: 0 auto 2rem;
+
     .ava-box {
       width: 100%;
       display: block;
       position: relative;
       z-index: 1;
+
       i {
         width: 100%;
         padding-top: 100%;
@@ -62,6 +66,7 @@
         border-radius: 50%;
       }
     }
+
     .upload-btn {
       cursor: pointer;
       position: absolute;
@@ -88,18 +93,20 @@
       border-top: 0;
       border-radius: 0px 0px 5px 5px;
     }
+
     background: #FFFFFF;
     border: 1px solid #EBE9F1;
     box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
     font-size: .9rem;
     padding: .9rem .6rem;
+
     .txt {
       color: var(--colorPurple);
     }
   }
 
-  .btn-reset{
+  .btn-reset {
     width: 100%;
   }
 }
@@ -111,16 +118,16 @@
 
   .modal-body {
     .form-check {
-      padding-left: 20px;
-      display: flex;
-      align-items: center;
-      min-height: auto;
+      //padding-left: 20px;
+      //display: flex;
+      //align-items: center;
+      //min-height: auto;
 
       .form-check-input {
-        margin-left: -1rem;
-        width: 1rem;
-        height: 1rem;
-        margin-right: 5px;
+        //margin-left: -1rem;
+        //width: 1rem;
+        //height: 1rem;
+        //margin-right: 5px;
       }
 
       label {
@@ -134,13 +141,34 @@
       padding: 0 .5rem;
     }
 
-    .row {
-      & + .row {
-        padding-top: 1rem;
+    .group-roles {
+
+      font-size: 1rem;
+      color: #111;
+      margin-bottom: .5rem;
+    }
+
+    .nameGr {
+      margin-bottom: 1rem;
+      font-size: .9rem;
+      color: var(--colorPurple);
+      padding: 0 0.5rem;
+    }
+
+    .group-roles {
+      & + .group-roles {
+        padding-top: 1.5rem;
         border-top: 1px solid #EFEFEF;
       }
 
       margin-bottom: 1rem;
+    }
+
+    .roles-row {
+      & + .roles-row {
+        margin-top: 1rem;
+
+      }
     }
 
     h5 {

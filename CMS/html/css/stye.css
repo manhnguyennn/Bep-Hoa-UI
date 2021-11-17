@@ -569,6 +569,19 @@ body {
   color: #666;
 }
 
+/*Modal Right*/
+.modal.right.fade .modal-dialog {
+  right: -300px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
 /* --------------------------------
 
 Nucleo Web Font
@@ -852,18 +865,6 @@ Generated using nucleoapp.com
   width: 100%;
 }
 
-.modal-manage-group .modal-body .form-check {
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  min-height: auto;
-}
-.modal-manage-group .modal-body .form-check .form-check-input {
-  margin-left: -1rem;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 5px;
-}
 .modal-manage-group .modal-body .form-check label {
   font-size: 0.8rem;
   line-height: 1.1rem;
@@ -872,12 +873,26 @@ Generated using nucleoapp.com
   row-gap: 1.2rem;
   padding: 0 0.5rem;
 }
-.modal-manage-group .modal-body .row {
+.modal-manage-group .modal-body .group-roles {
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.modal-manage-group .modal-body .nameGr {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--colorPurple);
+  padding: 0 0.5rem;
+}
+.modal-manage-group .modal-body .group-roles {
   margin-bottom: 1rem;
 }
-.modal-manage-group .modal-body .row + .row {
-  padding-top: 1rem;
+.modal-manage-group .modal-body .group-roles + .group-roles {
+  padding-top: 1.5rem;
   border-top: 1px solid #EFEFEF;
+}
+.modal-manage-group .modal-body .roles-row + .roles-row {
+  margin-top: 1rem;
 }
 .modal-manage-group .modal-body h5 {
   padding-bottom: 1rem;
