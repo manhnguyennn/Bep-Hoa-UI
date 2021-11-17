@@ -13,7 +13,7 @@ body {
   display: none !important;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
@@ -254,6 +254,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: .75rem;
+
   span {
     margin-left: 4px;
     color: var(--colorRed);
@@ -656,15 +657,39 @@ body {
 
 
 /*Modal Right*/
-.modal.right.fade .modal-dialog {
-  right: -300px;
-  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-  transition: opacity 0.3s linear, right 0.3s ease-out;
+.modal.right.fade {
+
+  .modal-dialog {
+    width: 300px;
+    height: 100vh;
+    box-sizing: border-box;
+    right: -300px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+    margin: 0 0 0 auto;
+  }
+
+  .modal-header, .modal-footer {
+    border-radius: 0 !important;
+  }
+
+  .modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-body {
+    flex-grow: 1;
+    max-height: 100%;
+    padding: 0;
+  }
 }
 
-.modal.right.fade.in .modal-dialog {
+.modal.right.fade.show .modal-dialog {
   right: 0;
 }
+
 //

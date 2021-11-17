@@ -571,14 +571,31 @@ body {
 
 /*Modal Right*/
 .modal.right.fade .modal-dialog {
+  width: 300px;
+  height: 100vh;
+  box-sizing: border-box;
   right: -300px;
   -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
   -o-transition: opacity 0.3s linear, right 0.3s ease-out;
   transition: opacity 0.3s linear, right 0.3s ease-out;
+  margin: 0 0 0 auto;
+}
+.modal.right.fade .modal-header, .modal.right.fade .modal-footer {
+  border-radius: 0 !important;
+}
+.modal.right.fade .modal-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal.right.fade .modal-body {
+  flex-grow: 1;
+  max-height: 100%;
+  padding: 0;
 }
 
-.modal.right.fade.in .modal-dialog {
+.modal.right.fade.show .modal-dialog {
   right: 0;
 }
 
@@ -1292,6 +1309,59 @@ Generated using nucleoapp.com
   font-size: 0.9rem;
   line-height: 101%;
   color: #111111;
+}
+
+.filter-adv .filter-group {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #EFEFEF;
+}
+.filter-adv .filter-group h5 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+.filter-adv .form-check + .form-check {
+  margin-top: 12px;
+}
+
+.filter-funcs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.filter-funcs .cancel-filter {
+  width: 90px;
+  box-sizing: border-box;
+  padding: 0;
+}
+.filter-funcs .cancel-filter .icn {
+  font-family: Nucleo;
+  font-size: 8px;
+  display: block;
+  margin-right: 8px;
+}
+.filter-funcs .cancel-filter .txt {
+  display: block;
+}
+.filter-funcs .btn-filter-action {
+  width: calc(100% - 115px);
+  box-sizing: border-box;
+}
+
+.btn-filter-adv {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.btn-filter-adv .txt {
+  color: #111111;
+  margin-right: 3px;
+  display: block;
+}
+.btn-filter-adv .icn {
+  font-family: Nucleo;
+  display: block;
+  font-size: 9px;
+  color: var(--colorPurple);
 }
 
 /*# sourceMappingURL=stye.css.map */
