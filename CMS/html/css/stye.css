@@ -351,16 +351,16 @@ body {
   display: flex;
   align-items: center;
 }
-.status.bh-stt-waiting .color, .status.bh-stt-orange .color {
+.status.bh-dot-waiting .color, .status.bh-dot-orange .color {
   background: var(--colorOrange);
 }
-.status.bh-stt-progress .color, .status.bh-stt-blue .color {
+.status.bh-dot-progress .color, .status.bh-dot-blue .color {
   background: var(--colorBlue);
 }
-.status.bh-stt-success .color, .status.bh-stt-green .color {
+.status.bh-dot-success .color, .status.bh-dot-green .color {
   background: var(--colorGreen);
 }
-.status.bh-stt-cancel .color, .status.bh-stt-red .color {
+.status.bh-dot-cancel .color, .status.bh-dot-red .color {
   background: var(--colorRed);
 }
 .status .color {
@@ -376,25 +376,25 @@ body {
   line-height: 110%;
 }
 
-.status-ship {
+.status-icn {
   display: flex;
   align-items: center;
 }
-.status-ship.bh-ship-done .icn {
+.status-icn.bh-icon-green .icn {
   color: var(--colorGreen);
 }
-.status-ship.bh-ship-not .icn {
+.status-icn.bh-icon-grey .icn {
   color: #666;
 }
-.status-ship.bh-ship-cancel .icn {
+.status-icn.bh-icon-red .icn {
   color: var(--colorRed);
 }
-.status-ship .icn {
+.status-icn .icn {
   font-size: 8px;
   margin-right: 8px;
   font-family: Nucleo;
 }
-.status-ship .text {
+.status-icn .text {
   font-family: Roboto-Regular;
   font-size: 0.9rem;
   color: #777;

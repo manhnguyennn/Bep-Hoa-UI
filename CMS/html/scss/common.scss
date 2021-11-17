@@ -388,25 +388,25 @@ body {
   display: flex;
   align-items: center;
 
-  &.bh-stt-waiting, &.bh-stt-orange {
+  &.bh-dot-waiting, &.bh-dot-orange {
     .color {
       background: var(--colorOrange);
     }
   }
 
-  &.bh-stt-progress, &.bh-stt-blue {
+  &.bh-dot-progress, &.bh-dot-blue {
     .color {
       background: var(--colorBlue);
     }
   }
 
-  &.bh-stt-success, &.bh-stt-green {
+  &.bh-dot-success, &.bh-dot-green {
     .color {
       background: var(--colorGreen);
     }
   }
 
-  &.bh-stt-cancel, &.bh-stt-red {
+  &.bh-dot-cancel, &.bh-dot-red {
     .color {
       background: var(--colorRed);
     }
@@ -427,23 +427,23 @@ body {
   }
 }
 
-.status-ship {
+.status-icn {
   display: flex;
   align-items: center;
 
-  &.bh-ship-done {
+  &.bh-icon-green {
     .icn {
       color: var(--colorGreen);
     }
   }
 
-  &.bh-ship-not {
+  &.bh-icon-grey {
     .icn {
       color: #666;
     }
   }
 
-  &.bh-ship-cancel {
+  &.bh-icon-red {
     .icn {
       color: var(--colorRed);
     }
