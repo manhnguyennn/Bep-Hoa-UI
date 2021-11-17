@@ -816,7 +816,7 @@ input:focus ~ .bg-primary {
 
 .btn-outline-secondary {
     border: 1px solid #D8D6DE !important;
-    background-color: transparent;
+    background-color: #fff;
     color: #666;
 }
 
