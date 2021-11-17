@@ -100,31 +100,41 @@ $icon-font-path: "../fonts" !default;
   @return unquote("\"\\#{$str}\"");
 }
 
-$icon-wrench: unicode(ea02);
-$icon-gear: unicode(ea03);
-$icon-check-in: unicode(ea04);
-$icon-shop-location: unicode(ea05);
-$icon-account: unicode(ea06);
-$icon-multiple-11: unicode(ea07);
-$icon-shop: unicode(ea08);
-$icon-discount-2: unicode(ea09);
-$icon-users-wm: unicode(ea0a);
-$icon-salad: unicode(ea0b);
-$icon-basket: unicode(ea0c);
-$icon-unlocked: unicode(ea0d);
-$icon-lock: unicode(ea0e);
-$icon-increase: unicode(ea0f);
-$icon-time-clock: unicode(ea10);
-$icon-print: unicode(ea11);
-$icon-zoom: unicode(ea12);
-$icon-e-remove-2: unicode(ea13);
-$icon-move-up: unicode(ea14);
-$icon-check: unicode(ea15);
-$icon-e-remove-1: unicode(ea16);
-$icon-down-arrow: unicode(ea17);
-$icon-c-add: unicode(ea18);
-$icon-calendar-date-2: unicode(ea19);
-$icon-pin-angle-fill: unicode(ea1a);
+$icon-right-arrow: unicode(ea02);
+$icon-refresh: unicode(ea03);
+$icon-wrench: unicode(ea04);
+$icon-gear: unicode(ea05);
+$icon-check-in: unicode(ea06);
+$icon-shop-location: unicode(ea07);
+$icon-account: unicode(ea08);
+$icon-multiple-11: unicode(ea09);
+$icon-shop: unicode(ea0a);
+$icon-discount-2: unicode(ea0b);
+$icon-users-wm: unicode(ea0c);
+$icon-salad: unicode(ea0d);
+$icon-basket: unicode(ea0e);
+$icon-unlocked: unicode(ea0f);
+$icon-lock: unicode(ea10);
+$icon-increase: unicode(ea11);
+$icon-time-clock: unicode(ea12);
+$icon-print: unicode(ea13);
+$icon-zoom: unicode(ea14);
+$icon-e-remove-1: unicode(ea15);
+$icon-move-up: unicode(ea16);
+$icon-check: unicode(ea17);
+$icon-e-remove-2: unicode(ea18);
+$icon-down-arrow: unicode(ea19);
+$icon-c-add: unicode(ea1a);
+$icon-calendar-date-2: unicode(ea1b);
+$icon-pin-angle-fill: unicode(ea1c);
+
+.icon-right-arrow::before {
+  content: $icon-right-arrow;
+}
+
+.icon-refresh::before {
+  content: $icon-refresh;
+}
 
 .icon-wrench::before {
   content: $icon-wrench;
@@ -194,8 +204,8 @@ $icon-pin-angle-fill: unicode(ea1a);
   content: $icon-zoom;
 }
 
-.icon-e-remove-2::before {
-  content: $icon-e-remove-2;
+.icon-e-remove-1::before {
+  content: $icon-e-remove-1;
 }
 
 .icon-move-up::before {
@@ -206,8 +216,8 @@ $icon-pin-angle-fill: unicode(ea1a);
   content: $icon-check;
 }
 
-.icon-e-remove-1::before {
-  content: $icon-e-remove-1;
+.icon-e-remove-2::before {
+  content: $icon-e-remove-2;
 }
 
 .icon-down-arrow::before {
