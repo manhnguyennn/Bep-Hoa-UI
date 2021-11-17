@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Roboto-Regular;
   src: url("../fonts/Roboto-Regular.ttf");
@@ -1290,6 +1291,35 @@ Generated using nucleoapp.com
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.name-cusomter.unset {
+  opacity: 0.4;
+}
+
+.tags-customer-list {
+  display: flex;
+}
+.tags-customer-list.unset:before {
+  content: "Chưa có";
+  color: #666666;
+  opacity: 0.4;
+}
+.tags-customer-list .tags-customer {
+  background: rgba(115, 103, 240, 0.08);
+  border: 1px solid #7367F0;
+  box-sizing: border-box;
+  border-radius: 53px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 12px 4px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #7367F0;
+}
+.tags-customer-list .tags-customer + .tags-customer {
+  margin-left: 6px;
 }
 
 .table-user-group .role.adm, .table-bh .role.adm {

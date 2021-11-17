@@ -263,15 +263,125 @@
                 </div>
             </div>
             <div class="container">
-                <div class="table-responsive table-menu-group">
+                <div class="table-responsive table-customer-group">
                     <div class="filter-table">
                         <a href="javascript:;" class="filter active">
                             <span class="txt">Tất cả</span>
-                            <span class="icn">2144</span>
+                            <span class="icn">4</span>
                         </a>
                         <a href="javascript:;" class="filter">
                             <span class="txt">Đã xoá</span>
                         </a>
+                        <a href="javascript:;" type="button" class="btn-filter-adv"
+                           data-bs-toggle="modal"
+                           data-bs-target="#exampleModalScrollable">
+                                    <span class="txt">
+                                        Lọc nâng cao
+                                    </span>
+                            <span class="icn icon-right-arrow"></span>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal right fade" id="exampleModalScrollable" tabindex="-1"
+                             aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollable1">Lọc nâng cao</h5>
+                                        <a href="javascript:;" data-bs-dismiss="modal"
+                                           aria-label="Close" class="btn-close-modal icon-e-remove-1">
+
+                                        </a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="filter-adv">
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Giới tính</h5>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                           id="inlineCheckbox2" value="unchecked">
+                                                    <label class="form-check-label"
+                                                           for="inlineCheckbox2">Nam</label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="checkbox"
+                                                           id="inlineCheckbox3" value="unchecked">
+                                                    <label class="form-check-label"
+                                                           for="inlineCheckbox3">Nữ</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Tổng thanh toán</h5>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="input-group input-group-merge ">
+                                                        <input type="text" class="form-control" placeholder="000.000" aria-label="A">
+                                                        <span class="input-group-text">đ</span>
+                                                    </div>
+                                                    <div class="bh-text-111 ml-075 mr-075">-</div>
+                                                    <div class="input-group input-group-merge ">
+                                                        <input type="text" class="form-control" placeholder="000.000" aria-label="A">
+                                                        <span class="input-group-text">đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Tỉnh / Thành phố </h5>
+                                                <select class="form-select" id="selectDefault">
+                                                    <option selected="">Tất cả</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Quận / Huyện </h5>
+                                                <select class="form-select" id="selectDefault">
+                                                    <option selected="">Tất cả</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Thời gian tạo </h5>
+                                                <select class="form-select" id="selectDefault">
+                                                    <option selected="">Tất cả</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="filter-group">
+                                                <h5 class="bh-text-111">Tags khách hàng</h5>
+                                                <select class="form-select" id="selectDefault">
+                                                    <option selected="">Tất cả</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+
+                                        <div class="filter-funcs">
+                                            <a href="javascript:;" data-bs-dismiss="modal"
+                                               class="btn d-flex align-items-center justify-content-center btn-outline-secondary cancel-filter">
+                                                <span class="icn icon-refresh"></span>
+                                                <span class="txt">
+                                                            Bỏ lọc
+                                                        </span>
+                                            </a>
+                                            <a href="javascript:;" data-bs-dismiss="modal"
+                                               class="btn btn-primary btn-filter-action">Lọc kết quả</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <table class="table">
                         <thead class="table-light">
@@ -290,7 +400,7 @@
                                 </a>
                             </th>
                             <th scope="col" class=" bh-text-111 text-nowrap">
-                                <a href="javascript:;" class="btn-sort-table justify-content-center">
+                                <a href="javascript:;" class="btn-sort-table ">
                                     <span class="txt">Tổng thanh toán</span>
                                     <span class="icn icon-increase"></span>
                                 </a>
@@ -309,21 +419,25 @@
                                 </div>
                             </td>
                             <td class="text-nowrap">
-                                <div class="form-check form-check-success form-switch">
-                                    <input type="checkbox" checked="" class="form-check-input" id="customSwitch4">
+                                <div class="bh-text-111 name-cusomter unset">Chưa cập nhật</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="phone  text-primary">0123456789</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="count text-center">1</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="money ">1,800,000</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="date-created">08/11/2021</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="tags-customer-list">
+                                    <div class="tags-customer">Vip</div>
+                                    <div class="tags-customer">Nợ tiền</div>
                                 </div>
-                            </td>
-                            <td class="text-nowrap">
-                                <div class="bh-text-111 name-menu">Món mới</div>
-                            </td>
-                            <td class="text-nowrap">
-                                <div class="count text-center">12</div>
-                            </td>
-                            <td class="text-nowrap">
-                                <div class="user-created ">QL - Hùng Hà</div>
-                            </td>
-                            <td class="text-nowrap">
-                                <div class="date-created">08/11/2021 - 09:14</div>
                             </td>
                             <td class="text-nowrap">
                                 <div class="funcsRow d-flex justify-content-start">
@@ -353,9 +467,97 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="text-nowrap">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="checked"
+                                           checked="">
+                                </div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="bh-text-111 name-cusomter ">Trần Mạnh Hà</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="phone  text-primary">0123456789</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="count text-center">1</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="money ">1,800,000</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="date-created">08/11/2021</div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="tags-customer-list unset">
 
+                                </div>
+                            </td>
+                            <td class="text-nowrap">
+                                <div class="funcsRow d-flex justify-content-start">
+                                    <a href="javascript:;" class="btn btn-outline-primary edit-btn mr-075"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                    <div class="btn-group">
+                                        <a href="javascript:;" class="btn btn-outline-secondary"
+                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                      fill="#666666"/>
+                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                      fill="#666666"/>
+                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                      fill="#666666"/>
+                                            </svg>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="dropdownMenuButton6" style="">
+                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="filter-footer-table d-flex justify-content-between align-items-center">
+                    <div class="filter-number d-flex align-items-center">
+                        <div class="text bh-text-111 mr-1">Hiển thị</div>
+                        <div class="dropdown">
+                            <a href="javascript:;" type="button" class="btn btn-outline-secondary  dropdown-toggle"
+                               id="numb-table"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="numb-table">
+                                <a class="dropdown-item" href="#">10</a>
+                                <a class="dropdown-item" href="#">20</a>
+                                <a class="dropdown-item" href="#">30</a>
+                                <a class="dropdown-item" href="#">40</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination ">
+                        <li class="page-item prev disabled"><a class="page-link" href="#"></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item next"><a class="page-link" href="#"></a></li>
+                    </ul>
                 </div>
             </div>
 
