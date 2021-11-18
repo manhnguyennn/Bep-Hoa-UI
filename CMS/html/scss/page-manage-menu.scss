@@ -1,5 +1,6 @@
 .form-food {
   width: 493px;
+  padding-left: 1rem;
 
   .percent-discount {
     font-size: 1rem;
@@ -13,7 +14,9 @@
 }
 
 .upload-food {
-  width: 320px;
+  width: 340px;
+  padding-right: 1rem;
+  box-sizing: border-box;
 
   .upload-images {
     &.uploaded {
@@ -276,13 +279,12 @@
 
 .form-menu {
   margin-right: 30px;
-  padding: 20px 0;
+  padding: 20px 0 20px 1rem;
   width: 530px;
   flex-shrink: 0;
 }
 
 .logs-edit {
-  border-radius: 10px;
   flex-grow: 1;
   padding: 20px;
   box-sizing: border-box;
@@ -365,7 +367,9 @@
 }
 
 .report-food {
+  padding-left: 1rem;
   width: 495px;
+  box-sizing: border-box;
   flex-shrink: 0;
   margin-right: 30px;
 }

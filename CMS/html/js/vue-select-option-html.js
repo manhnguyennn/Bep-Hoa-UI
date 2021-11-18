@@ -2,14 +2,14 @@
     option: {},
     data: {
         listColor: [
-            { "class": "purple", "title": "Màu tím", "value": 1 }
+            { "class": "green", "title": "Màu xanh", "value": 1 }
             , { "class": "blue", "title": "Màu xanh", "value": 2 }
             , { "class": "orange", "title": "Màu cam", "value": 3 }
             , { "class": "red", "title": "Màu đỏ", "value": 4 }
         ],
         listStatus: [
             { "class": "red", "title": "Dừng hoạt động", "value": 0 }
-            , { "class": "blue", "title": "Đang hoạt động", "value": 1 }
+            , { "class": "green", "title": "Đang hoạt động", "value": 1 }
         ],
     },
     init: function () {
@@ -33,7 +33,6 @@
             let hiddenid = $(v).data('hiddenid');
             htm = `
                 <div class ="selectBox vsoh-wrapt" id="vsoh-color-wrapt-${i}">
-                    <label class ="form-label">Màu sắc</label>
                     <div class ="selected vsoh-show">
                         <div class ="icn ${chosenOption.class} vsoh-show-class"></div>
                         <div class ="text vsoh-show-title">${chosenOption.title}</div>
@@ -108,7 +107,6 @@
             let hiddenid = $(v).data('hiddenid');
             htm = `
                 <div class ="selectBox vsoh-wrapt" id="vsoh-status-wrapt-${i}">
-                    <label class ="form-label">Màu sắc</label>
                     <div class ="selected vsoh-show">
                         <div class ="icn ${chosenOption.class} vsoh-show-class"></div>
                         <div class ="text vsoh-show-title">${chosenOption.title}</div>

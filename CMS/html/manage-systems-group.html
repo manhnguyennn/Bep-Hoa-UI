@@ -285,43 +285,14 @@
                                             <div class="col-3">
                                                 <div class="selectBox">
                                                     <label for="1" class="form-label">Màu sắc</label>
-                                                    <div class="selected">
-                                                        <div class="icn purple"></div>
-                                                        <div class="text">Màu tím</div>
-                                                    </div>
-                                                    <ul class="list-select-type list-group">
-                                                        <li class="list-group-item">
-                                                            <a href="javascript:;" class="select-type">
-                                                                <span class="icn purple"></span>
-                                                                <span class="txt">Màu tím</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <a href="javascript:;" class="select-type">
-                                                                <span class="icn blue"></span>
-                                                                <span class="txt">Màu xanh</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <a href="javascript:;" class="select-type">
-                                                                <span class="icn orange"></span>
-                                                                <span class="txt">Màu cam</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <a href="javascript:;" class="select-type">
-                                                                <span class="icn red"></span>
-                                                                <span class="txt">Màu đỏ</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="vue-select-option-html" data-list="color" data-hiddenid="hidGroupColor" id="ddlColor"></div>
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="selectBox ">
                                                     <label for="1" class="form-label">Trạng thái</label>
 
-                                                    <div class="vue-select-option-html" data-list="color" data-hiddenid="hidGroupColor" id="ddlColor"></div>
+                                                    <div class="vue-select-option-html" data-list="status" data-hiddenid="hidGroupColor" id="ddlColor"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -891,6 +862,8 @@
 <!-- END: Page JS-->
 
 <script>
+    VueSelectOptionHtml.init();
+
     /*$(window).on('load', function () {
         if (feather) {
             feather.replace({

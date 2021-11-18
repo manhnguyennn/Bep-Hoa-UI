@@ -47,6 +47,51 @@ body {
   --color111: #111;
 }
 
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.icn {
+  display: block;
+  font-family: Nucleo;
+}
+
 .bh-disabled {
   display: none !important;
 }
@@ -983,6 +1028,7 @@ Generated using nucleoapp.com
 
 .form-food {
   width: 493px;
+  padding-left: 1rem;
 }
 .form-food .percent-discount {
   font-size: 1rem;
@@ -993,7 +1039,9 @@ Generated using nucleoapp.com
 }
 
 .upload-food {
-  width: 320px;
+  width: 340px;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
 .upload-food .upload-images {
   background: #F8F8F8;
@@ -1212,13 +1260,12 @@ Generated using nucleoapp.com
 
 .form-menu {
   margin-right: 30px;
-  padding: 20px 0;
+  padding: 20px 0 20px 1rem;
   width: 530px;
   flex-shrink: 0;
 }
 
 .logs-edit {
-  border-radius: 10px;
   flex-grow: 1;
   padding: 20px;
   box-sizing: border-box;
@@ -1282,7 +1329,9 @@ Generated using nucleoapp.com
 }
 
 .report-food {
+  padding-left: 1rem;
   width: 495px;
+  box-sizing: border-box;
   flex-shrink: 0;
   margin-right: 30px;
 }
@@ -1340,6 +1389,96 @@ Generated using nucleoapp.com
 }
 .tags-customer-list .tags-customer + .tags-customer {
   margin-left: 6px;
+}
+
+.info-customer {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 500px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.total-customer {
+  flex-grow: 1;
+  padding: 1.2rem 1.5rem;
+  background: #F8F8F8;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
+}
+
+.bill-oder {
+  background: #FFFFFF;
+  border: 1px solid #D8D6DE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.data-customer {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  width: 520px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.list-address-cus {
+  padding: 0;
+}
+.list-address-cus li {
+  list-style-type: none;
+}
+.list-address-cus li + li {
+  margin-top: 10px;
+}
+
+.address-cus {
+  padding: 10px 15px;
+  background: #F8F8F8;
+  border: 1.5px solid #F8F8F8;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.address-cus.active {
+  border: 1.5px solid #7367F0;
+  background: rgba(115, 103, 240, 0.08);
+}
+.address-cus.active .userBox .use-addr {
+  display: none;
+}
+.address-cus.active .userBox .addr-stt {
+  display: flex;
+}
+.address-cus .str {
+  font-family: Roboto-Medium;
+}
+.address-cus .userBox .use-addr {
+  font-size: 14px;
+  line-height: 101%;
+  padding: 8px 15px;
+  display: inline-block;
+  color: #111111;
+  background: #FFFFFF;
+  border: 1px solid #111111;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.address-cus .userBox .use-addr:hover {
+  opacity: 1;
+}
+.address-cus .userBox .addr-stt {
+  display: none;
+  align-items: center;
+}
+.address-cus .userBox .addr-stt .icn {
+  font-size: 12px;
+  margin-right: 6px;
+}
+.address-cus .userBox .addr-stt .txt {
+  font-size: 14px;
+  font-family: Roboto-Medium;
 }
 
 .table-user-group .role.adm, .table-bh .role.adm {

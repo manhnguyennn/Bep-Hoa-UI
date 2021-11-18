@@ -232,8 +232,8 @@
                     <div class="col-6 d-flex">
                         <div class="dropdown bh-dropdown">
                             <a href="javascript:;" type="button" class="btn btn-outline-primary dropdown-toggle"
-                                    id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               id="dropdownMenuButton"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Thao tác
                             </a>
 
@@ -315,12 +315,14 @@
                                                 <h5 class="bh-text-111">Tổng thanh toán</h5>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="input-group input-group-merge ">
-                                                        <input type="text" class="form-control" placeholder="000.000" aria-label="A">
+                                                        <input type="text" class="form-control" placeholder="000.000"
+                                                               aria-label="A">
                                                         <span class="input-group-text">đ</span>
                                                     </div>
                                                     <div class="bh-text-111 ml-075 mr-075">-</div>
                                                     <div class="input-group input-group-merge ">
-                                                        <input type="text" class="form-control" placeholder="000.000" aria-label="A">
+                                                        <input type="text" class="form-control" placeholder="000.000"
+                                                               aria-label="A">
                                                         <span class="input-group-text">đ</span>
                                                     </div>
                                                 </div>
@@ -383,7 +385,8 @@
                         </div>
 
                     </div>
-                    <table class="table">
+
+                    <table class="table ">
                         <thead class="table-light">
                         <tr>
                             <th scope="col" class="text-nowrap">
@@ -446,8 +449,8 @@
                                        data-bs-target="#exampleModalCenter">Sửa</a>
                                     <div class="btn-group">
                                         <a href="javascript:;" class="btn btn-outline-secondary"
-                                                type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
+                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                           aria-expanded="false">
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
@@ -564,10 +567,10 @@
             <!-- Vertically centered scrollable modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1"
                  aria-labelledby="exampleModalScrollableTitle" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-md modal-dialog-centered modal-manage-food">
+                <div class="modal-dialog modal-md modal-dialog-scrollable modal-manage-food">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Tạo danh mục mới</h5>
+                            <h4 class="modal-title" id="exampleModalCenterTitle">Tạo khách hàng mới</h4>
                             <a href="javascript:;" data-bs-dismiss="modal"
                                aria-label="Close" class="btn-close-modal icon-e-remove-2">
 
@@ -576,104 +579,306 @@
                         </div>
 
                         <div class="modal-body pb-4">
-                            <div class="d-flex">
-                                <div class="form-menu">
-                                    <div class="form-input mb-2">
-                                        <label class="form-label" for="basicInput">
-                                            Tên danh mục <span>*</span>
-                                        </label>
-                                        <input type="text" class="form-control" id="basicInput"
-                                               placeholder="Nhập nội dung...">
-                                    </div>
-                                    <div class="form-input mb-2">
-                                        <label class="form-label" for="basicInput">
-                                            Trạng thái
-                                        </label>
-                                        <div class="selectBox ">
-                                            <div class="selected">
-                                                <span class="icn green"></span>
-                                                <span class="txt">Hoạt động</span>
-                                            </div>
-                                            <ul class="list-select-type list-group">
-                                                <li class="list-group-item">
-                                                    <a href="javascript:;" class="select-type">
-                                                        <span class="icn green"></span>
-                                                        <span class="txt">Hoạt động</span>
-                                                    </a>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <a href="javascript:;" class="select-type">
-                                                        <span class="icn red"></span>
-                                                        <span class="txt">Dừng hoạt động</span>
-                                                    </a>
-                                                </li>
 
+                            <ul class="nav nav-tabs mb-0" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="info-tab" data-bs-toggle="tab" href="#info"
+                                       aria-controls="info" role="tab" aria-selected="true">Tổng quan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="data-tab" data-bs-toggle="tab" href="#data"
+                                       aria-controls="data" role="tab" aria-selected="false">Dữ liệu khách hàng</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="info" aria-labelledby="info-tab" role="tabpanel">
+
+                                    <div class="d-flex">
+                                        <div class="info-customer pt-2">
+                                            <h4 class="mb-2">Thông tin chung</h4>
+                                            <div class="form-input mb-1">
+                                                <label class="form-label" for="basicInput">
+                                                    Số điện thoại <span>*</span>
+                                                </label>
+                                                <input type="text" class="form-control" id="basicInput"
+                                                       placeholder="Nhập nội dung...">
+                                            </div>
+
+                                            <div class="form-input mb-1">
+                                                <label class="form-label" for="basicInput">
+                                                    Tên khách <span>*</span>
+                                                </label>
+                                                <input type="text" class="form-control" id="basicInput"
+                                                       placeholder="Nhập nội dung...">
+                                            </div>
+
+                                            <div class="form-input mb-1">
+                                                <label class="form-label" for="basicInput">
+                                                    Tags khách hàng
+                                                </label>
+                                                <select class="select2 form-select" multiple="multiple"
+                                                        id="default-select-multi">
+                                                    <option value="square">Square</option>
+                                                    <option value="rectangle">Rectangle</option>
+                                                    <option value="rombo">Rombo</option>
+                                                    <option value="romboid">Romboid</option>
+                                                    <option value="trapeze">Trapeze</option>
+                                                    <option value="traible">Triangle</option>
+                                                    <option value="polygon" selected>Polygon</option>
+                                                </select>
+
+                                            </div>
+
+                                            <div class="form-input mb-2">
+                                                <label class="form-label" for="basicInput">
+                                                    Giới tính <span>*</span>
+                                                </label>
+                                                <div class="d-flex">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               name="inlineRadioOptions" id="inlineRadio1"
+                                                               value="option1" checked="">
+                                                        <label class="form-check-label"
+                                                               for="inlineRadio1">Nam</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               name="inlineRadioOptions" id="inlineRadio2"
+                                                               value="option1">
+                                                        <label class="form-check-label"
+                                                               for="inlineRadio2">Nữ</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <h4 class="mb-2">Địa chỉ</h4>
+
+                                            <div class="form-input mb-1">
+                                                <label class="form-label" for="basicInput">
+                                                    Địa chỉ nhận hàng <span>*</span>
+                                                </label>
+                                                <input type="text" class="form-control" id="basicInput"
+                                                       placeholder="Nhập nội dung...">
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-6 mb-1">
+                                                    <div class="form-input">
+                                                        <label class="form-label" for="basicInput">
+                                                            Tỉnh / Thành phố <span>*</span>
+                                                        </label>
+
+                                                        <select class="select2 form-select" id="default-select1">
+                                                            <option value="square">Square</option>
+                                                            <option value="rectangle">Rectangle</option>
+                                                            <option value="rombo">Rombo</option>
+                                                            <option value="romboid">Romboid</option>
+                                                            <option value="trapeze">Trapeze</option>
+                                                            <option value="traible">Triangle</option>
+                                                            <option value="polygon">Polygon</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6 mb-1">
+                                                    <div class="form-input">
+                                                        <label class="form-label" for="basicInput">
+                                                            Quận / Huyện <span>*</span>
+                                                        </label>
+                                                        <select class="select2 form-select" id="default-select2">
+                                                            <option value="square">Square</option>
+                                                            <option value="rectangle">Rectangle</option>
+                                                            <option value="rombo">Rombo</option>
+                                                            <option value="romboid">Romboid</option>
+                                                            <option value="trapeze">Trapeze</option>
+                                                            <option value="traible">Triangle</option>
+                                                            <option value="polygon">Polygon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 mb-1">
+                                                    <div class="form-input">
+                                                        <label class="form-label" for="basicInput">
+                                                            Phường / Xã
+                                                        </label>
+                                                        <select class="select2 form-select" id="default-select3">
+                                                            <option value="square">Square</option>
+                                                            <option value="rectangle">Rectangle</option>
+                                                            <option value="rombo">Rombo</option>
+                                                            <option value="romboid">Romboid</option>
+                                                            <option value="trapeze">Trapeze</option>
+                                                            <option value="traible">Triangle</option>
+                                                            <option value="polygon">Polygon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="total-customer">
+                                            <h4 class="mb-2">Đơn của khách</h5>
+                                                <div class="bill-oder mb-2">
+                                                    <div class="d-flex align-items-center justify-content-between mb-1">
+                                                        <div class="text-primary id-order"><b>#123456789</b></div>
+                                                        <div class="date">08/11/2021 - 09:14</div>
+
+                                                    </div>
+                                                    <div class="status-bill justify-content-between d-flex align-items-end">
+                                                        <div class="stt-box">
+                                                            <div class="status bh-dot-green mb-75">
+                                                                <div class="color"></div>
+                                                                <div class="text">Bếp đã hoàn thành</div>
+                                                            </div>
+                                                            <div class="status-icn bh-icon-green mb-75">
+                                                                <div class="icn icon-check"></div>
+                                                                <div class="text">Đã giao</div>
+                                                            </div>
+                                                            <div class="status-icn bh-icon-red">
+                                                                <div class="icn icon-e-remove-2"></div>
+                                                                <div class="text">Chuyển khoản</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javascript:;" class="btn btn-outline-secondary">
+                                                            Xem
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="bill-oder mb-2">
+                                                    <div class="d-flex align-items-center justify-content-between mb-1">
+                                                        <div class="text-primary id-order"><b>#123456789</b></div>
+                                                        <div class="date">08/11/2021 - 09:14</div>
+
+                                                    </div>
+                                                    <div class="status-bill justify-content-between d-flex align-items-end">
+                                                        <div class="stt-box">
+                                                            <div class="status bh-dot-blue mb-75">
+                                                                <div class="color"></div>
+                                                                <div class="text">Đã lên đơn</div>
+                                                            </div>
+                                                            <div class="status-icn bh-icon-grey mb-75">
+                                                                <div class="icn icon-check"></div>
+                                                                <div class="text">Chưa giao hàng</div>
+                                                            </div>
+                                                            <div class="status-icn bh-icon-red">
+                                                                <div class="icn icon-e-remove-2"></div>
+                                                                <div class="text">Chuyển khoản</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javascript:;" class="btn btn-outline-secondary">
+                                                            Xem
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane " id="data" aria-labelledby="data-tab" role="tabpanel">
+                                    <div class="d-flex">
+                                        <div class="data-customer">
+                                            <h4 class="mb-2">Số liệu</h4>
+                                            <ul class="list-data mb-2">
+                                                <li>
+                                                    <div class="data">
+                                                        <div class="text-primary">Số tiền đã chi tiêu</div>
+                                                        <div class="bh-text-111">86,860,000 đ</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="data">
+                                                        <div class="text-primary">Điểm thành viên</div>
+                                                        <div class="bh-text-111">86,860</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="data">
+                                                        <div class="text-primary">Hạng thành viên</div>
+                                                        <div class="bh-text-111">Chưa có</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <h4 class="mb-2">Dữ liệu địa chỉ</h4>
+
+                                            <ul class="list-address-cus">
+                                                <li>
+                                                    <div class="address-cus d-flex align-items-center justify-content-between">
+                                                        <div class="total-addr bh-text-111">
+                                                            <div class="str">12/366 Tây sơn</div>
+                                                            <div class="dist">Q. Đống Đa, Tp. Hà Nội</div>
+                                                        </div>
+                                                        <div class="userBox">
+                                                            <a href="javascript:;" class="use-addr">Sử dụng</a>
+                                                            <div class="addr-stt">
+                                                                <div class="icn icon-check text-primary"></div>
+                                                                <b class="text-primary">Đang sử dụng </b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="address-cus d-flex align-items-center justify-content-between active">
+                                                        <div class="total-addr bh-text-111">
+                                                            <div class="str">85 Vũ Trọng Phụng</div>
+                                                            <div class="dist">P. Thượng Đình, Q. Thanh Xuân,  Tp. Hà Nội</div>
+                                                        </div>
+                                                        <div class="userBox ">
+                                                            <a href="javascript:;" class="use-addr">Sử dụng</a>
+                                                            <div class="addr-stt">
+                                                                <div class="icn icon-check text-primary"></div>
+                                                                <div class="text-primary txt">Đang sử dụng </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="form-input mb-2">
-                                        <label class="form-label" for="basicInput">
-                                            Ghi chú
-                                        </label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                                  placeholder="Nhập nội dung..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="logs-edit">
-                                    <h5 class="mb-2">Lịch sử chỉnh sửa</h5>
-                                    <div class="logs-area">
-                                        <div class="logs-item edit">
-                                            <h4>Chỉnh sửa</h4>
-                                            <div class="time ">08/11/2021 - 09:14</div>
-                                            <div class="text">
-                                                <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                        <div class="logs-edit">
+                                            <h5 class="mb-2">Lịch sử chỉnh sửa</h5>
+                                            <div class="logs-area">
+                                                <div class="logs-item edit">
+                                                    <h4>Chỉnh sửa</h4>
+                                                    <div class="time ">08/11/2021 - 09:14</div>
+                                                    <div class="text">
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                    </div>
+                                                </div>
+                                                <div class="logs-item edit">
+                                                    <h4>Chỉnh sửa</h4>
+                                                    <div class="time ">08/11/2021 - 09:14</div>
+                                                    <div class="text">
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                    </div>
+                                                </div>
+                                                <div class="logs-item create">
+                                                    <h4>Tạo mới</h4>
+                                                    <div class="time ">08/11/2021 - 09:14</div>
+                                                    <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="logs-item edit">
-                                            <h4>Chỉnh sửa</h4>
-                                            <div class="time ">08/11/2021 - 09:14</div>
-                                            <div class="text">
-                                                <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
-                                            </div>
-                                        </div>
-                                        <div class="logs-item edit">
-                                            <h4>Chỉnh sửa</h4>
-                                            <div class="time ">08/11/2021 - 09:14</div>
-                                            <div class="text">
-                                                <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
-                                            </div>
-                                        </div>
-                                        <div class="logs-item edit">
-                                            <h4>Chỉnh sửa</h4>
-                                            <div class="time ">08/11/2021 - 09:14</div>
-                                            <div class="text">
-                                                <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
-                                            </div>
-                                        </div>
-                                        <div class="logs-item create">
-                                            <h4>Tạo mới</h4>
-                                            <div class="time ">08/11/2021 - 09:14</div>
-                                            <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="modal-footer">
                             <div class="noti-modal">
                                 <div class="text bh-text-red">
-                                    Bạn chưa tải ảnh đại diện
+
                                 </div>
                                 <div class="close-noti icon-e-remove-2"></div>
                             </div>
                             <a href="javascript:;" type="button"
-                                    class=" btn btn-outline-secondary waves-effect"
-                                    data-bs-dismiss="modal">Đóng
+                               class=" btn btn-outline-secondary waves-effect"
+                               data-bs-dismiss="modal">Đóng
                             </a>
                             <a href="javascript:;" type="button"
-                                    class="btn btn-primary waves-effect waves-float waves-light"
-                                    data-bs-dismiss="modal">Lưu
+                               class="btn btn-primary waves-effect waves-float waves-light"
+                               data-bs-dismiss="modal">Lưu
                             </a>
                         </div>
                     </div>
