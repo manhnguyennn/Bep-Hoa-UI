@@ -247,3 +247,23 @@
 
   }
 }
+
+.input-panel {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.add-panel, .add-icn {
+  .icn {
+    font-family: Nucleo;
+    width: 14px;
+    display: block;
+    margin-right: 8px;
+  }
+
+  .txt {
+    display: block;
+  }
+}

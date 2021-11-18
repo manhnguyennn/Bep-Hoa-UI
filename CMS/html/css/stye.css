@@ -178,6 +178,9 @@ body {
   background: #ffffff;
   color: #666;
 }
+.bh-cms-wrapper .table-responsive .table .table-primary td {
+  background: #F2F1FF;
+}
 .bh-cms-wrapper .table-responsive .table td:nth-child(1), .bh-cms-wrapper .table-responsive .table th:nth-child(1) {
   padding-left: 1rem;
 }
@@ -959,6 +962,23 @@ Generated using nucleoapp.com
   color: #111;
   font-size: 0.8rem;
   margin: 0;
+}
+
+.input-panel {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.add-panel .icn, .add-icn .icn {
+  font-family: Nucleo;
+  width: 14px;
+  display: block;
+  margin-right: 8px;
+}
+.add-panel .txt, .add-icn .txt {
+  display: block;
 }
 
 .form-food {
