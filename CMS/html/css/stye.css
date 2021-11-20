@@ -97,7 +97,7 @@ body {
 }
 
 .list-group-item.draggable {
-  cursor: grab;
+  cursor: move;
 }
 
 .text-right {
