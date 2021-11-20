@@ -23,6 +23,8 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dragula.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="css/drag-drop.css">-->
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -232,8 +234,8 @@
                     <div class="col-6 d-flex">
                         <div class="dropdown bh-dropdown">
                             <a href="javascript:;" type="button" class="btn btn-outline-primary dropdown-toggle"
-                                    id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               id="dropdownMenuButton"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Thao tác
                             </a>
 
@@ -249,8 +251,15 @@
                             <a href="javascript:;" class="icn icon-zoom"></a>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
-                        <a href="javascript:;" type="button" class="btn bg-primary text-white btn-add"
+                    <div class="col-3">
+                        <a href="javascript:;" type="button" class="btn btn-dark w-100 text-white "
+                           data-bs-toggle="modal"
+                           data-bs-target="#ModalDraggable">
+                            Sắp xếp thứ tự danh mục
+                        </a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <a href="javascript:;" type="button" class="btn bg-primary w-100 text-white btn-add"
                            data-bs-toggle="modal"
                            data-bs-target="#exampleModalCenter">
                             <span class="txt">
@@ -326,8 +335,8 @@
                                        data-bs-target="#exampleModalCenter">Sửa</a>
                                     <div class="btn-group">
                                         <a href="javascript:;" class="btn btn-outline-secondary"
-                                                type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
+                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                           aria-expanded="false">
                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
@@ -352,7 +361,95 @@
                     </table>
                 </div>
             </div>
+            <div class="modal fade" id="ModalDraggable" tabindex="-1"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalDraggableTitle">Sắp xếp thứ tự danh mục</h5>
+                            <a href="javascript:;" data-bs-dismiss="modal"
+                               aria-label="Close" class="btn-close-modal icon-e-remove-2">
 
+
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group" id="basic-list-group">
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text">Món mới</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text">Món chính</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text">Lẩu</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text">Món nướng</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text">Hải sản</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item draggable">
+                                    <div class="cate-name-drag bh-text-111">
+                                        <div class="text"> Ăn vặt</div>
+                                        <div class="icon">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="javascript:;" type="button"
+                               class=" btn btn-outline-secondary waves-effect"
+                               data-bs-dismiss="modal">Đóng
+                            </a>
+                            <a href="javascript:;" type="button"
+                               class="btn btn-primary waves-effect waves-float waves-light"
+                               data-bs-dismiss="modal">Lưu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Vertically centered scrollable modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1"
                  aria-labelledby="exampleModalScrollableTitle" style="display: none;" aria-hidden="true">
@@ -460,12 +557,12 @@
                                 <div class="close-noti icon-e-remove-2"></div>
                             </div>
                             <a href="javascript:;" type="button"
-                                    class=" btn btn-outline-secondary waves-effect"
-                                    data-bs-dismiss="modal">Đóng
+                               class=" btn btn-outline-secondary waves-effect"
+                               data-bs-dismiss="modal">Đóng
                             </a>
                             <a href="javascript:;" type="button"
-                                    class="btn btn-primary waves-effect waves-float waves-light"
-                                    data-bs-dismiss="modal">Lưu
+                               class="btn btn-primary waves-effect waves-float waves-light"
+                               data-bs-dismiss="modal">Lưu
                             </a>
                         </div>
                     </div>
@@ -486,10 +583,12 @@
 
 <!-- BEGIN: Vendor JS-->
 <script src="js/vendors.min.js"></script>
+<script src="js/dragula.min.js"></script>
 <!-- BEGIN Vendor JS-->
 <!-- BEGIN Vendor JS-->
 <script src="js/select2.full.min.js"></script>
 <script src="js/form-select2.min.js"></script>
+<script src="js/drag-drop.js"></script>
 <!-- BEGIN: Page Vendor JS-->
 <!-- END: Page Vendor JS-->
 

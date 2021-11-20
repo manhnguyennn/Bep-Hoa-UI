@@ -59,6 +59,10 @@ body {
   display: none !important;
 }
 
+.list-group-item.draggable {
+  cursor: grab;
+}
+
 .text-right {
   text-align: right;
 }
