@@ -46,6 +46,10 @@ body {
   --color777: #777;
   --color111: #111;
 }
+body i {
+  font-family: Roboto-Italic;
+  font-style: normal;
+}
 
 .pl-1 {
   padding-left: 1rem;
@@ -239,6 +243,10 @@ body {
 .bh-cms-wrapper .table-responsive table {
   margin: 0;
 }
+.bh-cms-wrapper .table-responsive table.table-order-list tbody td {
+  padding-bottom: 3rem;
+  vertical-align: top;
+}
 .bh-cms-wrapper .table-responsive table .title-col {
   font-family: Roboto-Medium;
   font-size: 0.9rem;
@@ -282,6 +290,7 @@ body {
 .bh-cms-wrapper .filter-table .filter .icn {
   margin-left: 5px;
   color: var(--colorPurple);
+  font-family: Roboto-Regular;
 }
 
 .form-label {
@@ -531,6 +540,7 @@ body {
   font-size: 0.9rem;
   color: #111;
   line-height: 110%;
+  font-weight: normal;
 }
 
 .btn-pin {
@@ -1508,6 +1518,100 @@ Generated using nucleoapp.com
   font-family: Roboto-Medium;
 }
 
+.form-date input {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+.form-date .icn {
+  font-size: 1rem;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.order-info {
+  position: relative;
+}
+.order-info .order-id {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.order-info .order-id .text {
+  margin-right: 5px;
+  line-height: 1.35;
+}
+.order-info .order-id .icn {
+  font-size: 10px;
+  line-height: 10px;
+}
+.order-info .order-date {
+  font-size: 0.8rem;
+}
+.order-info .source {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  font-size: 0.7rem;
+}
+
+.order-user {
+  position: relative;
+}
+.order-user .name {
+  margin-bottom: 9px;
+}
+.order-user .phone {
+  font-size: 0.8rem;
+}
+.order-user .order-total-food {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  font-size: 0.8rem;
+  max-width: 700px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.payment-stt .status-icn {
+  margin-bottom: 10px;
+}
+.payment-stt .cash-back {
+  padding-left: 16px;
+  font-size: 10px;
+  color: #E19D9D;
+  display: none;
+}
+.payment-stt .cash-back.active {
+  display: block;
+}
+
+.arrange-order {
+  color: var(--color666);
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+.arrange-order.active {
+  opacity: 1;
+}
+.arrange-order.active .sale {
+  color: var(--colorBlue);
+}
+.arrange-order.active .staff {
+  color: var(--colorPurple);
+}
+.arrange-order .sale {
+  margin-bottom: 7px;
+}
+.arrange-order .store {
+  margin-bottom: 7px;
+}
+
 .table-user-group .role.adm, .table-bh .role.adm {
   color: var(--colorRed);
 }
@@ -1614,13 +1718,14 @@ Generated using nucleoapp.com
 }
 .btn-filter-adv .txt {
   color: #111111;
-  margin-right: 3px;
+  margin-right: 7px;
   display: block;
 }
 .btn-filter-adv .icn {
   font-family: Nucleo;
   display: block;
   font-size: 9px;
+  line-height: 1.4;
   color: var(--colorPurple);
 }
 

@@ -7,6 +7,7 @@
 @import "page-manage-systems";
 @import "page-manage-menu";
 @import "page-manage-customer";
+@import "manage-order-list";
 
 
 .table-user-group, .table-bh {
@@ -142,13 +143,14 @@
   align-items: center;
   .txt{
     color: #111111;
-    margin-right: 3px;
+    margin-right: 7px;
     display: block;
   }
   .icn{
     font-family: Nucleo;
     display: block;
     font-size: 9px;
+    line-height: 1.4;
     color: var(--colorPurple);
   }
 }

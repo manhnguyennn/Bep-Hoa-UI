@@ -1,0 +1,114 @@
+.form-date {
+  input {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .icn {
+    font-size: 1rem;
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+}
+
+.order-info {
+  position: relative;
+
+  .order-id {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+
+    .text {
+      margin-right: 5px;
+      line-height: 1.35;
+    }
+
+    .icn {
+      font-size: 10px;
+      line-height: 10px;
+    }
+  }
+
+  .order-date {
+    font-size: .8rem;
+  }
+
+  .source {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    font-size: .7rem;
+  }
+}
+
+.order-user {
+  position: relative;
+
+  .name {
+    margin-bottom: 9px;
+  }
+
+  .phone {
+    font-size: .8rem;
+  }
+
+  .order-total-food {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    font-size: .8rem;
+    max-width: 700px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.payment-stt {
+  .status-icn {
+    margin-bottom: 10px;
+  }
+
+  .cash-back {
+    &.active {
+      display: block;
+    }
+
+    padding-left: 16px;
+    font-size: 10px;
+    color: #E19D9D;
+    display: none;
+  }
+}
+
+.arrange-order {
+  color: var(--color666);
+  opacity: 0.4;
+  font-size: .8rem;
+
+  &.active {
+    opacity: 1;
+
+    .sale {
+      color: var(--colorBlue);
+    }
+
+    .staff {
+      color: var(--colorPurple);
+    }
+  }
+
+  .sale {
+    margin-bottom: 7px;
+  }
+
+  .store {
+    margin-bottom: 7px;
+  }
+
+}
