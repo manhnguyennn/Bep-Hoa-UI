@@ -2398,6 +2398,20 @@ ul.list-inline.list-inline-pipe > li + li:before {
     font-family: Roboto-Medium;
     font-size: 1.1rem;
     line-height: 1.45;
+    box-shadow: inset 0px -1px 0px #EFEFEF;
+    border-radius: 5px 5px 0px 0px;
+    color: #111;
+}
+.accordion [data-bs-toggle='collapse']:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 4px;
+    height: 16px;
+    display: block;
+    content: '';
+    background: #7367F0;
 }
 
 .accordion .accordion-item {
@@ -2413,7 +2427,6 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .accordion .accordion-body {
-    padding-top: 0.42rem;
 }
 
 .accordion.accordion-without-arrow .accordion-button::after {

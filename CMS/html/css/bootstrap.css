@@ -5007,13 +5007,13 @@ fieldset:disabled .btn {
 
 .accordion-button::after {
     flex-shrink: 0;
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-left: auto;
     content: "";
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236e6b7b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-up'%3e%3cpolyline points='18 15 12 9 6 15'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-size: 1rem;
+    background-size: 1.5rem;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -5041,39 +5041,41 @@ fieldset:disabled .btn {
 .accordion-item {
     background-color: #fff;
     border: 0 solid rgba(34, 41, 47, 0.125);
+    box-shadow: inset 0px -1px 0px #EFEFEF;
+    border-radius: 5px 5px 0px 0px;
+    color: #111;
 }
 
 .accordion-item:first-of-type {
-    border-top-left-radius: 0.357rem;
-    border-top-right-radius: 0.357rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: 0.357rem;
-    border-top-right-radius: 0.357rem;
+
 }
 
 .accordion-item:not(:first-of-type) {
     border-top: 0;
 }
 
-.accordion-item:last-of-type {
-    border-bottom-right-radius: 0.357rem;
-    border-bottom-left-radius: 0.357rem;
+.accordion-item {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-right-radius: 0.357rem;
-    border-bottom-left-radius: 0.357rem;
+.accordion-item .accordion-button.collapsed {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.accordion-item:last-of-type .accordion-collapse {
-    border-bottom-right-radius: 0.357rem;
-    border-bottom-left-radius: 0.357rem;
+.accordion-item .accordion-collapse {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .accordion-body {
-    padding: 1rem 1rem;
+    padding: 0;
 }
 
 .accordion-flush .accordion-collapse {

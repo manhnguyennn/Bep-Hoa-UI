@@ -87,7 +87,7 @@ input:focus ~ .bg-black {
 }
 
 .bg-dark {
-    background-color: #4b4b4b !important;
+    background-color: #111 !important;
 }
 
 .bg-dark .card-header,
