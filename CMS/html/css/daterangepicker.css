@@ -380,7 +380,7 @@
 
 .daterangepicker .ranges li {
     font-size: 12px;
-    padding: 8px ;
+    padding: 7px ;
     color: var(--colorPurple);
     cursor: pointer;
     border: 1px solid var(--colorPurple);

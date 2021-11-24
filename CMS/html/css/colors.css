@@ -922,7 +922,7 @@ input:focus ~ .bg-primary {
 }
 
 .divider.divider-secondary .divider-text:before, .divider.divider-secondary .divider-text:after {
-    border-color: #82868b !important;
+    border-color: #111 !important;
 }
 
 input:focus ~ .bg-secondary {
@@ -930,8 +930,8 @@ input:focus ~ .bg-secondary {
 }
 
 .form-check-secondary .form-check-input:checked {
-    border-color: #82868b;
-    background-color: #82868b;
+    border-color: #111;
+    background-color: #111;
 }
 
 .form-check-secondary .form-check-input:not(:disabled):checked, .form-check-secondary .form-check-input:not(:disabled):focus {

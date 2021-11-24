@@ -819,3 +819,30 @@ body {
 }
 
 //
+
+.accordion [data-bs-toggle='collapse']{
+  i{
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+  }
+}
+
+.sticky-top.sticky-top-90{
+  top: 90px;
+}
+
+.select2-container{
+  &:after{
+    font-size: 12px;
+    line-height: 140%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    content: 'Chọn';
+    transform: translateY(-50%);
+    display: block;
+    color: #7367F0;
+  }
+}

@@ -2402,6 +2402,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
     border-radius: 5px 5px 0px 0px;
     color: #111;
 }
+
 .accordion [data-bs-toggle='collapse']:before {
     position: absolute;
     top: 50%;
@@ -2450,8 +2451,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .accordion-margin .accordion-item {
-    margin-top: 0.71rem;
-    margin-bottom: 0.71rem;
+    margin-bottom: 1.4rem;
     box-shadow: 0 2px 15px 0 rgba(34, 41, 47, 0.05) !important;
     border-radius: 0.357rem;
     border-bottom: 0 solid transparent !important;

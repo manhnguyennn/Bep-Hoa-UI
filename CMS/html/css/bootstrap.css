@@ -2676,14 +2676,14 @@ textarea.form-control-lg {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    width: 0.485rem;
-    height: 0.485rem;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     display: block;
     background: #fff;
     position: absolute;
-    left: 0.25rem;
-    top: 0.35rem;
+    left: 4px;
+    top: 5px;
     content: '';
 }
 
