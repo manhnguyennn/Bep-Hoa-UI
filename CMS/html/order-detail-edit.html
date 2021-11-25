@@ -369,7 +369,8 @@
                                         <div class="order-form-body">
                                             <div class="d-flex align-items-center">
                                                 <a href="javascript:;" type="button"
-                                                   class="btn bg-dark text-white btn-add-order">
+                                                   class="btn bg-dark text-white btn-add-order" data-bs-toggle="modal"
+                                                   data-bs-target="#modalSearchFood">
                                                     <span class="icn icon-c-add"></span>
                                                     <span class="txt">
                                                           Thêm
@@ -426,7 +427,8 @@
                                                     <span class="icn icon-e-remove-2"></span>
                                                 </a>
                                                 <a href="javascript:;"
-                                                   class="edit-addr text-primary btn-outline-primary ">
+                                                   class="edit-addr text-primary btn-outline-primary "
+                                                   data-bs-toggle="modal" data-bs-target="#modalEditAddr">
                                                     Sửa
                                                 </a>
                                             </div>
@@ -840,8 +842,8 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="sticky-top sticky-top-90 mb-2">
-                            <div class="order-bill-total">
+                        <div class="sticky-top sticky-top-90 ">
+                            <div class="order-bill-total mb-2">
                                 <div class="title-bill">
                                     Tổng quan đơn hàng
                                 </div>
@@ -920,19 +922,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="tags-order mb-2">
+                                <select class="select2 form-select" multiple="multiple"
+                                        id="default-select-multi">
+                                    <option value="Món">Món mới</option>
+                                    <option value="chính">Món chính</option>
+                                    <option value="Lẩu">Lẩu</option>
+                                    <option value="Hải sản">Hải sản</option>
+                                </select>
+                            </div>
+                            <div class="date-create-order">
+                                <i>Ngày tạo đơn: 08/11/2021 - 09:14 </i>
+                            </div>
                         </div>
-                        <div class="tags-order mb-2">
-                            <select class="select2 form-select" multiple="multiple"
-                                    id="default-select-multi">
-                                <option value="Món">Món mới</option>
-                                <option value="chính">Món chính</option>
-                                <option value="Lẩu">Lẩu</option>
-                                <option value="Hải sản">Hải sản</option>
-                            </select>
-                        </div>
-                        <div class="date-create-order">
-                            <i>Ngày tạo đơn: 08/11/2021 - 09:14	</i>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -954,7 +957,7 @@
                         <span class="icn icon-print"></span>
                         <span class="txt">In đơn</span>
                     </a>
-                    <a href="javascript:;" class="btn-history">
+                    <a href="javascript:;" class="btn-history" data-bs-toggle="modal" data-bs-target="#modalLogsEdit">
                         <span class="icn icon-time-clock"></span>
                         <span class="txt">Lịch sử chỉnh sửa</span>
                     </a>
@@ -966,6 +969,428 @@
                     <a href="javascript:;" type="button" class="btn btn-primary bh-disabled">Tạo đơn</a>
                     <a href="javascript:;" type="button" class="btn btn-primary bh-disabled">Nhận đơn</a>
                     <a href="javascript:;" type="button" class="btn btn-primary ">Lưu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search Food-->
+    <div class="modal fade" id="modalSearchFood" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Thêm món vào giỏ hàng</h5>
+                    <a href="javascript:;" data-bs-dismiss="modal"
+                       aria-label="Close" class="btn-close-modal icon-e-remove-2">
+
+
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="form-search-food">
+                        <div class="form-input-search">
+                            <input type="text" placeholder="Tìm kiếm món ăn">
+                            <a href="javascript:;" class="icn icon-zoom"></a>
+                        </div>
+                        <ul class="list-food-search">
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Set Lòng lợn siêu đỉnh</span>
+                                    <span class="price">120,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Miến trộn Thái hải sản</span>
+                                    <span class="price">820,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Thịt quay mắc mật giòn bì </span>
+                                    <span class="price">120,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Set Lòng lợn siêu đỉnh</span>
+                                    <span class="price">120,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Miến trộn Thái hải sản</span>
+                                    <span class="price">820,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Thịt quay mắc mật giòn bì </span>
+                                    <span class="price">120,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Miến trộn Thái hải sản</span>
+                                    <span class="price">820,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Thịt quay mắc mật giòn bì </span>
+                                    <span class="price">120,000đ</span>
+                                    <span class="status">Đang bán</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="food-link">
+                                    <span class="name">Cua Cà Mau hấp </span>
+                                    <span class="price">720,000đ</span>
+                                    <span class="status">Có cơ sở hết</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-outline-secondary waves-effect"
+                       data-bs-dismiss="modal">Huỷ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add Food-->
+    <div class="modal fade" id="modalAddFood" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAddFoodTitle">Thêm món vào giỏ hàng</h5>
+                    <a href="javascript:;" data-bs-dismiss="modal"
+                       aria-label="Close" class="btn-close-modal icon-e-remove-2">
+
+
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="add-foodBox">
+                            <div class="food-box">
+                                <div class="food-total">
+                                    <div class="food-name">Miến om cua Cà Mau</div>
+                                    <div class="food-price">
+                                        <div class="current">320.000đ</div>
+                                        <div class="original">820.000</div>
+                                    </div>
+                                    <div class="number-order">
+                                        <a href="javascript:;" class="number-btn minus">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 0C11.2311 0 8.52431 0.821086 6.22202 2.35943C3.91973 3.89776 2.12532 6.08427 1.06569 8.64243C0.006066 11.2006 -0.271181 14.0155 0.269012 16.7313C0.809206 19.447 2.14258 21.9416 4.10051 23.8995C6.05845 25.8574 8.55301 27.1908 11.2687 27.731C13.9845 28.2712 16.7994 27.9939 19.3576 26.9343C21.9157 25.8747 24.1022 24.0803 25.6406 21.778C27.1789 19.4757 28 16.7689 28 14C27.9892 10.2903 26.5108 6.73558 23.8876 4.11241C21.2644 1.48923 17.7097 0.0107729 14 0V0ZM21 15.1667H7.00001V12.8333H21V15.1667Z"
+                                                      fill="#111111"/>
+                                            </svg>
+                                        </a>
+                                        <input type="number" value="1">
+                                        <a href="javascript:;" class="number-btn plus active">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_150_1428)">
+                                                    <path d="M14 0C11.2311 0 8.52431 0.821086 6.22202 2.35943C3.91973 3.89776 2.12532 6.08427 1.06569 8.64243C0.006066 11.2006 -0.271181 14.0155 0.269012 16.7313C0.809206 19.447 2.14258 21.9416 4.10051 23.8995C6.05845 25.8574 8.55301 27.1908 11.2687 27.731C13.9845 28.2712 16.7994 27.9939 19.3576 26.9343C21.9157 25.8747 24.1022 24.0803 25.6406 21.778C27.1789 19.4757 28 16.7689 28 14C27.9892 10.2903 26.5108 6.73558 23.8876 4.11241C21.2644 1.48923 17.7097 0.0107729 14 0V0ZM21 15.1667H15.1667V21H12.8333V15.1667H7.00001V12.8333H12.8333V7H15.1667V12.8333H21V15.1667Z"
+                                                          fill="#111111"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_150_1428">
+                                                        <rect width="28" height="28" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="food-thumb">
+                                    <i style="background-image: url('img/thumb-food.png')"></i>
+                                </div>
+                            </div>
+                            <div class="options-food">
+
+                                <div class="form-opt form-check">
+                                    <input type="checkbox" class="form-check-input" id="option-1">
+                                    <label class="label-opts" for="option-1">
+                                        <span class="txt">Chỉ mua nửa phần</span>
+                                        <span class="price minus-price">-120.000</span>
+                                    </label>
+                                </div>
+                                <div class="form-opt form-check">
+                                    <input type="checkbox" class="form-check-input" id="option-2">
+                                    <label class="label-opts" for="option-2">
+                                        <span class="txt">Thêm 1 con cua</span>
+                                        <span class="price plus-price">+750.000</span>
+                                    </label>
+                                </div>
+                                <div class="form-opt form-check">
+                                    <input type="checkbox" class="form-check-input" id="option-3">
+                                    <label class="label-opts" for="option-3">
+                                        <span class="txt">Thêm miến</span>
+                                        <span class="price free-price">Miễn phí</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="note-foodBox">
+                            <h5>Ghi chú</h5>
+                            <textarea class="form-control" id="" rows="6" placeholder="Nhập nội dung..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-outline-secondary"
+                       data-bs-dismiss="modal">Huỷ
+                    </a>
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-primary"
+                       data-bs-dismiss="modal">Thêm
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Address Customer-->
+    <div class="modal fade" id="modalEditAddr" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEditAddTitle">Sửa địa chỉ nhận hàng</h5>
+                    <a href="javascript:;" data-bs-dismiss="modal"
+                       aria-label="Close" class="btn-close-modal icon-e-remove-2">
+
+
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="form-edit-address">
+                        <div class="customer-total">
+                            <h5 class="name text-center">Anh Tùng</h5>
+                            <div class="phone bh-text-666 text-center">
+                                090123456
+                            </div>
+                        </div>
+                        <div class="form-address">
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                       id="inlineRadio11111" value="option1" checked="">
+                                <label class="form-check-label bh-text-111 " for="inlineRadio11111"><b>Địa chỉ
+                                    mới</b></label>
+                            </div>
+
+                            <div class="mb-1">
+                                <div class="label-manage-order">
+                                    Số tiền hoàn cho khách <span>*</span>
+                                </div>
+                                <input id="defaultInput" class="form-control" type="text"
+                                       placeholder="Nhập nội dung...">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 mb-1">
+                                    <div class="label-manage-order">
+                                        Số tiền hoàn cho khách <span>*</span>
+                                    </div>
+                                    <select class="select2 form-select" id="default-select2">
+                                        <option value="rectangle">Rectangle</option>
+                                        <option value="rombo">Rombo</option>
+                                        <option value="romboid">Romboid</option>
+                                        <option value="trapeze">Trapeze</option>
+                                        <option value="traible">Triangle</option>
+                                        <option value="polygon">Polygon</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <div class="label-manage-order">
+                                        Quận / Huyện <span>*</span>
+                                    </div>
+                                    <select class="select2 form-select" id="default-select3">
+                                        <option value="rectangle">Rectangle</option>
+                                        <option value="rombo">Rombo</option>
+                                        <option value="romboid">Romboid</option>
+                                        <option value="trapeze">Trapeze</option>
+                                        <option value="traible">Triangle</option>
+                                        <option value="polygon">Polygon</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <div class="label-manage-order">
+                                        Phường / Xã
+                                    </div>
+                                    <select class="select2 form-select" id="default-select4">
+                                        <option value="rectangle">Rectangle</option>
+                                        <option value="rombo">Rombo</option>
+                                        <option value="romboid">Romboid</option>
+                                        <option value="trapeze">Trapeze</option>
+                                        <option value="traible">Triangle</option>
+                                        <option value="polygon">Polygon</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-address">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                       id="inlineRadio11112" value="option1" checked="">
+                                <label class="form-check-label bh-text-111 " for="inlineRadio11112"><b>Địa chỉ đã
+                                    lưu</b></label>
+                            </div>
+
+                            <ul class="list-addr-saved">
+                                <li>
+                                    <div class="addr-saved using">
+                                        <b>85 Vũ Trọng Phụng</b>
+                                        <div class="text">P. Thượng Đình, Q. Thanh Xuân, Tp. Hà Nội</div>
+
+                                        <div class="check-addrBox">
+                                            <div class="icn icon-check"></div>
+                                            <a href="javascript:;" class="use-addr">Sử dụng </a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="addr-saved">
+                                        <b>12/366 Tây sơn</b>
+                                        <div class="text">Q. Đống Đa, Tp. Hà Nội</div>
+
+                                        <div class="check-addrBox">
+                                            <div class="icn icon-check"></div>
+                                            <a href="javascript:;" class="use-addr">Sử dụng </a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-outline-secondary"
+                       data-bs-dismiss="modal">Đóng
+                    </a>
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-primary"
+                       data-bs-dismiss="modal">Lưu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Logs Edit-->
+    <div class="modal fade" id="modalLogsEdit" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLogsEditTitle">Lịch sử chỉnh sửa</h5>
+                    <a href="javascript:;" data-bs-dismiss="modal"
+                       aria-label="Close" class="btn-close-modal icon-e-remove-2">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="logs-edit">
+                        <!--<h5 class="mb-2">Lịch sử chỉnh sửa</h5>-->
+                        <div class="logs-area">
+                            <div class="logs-item edit">
+                                <h4>Chỉnh sửa</h4>
+                                <div class="time ">08/11/2021 - 09:14</div>
+                                <div class="text">
+                                    <span>Sale - Đức Thịnh</span> đã chỉnh sửa
+                                </div>
+                                <ul class="list-logs-change">
+                                    <li>
+                                        <div class="log-change">
+                                            <div class="type">Khoá đơn</div>
+                                            <i>Khoá</i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="log-change">
+                                            <div class="type">Hoàn tất nhanh</div>
+                                            <i>Đã hoàn tất đơn hàng </i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="log-change">
+                                            <div class="type">Trạng thái đơn hàng</div>
+                                            <i>Đã lên đơn</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="logs-item create">
+                                <h4>Tạo mới</h4>
+                                <div class="time ">08/11/2021 - 09:14</div>
+                                <div class="text">Tạo mới bởi <span>QL - Hùng Hà</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="javascript:;" type="button"
+                       class=" btn btn-outline-secondary"
+                       data-bs-dismiss="modal">Đóng
+                    </a>
                 </div>
             </div>
         </div>
@@ -1003,6 +1428,14 @@
 <!-- END: Page JS-->
 
 <script>
+
+    // Open Modal Add food
+    $('.food-link').click(function () {
+        $('#modalSearchFood').modal('hide');
+        $('#modalAddFood').modal('show');
+    });
+
+
     VueSelectOptionHtml.init();
 
     var textarea = document.querySelector('.order-note-textarea');
@@ -1080,6 +1513,7 @@
         // min: [7,30],
         // max: [14,0]
     });
+
 
 </script>
 </body>

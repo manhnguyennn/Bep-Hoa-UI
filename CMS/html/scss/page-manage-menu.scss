@@ -224,7 +224,6 @@
     margin-top: 12px;
   }
 
-
 }
 
 .stop-sell {
@@ -290,6 +289,32 @@
   box-sizing: border-box;
   background: #F8F8F8;
   box-shadow: inset 1px 0px 1px #EFEFEF;
+
+  .list-logs-change {
+    margin-top: 15px;
+    padding-left: 1rem;
+    li {
+      //& + li {
+      //  margin-top: 10px;
+      //}
+    }
+    .log-change {
+      display: flex;
+      font-size: 12px;
+      line-height: 180%;
+      color: #444444;
+      .type {
+        width: 150px;
+        flex-shrink: 0;
+        margin-right: 20px;
+        font-family: Roboto-Medium;
+      }
+      i {
+        flex-grow: 1;
+        display: block;
+      }
+    }
+  }
 
   .logs-area {
 
@@ -405,9 +430,9 @@
   }
 }
 
-.cate-name-drag{
+.cate-name-drag {
   position: relative;
-  .icon{
+  .icon {
     position: absolute;
     width: 14px;
     height: 14px;
@@ -418,7 +443,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    i{
+    i {
       width: 100%;
       height: 2px;
       border-radius: 5px;

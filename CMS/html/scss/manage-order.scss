@@ -401,7 +401,6 @@
       display: block;
     }
 
-
   }
 
   .images-bk {
@@ -417,7 +416,6 @@
 
     .img {
       display: block;
-
 
       border-radius: 5px;
 
@@ -508,7 +506,6 @@
   color: #111111;
 }
 
-
 .images-bk-modal {
   img {
     width: 100%;
@@ -591,4 +588,316 @@
 
 .date-create-order {
   font-size: 12px;
+}
+
+.form-search-food {
+  padding: 20px;
+  .form-input-search {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    input {
+      &:focus {
+        border: 1px solid #7367F0;
+      }
+      border-radius: 5px 5px 0px 0px;
+      border: 1px solid #D8D6DE;
+      width: 100%;
+      padding: 11px 15px;
+      outline: none;
+      font-size: 14px;
+      line-height: 16px;
+      color: #111111;
+      &::placeholder {
+        opacity: 0.3;
+      }
+    }
+    .icn {
+      position: absolute;
+      font-size: 16px;
+      color: #5E5873;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+    }
+  }
+  .list-food-search {
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+    }
+    max-height: 351px;
+    overflow-y: scroll;
+    padding: 0;
+    background: #FFFFFF;
+    border-left: 1px solid #D8D6DE;
+    border-right: 1px solid #D8D6DE;
+    border-bottom: 1px solid #D8D6DE;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    li {
+      &:hover {
+        background: #F8F8F8;
+      }
+      list-style-type: none;
+    }
+  }
+  .food-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    .name {
+      font-size: 13px;
+      line-height: 15px;
+      margin-right: 10px;
+      color: #222222;
+
+    }
+    .price {
+      font-size: 12px;
+      line-height: 14px;
+      margin-right: auto;
+      color: #5E5873;
+
+    }
+    .status {
+      font-size: 12px;
+      line-height: 14px;
+      font-family: Roboto-Italic;
+      text-align: right;
+      color: #C7C7C7;
+
+    }
+  }
+}
+
+.add-foodBox {
+  width: 550px;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  .food-box {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .food-total {
+    flex-grow: 1;
+  }
+  .food-thumb {
+    width: 110px;
+    margin-left: 15px;
+    flex-shrink: 0;
+    i {
+      width: 100%;
+      padding-top: 100%;
+      border: 0.5px solid rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      border-radius: 6px;
+      @include bg-thumb();
+      display: block;
+    }
+  }
+  .food-name {
+    font-size: 19px;
+    line-height: 130%;
+    margin-bottom: 10px;
+    color: #111111;
+    font-family: Roboto-Medium;
+  }
+  .food-price {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .current {
+      font-size: 18px;
+      line-height: 100%;
+      color: #7367F0;
+    }
+    .original {
+      font-size: 11px;
+      line-height: 130%;
+      text-decoration-line: line-through;
+      color: #999999;
+      margin-left: 13px;
+    }
+  }
+
+  .number-order {
+    display: flex;
+    align-items: center;
+    .number-btn {
+      opacity: .3;
+      &.active {
+        opacity: 1;
+      }
+      width: 28px;
+      display: block;
+      svg {
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+    }
+    input {
+      margin: 0 10px;
+      outline: none;
+      width: 38px;
+      height: 30px;
+      background: #FFFFFF;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #222222;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  .form-opt {
+    & + .form-opt {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #EFEFEF;
+    }
+
+    display: block;
+    .form-check-input[type="checkbox"] {
+      &:checked ~ label .txt {
+        font-family: Roboto-Medium;
+      }
+      margin-top: 0;
+    }
+    label {
+
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        display: block;
+      }
+
+      .txt {
+        margin-right: auto;
+        margin-left: 0;
+        font-size: 13px;
+        line-height: 140%;
+
+        color: #222222;
+
+      }
+
+      .price {
+        font-size: 13px;
+        line-height: 140%;
+        text-align: right;
+        color: #666666;
+
+        //&.plus-price {
+        //  font-family: BVNPro-Medium;
+        //  color: #222222;
+        //}
+      }
+    }
+
+  }
+
+}
+
+.note-foodBox {
+  flex-grow: 1;
+  padding: 20px;
+  background: #F8F8F8;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
+
+}
+
+.form-edit-address {
+  .customer-total {
+    padding: 20px;
+  }
+  .form-address {
+    border-top: 1px solid #EFEFEF;
+    padding: 20px;
+  }
+}
+
+.list-addr-saved {
+  padding: 0;
+  li {
+    & + li {
+      margin-top: 10px;
+    }
+    list-style-type: none;
+  }
+  .addr-saved {
+    background: #F8F8F8;
+    border-radius: 5px;
+    border: 1.5px solid #F8F8F8;
+    position: relative;
+    padding: 11px 113px 11px 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 150%;
+    color: #111111;
+    &:hover {
+      background: rgba(115, 103, 240, 0.08);
+      border: 1.5px solid #7367F0;
+    }
+    &.using {
+      background: rgba(115, 103, 240, 0.08);
+      border: 1.5px solid #7367F0;
+      .check-addrBox {
+        .icn {
+          display: block;
+        }
+        .use-addr {
+          display: none;
+        }
+      }
+    }
+    b {
+      display: block;
+    }
+    .check-addrBox {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      .icn {
+        font-size: 12px;
+        color: var(--colorPurple);
+        display: none;
+      }
+      .use-addr {
+        &:hover {
+          opacity: 1;
+        }
+        opacity: .5;
+        display: flex;
+        padding: 8px 15px;
+        background: #FFFFFF;
+        border: 1px solid #111111;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 101%;
+        color: #111111;
+      }
+    }
+  }
 }
