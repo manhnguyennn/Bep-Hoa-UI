@@ -452,6 +452,14 @@
     font-family: Roboto-Medium;
     color: #EA5455;
   }
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    &.active, &:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111;
+    }
+  }
 
   transition: .2s;
   border: 1.5px solid #F8F8F8;
@@ -473,6 +481,14 @@
     font-family: Roboto-Medium;
     color: var(--colorGreen);
   }
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    &.active, &:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111;
+    }
+  }
 
   transition: .2s;
   border: 1.5px solid #F8F8F8;
@@ -491,6 +507,14 @@
   &.active, &:hover {
     border: 1.5px solid #111;
     font-family: Roboto-Medium;
+  }
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    &.active, &:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111;
+    }
   }
 
   transition: .2s;

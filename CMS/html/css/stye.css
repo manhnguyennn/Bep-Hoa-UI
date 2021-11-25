@@ -1736,6 +1736,12 @@ Generated using nucleoapp.com
     border: 1.5px solid #EA5455;
     font-family: Roboto-Medium;
     color: #EA5455; }
+  .btn-order-uncheck[disabled] {
+    opacity: 0.5;
+    cursor: default; }
+    .btn-order-uncheck[disabled].active, .btn-order-uncheck[disabled]:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111; }
 
 .btn-order-check {
   transition: .2s;
@@ -1754,6 +1760,12 @@ Generated using nucleoapp.com
     border: 1.5px solid #28C76F;
     font-family: Roboto-Medium;
     color: var(--colorGreen); }
+  .btn-order-check[disabled] {
+    opacity: 0.5;
+    cursor: default; }
+    .btn-order-check[disabled].active, .btn-order-check[disabled]:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111; }
 
 .btn-order-df-check {
   transition: .2s;
@@ -1770,6 +1782,12 @@ Generated using nucleoapp.com
   .btn-order-df-check.active, .btn-order-df-check:hover {
     border: 1.5px solid #111;
     font-family: Roboto-Medium; }
+  .btn-order-df-check[disabled] {
+    opacity: 0.5;
+    cursor: default; }
+    .btn-order-df-check[disabled].active, .btn-order-df-check[disabled]:hover {
+      border: 1.5px solid #F8F8F8;
+      color: #111111; }
 
 .images-bk-modal img {
   width: 100%;
