@@ -23,6 +23,8 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/form-pickdate.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -249,7 +251,13 @@
                             <a href="javascript:;" class="icn icon-zoom"></a>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
+                    <div class="col-3">
+                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary" id="datepick">
+                            <input type="text" name="daterange" value="Hôm nay"/>
+                            <div class="icn icon-calendar-date-2"></div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
                         <a href="javascript:;" type="button" class="btn bg-primary text-white btn-add"
                            data-bs-toggle="modal"
                            data-bs-target="#exampleModalCenter">
@@ -822,13 +830,15 @@
                                                     <div class="address-cus d-flex align-items-center justify-content-between active">
                                                         <div class="total-addr bh-text-111">
                                                             <div class="str">85 Vũ Trọng Phụng</div>
-                                                            <div class="dist">P. Thượng Đình, Q. Thanh Xuân,  Tp. Hà Nội</div>
+                                                            <div class="dist">P. Thượng Đình, Q. Thanh Xuân, Tp. Hà
+                                                                Nội
+                                                            </div>
                                                         </div>
                                                         <div class="userBox ">
                                                             <a href="javascript:;" class="use-addr">Sử dụng</a>
                                                             <div class="addr-stt">
                                                                 <div class="icn icon-check text-primary"></div>
-                                                                <div class="text-primary txt">Đang sử dụng </div>
+                                                                <div class="text-primary txt">Đang sử dụng</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -842,20 +852,23 @@
                                                     <h4>Chỉnh sửa</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item edit">
                                                     <h4>Chỉnh sửa</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item create">
                                                     <h4>Tạo mới</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
-                                                    <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span></div>
+                                                    <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -903,6 +916,12 @@
 <!-- BEGIN Vendor JS-->
 <script src="js/select2.full.min.js"></script>
 <script src="js/form-select2.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.min.js"></script>
+<script src="js/picker.js"></script>
+<script src="js/picker.time.js"></script>
+<!-- BEGIN Vendor JS-->
+
 <!-- BEGIN: Page Vendor JS-->
 <!-- END: Page Vendor JS-->
 
@@ -914,14 +933,59 @@
 <!-- END: Page JS-->
 
 <script>
-    /*$(window).on('load', function () {
-        if (feather) {
-            feather.replace({
-                width: 14,
-                height: 14
-            });
-        }
-    })*/
+    $('#datepick').daterangepicker({
+        ranges: {
+            'Hôm nay': [moment(), moment()],
+            'Hôm qua': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            '7 ngày trước': [moment().subtract(6, 'days'), moment()],
+            '30 ngày trước': [moment().subtract(29, 'days'), moment()],
+            '1 năm trước': [moment().startOf('year'), moment().endOf('days')],
+            'Năm nay': [moment().startOf('year'), moment().endOf('days')]
+        },
+        "locale": {
+            "format": "DD/MM/YYYY",
+            "separator": " - ",
+            "applyLabel": "Đồng ý",
+            "cancelLabel": "Hủy",
+            "fromLabel": "Từ",
+            "toLabel": "Đến",
+            "customRangeLabel": "Tùy chỉnh",
+            "weekLabel": "W",
+            "daysOfWeek": [
+                "CN",
+                "T2",
+                "T3",
+                "T4",
+                "T5",
+                "T6",
+                "T7",
+
+            ],
+            "monthNames": [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9",
+                "Tháng 10",
+                "Tháng 11",
+                "Tháng 12"
+            ],
+            "firstDay": 1
+        },
+        "alwaysShowCalendars": true,
+        "startDate": "11/12/2021",
+        "endDate": "11/1/2022"
+    }, function (start, end, label) {
+        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+    });
+
+
+
 </script>
 </body>
 <!-- END: Body-->
