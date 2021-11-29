@@ -1054,7 +1054,7 @@ Generated using nucleoapp.com
   margin-bottom: 1rem;
   font-size: 0.9rem;
   color: var(--colorPurple);
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 .modal-manage-group .modal-body .group-roles {
   margin-bottom: 1rem;
@@ -1121,6 +1121,11 @@ Generated using nucleoapp.com
 }
 .add-panel .txt, .add-icn .txt {
   display: block;
+}
+
+.col-2-4 {
+  flex: 0 0 auto;
+  width: 20%;
 }
 
 .form-food {

@@ -266,7 +266,7 @@
                                     <div class="modal-body">
                                         <div class="p-1">
                                             <div class="row mb-2">
-                                                <div class="col-3">
+                                                <div class="col-2-4">
                                                     <div class="input-form">
                                                         <label for="1" class="form-label">Tên nhóm
                                                             <span>*</span></label>
@@ -274,7 +274,7 @@
                                                                placeholder="Nhập nội dung...">
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-2-4">
                                                     <div class="input-form">
                                                         <label for="2" class="form-label">Ký hiệu
                                                             <span>*</span></label>
@@ -282,14 +282,24 @@
                                                                placeholder="Nhập nội dung...">
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-2-4">
+                                                    <div class="input-form">
+                                                        <label for="2" class="form-label">Phạm vi
+                                                            <span>*</span></label>
+                                                        <select class="form-select" id="selectDefault">
+                                                            <option selected="">Đơn hàng của tôi</option>
+                                                            <option value="1">Tất cả đơn</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2-4">
                                                     <div class="selectBox">
                                                         <label for="1" class="form-label">Màu sắc</label>
                                                         <div class="vue-select-option-html" data-list="color"
                                                              data-hiddenid="hidGroupColor" id="ddlColor"></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-2-4">
                                                     <div class="selectBox ">
                                                         <label for="1" class="form-label">Trạng thái</label>
 
@@ -302,15 +312,15 @@
                                             <div class="list-roles container">
                                                 <div class="group-roles row">
                                                     <div class="row">
-                                                        <div class="nameGr">QL Sản phẩm</div>
+                                                        <div class="nameGr">Quản lý Sản phẩm</div>
                                                     </div>
                                                     <div class="row roles-row">
-                                                        <div class="col-2">
+                                                        <div class="col-3">
                                                             <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6>Đơn hàng</h6>
+                                                                <div class="col-8">
+                                                                    <h6>Quản lý Đơn hàng của tôi</h6>
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-4">
                                                                     <div class="form-check ">
                                                                         <input class="form-check-input" type="checkbox"
                                                                                id=""
@@ -321,7 +331,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-10">
+                                                        <div class="col-8">
                                                             <div class="row">
                                                                 <div class="col-1-9">
                                                                     <div class="form-check ">
@@ -404,16 +414,25 @@
                                                                             Lock</label>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row roles-row">
-                                                        <div class="col-2">
+                                                        <div class="col-3">
                                                             <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6>Đơn hàng</h6>
+                                                                <div class="col-8">
+                                                                    <h6>Quản lý Đơn hàng của tôi</h6>
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-4">
                                                                     <div class="form-check ">
                                                                         <input class="form-check-input" type="checkbox"
                                                                                id=""
@@ -424,7 +443,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-10">
+                                                        <div class="col-8">
                                                             <div class="row">
                                                                 <div class="col-1-9">
                                                                     <div class="form-check ">
@@ -462,20 +481,75 @@
                                                                             đơn</label>
                                                                     </div>
                                                                 </div>
-
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Huỷ
+                                                                            đơn</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Hoàn
+                                                                            Tất</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label"
+                                                                               for="">Export</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">In
+                                                                            đơn</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="group-roles row">
-                                                    <div class="nameGr">QL Khách hàng</div>
+                                                    <div class="row">
+                                                        <div class="nameGr">Quản lý Sản phẩm</div>
+                                                    </div>
                                                     <div class="row roles-row">
-                                                        <div class="col-2">
+                                                        <div class="col-3">
                                                             <div class="row">
-                                                                <div class="col-6">
-                                                                    <h6>Đơn hàng</h6>
+                                                                <div class="col-8">
+                                                                    <h6>Quản lý Đơn hàng của tôi</h6>
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-4">
                                                                     <div class="form-check ">
                                                                         <input class="form-check-input" type="checkbox"
                                                                                id=""
@@ -486,7 +560,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-10">
+                                                        <div class="col-8">
                                                             <div class="row">
                                                                 <div class="col-1-9">
                                                                     <div class="form-check ">
@@ -569,10 +643,130 @@
                                                                             Lock</label>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    <div class="row roles-row">
+                                                        <div class="col-3">
+                                                            <div class="row">
+                                                                <div class="col-8">
+                                                                    <h6>Quản lý Đơn hàng của tôi</h6>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Tất
+                                                                            cả</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="row">
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label"
+                                                                               for="">Xem</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Tạo
+                                                                            mới</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Chỉnh
+                                                                            sửa</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Nhận
+                                                                            đơn</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Huỷ
+                                                                            đơn</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Hoàn
+                                                                            Tất</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label"
+                                                                               for="">Export</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">In
+                                                                            đơn</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1-9">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                               id=""
+                                                                               value="checked" checked="">
+                                                                        <label class="form-check-label" for="">Edit
+                                                                            Lock</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                             </div>

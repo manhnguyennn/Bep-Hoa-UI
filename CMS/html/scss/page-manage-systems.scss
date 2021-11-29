@@ -152,7 +152,7 @@
       margin-bottom: 1rem;
       font-size: .9rem;
       color: var(--colorPurple);
-      padding: 0 0.5rem;
+      padding: 0 1rem;
     }
 
     .group-roles {
@@ -266,4 +266,9 @@
   .txt {
     display: block;
   }
+}
+
+.col-2-4 {
+  flex: 0 0 auto;
+  width: 20%;
 }
