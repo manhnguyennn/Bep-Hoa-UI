@@ -2207,6 +2207,88 @@ Generated using nucleoapp.com
         .list-addr-saved .addr-saved .check-addrBox .use-addr:hover {
           opacity: 1; }
 
+.select-address.active .input-select {
+  border: 1px solid #7367F0;
+  border-radius: 5px 5px 0 0; }
+.select-address .select-input {
+  position: relative; }
+  .select-address .select-input .icn {
+    font-size: 16px;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block; }
+.select-address .input-select {
+  background: #FFFFFF;
+  border: 1px solid #D8D6DE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  padding: 11px 15px;
+  font-size: 14px;
+  width: 100%;
+  line-height: 16px;
+  color: #111111; }
+  .select-address .input-select:focus {
+    border: 1px solid #7367F0;
+    border-radius: 5px 5px 0 0; }
+  .select-address .input-select::placeholder {
+    opacity: 0.3; }
+.select-address .list-search-drop {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #FFFFFF;
+  border-top: 0;
+  border-left: 1px solid #D8D6DE;
+  border-right: 1px solid #D8D6DE;
+  border-bottom: 1px solid #D8D6DE;
+  box-sizing: border-box;
+  border-radius: 5px; }
+.select-address .new-address {
+  padding: 8px 15px;
+  display: flex;
+  align-items: center; }
+  .select-address .new-address .icn {
+    font-size: 16px;
+    color: var(--colorPurple);
+    display: block;
+    margin-right: 7px; }
+  .select-address .new-address .txt {
+    font-size: 13px;
+    line-height: 140%;
+    font-family: Roboto-Medium;
+    color: #7367F0;
+    display: block; }
+.select-address .customers-addr {
+  display: block;
+  padding: 8px 15px; }
+  .select-address .customers-addr .name {
+    font-size: 13px;
+    line-height: 15px;
+    color: #222222; }
+  .select-address .customers-addr .phone {
+    font-size: 12px;
+    line-height: 14px;
+    color: #5E5873; }
+  .select-address .customers-addr .addr {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Roboto-Italic;
+    color: #B6B6B6; }
+.select-address ul {
+  padding: 0;
+  margin: 0;
+  max-height: 136px;
+  overflow-y: scroll; }
+  .select-address ul::-webkit-scrollbar {
+    width: 4px; }
+  .select-address ul::-webkit-scrollbar-thumb {
+    background-color: darkgrey; }
+  .select-address ul li {
+    list-style-type: none; }
+
 .table-user-group .role.adm, .table-bh .role.adm {
   color: var(--colorRed); }
 .table-user-group .role.staff, .table-bh .role.staff {
