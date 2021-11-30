@@ -237,42 +237,49 @@
 
         </div>
         <div class="content-body manage-order-container">
-            <div class="d-flex mb-2 justify-content-between">
+            <div class="d-flex edit-order-header mb-2 justify-content-between">
                 <div class="form-slt-order">
                     <div class="vue-select-option-html" data-list="color"
                          data-hiddenid="hidGroupColor" id="ddlColor"></div>
                 </div>
                 <div class="form-slt-order">
-                    <div class="selectBox vsoh-wrapt" id="vsoh-color-wrapt-0">
-                        <div class="selected before-select">
-                            <div class="text vsoh-show-title">Nguồn đơn</div>
-                            <div class="required">*</div>
+                    <!--add active khi click-->
+                    <div class="selectBox vsoh-wrapt">
+                        <a href="javascript:;" class="select-btn before-select" disabled>
+                            <div class="text vsoh-show-title">Nguồn đơn <span>*</span></div>
+                        </a>
+                        <div class="list-selectBox">
+                            <ul class="list-options-slc">
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">Facebook</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">Zalo</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">Hotline</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">Website</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="list-select-type list-group">
-                            <li class="list-group-item vsoh-option" data-val="1" data-index="0">
-                                <a href="javascript:;" class="select-type">
-                                    <span class="txt">Facebook</span>
-                                </a>
-                            </li>
-
-                            <li class="list-group-item vsoh-option" data-val="2" data-index="1">
-                                <a href="javascript:;" class="select-type">
-                                    <span class="txt">Zalo</span>
-                                </a>
-                            </li>
-
-                            <li class="list-group-item vsoh-option" data-val="3" data-index="2">
-                                <a href="javascript:;" class="select-type">
-                                    <span class="txt">Website</span>
-                                </a>
-                            </li>
-
-                            <li class="list-group-item vsoh-option" data-val="4" data-index="3">
-                                <a href="javascript:;" class="select-type">
-                                    <span class="txt">Hotline</span>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="form-slt-order">
@@ -287,13 +294,130 @@
                     </select>
                 </div>
                 <div class="form-slt-order">
-
+                    <!--add active khi click-->
+                    <div class="selectBox vsoh-wrapt">
+                        <a href="javascript:;" class="select-btn before-select">
+                            <div class="text vsoh-show-title">Chọn cơ sở phụ trách </div>
+                        </a>
+                        <div class="list-selectBox">
+                            <input type="text" placeholder="Tìm...">
+                            <ul class="list-options-slc">
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">HN1 - 113 Thịnh Quang</span>
+                                            <span class="des">Q. Đống Đa</span>
+                                        </span>
+                                        <span class="numb">120</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">HN2 - 24 Quang Trung</span>
+                                             <span class="des">Q. Hoàn Kiếm</span>
+                                        </span>
+                                        <span class="numb">120</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">HN3 - 12/1234 Kim Ngưu</span>
+                                             <span class="des">Q. Hai Bà Trưng</span>
+                                        </span>
+                                        <span class="numb">120</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-slt-order">
+                    <div class="selectBox vsoh-wrapt">
+                        <a href="javascript:;" class="select-btn before-select">
+                            <div class="text vsoh-show-title">Chọn NV xử lý đơn</div>
+                        </a>
+                        <div class="list-selectBox">
+                            <input type="text" placeholder="Tìm...">
+                            <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">Tôi</span>
+                                        </span>
+                                <span class="numb">3</span>
+                            </a>
+                            <div class="type-group">NV cơ sở</div>
+                            <ul class="list-options-slc">
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">NV - Huy Hùng</span>
+                                        </span>
+                                        <span class="numb">0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">NV - Thuý Hạnh</span>
+                                        </span>
+                                        <span class="numb">4</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">NV - Minh Hà</span>
+                                        </span>
+                                        <span class="numb">8</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="type-group">Quản lý cơ sở</div>
+                            <ul class="list-options-slc">
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">QL - Hồng Hạnh</span>
+                                        </span>
+                                        <span class="numb">0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">QL - Hùng Thịnh</span>
+                                        </span>
+                                        <span class="numb">1</span>
+                                    </a>
+                                </li>
 
+                            </ul>
+                            <div class="type-group">sale trung tâm</div>
+                            <ul class="list-options-slc">
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">QL - Hồng Hạnh</span>
+                                        </span>
+                                        <span class="numb">1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="value-btn">
+                                        <span class="total">
+                                            <span class="text">QL - Hùng Thịnh</span>
+                                        </span>
+                                        <span class="numb">1</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container  p-0">
+            <div class="container edit-order-content  p-0">
                 <div class="row">
                     <div class="col-8">
 
@@ -404,6 +528,20 @@
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingTwo">
                                     <div class="accordion-body">
+                                        <div class="order-form-body">
+                                            <div class="label-manage-order">
+                                                Thông tin khách hàng <span>*</span>
+                                            </div>
+                                            <div class="select-address">
+                                                <div class="select-input">
+                                                    <input type="text" class="input-select" placeholder="Tìm kiếm hoặc thêm mới khách hàng">
+                                                    <div class="icn icon-zoom"></div>
+                                                </div>
+                                                <div class="list-search-drop">
+                                                    <a href="javascript:;" class="new-address"></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="order-form-body">
                                             <div class="label-manage-order">
                                                 Thông tin khách hàng <span>*</span>
