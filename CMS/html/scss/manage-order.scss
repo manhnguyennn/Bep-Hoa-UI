@@ -942,7 +942,12 @@
       border: 1px solid #7367F0;
       border-radius: 5px 5px 0 0;
     }
+    .list-search-drop {
+      opacity: 1;
+      visibility: visible;
+    }
   }
+  position: relative;
   .select-input {
     position: relative;
     .icn {
@@ -955,7 +960,7 @@
     }
   }
   .input-select {
-    &:focus{
+    &:focus {
       border: 1px solid #7367F0;
       border-radius: 5px 5px 0 0;
     }
@@ -974,16 +979,20 @@
     }
   }
   .list-search-drop {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: 0;
     top: 100%;
+    width: 100%;
+    z-index: 3;
     background: #FFFFFF;
     border-top: 0;
     border-left: 1px solid #D8D6DE;
     border-right: 1px solid #D8D6DE;
     border-bottom: 1px solid #D8D6DE;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 
   }
   .new-address {
@@ -1007,6 +1016,12 @@
   }
 
   .customers-addr {
+    &:hover {
+      background: #F2F1FF;
+      .name {
+        font-family: Roboto-Medium;
+      }
+    }
     display: block;
     padding: 8px 15px;
     .name {
@@ -1031,7 +1046,7 @@
   ul {
     padding: 0;
     margin: 0;
-    max-height: 136px;
+    max-height: 155px;
     overflow-y: scroll;
     &::-webkit-scrollbar {
       width: 4px;
@@ -1047,4 +1062,8 @@
       list-style-type: none;
     }
   }
+}
+
+.form-add-cus{
+  padding: 20px;
 }
