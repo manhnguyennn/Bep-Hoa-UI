@@ -66,15 +66,6 @@
             },
         });
 
-        let swiperMenuTags = new Swiper(".menu__tags-list", {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            freeMode: true,
-            navigation: {
-                nextEl: ".menu__tags-list .swiper-button-next",
-                prevEl: ".menu__tags-list .swiper-button-prev",
-            },
-        });
 
         $(".tagBox").sticky({topSpacing: 60});
 
@@ -164,91 +155,6 @@
             $('.popup-detailfood-content .sapo').addClass('active')
         });
 
-        // Fancy Box Popup Detail
-        $('.open-popup-atc').off('click').click(function () {
-
-
-            $.fancybox.open({
-                src: '#popup-detail-atc',
-                type: 'inline',
-                opts: {
-                    protect: true,
-                    animationDuration: 500,
-                    animationEffect: 'slide-in-out',
-                    touch: false,
-                    beforeShow: function () {
-                        $('body').addClass('popup-active');
-                    },
-                    afterShow: function () {
-                        swiperGallery = new Swiper(".swiper-gallery", {
-                            slidesPerView: 1,
-                            spaceBetween: 0,
-                            pagination: {
-                                el: ".galleryBox .swiper-pagination",
-                                type: "fraction",
-                            },
-                            initialSlide: 0,
-                        });
-
-
-                    },
-                    afterClose: function () {
-                        $('body').removeClass('popup-active');
-                        swiperGallery.destroy();
-                    }
-                },
-            });
-        });
-
-        // Fancy Box Popup Cart
-        $('.open-popup-cart').off('click').click(function () {
-
-
-            $.fancybox.open({
-                src: '#popup-cart',
-                type: 'inline',
-                opts: {
-                    protect: true,
-                    animationDuration: 500,
-                    animationEffect: 'slide-in-out',
-                    beforeShow: function () {
-                        $('body').addClass('popup-cart-active');
-                    },
-                    afterShow: function () {
-
-
-                    },
-                    afterClose: function () {
-                        $('body').removeClass('popup-cart-active');
-                    }
-                },
-            });
-        });
-
-        // Fancy Box Popup Checkout
-        $('.open-popup-checkout').off('click').click(function () {
-
-
-            $.fancybox.open({
-                src: '#open-popup-checkout',
-                type: 'inline',
-                opts: {
-                    protect: true,
-                    animationDuration: 500,
-                    touch: false,
-                    animationEffect: 'slide-in-out-right',
-                    beforeShow: function () {
-                        $('body').addClass('popup-checkout-active');
-                    },
-                    afterShow: function () {
-
-                    },
-                    afterClose: function () {
-                        $('body').removeClass('popup-checkout-active');
-                    }
-                },
-            });
-        });
 
         //check box type shiping
         $('.choose-type-order').each(function () {
@@ -328,9 +234,209 @@
         });
 
 
-        if (me.windowW > 800) {
+        if (me.windowW > 760) {
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+
+            // Fancy Box Popup Detail
+            $('.open-popup-atc').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#popup-detail-atc',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        animationDuration: 500,
+                        // animationEffect: 'fade-in',
+                        touch: false,
+                        beforeShow: function () {
+                            $('body').addClass('popup-active');
+                        },
+                        afterShow: function () {
+                            swiperGallery = new Swiper(".swiper-gallery", {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                pagination: {
+                                    el: ".galleryBox .swiper-pagination",
+                                    type: "fraction",
+                                },
+                                initialSlide: 0,
+                            });
+
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-active');
+                            swiperGallery.destroy();
+                        }
+                    },
+                });
+            });
+
+            // Fancy Box Popup Cart
+            $('.open-popup-cart').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#popup-cart',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        touch: false,
+                        animationDuration: 500,
+                        mobile:{
+                            touch: true,
+                        },
+                        clickOutside: true,
+                        animationEffect: 'slide-in-out-right',
+                        beforeShow: function () {
+                            $('body').addClass('popup-cart-active');
+                        },
+                        afterShow: function () {
+
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-cart-active');
+                        }
+                    },
+                });
+            });
+
+            // Fancy Box Popup Checkout
+            $('.open-popup-checkout').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#open-popup-checkout',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        animationDuration: 500,
+                        touch: false,
+                        animationEffect: 'slide-in-out-right',
+                        beforeShow: function () {
+                            $('body').addClass('popup-checkout-active');
+                        },
+                        afterShow: function () {
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-checkout-active');
+                        }
+                    },
+                });
+            });
+
 
         } else {
+
+
+            // Fancy Box Popup Detail
+            $('.open-popup-atc').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#popup-detail-atc',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        animationDuration: 500,
+                        animationEffect: 'slide-in-out',
+                        touch: false,
+                        beforeShow: function () {
+                            $('body').addClass('popup-active');
+                        },
+                        afterShow: function () {
+                            swiperGallery = new Swiper(".swiper-gallery", {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                pagination: {
+                                    el: ".galleryBox .swiper-pagination",
+                                    type: "fraction",
+                                },
+                                initialSlide: 0,
+                            });
+
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-active');
+                            swiperGallery.destroy();
+                        }
+                    },
+                });
+            });
+
+            // Fancy Box Popup Cart
+            $('.open-popup-cart').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#popup-cart',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        touch: false,
+                        animationDuration: 500,
+                        mobile:{
+                            touch: true,
+                        },
+                        clickOutside: true,
+                        animationEffect: 'slide-in-out',
+                        beforeShow: function () {
+                            $('body').addClass('popup-cart-active');
+                        },
+                        afterShow: function () {
+
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-cart-active');
+                        }
+                    },
+                });
+            });
+
+            // Fancy Box Popup Checkout
+            $('.open-popup-checkout').off('click').click(function () {
+
+
+                $.fancybox.open({
+                    src: '#open-popup-checkout',
+                    type: 'inline',
+                    opts: {
+                        protect: true,
+                        animationDuration: 500,
+                        touch: false,
+                        animationEffect: 'slide-in-out-right',
+                        beforeShow: function () {
+                            $('body').addClass('popup-checkout-active');
+                        },
+                        afterShow: function () {
+
+                        },
+                        afterClose: function () {
+                            $('body').removeClass('popup-checkout-active');
+                        }
+                    },
+                });
+            });
+
+
+            let swiperMenuTags = new Swiper(".menu__tags-list", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                freeMode: true,
+                navigation: {
+                    nextEl: ".menu__tags-list .swiper-button-next",
+                    prevEl: ".menu__tags-list .swiper-button-prev",
+                },
+            });
 
 
         }

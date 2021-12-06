@@ -1,5 +1,5 @@
 .Popup-checkout {
-  width: 100vw;
+  @extend .widthCT;
 
   .popup-content {
     background: #EEEEEE;
@@ -298,7 +298,6 @@
 
     }
 
-
   }
 
   .form-input-user {
@@ -308,7 +307,6 @@
       & + .form-input {
         margin-top: 15px;
       }
-
 
     }
 
@@ -351,7 +349,6 @@
     option {
       color: #222222;
     }
-
 
     .city {
       font-size: 14px;
@@ -419,7 +416,6 @@
       color: var(--colorRed);
       display: block;
     }
-
 
   }
 
@@ -531,7 +527,6 @@
       display: flex;
       align-items: center;
 
-
       span {
         font-size: 12px;
         font-family: BVNPro-Regular;
@@ -639,7 +634,6 @@
       color: #FFFFFF;
     }
 
-
   }
 
   .footer-bill {
@@ -652,7 +646,6 @@
     box-shadow: inset 0px 0.5px 0px #A08C78;
     padding: 15px 20px 40px;
     box-sizing: border-box;
-
 
     .total-checkout {
       display: flex;
@@ -721,5 +714,16 @@
 
   .fancybox-close-small {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Popup-checkout {
+
+  }
+  .popup-checkout-active {
+    .fancybox-bg {
+      background: #F5F5F5;
+    }
   }
 }

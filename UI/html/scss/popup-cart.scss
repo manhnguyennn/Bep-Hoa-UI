@@ -1,19 +1,24 @@
 .PopUp-cart {
   width: 100vw;
 
-
   .popup-cart-content {
     height: calc(calc(var(--vh, 1vh) * 100) - 92px);
-    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-top: 62px;
     box-sizing: border-box;
     padding-bottom: 140px;
   }
+  .list-order {
+    flex-grow: 1;
+    overflow-y: scroll;
+    box-sizing: border-box;
 
+  }
   .header-cart {
-    position: fixed;
-    top: 92px;
+    position: absolute;
+    top: 0;
     left: 0;
     background: #FFFFFF;
     box-shadow: inset 0px -0.5px 0px #E6E6E6;
@@ -27,7 +32,7 @@
   }
 
   .footer-cart {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     background: #FFFFFF;
@@ -278,5 +283,25 @@
 
   .fancybox-close-small {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .PopUp-cart {
+    width: 400px;
+    .popup-cart-content {
+      height: calc(100vh - 18px);
+    }
+  }
+  .popup-cart-active {
+    .fancybox-content{
+      margin-top: 9px;
+      border-radius: 6px;
+    }
+    .fancybox-slide {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 8px;
+    }
   }
 }

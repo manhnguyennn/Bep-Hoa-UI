@@ -6,7 +6,6 @@
 @import "mixins";
 @import "commons";
 @import "fonts";
-
 //Layout
 @import "header";
 @import "home";
@@ -16,4 +15,26 @@
 
 .bh-wrapper {
   padding-top: 60px;
+
+}
+
+.widthCT {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 768px) {
+  .widthCT {
+    width: 836px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .widthCT {
+    width: 63.17vw;
+  }
 }

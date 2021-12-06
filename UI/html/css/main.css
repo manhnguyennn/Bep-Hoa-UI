@@ -300,6 +300,9 @@ svg {
     .timepicker .input-hour::placeholder {
       opacity: 0.5; }
 
+.fancybox-container {
+  transition-duration: 500ms; }
+
 @font-face {
   font-family: BVNPro-Regular;
   src: url("../fonts/BVNPro-Regular.ttf"); }
@@ -437,11 +440,11 @@ svg {
 
 .bh-home-contact {
   background: #FFFFFF;
+  width: 335px;
   border: 0.7px solid #D0D0D0;
   box-sizing: border-box;
   border-radius: 52px;
   position: relative;
-  width: calc(100% - 40px);
   margin: 0 auto 33px; }
   .bh-home-contact .text {
     position: absolute;
@@ -482,8 +485,29 @@ svg {
   align-items: center;
   margin-bottom: 10px; }
   .bh-home-menu .heading .icn {
-    width: 60px; }
+    flex-grow: 1;
+    height: 4px;
+    position: relative; }
+    .bh-home-menu .heading .icn:before {
+      width: 100%;
+      height: 1px;
+      background: #B5292F;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: ''; }
+    .bh-home-menu .heading .icn:after {
+      width: 100%;
+      height: 1px;
+      background: #B5292F;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: ''; }
   .bh-home-menu .heading .txt {
+    flex-shrink: 0;
     font-size: 15px;
     line-height: 100%;
     font-family: BVNPro-SemiBold;
@@ -742,11 +766,96 @@ svg {
   .bh-main-footer-fixed .open-mess {
     width: 42px; }
 
+@media screen and (min-width: 768px) {
+  .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-child(1) {
+    margin-left: 0; }
+  .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-last-child(1) {
+    margin-right: 0; }
+  .bh-home-menu .tagBox .menu__tags-list .swiper-wrapper {
+    justify-content: center; }
+  .bh-home-menu .tagBox .menu__tags-list .swiper-button-next, .bh-home-menu .tagBox .menu__tags-list .swiper-button-prev {
+    display: none; }
+  .bh-home-menu .heading {
+    margin-bottom: 30px; }
+
+  .bh-menu-list {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px; }
+    .bh-menu-list li {
+      background: #FFFFFF;
+      border: none;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+      border-radius: 6px;
+      padding: 0; }
+
+  .food-card {
+    position: relative;
+    height: 100%;
+    flex-direction: column; }
+    .food-card .thumb {
+      margin-right: 0;
+      width: 100%; }
+      .food-card .thumb i {
+        border-radius: 6px 6px 0px 0px;
+        padding-top: 63.45%; }
+        .food-card .thumb i:before {
+          border-radius: 6px 6px 0px 0px; }
+    .food-card .total-food {
+      display: flex;
+      flex-direction: column;
+      border-right: 0.5px solid rgba(0, 0, 0, 0.15);
+      border-left: 0.5px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+      padding: 9px 12px 20px;
+      border-radius: 0px 0px 6px 6px; }
+    .food-card .status {
+      top: 10px; }
+    .food-card .name {
+      text-align: center; }
+    .food-card .price {
+      justify-content: center; }
+    .food-card .voucher {
+      display: flex;
+      position: absolute;
+      background: linear-gradient(359.36deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 97.27%);
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      padding: 20px 7px 7px;
+      width: 100%; }
+      .food-card .voucher + .voucher {
+        display: none; }
+      .food-card .voucher .icn svg path {
+        fill: #FFE600; }
+      .food-card .voucher .text {
+        color: #fff; }
+    .food-card .funcsBox {
+      margin-top: auto;
+      flex-direction: column-reverse;
+      align-items: center; }
+    .food-card .add-to-card, .food-card .buy-now {
+      width: 120px; }
+    .food-card .buy-now {
+      background: none;
+      margin-top: 5px; }
+
+  .bh-main-footer-fixed {
+    width: 375px;
+    right: 0;
+    left: auto;
+    background: none; } }
 .PopUp-detail {
   width: 100vw; }
   .PopUp-detail .popup-detailfood-content {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column; }
     .PopUp-detail .popup-detailfood-content .close-popup {
       top: 20px;
       left: 20px;
@@ -754,8 +863,11 @@ svg {
       width: 32px;
       display: block;
       z-index: 2; }
+  .PopUp-detail .content-pop {
+    flex-grow: 1;
+    overflow-y: scroll; }
   .PopUp-detail .funcsFixed {
-    position: fixed;
+    position: absolute;
     z-index: 99;
     bottom: 0;
     left: 0;
@@ -789,6 +901,7 @@ svg {
     .PopUp-detail .atc-btn.save-edit, .PopUp-detail .buy-now.save-edit {
       background: #222222; }
   .PopUp-detail .galleryBox {
+    flex-shrink: 0;
     position: relative;
     z-index: 1; }
     .PopUp-detail .galleryBox .images-food {
@@ -964,18 +1077,46 @@ svg {
 .popup-active .fancybox-close-small {
   display: none; }
 
+@media screen and (min-width: 768px) {
+  .PopUp-detail {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 585px; }
+    .PopUp-detail .popup-detailfood-content {
+      max-height: calc(100vh - 60px); }
+      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar {
+        width: 6px;
+        border-right: 6px; }
+      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-thumb {
+        background-color: #B5292F; }
+      .PopUp-detail .popup-detailfood-content .close-popup {
+        right: 60px;
+        left: auto;
+        width: 50px;
+        top: 40px; }
+
+  .popup-active .fancybox-bg {
+    background: rgba(0, 0, 0, 0.75); }
+  .popup-active .fancybox-content {
+    margin-top: 30px; } }
 .PopUp-cart {
   width: 100vw; }
   .PopUp-cart .popup-cart-content {
     height: calc(calc(var(--vh, 1vh) * 100) - 92px);
-    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-top: 62px;
     box-sizing: border-box;
     padding-bottom: 140px; }
+  .PopUp-cart .list-order {
+    flex-grow: 1;
+    overflow-y: scroll;
+    box-sizing: border-box; }
   .PopUp-cart .header-cart {
-    position: fixed;
-    top: 92px;
+    position: absolute;
+    top: 0;
     left: 0;
     background: #FFFFFF;
     box-shadow: inset 0px -0.5px 0px #E6E6E6;
@@ -987,7 +1128,7 @@ svg {
     width: 100%;
     box-sizing: border-box; }
   .PopUp-cart .footer-cart {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     background: #FFFFFF;
@@ -1165,474 +1306,485 @@ svg {
 .popup-cart-active .fancybox-close-small {
   display: none; }
 
-.Popup-checkout {
-  width: 100vw; }
-  .Popup-checkout .popup-content {
-    background: #EEEEEE;
-    padding-top: 72px;
-    padding-bottom: 150px; }
-  .Popup-checkout .header {
+@media screen and (min-width: 768px) {
+  .PopUp-cart {
+    width: 400px; }
+    .PopUp-cart .popup-cart-content {
+      height: calc(100vh - 18px); }
+
+  .popup-cart-active .fancybox-content {
+    margin-top: 9px;
+    border-radius: 6px; }
+  .popup-cart-active .fancybox-slide {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #FFFFFF;
-    height: 62px;
-    box-shadow: inset 0px -0.5px 0px #E6E6E6;
-    z-index: 99;
-    width: 100%;
-    box-sizing: border-box; }
-    .Popup-checkout .header .back-btn {
-      position: absolute;
-      width: 24px;
-      top: 50%;
-      left: 11px;
-      transform: translateY(-50%);
-      display: block; }
-    .Popup-checkout .header .heading {
-      font-size: 19px;
-      line-height: 130%;
-      font-family: BVNPro-SemiBold;
-      text-align: center;
-      color: #222222; }
-  .Popup-checkout .infoBox {
-    background: #FFFFFF;
-    margin-bottom: 10px; }
-    .Popup-checkout .infoBox .title {
-      padding: 15px 20px 15px 33px;
-      position: relative;
-      font-size: 15px;
-      line-height: 100%;
-      font-family: BVNPro-SemiBold;
-      text-transform: uppercase;
-      color: #222222; }
-      .Popup-checkout .infoBox .title:before {
-        background: var(--colorRed);
-        width: 4px;
-        height: 17px;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block;
-        content: '';
-        position: absolute; }
-  .Popup-checkout .contentBox {
-    padding: 20px; }
-  .Popup-checkout .infoGroup + .infoGroup {
-    margin-top: 25px; }
-  .Popup-checkout .infoGroup .label {
-    font-size: 14px;
+    justify-content: flex-end;
+    padding-right: 8px; } }
+.Popup-checkout .popup-content {
+  background: #EEEEEE;
+  padding-top: 72px;
+  padding-bottom: 150px; }
+.Popup-checkout .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  height: 62px;
+  box-shadow: inset 0px -0.5px 0px #E6E6E6;
+  z-index: 99;
+  width: 100%;
+  box-sizing: border-box; }
+  .Popup-checkout .header .back-btn {
+    position: absolute;
+    width: 24px;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+    display: block; }
+  .Popup-checkout .header .heading {
+    font-size: 19px;
+    line-height: 130%;
+    font-family: BVNPro-SemiBold;
+    text-align: center;
+    color: #222222; }
+.Popup-checkout .infoBox {
+  background: #FFFFFF;
+  margin-bottom: 10px; }
+  .Popup-checkout .infoBox .title {
+    padding: 15px 20px 15px 33px;
+    position: relative;
+    font-size: 15px;
     line-height: 100%;
     font-family: BVNPro-SemiBold;
-    margin-bottom: 15px;
+    text-transform: uppercase;
     color: #222222; }
-  .Popup-checkout .infoGroup .type-order {
+    .Popup-checkout .infoBox .title:before {
+      background: var(--colorRed);
+      width: 4px;
+      height: 17px;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      position: absolute; }
+.Popup-checkout .contentBox {
+  padding: 20px; }
+.Popup-checkout .infoGroup + .infoGroup {
+  margin-top: 25px; }
+.Popup-checkout .infoGroup .label {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: BVNPro-SemiBold;
+  margin-bottom: 15px;
+  color: #222222; }
+.Popup-checkout .infoGroup .type-order {
+  display: flex;
+  justify-content: space-between; }
+.Popup-checkout .infoGroup .choose-type-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 15px) / 2);
+  padding: 9px 0;
+  box-sizing: border-box;
+  background: #F6F6F6;
+  border-bottom: 1.5px solid #F6F6F6;
+  border-radius: 6px; }
+  .Popup-checkout .infoGroup .choose-type-order.shipping .icn {
+    background-image: url("../img/shipping.png"); }
+  .Popup-checkout .infoGroup .choose-type-order.shipping.active .icn {
+    background-image: url("../img/shipping-active.png"); }
+  .Popup-checkout .infoGroup .choose-type-order.pickup .icn {
+    background-image: url("../img/pickup.png"); }
+  .Popup-checkout .infoGroup .choose-type-order.pickup.active .icn {
+    background-image: url("../img/pickup-active.png"); }
+  .Popup-checkout .infoGroup .choose-type-order.active {
+    background: #FFFFFF;
+    border: 1.5px solid var(--colorRed); }
+  .Popup-checkout .infoGroup .choose-type-order .icn {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    margin-right: 11px; }
+  .Popup-checkout .infoGroup .choose-type-order .txt {
+    font-size: 14px;
+    line-height: 100%;
+    font-family: BVNPro-Medium;
+    color: #222222; }
+.Popup-checkout .infoGroup .date-order {
+  display: flex;
+  justify-content: space-between; }
+  .Popup-checkout .infoGroup .date-order .pick-date {
+    width: calc((100% - 20px) / 3);
     display: flex;
-    justify-content: space-between; }
-  .Popup-checkout .infoGroup .choose-type-order {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F6F6F6;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 100%;
+    font-family: BVNPro-Medium;
+    text-align: center;
+    transition: .2s;
+    color: #666666;
+    padding: 10px 0;
+    box-sizing: border-box; }
+    .Popup-checkout .infoGroup .date-order .pick-date.active {
+      background: var(--colorRed);
+      color: #FFFFFF; }
+    .Popup-checkout .infoGroup .date-order .pick-date .text {
+      display: block;
+      margin-bottom: 6px; }
+    .Popup-checkout .infoGroup .date-order .pick-date .date {
+      display: block; }
+.Popup-checkout .infoGroup .choose-time-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .Popup-checkout .infoGroup .choose-time-order + .choose-time-order {
+    margin-top: 15px; }
+.Popup-checkout .infoGroup .choose-ampm {
+  margin-left: 9px;
+  display: flex;
+  background: #F6F6F6;
+  border-radius: 6px; }
+  .Popup-checkout .infoGroup .choose-ampm .ampm-radio {
+    font-size: 12px;
+    line-height: 100%;
+    padding: 11px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc((100% - 15px) / 2);
-    padding: 9px 0;
+    text-align: center;
+    font-family: BVNPro-Medium;
+    color: #666666;
+    border-radius: 6px;
+    border: 1.5px solid #F6F6F6;
+    transition: .2s; }
+    .Popup-checkout .infoGroup .choose-ampm .ampm-radio.active {
+      background: #ffffff;
+      border: 1.5px solid #000000;
+      color: #222222; }
+.Popup-checkout .infoGroup .food-total {
+  display: flex; }
+  .Popup-checkout .infoGroup .food-total + .food-total {
+    margin-top: 15px; }
+  .Popup-checkout .infoGroup .food-total .count {
+    width: 27px;
+    flex-shrink: 0;
+    margin-right: 11px;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    display: block;
+    color: #222222; }
+  .Popup-checkout .infoGroup .food-total .info-food {
+    flex-grow: 1; }
+  .Popup-checkout .infoGroup .food-total .name-food {
+    font-size: 14px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    color: #222222; }
+  .Popup-checkout .infoGroup .food-total .options-food {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 170%;
+    font-family: BVNPro-RegularItalic;
+    color: #666666; }
+    .Popup-checkout .infoGroup .food-total .options-food span + span:before {
+      content: ' / '; }
+.Popup-checkout .infoGroup .note-order {
+  background: #FFF6ED;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 13px;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: BVNPro-Regular;
+  color: #222222; }
+  .Popup-checkout .infoGroup .note-order::placeholder {
+    opacity: 0.5; }
+.Popup-checkout .form-input-user {
+  padding: 20px; }
+  .Popup-checkout .form-input-user .form-input + .form-input {
+    margin-top: 15px; }
+  .Popup-checkout .form-input-user .input-user {
+    padding: 12px 13px;
+    background: #FFFFFF;
+    border: 0.5px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative; }
+  .Popup-checkout .form-input-user .icn {
+    width: 16px;
+    display: block;
+    margin-right: 16px;
+    flex-shrink: 0; }
+  .Popup-checkout .form-input-user input, .Popup-checkout .form-input-user select {
+    flex-grow: 1;
+    border: none;
+    font-size: 14px;
+    line-height: 117%;
+    font-family: BVNPro-Regular;
+    color: #222222; }
+    .Popup-checkout .form-input-user input::placeholder, .Popup-checkout .form-input-user select::placeholder {
+      opacity: 0.5; }
+  .Popup-checkout .form-input-user select:required:invalid {
+    color: gray; }
+  .Popup-checkout .form-input-user option {
+    color: #222222; }
+  .Popup-checkout .form-input-user .city {
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    display: inline-block;
+    flex-shrink: 0;
+    font-family: BVNPro-Regular;
+    color: #222222;
+    margin-right: 5px; }
+    .Popup-checkout .form-input-user .city:after {
+      content: '  /';
+      opacity: .5;
+      margin-left: 5px; }
+  .Popup-checkout .form-input-user .autofill-box {
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: -1px;
+    width: calc(100% + 2px);
+    z-index: 2; }
+    .Popup-checkout .form-input-user .autofill-box.active {
+      opacity: 1;
+      visibility: visible; }
+  .Popup-checkout .form-input-user .list-address {
+    background: #FFFFFF;
+    border: 0.5px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 13px; }
+    .Popup-checkout .form-input-user .list-address li + li {
+      padding-top: 10px;
+      margin-top: 10px; }
+    .Popup-checkout .form-input-user .list-address .address-used {
+      font-size: 14px;
+      line-height: 119%;
+      font-family: BVNPro-Regular;
+      display: block;
+      color: #222222; }
+  .Popup-checkout .form-input-user .trigger-select {
+    position: absolute;
+    font-size: 12px;
+    line-height: 100%;
+    font-family: BVNPro-Regular;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--colorRed);
+    display: block; }
+.Popup-checkout .remind-user {
+  margin-top: 5px;
+  padding-bottom: 36px; }
+  .Popup-checkout .remind-user .text {
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    font-family: BVNPro-Regular;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 38px; }
+  .Popup-checkout .remind-user .images {
+    width: 97px;
+    margin: 0 auto 20px; }
+    .Popup-checkout .remind-user .images img {
+      width: 100%;
+      display: block; }
+  .Popup-checkout .remind-user .remind-text {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: BVNPro-SemiBold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111111; }
+    .Popup-checkout .remind-user .remind-text span {
+      color: var(--colorRed); }
+.Popup-checkout .payment-box {
+  padding: 20px; }
+  .Popup-checkout .payment-box .list-payment {
+    margin-bottom: 28px; }
+    .Popup-checkout .payment-box .list-payment li + li {
+      margin-top: 10px; }
+  .Popup-checkout .payment-box .payment-type {
+    transition: .2s;
+    border: 1.5px solid #F6F6F6;
     box-sizing: border-box;
     background: #F6F6F6;
-    border-bottom: 1.5px solid #F6F6F6;
-    border-radius: 6px; }
-    .Popup-checkout .infoGroup .choose-type-order.shipping .icn {
-      background-image: url("../img/shipping.png"); }
-    .Popup-checkout .infoGroup .choose-type-order.shipping.active .icn {
-      background-image: url("../img/shipping-active.png"); }
-    .Popup-checkout .infoGroup .choose-type-order.pickup .icn {
-      background-image: url("../img/pickup.png"); }
-    .Popup-checkout .infoGroup .choose-type-order.pickup.active .icn {
-      background-image: url("../img/pickup-active.png"); }
-    .Popup-checkout .infoGroup .choose-type-order.active {
-      background: #FFFFFF;
-      border: 1.5px solid var(--colorRed); }
-    .Popup-checkout .infoGroup .choose-type-order .icn {
-      width: 32px;
-      height: 32px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px; }
+    .Popup-checkout .payment-box .payment-type.active {
+      border: 1.5px solid #B5292F;
+      background: #FFFFFF; }
+      .Popup-checkout .payment-box .payment-type.active .txt {
+        font-family: BVNPro-Medium; }
+    .Popup-checkout .payment-box .payment-type .icn {
+      width: 18px;
       display: block;
-      margin-right: 11px; }
-    .Popup-checkout .infoGroup .choose-type-order .txt {
+      flex-shrink: 0;
+      margin-right: 13px; }
+    .Popup-checkout .payment-box .payment-type .txt {
       font-size: 14px;
       line-height: 100%;
-      font-family: BVNPro-Medium;
-      color: #222222; }
-  .Popup-checkout .infoGroup .date-order {
-    display: flex;
-    justify-content: space-between; }
-    .Popup-checkout .infoGroup .date-order .pick-date {
-      width: calc((100% - 20px) / 3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #F6F6F6;
-      border-radius: 6px;
-      font-size: 12px;
-      line-height: 100%;
-      font-family: BVNPro-Medium;
-      text-align: center;
-      transition: .2s;
-      color: #666666;
-      padding: 10px 0;
-      box-sizing: border-box; }
-      .Popup-checkout .infoGroup .date-order .pick-date.active {
-        background: var(--colorRed);
-        color: #FFFFFF; }
-      .Popup-checkout .infoGroup .date-order .pick-date .text {
-        display: block;
-        margin-bottom: 6px; }
-      .Popup-checkout .infoGroup .date-order .pick-date .date {
-        display: block; }
-  .Popup-checkout .infoGroup .choose-time-order {
+      font-family: BVNPro-Regular;
+      display: block;
+      color: #111111; }
+.Popup-checkout .total-bill-order {
+  margin-bottom: 20px; }
+  .Popup-checkout .total-bill-order .priceFlx {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    .Popup-checkout .infoGroup .choose-time-order + .choose-time-order {
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: BVNPro-Medium;
+    color: #222222; }
+    .Popup-checkout .total-bill-order .priceFlx + .priceFlx {
       margin-top: 15px; }
-  .Popup-checkout .infoGroup .choose-ampm {
-    margin-left: 9px;
+  .Popup-checkout .total-bill-order .text {
     display: flex;
-    background: #F6F6F6;
-    border-radius: 6px; }
-    .Popup-checkout .infoGroup .choose-ampm .ampm-radio {
+    align-items: center; }
+    .Popup-checkout .total-bill-order .text span {
       font-size: 12px;
-      line-height: 100%;
-      padding: 11px;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-family: BVNPro-Medium;
-      color: #666666;
-      border-radius: 6px;
-      border: 1.5px solid #F6F6F6;
-      transition: .2s; }
-      .Popup-checkout .infoGroup .choose-ampm .ampm-radio.active {
-        background: #ffffff;
-        border: 1.5px solid #000000;
-        color: #222222; }
-  .Popup-checkout .infoGroup .food-total {
-    display: flex; }
-    .Popup-checkout .infoGroup .food-total + .food-total {
-      margin-top: 15px; }
-    .Popup-checkout .infoGroup .food-total .count {
-      width: 27px;
-      flex-shrink: 0;
-      margin-right: 11px;
-      font-size: 14px;
-      line-height: 140%;
       font-family: BVNPro-Regular;
+      color: #B5292F;
+      margin-left: 6px;
+      display: block; }
+  .Popup-checkout .total-bill-order .price-detail {
+    display: block;
+    text-align: right; }
+    .Popup-checkout .total-bill-order .price-detail .discount {
       display: block;
-      color: #222222; }
-    .Popup-checkout .infoGroup .food-total .info-food {
-      flex-grow: 1; }
-    .Popup-checkout .infoGroup .food-total .name-food {
-      font-size: 14px;
-      line-height: 140%;
-      font-family: BVNPro-Regular;
-      color: #222222; }
-    .Popup-checkout .infoGroup .food-total .options-food {
-      margin-top: 4px;
-      font-size: 12px;
-      line-height: 170%;
-      font-family: BVNPro-RegularItalic;
-      color: #666666; }
-      .Popup-checkout .infoGroup .food-total .options-food span + span:before {
-        content: ' / '; }
-  .Popup-checkout .infoGroup .note-order {
-    background: #FFF6ED;
-    width: 100%;
-    border: none;
+      color: #629050; }
+      .Popup-checkout .total-bill-order .price-detail .discount + .discount {
+        margin-top: 5px; }
+.Popup-checkout .voucherBox {
+  display: flex; }
+  .Popup-checkout .voucherBox + .voucherBox {
+    margin-top: 15px; }
+  .Popup-checkout .voucherBox .form-input-voucher {
+    flex-grow: 1; }
+    .Popup-checkout .voucherBox .form-input-voucher.approved .checking-voucher {
+      display: block; }
+    .Popup-checkout .voucherBox .form-input-voucher.wrong .noti {
+      display: block; }
+  .Popup-checkout .voucherBox .input-voucher {
+    background: #FFFFFF;
+    border: 0.5px solid #C7C7C7;
     box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 10px 11px; }
+  .Popup-checkout .voucherBox .noti {
+    margin-top: 9px;
+    padding-left: 11px;
+    font-size: 10px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    display: none;
+    color: #B5292F; }
+  .Popup-checkout .voucherBox .checking-voucher {
+    width: 16px;
+    display: none;
+    flex-shrink: 0;
+    margin-right: 8px; }
+  .Popup-checkout .voucherBox input {
+    border: none;
+    flex-grow: 1;
+    font-size: 13px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    color: #222222;
+    text-transform: uppercase; }
+    .Popup-checkout .voucherBox input::placeholder {
+      text-transform: none;
+      opacity: 0.5; }
+  .Popup-checkout .voucherBox .confirm-btn {
+    margin-left: 10px;
+    flex-shrink: 0;
+    background: #222222;
+    border-radius: 6px;
+    width: 90px;
     height: 40px;
     display: flex;
     align-items: center;
-    border-radius: 6px;
-    padding: 13px;
+    justify-content: center;
     font-size: 14px;
+    line-height: 140%;
+    font-family: BVNPro-Medium;
+    color: #FFFFFF; }
+.Popup-checkout .footer-bill {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0.5px 0px #A08C78;
+  padding: 15px 20px 40px;
+  box-sizing: border-box; }
+  .Popup-checkout .footer-bill .total-checkout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px; }
+  .Popup-checkout .footer-bill .complete-checkout-btn {
+    background: #B5292F;
+    border-radius: 6px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 100%;
+    font-family: BVNPro-Medium;
+    color: #FFFFFF; }
+  .Popup-checkout .footer-bill .text {
+    font-size: 16px;
     line-height: 100%;
     font-family: BVNPro-Regular;
     color: #222222; }
-    .Popup-checkout .infoGroup .note-order::placeholder {
-      opacity: 0.5; }
-  .Popup-checkout .form-input-user {
-    padding: 20px; }
-    .Popup-checkout .form-input-user .form-input + .form-input {
-      margin-top: 15px; }
-    .Popup-checkout .form-input-user .input-user {
-      padding: 12px 13px;
-      background: #FFFFFF;
-      border: 0.5px solid #C7C7C7;
-      box-sizing: border-box;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      position: relative; }
-    .Popup-checkout .form-input-user .icn {
-      width: 16px;
-      display: block;
-      margin-right: 16px;
-      flex-shrink: 0; }
-    .Popup-checkout .form-input-user input, .Popup-checkout .form-input-user select {
-      flex-grow: 1;
-      border: none;
-      font-size: 14px;
-      line-height: 117%;
-      font-family: BVNPro-Regular;
-      color: #222222; }
-      .Popup-checkout .form-input-user input::placeholder, .Popup-checkout .form-input-user select::placeholder {
-        opacity: 0.5; }
-    .Popup-checkout .form-input-user select:required:invalid {
-      color: gray; }
-    .Popup-checkout .form-input-user option {
-      color: #222222; }
-    .Popup-checkout .form-input-user .city {
-      font-size: 14px;
-      line-height: 100%;
-      /* identical to box height, or 14px */
-      display: inline-block;
-      flex-shrink: 0;
-      font-family: BVNPro-Regular;
-      color: #222222;
-      margin-right: 5px; }
-      .Popup-checkout .form-input-user .city:after {
-        content: '  /';
-        opacity: .5;
-        margin-left: 5px; }
-    .Popup-checkout .form-input-user .autofill-box {
-      opacity: 0;
-      visibility: hidden;
-      transition: .2s;
-      position: absolute;
-      top: calc(100% + 5px);
-      left: -1px;
-      width: calc(100% + 2px);
-      z-index: 2; }
-      .Popup-checkout .form-input-user .autofill-box.active {
-        opacity: 1;
-        visibility: visible; }
-    .Popup-checkout .form-input-user .list-address {
-      background: #FFFFFF;
-      border: 0.5px solid #C7C7C7;
-      box-sizing: border-box;
-      border-radius: 6px;
-      padding: 12px 13px; }
-      .Popup-checkout .form-input-user .list-address li + li {
-        padding-top: 10px;
-        margin-top: 10px; }
-      .Popup-checkout .form-input-user .list-address .address-used {
-        font-size: 14px;
-        line-height: 119%;
-        font-family: BVNPro-Regular;
-        display: block;
-        color: #222222; }
-    .Popup-checkout .form-input-user .trigger-select {
-      position: absolute;
-      font-size: 12px;
-      line-height: 100%;
-      font-family: BVNPro-Regular;
-      right: 13px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--colorRed);
-      display: block; }
-  .Popup-checkout .remind-user {
-    margin-top: 5px;
-    padding-bottom: 36px; }
-    .Popup-checkout .remind-user .text {
-      font-size: 14px;
-      line-height: 130%;
-      /* or 18px */
-      font-family: BVNPro-Regular;
-      text-align: center;
-      color: #222222;
-      margin-bottom: 38px; }
-    .Popup-checkout .remind-user .images {
-      width: 97px;
-      margin: 0 auto 20px; }
-      .Popup-checkout .remind-user .images img {
-        width: 100%;
-        display: block; }
-    .Popup-checkout .remind-user .remind-text {
-      font-size: 14px;
-      line-height: 150%;
-      font-family: BVNPro-SemiBold;
-      text-align: center;
-      text-transform: uppercase;
-      color: #111111; }
-      .Popup-checkout .remind-user .remind-text span {
-        color: var(--colorRed); }
-  .Popup-checkout .payment-box {
-    padding: 20px; }
-    .Popup-checkout .payment-box .list-payment {
-      margin-bottom: 28px; }
-      .Popup-checkout .payment-box .list-payment li + li {
-        margin-top: 10px; }
-    .Popup-checkout .payment-box .payment-type {
-      transition: .2s;
-      border: 1.5px solid #F6F6F6;
-      box-sizing: border-box;
-      background: #F6F6F6;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      padding: 16px 20px; }
-      .Popup-checkout .payment-box .payment-type.active {
-        border: 1.5px solid #B5292F;
-        background: #FFFFFF; }
-        .Popup-checkout .payment-box .payment-type.active .txt {
-          font-family: BVNPro-Medium; }
-      .Popup-checkout .payment-box .payment-type .icn {
-        width: 18px;
-        display: block;
-        flex-shrink: 0;
-        margin-right: 13px; }
-      .Popup-checkout .payment-box .payment-type .txt {
-        font-size: 14px;
-        line-height: 100%;
-        font-family: BVNPro-Regular;
-        display: block;
-        color: #111111; }
-  .Popup-checkout .total-bill-order {
-    margin-bottom: 20px; }
-    .Popup-checkout .total-bill-order .priceFlx {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      font-size: 14px;
-      line-height: 100%;
-      font-family: BVNPro-Medium;
-      color: #222222; }
-      .Popup-checkout .total-bill-order .priceFlx + .priceFlx {
-        margin-top: 15px; }
-    .Popup-checkout .total-bill-order .text {
-      display: flex;
-      align-items: center; }
-      .Popup-checkout .total-bill-order .text span {
-        font-size: 12px;
-        font-family: BVNPro-Regular;
-        color: #B5292F;
-        margin-left: 6px;
-        display: block; }
-    .Popup-checkout .total-bill-order .price-detail {
-      display: block;
-      text-align: right; }
-      .Popup-checkout .total-bill-order .price-detail .discount {
-        display: block;
-        color: #629050; }
-        .Popup-checkout .total-bill-order .price-detail .discount + .discount {
-          margin-top: 5px; }
-  .Popup-checkout .voucherBox {
-    display: flex; }
-    .Popup-checkout .voucherBox + .voucherBox {
-      margin-top: 15px; }
-    .Popup-checkout .voucherBox .form-input-voucher {
-      flex-grow: 1; }
-      .Popup-checkout .voucherBox .form-input-voucher.approved .checking-voucher {
-        display: block; }
-      .Popup-checkout .voucherBox .form-input-voucher.wrong .noti {
-        display: block; }
-    .Popup-checkout .voucherBox .input-voucher {
-      background: #FFFFFF;
-      border: 0.5px solid #C7C7C7;
-      box-sizing: border-box;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      padding: 10px 11px; }
-    .Popup-checkout .voucherBox .noti {
-      margin-top: 9px;
-      padding-left: 11px;
-      font-size: 10px;
-      line-height: 140%;
-      font-family: BVNPro-Regular;
-      display: none;
-      color: #B5292F; }
-    .Popup-checkout .voucherBox .checking-voucher {
-      width: 16px;
-      display: none;
-      flex-shrink: 0;
-      margin-right: 8px; }
-    .Popup-checkout .voucherBox input {
-      border: none;
-      flex-grow: 1;
-      font-size: 13px;
-      line-height: 140%;
-      font-family: BVNPro-Regular;
-      color: #222222;
-      text-transform: uppercase; }
-      .Popup-checkout .voucherBox input::placeholder {
-        text-transform: none;
-        opacity: 0.5; }
-    .Popup-checkout .voucherBox .confirm-btn {
-      margin-left: 10px;
-      flex-shrink: 0;
-      background: #222222;
-      border-radius: 6px;
-      width: 90px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      line-height: 140%;
-      font-family: BVNPro-Medium;
-      color: #FFFFFF; }
-  .Popup-checkout .footer-bill {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background: #FFFFFF;
-    box-shadow: inset 0px 0.5px 0px #A08C78;
-    padding: 15px 20px 40px;
-    box-sizing: border-box; }
-    .Popup-checkout .footer-bill .total-checkout {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 14px; }
-    .Popup-checkout .footer-bill .complete-checkout-btn {
-      background: #B5292F;
-      border-radius: 6px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      line-height: 100%;
-      font-family: BVNPro-Medium;
-      color: #FFFFFF; }
-    .Popup-checkout .footer-bill .text {
-      font-size: 16px;
-      line-height: 100%;
-      font-family: BVNPro-Regular;
-      color: #222222; }
-    .Popup-checkout .footer-bill .price-bill {
-      text-align: right;
-      display: block; }
-    .Popup-checkout .footer-bill .price-final {
-      font-size: 16px;
-      line-height: 100%;
-      font-family: BVNPro-SemiBold;
-      color: #B5292F; }
-    .Popup-checkout .footer-bill .price-ori {
-      font-size: 11px;
-      line-height: 130%;
-      font-family: BVNPro-Regular;
-      margin-top: 6px;
-      text-decoration-line: line-through;
-      color: #666666; }
+  .Popup-checkout .footer-bill .price-bill {
+    text-align: right;
+    display: block; }
+  .Popup-checkout .footer-bill .price-final {
+    font-size: 16px;
+    line-height: 100%;
+    font-family: BVNPro-SemiBold;
+    color: #B5292F; }
+  .Popup-checkout .footer-bill .price-ori {
+    font-size: 11px;
+    line-height: 130%;
+    font-family: BVNPro-Regular;
+    margin-top: 6px;
+    text-decoration-line: line-through;
+    color: #666666; }
 
 .popup-checkout-active .fancybox-slide--html {
   padding: 0; }
@@ -1644,7 +1796,24 @@ svg {
 .popup-checkout-active .fancybox-close-small {
   display: none; }
 
+@media screen and (min-width: 768px) {
+  .popup-checkout-active .fancybox-bg {
+    background: #F5F5F5; } }
 .bh-wrapper {
   padding-top: 60px; }
+
+.widthCT, .bh-main-header .header-content, .bh-home_wrapper-content, .Popup-checkout {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 768px) {
+  .widthCT, .bh-main-header .header-content, .bh-home_wrapper-content, .Popup-checkout {
+    width: 836px;
+    padding: 0 20px; } }
+@media screen and (min-width: 1440px) {
+  .widthCT, .bh-main-header .header-content, .bh-home_wrapper-content, .Popup-checkout {
+    width: 63.17vw; } }
 
 /*# sourceMappingURL=main.css.map */
