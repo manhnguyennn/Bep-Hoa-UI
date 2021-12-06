@@ -7,6 +7,7 @@
     max-height: 100vh;
     display: flex;
     flex-direction: column;
+
     .close-popup {
       top: 20px;
       left: 20px;
@@ -17,9 +18,11 @@
     }
 
   }
+
   .content-pop {
     flex-grow: 1;
     overflow-y: scroll;
+    overflow-y: overlay;
   }
 
   .funcsFixed {
@@ -59,6 +62,7 @@
     &.save-edit {
       background: #222222;
     }
+
     display: inline-flex;
     padding: 12px 28px;
     font-size: 15px;
@@ -310,26 +314,42 @@
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 585px;
+
     .funcsFixed {
       //width: 585px;
       //left: calc((100% - 585px) / 2);
       //border-radius: 0px 0px 10px 10px;
     }
+
     .popup-detailfood-content {
       max-height: calc(100vh - 60px);
+
       .content-pop {
+
         &::-webkit-scrollbar {
-          width: 6px;
-          border-right: 6px;
+          width: 5px;
+          height: 0;
         }
 
         &::-webkit-scrollbar-track {
+          margin: 345px 0 0;
         }
 
         &::-webkit-scrollbar-thumb {
-          background-color: #B5292F;
+          background: rgba(0, 0, 0, 0.0);
+          border-radius: 10px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+          background: rgba(0, 0, 0, 0.45)
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba(0, 0, 0, 0.85)
         }
       }
+
       .close-popup {
         right: 60px;
         left: auto;
@@ -342,6 +362,7 @@
     .fancybox-bg {
       background: rgba(0, 0, 0, .75);
     }
+
     .fancybox-content {
       margin-top: 30px;
     }

@@ -1,7 +1,13 @@
 .Popup-checkout {
-  @extend .widthCT;
-
+  width: 100vw;
+  &.fancybox-content {
+    background: transparent;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
+  }
   .popup-content {
+    @extend .widthCT;
     background: #EEEEEE;
     padding-top: 72px;
     padding-bottom: 150px;
@@ -127,7 +133,7 @@
       border-bottom: 1.5px solid #F6F6F6;
       border-radius: 6px;
 
-      &.active {
+      &.active, &:hover {
         background: #FFFFFF;
         border: 1.5px solid var(--colorRed);
       }
@@ -170,7 +176,7 @@
         padding: 10px 0;
         box-sizing: border-box;
 
-        &.active {
+        &.active, &:hover {
           background: var(--colorRed);
           color: #FFFFFF;
         }
@@ -221,7 +227,7 @@
         border: 1.5px solid #F6F6F6;
         transition: .2s;
 
-        &.active {
+        &.active, &:hover {
           background: #ffffff;
           border: 1.5px solid #000000;
           color: #222222;
@@ -471,7 +477,7 @@
     }
 
     .payment-type {
-      &.active {
+      &.active, &:hover {
         border: 1.5px solid #B5292F;
         background: #FFFFFF;
 
@@ -720,10 +726,92 @@
 @media screen and (min-width: 768px) {
   .Popup-checkout {
 
+
+
+    .infoBox {
+      border: 0.5px solid rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+      border-radius: 6px;
+    }
+
+    .popup-content {
+      background: none;
+      padding: 87px 0 50px !important;
+    }
+
+    .content-flex {
+      display: flex;
+    }
+
+    .content {
+      flex-grow: 1;
+    }
+
+    .right-web {
+      width: 345px;
+      margin-left: 25px;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .footer-bill {
+      padding: 20px;
+      top: 80px;
+      left: 0;
+      position: sticky;
+      width: 100%;
+      border: 0.5px solid #B5292F;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+      border-radius: 6px;
+
+      .text {
+        font-size: 14px;
+      }
+    }
+
+    .infoGroup {
+      .note-order {
+        height: 80px;
+      }
+      .food-total{
+        .name-food{
+          font-size: 13px;
+          font-family: BVNPro-Medium;
+        }
+      }
+    }
+
+    .billGroup {
+      margin-bottom: 25px;
+
+      .label {
+        font-size: 16px;
+      }
+    }
+
+    .bill-payment {
+      padding-top: 25px;
+      border-top: 1px solid #D3D3D3;
+      margin-bottom: 25px;
+    }
+
+    .total-checkout {
+      padding-top: 25px;
+      border-top: 1px solid #B5292F;
+    }
+
+    .header {
+      z-index: 99999;
+    }
   }
   .popup-checkout-active {
-    .fancybox-bg {
-      background: #F5F5F5;
+    .fancybox-is-open {
+      .fancybox-bg {
+        opacity: 1;
+        background: #F5F5F5;
+      }
     }
   }
 }

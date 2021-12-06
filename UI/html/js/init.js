@@ -288,7 +288,7 @@
                         protect: true,
                         touch: false,
                         animationDuration: 500,
-                        mobile:{
+                        mobile: {
                             touch: true,
                         },
                         clickOutside: true,
@@ -321,6 +321,10 @@
                         animationEffect: 'slide-in-out-right',
                         beforeShow: function () {
                             $('body').addClass('popup-checkout-active');
+                            $('.footer-bill').appendTo('.right-web');
+                            $('.bill-payment').insertBefore('.footer-bill .total-checkout')
+                            $('.billGroup').insertBefore('.bill-payment')
+
                         },
                         afterShow: function () {
 
@@ -383,7 +387,7 @@
                         protect: true,
                         touch: false,
                         animationDuration: 500,
-                        mobile:{
+                        mobile: {
                             touch: true,
                         },
                         clickOutside: true,
