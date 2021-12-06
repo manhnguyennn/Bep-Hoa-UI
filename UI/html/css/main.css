@@ -935,7 +935,7 @@ svg {
   .bh-menu-list {
     margin-top: 35px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
   }
   .bh-menu-list li {
@@ -969,7 +969,7 @@ svg {
     border-right: 0.5px solid rgba(0, 0, 0, 0.15);
     border-left: 0.5px solid rgba(0, 0, 0, 0.15);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
-    padding: 9px 12px 20px;
+    padding: 9px 12px 10px;
     border-radius: 0px 0px 6px 6px;
   }
   .food-card .status {
@@ -1019,6 +1019,11 @@ svg {
     right: 0;
     left: auto;
     background: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bh-menu-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .PopUp-detail {
