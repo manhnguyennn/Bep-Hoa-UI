@@ -1,73 +1,177 @@
+.is-sticky {
+
+}
+
 .bh-main-header {
-  padding: 0 20px;
-  width: 100%;
-  box-sizing: border-box;
-  background: var(--colorRed);
+  &.active {
+    box-shadow: inset 0px -0.5px 0px #E6E6E6;
+
+    .header-content {
+      height: 70px;
+    }
+
+    .bh-logo {
+      width: 164px;
+    }
+  }
+
   position: fixed;
-  z-index: 999;
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  background: #ffffff;
+  width: 100%;
 
   .header-content {
-    height: 60px;
+    @extend .widthCT;
+    transition: .15s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @extend .widthCT;
+    height: 105px;
   }
 
   .burger {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-
-    .toggle-btn {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 14px;
-    }
-
-    i {
-      width: 100%;
-      height: 1.8px;
-      background: var(--colorBe);
-      position: absolute;
-      top: 0;
-
-      &:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      &:nth-child(3) {
-        width: 50%;
-        top: auto;
-        bottom: 0;
-      }
-    }
+    display: none;
   }
 
   .bh-logo {
-    width: 48px;
+    width: 225px;
+    transition: .15s ease-in-out;
     display: block;
+
+    .icn-web {
+      display: block;
+    }
+
+    .icn-mob {
+      display: none;
+    }
+  }
+
+  .list-nav {
+    display: flex;
+    align-items: center;
   }
 
   .searchBox {
     position: relative;
+    margin-left: 40px;
 
     .searchBtn {
-      width: 24px;
-      display: block;
+      display: flex;
+      align-items: center;
+
+      .icn {
+        width: 24px;
+        display: block;
+        margin-right: 10px;
+      }
+
+      svg {
+        path {
+          stroke: var(--colorRed);
+        }
+      }
+
+      .txt {
+        font-size: 14px;
+        line-height: 100%;
+        font-family: BVNPro-Medium;
+        display: block;
+        color: #222222;
+      }
     }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .bh-main-header {
-    .header-content {
+@media screen and (max-width: 760px) {
 
+  .bh-main-header {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--colorRed);
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+
+    .header-content {
+      height: 60px;
     }
+
+    .burger {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+
+      .toggle-btn {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 14px;
+      }
+
+      i {
+        width: 100%;
+        height: 1.8px;
+        background: var(--colorBe);
+        position: absolute;
+        top: 0;
+
+        &:nth-child(2) {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:nth-child(3) {
+          width: 50%;
+          top: auto;
+          bottom: 0;
+        }
+      }
+    }
+
+    .bh-logo {
+      width: 48px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .icn-web {
+        display: none;
+      }
+
+      .icn-mob {
+        display: block;
+      }
+    }
+
+    .searchBox {
+      margin: 0;
+
+      .searchBtn {
+        .icn {
+          width: 24px;
+          margin: 0;
+
+          svg {
+            path {
+              stroke: #FFE6CE;
+            }
+          }
+        }
+
+        .txt {
+          display: none;
+        }
+      }
+    }
+
   }
+
 }

@@ -54,6 +54,16 @@
         let me = this;
 
 
+        // Dropdown change location
+
+        $('.address-store .dropdown-btn').click(function () {
+            $('.address-store .dropdown-box').toggleClass('active');
+        })
+
+        $('.address-store .loca-change').click(function () {
+            $('.address-store .dropdown-box').toggleClass('active');
+        })
+
         let swiperBannerHome = new Swiper(".swiper-hbanner", {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -66,8 +76,6 @@
             },
         });
 
-
-        $(".tagBox").sticky({topSpacing: 60});
 
         // Start Auto Scroll top menu when clicked filter
         function getElementY(query) {
@@ -199,7 +207,7 @@
             else if ($(this).val() < 10)
                 $(this).val("0" + parseInt($(this).val()));
 
-            var x = $(this).parent().attr("class").split(" ")[1];
+            let x = $(this).parent().attr("class").split(" ")[1];
 
         });
 
@@ -235,11 +243,26 @@
 
 
         if (me.windowW > 760) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+
+            $(".tagBox").sticky({topSpacing: 70});
+
 
             $(".food-card").each(function () {
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
+            $('.bh-home-contact').insertAfter('.address-store');
+            $('.bh-cart-total').insertAfter('.searchBox');
 
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
@@ -338,8 +361,9 @@
 
 
         } else {
+            $(".tagBox").sticky({topSpacing: 60});
 
-
+            $('.address-store').insertBefore('.bannerBox');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
 
