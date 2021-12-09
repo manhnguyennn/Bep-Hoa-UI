@@ -108,6 +108,10 @@ body i {
   text-align: right;
 }
 
+.bh-text-purple {
+  color: var(--colorPurple) !important;
+}
+
 .bh-text-red {
   color: var(--colorRed) !important;
 }
