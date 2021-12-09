@@ -7,6 +7,7 @@ body {
   --color666: #666;
   --color777: #777;
   --color111: #111;
+
   i {
     font-family: Roboto-Italic;
     font-style: normal;
@@ -68,6 +69,10 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.bh-text-purple {
+  color: var(--colorPurple) !important;
 }
 
 .bh-text-red {
@@ -253,6 +258,7 @@ body {
 
     table {
       margin: 0;
+
       &.table-order-list {
         tbody {
           td {
@@ -261,6 +267,7 @@ body {
           }
         }
       }
+
       .title-col {
         font-family: Roboto-Medium;
         font-size: 0.9rem;
@@ -351,14 +358,17 @@ body {
     .list-select-type, .list-selectBox {
       opacity: 1;
       visibility: visible;
+
       .list-group-item:nth-child(1) {
         border-top: none;
       }
     }
+
     .selected {
       border-radius: 5px 5px 0 0;
       border: 1px solid var(--colorPurple);
     }
+
     .select-btn {
       border: 1px solid #7367F0;
       border-radius: 5px 5px 0px 0px;
@@ -376,6 +386,7 @@ body {
     padding: 0 1.25rem;
     background: #FFFFFF;
     position: relative;
+
     &.before-select {
 
       .text, .required {
@@ -383,6 +394,7 @@ body {
         opacity: 0.4;
       }
     }
+
     &:after {
       border: none !important;
       content: ' ';
@@ -406,11 +418,13 @@ body {
   .select-type {
 
   }
+
   .required {
     display: none;
     margin-left: 3px;
     color: #EA5455;
   }
+
   .selected, .select-type {
     display: flex;
     align-items: center;
@@ -458,9 +472,11 @@ body {
     left: 0;
     list-style-type: none;
     width: 100%;
+
     li:nth-last-child(1) {
       border-radius: 0 0 5px 5px;
     }
+
     li:hover {
       background: #F8F8F8;
     }
@@ -476,10 +492,12 @@ body {
     position: relative;
     border-radius: 5px;
     color: rgba(0, 0, 0, .3);
+
     span {
       color: rgba(234, 84, 85, .3);
 
     }
+
     &:after {
       border: none !important;
       content: ' ';
@@ -499,13 +517,16 @@ body {
       vertical-align: 0;
     }
   }
+
   ul {
     padding: 0;
     margin: 0;
+
     li {
       list-style-type: none;
     }
   }
+
   .list-selectBox {
     position: absolute;
     top: 100%;
@@ -522,6 +543,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 0px 0px 5px 5px;
+
     input {
       height: 34px;
       width: 100%;
@@ -536,10 +558,12 @@ body {
       font-size: 14px;
       line-height: 16px;
       color: #111111;
+
       &::placeholder {
         opacity: 0.3;
       }
     }
+
     .type-group {
       background: #F8F8F8;
       font-size: 10px;
@@ -555,11 +579,13 @@ body {
     .value-btn {
       &:hover {
         background: #F2F1FF;
+
         .text {
           color: #7367F0;
           font-family: Roboto-Medium;
         }
       }
+
       width: 100%;
       padding: 10px;
       background: #FFFFFF;
@@ -568,20 +594,24 @@ body {
       box-sizing: border-box;
       font-size: 13px;
       line-height: 14px;
+
       .total {
         flex-grow: 1;
         display: block;
       }
+
       .text {
         color: #222222;
         display: block;
       }
+
       .des {
         font-size: 10px;
         color: #666666;
         margin-top: 4px;
         display: block;
       }
+
       .numb {
         display: inline-block;
         flex-shrink: 0;
@@ -928,6 +958,7 @@ body {
 .bh-loading {
   position: relative;
   cursor: default;
+
   &:before {
     content: '';
     position: absolute;
@@ -941,6 +972,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   &:after {
     content: '';
     position: absolute;
