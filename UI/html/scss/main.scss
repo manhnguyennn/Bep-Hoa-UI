@@ -6,11 +6,15 @@
 @import "mixins";
 @import "commons";
 @import "fonts";
+
 //Layout
 @import "header";
+@import "footer";
+
+//Page
 @import "home";
-@import "popup-detail";
 @import "popup-cart";
+@import "popup-checkout";
 @import "popup-checkout";
 
 .bh-wrapper {
