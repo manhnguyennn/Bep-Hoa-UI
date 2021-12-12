@@ -1462,6 +1462,10 @@ Generated using nucleoapp.com
   line-height: 100%;
   color: #111111;
 }
+.stop-sell.active {
+  border: 2px solid var(--colorRed);
+  color: var(--colorRed);
+}
 
 .noti-modal {
   margin: 0;

@@ -227,6 +227,10 @@
 }
 
 .stop-sell {
+  &.active{
+    border: 2px solid var(--colorRed);
+    color: var(--colorRed);
+  }
   display: block;
   background: #F8F8F8;
   border-radius: 5px;

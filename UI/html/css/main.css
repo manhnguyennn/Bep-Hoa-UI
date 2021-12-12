@@ -593,7 +593,7 @@ svg {
 @media screen and (max-width: 760px) {
   .bh-footer {
     background: #fff;
-    padding: 30px;
+    padding: 30px 30px 90px;
     position: relative;
   }
   .bh-footer:before {
