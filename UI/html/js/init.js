@@ -241,6 +241,18 @@
             })
         });
 
+        var textarea = document.querySelector('.note-order');
+
+        textarea.addEventListener('keydown', autosize);
+
+        function autosize() {
+            var el = this;
+            setTimeout(function () {
+                el.style.cssText = 'height:auto'
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 0);
+        }
+
 
         if (me.windowW > 760) {
             $(window).scroll(function () {
@@ -348,8 +360,10 @@
                             $('.bill-payment').insertBefore('.footer-bill .total-checkout')
                             $('.billGroup').insertBefore('.bill-payment')
 
+
                         },
                         afterShow: function () {
+                            $('.select-dict').select2({dropdownParent: $('#open-popup-checkout .select-user')});
 
                         },
                         afterClose: function () {
@@ -446,7 +460,7 @@
                             $('body').addClass('popup-checkout-active');
                         },
                         afterShow: function () {
-
+                            $('.select-dict').select2({dropdownParent: $('#open-popup-checkout .select-user')});
                         },
                         afterClose: function () {
                             $('body').removeClass('popup-checkout-active');
