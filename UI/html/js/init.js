@@ -241,9 +241,6 @@
             })
         });
 
-        var textarea = document.querySelector('.note-order');
-
-        textarea.addEventListener('keydown', autosize);
 
         function autosize() {
             var el = this;
@@ -359,6 +356,9 @@
                             $('.footer-bill').appendTo('.right-web');
                             $('.bill-payment').insertBefore('.footer-bill .total-checkout')
                             $('.billGroup').insertBefore('.bill-payment')
+                            var textarea = document.querySelector('.note-order');
+
+                            textarea.addEventListener('keydown', autosize);
 
 
                         },
@@ -458,6 +458,10 @@
                         animationEffect: 'slide-in-out-right',
                         beforeShow: function () {
                             $('body').addClass('popup-checkout-active');
+                            var textarea = document.querySelector('.note-order');
+
+                            textarea.addEventListener('keydown', autosize);
+
                         },
                         afterShow: function () {
                             $('.select-dict').select2({dropdownParent: $('#open-popup-checkout .select-user')});
