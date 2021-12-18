@@ -1577,7 +1577,8 @@ Generated using nucleoapp.com
   color: #111;
 }
 .logs-edit .logs-item .time {
-  margin-bottom: 10px;
+  margin-left: 7px;
+  margin-bottom: 0.5rem;
   font-size: 11px;
   line-height: 140%;
   color: #5F5F5F;
