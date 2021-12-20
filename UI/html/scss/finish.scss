@@ -1,0 +1,233 @@
+.bh-finish_wrapper {
+  background: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+}
+
+.fn-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  height: 62px;
+  box-shadow: inset 0px -0.5px 0px #E6E6E6;
+  z-index: 99;
+  width: 100%;
+  box-sizing: border-box;
+
+  .back-btn {
+    position: absolute;
+    width: 24px;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  .heading {
+    font-size: 19px;
+    line-height: 130%;
+    font-family: BVNPro-SemiBold;
+    text-align: center;
+    color: #222222;
+
+  }
+}
+
+.fn-content {
+  padding-bottom: 60px;
+  width: 768px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 30px;
+  .icon-success {
+    width: 100px;
+    margin: 0 auto 30px;
+  }
+  .title {
+    width: 256px;
+    margin: 0 auto 10px;
+    font-size: 22px;
+    line-height: 100%;
+    font-family: BVNPro-SemiBold;
+    color: #222222;
+    text-align: center;
+
+  }
+  .des {
+    width: 311px;
+    margin: 0 auto 43px;
+    font-size: 13px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    text-align: center;
+    color: #666666;
+  }
+
+  .od-id {
+    .text {
+      font-size: 10px;
+      line-height: 100%;
+      font-family: BVNPro-Medium;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+      color: #B5292F;
+      text-align: center;
+
+    }
+    .id-numb {
+      font-size: 18px;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+      margin-bottom: 34px;
+      text-align: center;
+      color: #222222;
+    }
+  }
+
+  .warning {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    .icn-top, .icn-bottom {
+      width: 768px;
+      margin-left: calc((100vw - 768px) / 2);
+    }
+    .total {
+      padding: 15px 0;
+      background: #FFF6ED;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 130%;
+      font-family: BVNPro-SemiBold;
+      width: 220px;
+      margin: 0 auto 31px;
+      color: #111111;
+    }
+    .price {
+      font-size: 22px;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+      color: #356721;
+      margin-bottom: 32px;
+    }
+    .note-pickup {
+      font-size: 13px;
+      line-height: 150%;
+      font-family: BVNPro-SemiBold;
+      text-transform: uppercase;
+      span {
+        color: #B5292F;
+      }
+      color: #111111;
+    }
+
+    .note-ship {
+      padding: 0 25px;
+      font-size: 13px;
+      line-height: 140%;
+      font-family: BVNPro-RegularItalic;
+      text-align: center;
+
+      color: #78614B;
+
+    }
+  }
+
+  .od-total {
+    padding: 0 20px;
+    margin-bottom: 41px;
+    h4 {
+      font-size: 14px;
+      line-height: 140%;
+      font-family: BVNPro-SemiBold;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+      color: #222222;
+    }
+    .total-flx {
+      & + .total-flx {
+        margin-top: 12px;
+      }
+      display: flex;
+    }
+    .type {
+      font-size: 13px;
+      line-height: 100%;
+      font-family: BVNPro-Regular;
+      color: #666666;
+      flex-shrink: 0;
+      margin-right: 11px;
+      width: 92px;
+    }
+    .txt {
+      font-size: 13px;
+      line-height: 130%;
+      font-family: BVNPro-Regular;
+      color: #222222;
+    }
+  }
+
+  .funcsBox {
+    width: 335px;
+    margin: 0 auto;
+  }
+  .fn-funcs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.save-bill {
+      background: #B5292F;
+      border: 1.5px solid #B5292F;
+
+    }
+    &.back-home {
+      background: #FFFFFF;
+      border: 1px solid #CBCBCB;
+      .txt {
+        color: #111111;
+      }
+    }
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 33px;
+    margin-bottom: 16px;
+    .icn {
+      width: 14px;
+      display: block;
+      margin-right: 9px;
+    }
+    .txt {
+      font-size: 14px;
+      line-height: 100%;
+      font-family: BVNPro-Medium;
+      color: #FFFFFF;
+      display: block;
+    }
+  }
+  .view-detail {
+    font-size: 13px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    display: block;
+    text-align: center;
+    color: #666666;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fn-content {
+    padding-top: 90px;
+    .title {
+      width: 100%;
+    }
+  }
+}
