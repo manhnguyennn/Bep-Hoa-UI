@@ -28,6 +28,8 @@
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/stye.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/page-auth.css">
+
     <!-- END: Custom CSS-->
 
 </head>
@@ -219,16 +221,100 @@
 
             <h4 class="text-black">Title</h4>
             <div class="user-info">
-                <div class="name">Sale - Hoàng Hà</div>
+
                 <div class="ava">
                     <img src="web_images/user-ava-default.png" alt="">
+                </div>
+                <div class="user-total">
+                    <a href="javascript:;" class="name" data-bs-toggle="dropdown" id="dropdownMenuButton700"
+                       aria-expanded="false">
+                        <div class="text">Sale - Hoàng Hà</div>
+                        <div class="icon icon-down-arrow"></div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton700" style="">
+                        <a class="dropdown-item" href="javascript:;">Đăng xuất</a>
+                        <a class="dropdown-item" href="javascript:;"  data-bs-toggle="modal"
+                           data-bs-target="#modalChangePass">Đổi mật khẩu</a>
+                    </div>
+
                 </div>
             </div>
 
 
         </div>
         <div class="content-body">
+            <!-- Modal Add Change Password-->
+            <div class="modal fade" id="modalChangePass" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xs modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalChangePassTitle">Đổi mật khẩu</h5>
+                            <a href="javascript:;" data-bs-dismiss="modal"
+                               aria-label="Close" class="btn-close-modal icon-e-remove-2">
 
+
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-add-cus">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="label-manage-order">
+                                            Mật khẩu hiện tại <span>*</span>
+                                        </div>
+                                        <div class="input-group input-group-merge form-password-toggle">
+                                            <input type="password" class="form-control form-control-merge"
+                                                   id="login-password" name="login-password" tabindex="2"
+                                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                                   aria-describedby="login-password"/>
+                                            <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="label-manage-order">
+                                            Mật khẩu mới <span>*</span>
+                                        </div>
+                                        <div class="input-group input-group-merge form-password-toggle">
+                                            <input type="password" class="form-control form-control-merge"
+                                                   id="login-password2" name="login-password" tabindex="2"
+                                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                                   aria-describedby="login-password"/>
+                                            <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="label-manage-order">
+                                            Nhập lại mật khẩu mới <span>*</span>
+                                        </div>
+                                        <div class="input-group input-group-merge form-password-toggle">
+                                            <input type="password" class="form-control form-control-merge"
+                                                   id="login-password3" name="login-password" tabindex="2"
+                                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                                   aria-describedby="login-password"/>
+                                            <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <a href="javascript:;" type="button"
+                               class=" btn btn-outline-secondary"
+                               data-bs-dismiss="modal">Đóng
+                            </a>
+                            <a href="javascript:;" type="button"
+                               class=" btn btn-primary"
+                               data-bs-dismiss="modal">Lưu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -244,11 +330,12 @@
 
 <!-- BEGIN: Vendor JS-->
 <script src="js/vendors.min.js"></script>
-<script src="js/select2.full.min.js"></script>
-<script src="js/form-select2.min.js"></script>
+<script src="js/form-validation.js"></script>
+
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
+
 <!-- END: Page Vendor JS-->
 
 <!-- BEGIN: Theme JS-->
@@ -259,14 +346,14 @@
 <!-- END: Page JS-->
 
 <script>
-    /*$(window).on('load', function () {
+    $(window).on('load', function () {
         if (feather) {
             feather.replace({
                 width: 14,
                 height: 14
             });
         }
-    })*/
+    })
 </script>
 </body>
 <!-- END: Body-->
