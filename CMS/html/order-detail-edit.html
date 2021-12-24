@@ -283,61 +283,51 @@
                     </div>
                 </div>
                 <div class="form-slt-order">
-                    <select class="select2 form-select" id="default-select">
-                        <option value="square">Sale - Tên tôi</option>
-                        <option value="rectangle">Rectangle</option>
-                        <option value="rombo">Rombo</option>
-                        <option value="romboid">Romboid</option>
-                        <option value="trapeze">Trapeze</option>
-                        <option value="traible">Triangle</option>
-                        <option value="polygon">Polygon</option>
-                    </select>
+                    <div class="sale-name active"><span>SALE- Tên tôi</span></div>
                 </div>
                 <div class="form-slt-order">
                     <!--add active khi click-->
                     <div class="selectBox vsoh-wrapt">
-                        <a href="javascript:;" class="select-btn before-select">
-                            <div class="text vsoh-show-title">Chọn cơ sở phụ trách</div>
-                        </a>
-                        <div class="list-selectBox">
-                            <input type="text" placeholder="Tìm...">
-                            <ul class="list-options-slc">
-                                <li>
-                                    <a href="javascript:;" class="value-btn">
-                                        <span class="total">
-                                            <span class="text">HN1 - 113 Thịnh Quang</span>
-                                            <span class="des">Q. Đống Đa</span>
-                                        </span>
-                                        <span class="numb">120</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="value-btn">
-                                        <span class="total">
-                                            <span class="text">HN2 - 24 Quang Trung</span>
-                                             <span class="des">Q. Hoàn Kiếm</span>
-                                        </span>
-                                        <span class="numb">120</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="value-btn">
-                                        <span class="total">
-                                            <span class="text">HN3 - 12/1234 Kim Ngưu</span>
-                                             <span class="des">Q. Hai Bà Trưng</span>
-                                        </span>
-                                        <span class="numb">120</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
+                        <select name="" id="branch-select" class="select2 multi-select"></select>
+<!--                        <div class="list-selectBox">-->
+<!--                            <input type="text" placeholder="Tìm...">-->
+<!--                            <ul class="list-options-slc">-->
+<!--                                <li>-->
+<!--                                    <a href="javascript:;" class="value-btn">-->
+<!--                                        <span class="total">-->
+<!--                                            <span class="text">HN1 - 113 Thịnh Quang</span>-->
+<!--                                            <span class="des">Q. Đống Đa</span>-->
+<!--                                        </span>-->
+<!--                                        <span class="numb">120</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="javascript:;" class="value-btn">-->
+<!--                                        <span class="total">-->
+<!--                                            <span class="text">HN2 - 24 Quang Trung</span>-->
+<!--                                             <span class="des">Q. Hoàn Kiếm</span>-->
+<!--                                        </span>-->
+<!--                                        <span class="numb">120</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="javascript:;" class="value-btn">-->
+<!--                                        <span class="total">-->
+<!--                                            <span class="text">HN3 - 12/1234 Kim Ngưu</span>-->
+<!--                                             <span class="des">Q. Hai Bà Trưng</span>-->
+<!--                                        </span>-->
+<!--                                        <span class="numb">120</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="form-slt-order">
                     <div class="selectBox vsoh-wrapt">
-                        <a href="javascript:;" class="select-btn before-select">
-                            <div class="text vsoh-show-title">Chọn NV xử lý đơn</div>
-                        </a>
+
+                        <select name="" id="staff-select" class="select2 multi-select"></select>
                         <div class="list-selectBox">
                             <input type="text" placeholder="Tìm...">
                             <a href="javascript:;" class="value-btn">
@@ -1777,6 +1767,63 @@
     $('.food-link').click(function () {
         $('#modalSearchFood').modal('hide');
         $('#modalAddFood').modal('show');
+    });
+
+    let data = [{
+        id: 0,
+        text: 'Chọn cơ sở phụ trách ',
+        html: '<div class="label-disable">Chọn cơ sở phụ trách </div>'
+    }, {
+        id: 1,
+        text: 'HN1 - 113 Thịnh Quang',
+        html: ' <div class="value-btn">\n' +
+            '                                        <span class="total">\n' +
+            '                                            <span class="text">HN1 - 113 Thịnh Quang</span>\n' +
+            '                                            <span class="des">Q. Đống Đa</span>\n' +
+            '                                        </span>\n' +
+            '                                        <span class="numb">120</span>\n' +
+            '                                    </div>'
+    }];
+
+    function templateBrand(data) {
+        return data.html;
+    }
+
+    $("#branch-select").select2({
+        data: data,
+        templateResult: templateBrand,
+        escapeMarkup: function(m) {
+            return m;
+        }
+    });
+
+
+    let dataStaff = [{
+        id: 0,
+        text: 'Chọn NV xử lí đơn',
+        html: '<div class="label-disable">Chọn NV xử lí đơn</div>'
+    }, {
+        id: 1,
+        text: 'HN1 - 113 Thịnh Quang',
+        html: '<div  class="value-btn">\n' +
+            '                                        <span class="total">\n' +
+            '                                            <span class="text">NV - Huy Hùng</span>\n' +
+            '                                        </span>\n' +
+            '                                        <span class="numb">0</span>\n' +
+            '                                    </div>'
+
+    }];
+
+    function templateStaff(dataStaff) {
+        return dataStaff.html;
+    }
+
+    $("#staff-select").select2({
+        data: dataStaff,
+        templateResult: templateStaff,
+        escapeMarkup: function(v) {
+            return v;
+        }
     });
 
 

@@ -1067,3 +1067,18 @@
 .form-add-cus{
   padding: 20px;
 }
+
+.sale-name{
+  &.active{
+    color: #111;
+  }
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #D8D6DE;
+  padding: 0 1.25rem;
+  background: #FFFFFF;
+  position: relative;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
