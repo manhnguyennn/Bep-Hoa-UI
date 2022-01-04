@@ -6,6 +6,7 @@
     overflow: hidden;
     height: 100vh;
     overflow-y: scroll;
+    min-height: -webkit-fill-available;
   }
 
   .popup-content {
