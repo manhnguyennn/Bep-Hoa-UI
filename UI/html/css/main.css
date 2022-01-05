@@ -1450,8 +1450,7 @@ svg {
   .Popup-checkout.fancybox-content {
     background: transparent;
     overflow: hidden;
-    height: 100vh;
-    overflow-y: scroll;
+    min-height: 100vh;
     min-height: -webkit-fill-available; }
   .Popup-checkout .popup-content {
     background: #EEEEEE;
@@ -1992,6 +1991,9 @@ svg {
   display: none; }
 
 @media screen and (min-width: 768px) {
+  .Popup-checkout.fancybox-content {
+    height: 100vh;
+    overflow: scroll; }
   .Popup-checkout .infoBox {
     border: 0.5px solid rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
@@ -2059,16 +2061,15 @@ svg {
       z-index: 2; }
   .PopUp-detail .content-pop {
     flex-grow: 1;
-    overflow-y: scroll;
-    overflow-y: overlay; }
+    padding-bottom: 67px; }
   .PopUp-detail .funcsFixed {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     bottom: 0;
     left: 0;
     width: 100%;
     border-top: 0.5px solid #A08C78;
-    padding: 12px 20px 38px;
+    padding: 12px 20px 15px;
     display: flex;
     justify-content: space-between;
     background: #FFFFFF;
@@ -2278,21 +2279,27 @@ svg {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 585px; }
+    .PopUp-detail .funcsFixed {
+      position: absolute; }
     .PopUp-detail .popup-detailfood-content {
       max-height: calc(100vh - 60px); }
-      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar {
-        width: 5px;
-        height: 0; }
-      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-track {
-        margin: 345px 0 0; }
-      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0);
-        border-radius: 10px;
-        box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px; }
-      .PopUp-detail .popup-detailfood-content .content-pop:hover::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.45); }
-      .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-thumb:hover {
-        background: rgba(0, 0, 0, 0.85); }
+      .PopUp-detail .popup-detailfood-content .content-pop {
+        overflow-y: scroll;
+        overflow-y: overlay;
+        padding-bottom: 0; }
+        .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar {
+          width: 5px;
+          height: 0; }
+        .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-track {
+          margin: 345px 0 0; }
+        .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-thumb {
+          background: rgba(0, 0, 0, 0);
+          border-radius: 10px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px; }
+        .PopUp-detail .popup-detailfood-content .content-pop:hover::-webkit-scrollbar-thumb {
+          background: rgba(0, 0, 0, 0.45); }
+        .PopUp-detail .popup-detailfood-content .content-pop::-webkit-scrollbar-thumb:hover {
+          background: rgba(0, 0, 0, 0.85); }
       .PopUp-detail .popup-detailfood-content .close-popup {
         right: 60px;
         left: auto;

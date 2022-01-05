@@ -4,8 +4,7 @@
   &.fancybox-content {
     background: transparent;
     overflow: hidden;
-    height: 100vh;
-    overflow-y: scroll;
+    min-height: 100vh;
     min-height: -webkit-fill-available;
   }
 
@@ -818,7 +817,10 @@
 @media screen and (min-width: 768px) {
   .Popup-checkout {
 
-
+    &.fancybox-content {
+      height: 100vh;
+      overflow: scroll;
+    }
     .infoBox {
       border: 0.5px solid rgba(0, 0, 0, 0.15);
       box-sizing: border-box;
