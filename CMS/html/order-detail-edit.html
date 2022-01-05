@@ -290,38 +290,38 @@
                     <div class="selectBox vsoh-wrapt">
 
                         <select name="" id="branch-select" class="select2 multi-select"></select>
-<!--                        <div class="list-selectBox">-->
-<!--                            <input type="text" placeholder="Tìm...">-->
-<!--                            <ul class="list-options-slc">-->
-<!--                                <li>-->
-<!--                                    <a href="javascript:;" class="value-btn">-->
-<!--                                        <span class="total">-->
-<!--                                            <span class="text">HN1 - 113 Thịnh Quang</span>-->
-<!--                                            <span class="des">Q. Đống Đa</span>-->
-<!--                                        </span>-->
-<!--                                        <span class="numb">120</span>-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="javascript:;" class="value-btn">-->
-<!--                                        <span class="total">-->
-<!--                                            <span class="text">HN2 - 24 Quang Trung</span>-->
-<!--                                             <span class="des">Q. Hoàn Kiếm</span>-->
-<!--                                        </span>-->
-<!--                                        <span class="numb">120</span>-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="javascript:;" class="value-btn">-->
-<!--                                        <span class="total">-->
-<!--                                            <span class="text">HN3 - 12/1234 Kim Ngưu</span>-->
-<!--                                             <span class="des">Q. Hai Bà Trưng</span>-->
-<!--                                        </span>-->
-<!--                                        <span class="numb">120</span>-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
+                        <!--                        <div class="list-selectBox">-->
+                        <!--                            <input type="text" placeholder="Tìm...">-->
+                        <!--                            <ul class="list-options-slc">-->
+                        <!--                                <li>-->
+                        <!--                                    <a href="javascript:;" class="value-btn">-->
+                        <!--                                        <span class="total">-->
+                        <!--                                            <span class="text">HN1 - 113 Thịnh Quang</span>-->
+                        <!--                                            <span class="des">Q. Đống Đa</span>-->
+                        <!--                                        </span>-->
+                        <!--                                        <span class="numb">120</span>-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                                <li>-->
+                        <!--                                    <a href="javascript:;" class="value-btn">-->
+                        <!--                                        <span class="total">-->
+                        <!--                                            <span class="text">HN2 - 24 Quang Trung</span>-->
+                        <!--                                             <span class="des">Q. Hoàn Kiếm</span>-->
+                        <!--                                        </span>-->
+                        <!--                                        <span class="numb">120</span>-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                                <li>-->
+                        <!--                                    <a href="javascript:;" class="value-btn">-->
+                        <!--                                        <span class="total">-->
+                        <!--                                            <span class="text">HN3 - 12/1234 Kim Ngưu</span>-->
+                        <!--                                             <span class="des">Q. Hai Bà Trưng</span>-->
+                        <!--                                        </span>-->
+                        <!--                                        <span class="numb">120</span>-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                            </ul>-->
+                        <!--                        </div>-->
                     </div>
                 </div>
                 <div class="form-slt-order">
@@ -1137,11 +1137,11 @@
             <div class="d-flex w-100 justify-content-between align-items-center ">
                 <a href="javascript:;" class="close-order  bh-text-666">Đóng</a>
                 <div class="d-flex align-items-center ">
-                    <a href="javascript:;" class="btn-lock bh-disabled">
+                    <a href="javascript:;" class="btn-lock bh-text-red">
                         <span class="icn icon-lock"></span>
                         <span class="txt">Khoá đơn</span>
                     </a>
-                    <a href="javascript:;" class="btn-unlock bh-text-red bh-disabled">
+                    <a href="javascript:;" class="btn-unlock  bh-text-111">
                         <span class="icn icon-unlocked"></span>
                         <span class="txt">Mở khoá</span>
                     </a>
@@ -1153,6 +1153,9 @@
                     <a href="javascript:;" class="btn-history" data-bs-toggle="modal" data-bs-target="#modalLogsEdit">
                         <span class="icn icon-time-clock"></span>
                         <span class="txt">Lịch sử chỉnh sửa</span>
+                    </a>
+                    <a href="javascript:;" class="bh-text-red">
+                        Hủy đơn
                     </a>
                 </div>
                 <div class="d-flex align-items-center">
@@ -1777,12 +1780,12 @@
         id: 1,
         text: 'HN1 - 113 Thịnh Quang',
         html: ' <div class="value-btn">\n' +
-            '                                        <span class="total">\n' +
-            '                                            <span class="text">HN1 - 113 Thịnh Quang</span>\n' +
-            '                                            <span class="des">Q. Đống Đa</span>\n' +
-            '                                        </span>\n' +
-            '                                        <span class="numb">120</span>\n' +
-            '                                    </div>'
+        '                                        <span class="total">\n' +
+        '                                            <span class="text">HN1 - 113 Thịnh Quang</span>\n' +
+        '                                            <span class="des">Q. Đống Đa</span>\n' +
+        '                                        </span>\n' +
+        '                                        <span class="numb">120</span>\n' +
+        '                                    </div>'
     }];
 
     function templateBrand(data) {
@@ -1792,7 +1795,7 @@
     $("#branch-select").select2({
         data: data,
         templateResult: templateBrand,
-        escapeMarkup: function(m) {
+        escapeMarkup: function (m) {
             return m;
         }
     });
@@ -1806,11 +1809,11 @@
         id: 1,
         text: 'HN1 - 113 Thịnh Quang',
         html: '<div  class="value-btn">\n' +
-            '                                        <span class="total">\n' +
-            '                                            <span class="text">NV - Huy Hùng</span>\n' +
-            '                                        </span>\n' +
-            '                                        <span class="numb">0</span>\n' +
-            '                                    </div>'
+        '                                        <span class="total">\n' +
+        '                                            <span class="text">NV - Huy Hùng</span>\n' +
+        '                                        </span>\n' +
+        '                                        <span class="numb">0</span>\n' +
+        '                                    </div>'
 
     }];
 
@@ -1821,7 +1824,7 @@
     $("#staff-select").select2({
         data: dataStaff,
         templateResult: templateStaff,
-        escapeMarkup: function(v) {
+        escapeMarkup: function (v) {
             return v;
         }
     });
