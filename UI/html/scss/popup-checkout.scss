@@ -162,7 +162,11 @@
       justify-content: space-between;
 
       .pick-date {
-        width: calc((100% - 20px) / 3);
+        & + .pick-date {
+          margin-left: 20px;
+        }
+
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -821,6 +825,7 @@
       height: 100vh;
       overflow: scroll;
     }
+
     .infoBox {
       border: 0.5px solid rgba(0, 0, 0, 0.15);
       box-sizing: border-box;
