@@ -1338,12 +1338,6 @@ svg {
   .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-last-child(1) {
     margin-right: 0;
   }
-  .bh-home-menu .tagBox .menu__tags-list .swiper-wrapper {
-    justify-content: center;
-  }
-  .bh-home-menu .tagBox .menu__tags-list .swiper-button-next, .bh-home-menu .tagBox .menu__tags-list .swiper-button-prev {
-    display: none;
-  }
   .bh-home-menu .heading {
     margin-bottom: 30px;
   }

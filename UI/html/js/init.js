@@ -76,59 +76,21 @@
             },
         });
 
-
-        // Start Auto Scroll top menu when clicked filter
-        function getElementY(query) {
-            return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
-        }
-
-        function doScrolling(element, duration) {
-            let startingY = window.pageYOffset
-            let elementY = getElementY(element)
-            // If element is close to page's bottom then window will scroll only to some position above the element.
-            let targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
-            let diff = targetY - startingY
-            // Easing function: easeInOutCubic
-            // From: https://gist.github.com/gre/1650294
-            let easing = function (t) {
-                return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
-            }
-            let start
-
-            if (!diff) return
-
-            // Bootstrap our animation - it will get called right before next frame shall be rendered.
-            window.requestAnimationFrame(function step(timestamp) {
-                if (!start) start = timestamp
-                // Elapsed miliseconds since start of scrolling.
-                let time = timestamp - start
-                // Get percent of completion in range [0, 1].
-                let percent = Math.min(time / duration, 1)
-                // Apply the easing.
-                // It can cause bad-looking slow frames in browser performance tool, so be careful.
-                percent = easing(percent)
-
-                window.scrollTo(0, startingY + diff * percent)
-
-                // Proceed with animation as long as we wanted it to.
-                if (time < duration) {
-                    window.requestAnimationFrame(step)
-                }
-            })
-        }
-
-
-        let tagsfilter = document.getElementsByClassName('tags-filter');
-
-        for (let i = 0; i < tagsfilter.length; i++) {
-            tagsfilter[i].addEventListener("click", doScrolling.bind(null, '#head-menu', 500))
-        }
-        // End Auto Scroll top menu when clicked filter
+        let swiperMenuTags = new Swiper(".menu__tags-list", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            navigation: {
+                nextEl: ".menu__tags-list .swiper-button-next",
+                prevEl: ".menu__tags-list .swiper-button-prev",
+            },
+        });
 
         $('.tags-filter').each(function () {
             $(this).click(function () {
                 $(".tags-filter").removeClass("active");
                 $(this).addClass("active");
+                scrollToId('head-menu');
             })
         });
         // End Auto Scroll top menu when clicked filter
@@ -474,17 +436,15 @@
             });
 
 
-            let swiperMenuTags = new Swiper(".menu__tags-list", {
-                slidesPerView: 'auto',
-                spaceBetween: 0,
-                freeMode: true,
-                navigation: {
-                    nextEl: ".menu__tags-list .swiper-button-next",
-                    prevEl: ".menu__tags-list .swiper-button-prev",
-                },
-            });
-
-
         }
     },
 };
+
+
+function scrollToId(id) {
+    $("html, body").animate({scrollTop: $('#' + id).offset().top}, 400);
+}
+
+function scrollToObj(obj, top) {
+    $("html, body").animate({scrollTop: obj.offset().top - top}, 400);
+}
