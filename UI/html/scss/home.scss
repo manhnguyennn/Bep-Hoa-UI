@@ -315,6 +315,9 @@
 }
 
 .bh-menu-list {
+  &.bh-loading {
+    min-height: 70vh;
+  }
   li {
     &:nth-child(1) {
       @extend .bt05;
@@ -746,6 +749,8 @@
   }
 
   .bh-menu-list {
+
+
     margin-top: 35px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -761,7 +766,7 @@
     }
   }
 
-  .go-to-top{
+  .go-to-top {
     margin-top: 30px;
   }
 

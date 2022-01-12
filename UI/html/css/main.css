@@ -996,6 +996,9 @@ svg {
   visibility: hidden;
 }
 
+.bh-menu-list.bh-loading {
+  min-height: 70vh;
+}
 .bh-menu-list li {
   padding: 15px 20px;
 }
