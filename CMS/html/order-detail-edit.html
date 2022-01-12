@@ -650,19 +650,29 @@
                                                 Thời gian giao hàng <span>*</span>
                                             </div>
                                             <div class="row mb-2">
-                                                <div class="col-6">
+
+                                                <div class="col-4">
                                                     <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary"
                                                          id="datepick">
                                                         <input type="text" name="daterange" value="Hôm nay"/>
                                                         <div class="icn icon-calendar-date-2"></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-6">
-                                                    <div class="picktime-order  ">
+                                                <div class="col-4">
+                                                    <div class="picktime-order   ">
                                                         <input type="text" id="pt-min-max"
-                                                               class="form-control "
+                                                               class="form-control pickatime-min-max"
                                                                placeholder="Nhập giờ giao"/>
                                                         <div class="icn icon-time-clock"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+
+                                                    <div class="form-check form-check-primary">
+                                                        <input type="checkbox" class="form-check-input"
+                                                               id="colorCheck1" checked="">
+                                                        <label class="form-check-label" for="colorCheck1">Giao
+                                                            ngay khi xong</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1780,12 +1790,12 @@
         id: 1,
         text: 'HN1 - 113 Thịnh Quang',
         html: ' <div class="value-btn">\n' +
-        '                                        <span class="total">\n' +
-        '                                            <span class="text">HN1 - 113 Thịnh Quang</span>\n' +
-        '                                            <span class="des">Q. Đống Đa</span>\n' +
-        '                                        </span>\n' +
-        '                                        <span class="numb">120</span>\n' +
-        '                                    </div>'
+            '                                        <span class="total">\n' +
+            '                                            <span class="text">HN1 - 113 Thịnh Quang</span>\n' +
+            '                                            <span class="des">Q. Đống Đa</span>\n' +
+            '                                        </span>\n' +
+            '                                        <span class="numb">120</span>\n' +
+            '                                    </div>'
     }];
 
     function templateBrand(data) {
@@ -1809,11 +1819,11 @@
         id: 1,
         text: 'HN1 - 113 Thịnh Quang',
         html: '<div  class="value-btn">\n' +
-        '                                        <span class="total">\n' +
-        '                                            <span class="text">NV - Huy Hùng</span>\n' +
-        '                                        </span>\n' +
-        '                                        <span class="numb">0</span>\n' +
-        '                                    </div>'
+            '                                        <span class="total">\n' +
+            '                                            <span class="text">NV - Huy Hùng</span>\n' +
+            '                                        </span>\n' +
+            '                                        <span class="numb">0</span>\n' +
+            '                                    </div>'
 
     }];
 
