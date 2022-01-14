@@ -320,6 +320,25 @@
         margin-top: 15px;
       }
 
+
+      &.error {
+        .warning {
+          display: block;
+        }
+        .input-user{
+          border: 0.5px solid #B5292F;
+        }
+      }
+    }
+
+    .warning {
+      margin-top: 9px;
+      padding-left: 11px;
+      font-size: 10px;
+      line-height: 140%;
+      font-family: BVNPro-Regular;
+      display: none;
+      color: #B5292F;
     }
 
     .input-user {
@@ -521,7 +540,7 @@
   }
 
   .remind-user {
-    margin-top: 5px;
+    margin-top: 25px;
     padding-bottom: 36px;
 
     .text {

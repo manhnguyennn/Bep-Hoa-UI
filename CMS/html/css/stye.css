@@ -1546,7 +1546,7 @@ Generated using nucleoapp.com
   color: #444444;
 }
 .logs-edit .list-logs-change .log-change .type {
-  width: 150px;
+  width: 100px;
   flex-shrink: 0;
   margin-right: 20px;
   font-family: Roboto-Medium;
