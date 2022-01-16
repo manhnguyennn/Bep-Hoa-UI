@@ -97,20 +97,22 @@
                                         <input type="radio" id="test2" name="radio-group">
                                         <label for="test2">Giao vào giờ</label>
                                     </div>
-                                    <div class="flexBox">
 
-                                        <div class="timepicker timepicker1" dir="ltr">
-                                            <input type="number" class="hh input-hour" min="0" max="12" placeholder="00"
-                                                   maxlength="2"/>
-                                            <span>:</span>
-                                            <input type="number" class="mm input-hour" min="0" max="59" placeholder="00"
-                                                   maxlength="2"/>
-                                        </div>
-                                        <div class="choose-ampm">
-                                            <a href="javascript:;" class="ampm-radio active">Sáng</a>
-                                            <a href="javascript:;" class="ampm-radio">Chiều</a>
-                                        </div>
+                                    <div class="select-timeBox">
+                                        <select class="select-time" name="">
+                                            <option value="AL" selected disabled>10:30 AM</option>
+                                            <option value="WY">10:30 AM</option>
+                                            <option value="WY">12:30 AM</option>
+                                            <option value="WY">11:30 AM</option>
+                                            <option value="WY">10:30 PM</option>
+                                            <option value="WY">12:30 PM</option>
+                                            <option value="WY">11:30 PM</option>
+
+
+                                        </select>
+                                        <div class="trigger-select"></div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -278,7 +280,6 @@
                                 <input type="text" class="input-user-info" placeholder="Số điện thoại nhận hàng">
                             </div>
                         </div>
-
 
 
                         <div class="form-input">

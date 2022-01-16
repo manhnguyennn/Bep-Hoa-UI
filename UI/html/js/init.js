@@ -142,58 +142,6 @@
             })
         });
 
-        //check AM PM time
-        $('.ampm-radio').each(function () {
-            $(this).click(function () {
-                $(".ampm-radio").removeClass("active");
-                $(this).addClass("active");
-            })
-        });
-
-        //Start Input Hour Order
-        $(".hh").blur(function () {
-            if ($(this).val() >= 24)
-                $(this).val($(this).val() % 24);
-
-            if ($(this).val() == "")
-                $(this).val("");
-            else if ($(this).val() < 10)
-                $(this).val("0" + parseInt($(this).val()));
-        });
-        $(".mm").blur(function () {
-            if ($(this).val() >= 60)
-                $(this).val($(this).val() % 60);
-
-            if ($(this).val() == "")
-                $(this).val("");
-            else if ($(this).val() < 10)
-                $(this).val("0" + parseInt($(this).val()));
-
-            let x = $(this).parent().attr("class").split(" ")[1];
-
-        });
-
-        $(".hh").on("input", function () {
-            $(this).parent().removeClass("invalid").removeClass("valid");
-            if ($(this).val().length == 2)
-                $(this).siblings(".mm").focus().select();
-        });
-        $(".mm").on("input", function () {
-            $(this).parent().removeClass("invalid").removeClass("valid");
-            if ($(this).val().length == 2)
-                $(this).blur();
-        });
-        $(".hh").on("focus", function () {
-            $(this).parent().removeClass("invalid").removeClass("valid");
-        });
-        $(".mm").on("focus", function () {
-            $(this).parent().removeClass("invalid").removeClass("valid");
-        });
-
-        $("html").on('input', ".input-hour", function () {
-            $(this).val($(this).val().replace(/[^0-9.]/g, ""));
-        });
-        //End Input Hour Order
 
         //check Payment type
         $('.payment-type').each(function () {
@@ -321,11 +269,15 @@
                             var textarea = document.querySelector('.note-order');
 
                             textarea.addEventListener('keydown', autosize);
-
+                            $('.select-dict').select2({dropdownParent: $('#open-popup-checkout .select-user')});
+                            $('.select-time').select2({
+                                dropdownParent: $('#open-popup-checkout .select-timeBox'),
+                                minimumResultsForSearch: -1,
+                            });
 
                         },
                         afterShow: function () {
-                            $('.select-dict').select2({dropdownParent: $('#open-popup-checkout .select-user')});
+
 
                         },
                         afterClose: function () {
