@@ -19,6 +19,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  outline: none;
 }
 
 textarea {
@@ -2409,6 +2410,7 @@ svg {
 }
 .Popup-checkout .footer-bill {
   position: fixed;
+  transition: bottom 0.2s ease;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -2574,6 +2576,7 @@ svg {
   position: fixed;
   z-index: 99;
   bottom: 0;
+  transition: bottom 0.2s ease;
   left: 0;
   width: 100%;
   border-top: 0.5px solid #A08C78;
