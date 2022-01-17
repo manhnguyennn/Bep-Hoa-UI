@@ -229,135 +229,376 @@
         <div class="content-body">
 
             <div class="upload-food full-width">
-                <div class="container bg-white p-2">
-                    <div class="col-12 ">
-                        <div class="row">
-                            <div class="col-5">
-                                <div class="upload-images upload-banner height-95-per">
-                                    <a href="javascript:;"
-                                       class="upload-btn btn btn-primary btn-group align-items-center justify-content-center mb-1">
-                                                    <span class="txt">
-                                                        Tải ảnh lên
-                                                    </span>
-                                        <span class="icn icon-move-up"></span>
-                                    </a>
-                                    <div class="text text-center">
-                                        Tải lên tối đa 8 ảnh <br>
-                                        Dung lượng mỗi ảnh dưới 2MB
+                <div class="container p-2">
+                    <div class="row ">
+                        <div class="col-5">
+                            <div class="bg-white p-1">
+                                <div class="form-banner mb-1">
+                                    <label class="form-label" for="">
+                                        Tên Banner <span>*</span>
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Nhập thông tin">
+                                </div>
+                                <div class="form-banner mb-1">
+                                    <label class="form-label" for="">
+                                        Link Banner
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Nhập thông tin">
+                                </div>
+
+
+                                <div class="form-banner mb-1">
+                                    <label class="form-label" for="">
+                                        Số thứ tự
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Nhập thông tin">
+                                </div>
+
+
+                                <div class="form-banner mb-1">
+                                    <label class="form-label" for="">
+                                        Ảnh Banner
+                                    </label>
+                                    <div class="list-images list-banner">
+                                        <div class="images-fd">
+                                            <img src="img/img-banking.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="d-flex justify-content-between  mb-1">
+
+                                    <a href="javascript:;"
+                                       class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center">
+                                        <span class="txt mr-1">Tải ảnh lên</span>
+                                        <span class="icn icon-move-up"></span>
+                                    </a>
+
+
+
+                                    <a href="javascript:;"
+                                       class="btn btn-outline-success ml-1 d-flex align-items-center justify-content-center">
+                                        Lưu
+                                    </a>
+
+
+                                    <a href="javascript:;"
+                                       class="btn btn-outline-secondary ml-1 d-flex align-items-center justify-content-center">
+                                        Đóng
+                                    </a>
+
+                                </div>
                             </div>
-                            <div class="col-7">
-                                <ul class="list-images list-banner">
-                                    <li>
-                                        <div class="images-box active">
-                                            <div class="images-fd">
-                                                <div class="numb">1</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="images-box ">
-                                            <div class="images-fd">
-                                                <div class="numb">2</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
+                        </div>
+                        <div class="col-7 ">
+                            <div class="container">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="table-light">
+                                        <tr>
+                                            <th scope="col" class=" bh-text-111 text-nowrap">STT</th>
+                                            <th scope="col" class=" bh-text-111 text-nowrap">Trạng thái</th>
+                                            <th scope="col" class=" bh-text-111 text-nowrap">Tên Banner</th>
+                                            <th scope="col" class=" bh-text-111 text-nowrap"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>1</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           >
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 1</b>
+                                                </div>
+                                            </td>
 
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="images-box active">
-                                            <div class="images-fd">
-                                                <div class="numb">3</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="images-box ">
 
-                                            <div class="images-fd">
-                                                <div class="numb">4</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
 
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="images-box active">
-                                            <div class="images-fd">
-                                                <div class="numb">5</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="images-box ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>2</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           checked>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 2</b>
+                                                </div>
+                                            </td>
 
-                                            <div class="images-fd">
-                                                <div class="numb">6</div>
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Nhập link ảnh banner">
-                                            <div class="d-flex">
 
-                                                <a href="javascript:;" class="upload-btn">
-                                                    <span class="icn icon-move-up"></span>
-                                                </a>
-                                                <a href="javascript:;" class="remove-btn">
-                                                    <span class="icn icon-e-remove-2"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>3</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           checked>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 3</b>
+                                                </div>
+                                            </td>
+
+
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>1</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           checked>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 1</b>
+                                                </div>
+                                            </td>
+
+
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>2</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           checked>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 2</b>
+                                                </div>
+                                            </td>
+
+
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>3</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap bh-text-111">
+                                                <div class="form-check-success form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch3"
+                                                           checked>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap ">
+                                                <div class="bh-text-111">
+                                                    <b>Banner Event 3</b>
+                                                </div>
+                                            </td>
+
+
+                                            <td class="text-nowrap ">
+                                                <div class="funcsRow d-flex justify-content-end">
+                                                    <a href="javascript:;"
+                                                       class="btn btn-outline-primary edit-btn waves-effect"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                                    <div class="btn-group ml-075">
+                                                        <a href="javascript:;"
+                                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
+                                                           type="button" id="dropdownMenuButton6"
+                                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
+                                                                      fill="#666666"></path>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end"
+                                                             aria-labelledby="dropdownMenuButton6" style="">
+                                                            <a class="dropdown-item" href="#">Xóa</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1343,12 +1343,6 @@ Generated using nucleoapp.com
 .upload-food .list-images {
   padding: 0;
 }
-.upload-food .list-images.list-banner {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
-}
 .upload-food .list-images.list-banner input {
   width: calc(100% - 94px);
 }
@@ -1359,14 +1353,14 @@ Generated using nucleoapp.com
   display: flex;
   flex-wrap: wrap;
 }
-.upload-food .list-images.list-banner .images-box .images-fd {
+.upload-food .list-images.list-banner .images-fd {
   width: 100%;
   height: auto;
   padding-top: 56.25%;
   position: relative;
   margin-bottom: 10px;
 }
-.upload-food .list-images.list-banner .images-box .images-fd .numb {
+.upload-food .list-images.list-banner .images-fd .numb {
   width: 30px;
   height: 30px;
   border: 1px solid #D8D6DE;
@@ -1385,7 +1379,7 @@ Generated using nucleoapp.com
   font-size: 1.1rem;
   line-height: 30px;
 }
-.upload-food .list-images.list-banner .images-box .images-fd img {
+.upload-food .list-images.list-banner .images-fd img {
   top: 0;
   left: 0;
   position: absolute;
