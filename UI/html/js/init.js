@@ -173,7 +173,7 @@
                 }
             });
 
-            $(".tagBox").sticky({topSpacing: 70});
+            // $(".tagBox").sticky({topSpacing: 70});
 
 
             $(".food-card").each(function () {
@@ -289,7 +289,7 @@
 
 
         } else {
-            $(".tagBox").sticky({topSpacing: 60});
+            // $(".tagBox").sticky({topSpacing: 60});
 
             $('.address-store').insertBefore('.bannerBox');
             // Fancy Box Popup Detail
