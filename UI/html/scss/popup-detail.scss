@@ -173,15 +173,23 @@
   }
 
   .sapo {
-    &.active {
-      overflow: visible;
-      -webkit-line-clamp: unset;
 
+    &.has-expand {
+      &.active {
+        display: -webkit-box;
+        overflow: visible;
+        -webkit-line-clamp: unset;
+        .show-more {
+          display: none;
+        }
+      }
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       .show-more {
-        display: none;
+        display: block;
       }
     }
-
     margin-top: 15px;
     position: relative;
     font-size: 14px;
@@ -189,16 +197,15 @@
     font-family: BVNPro-Regular;
     color: #222222;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow: visible;
+    -webkit-line-clamp: unset;
 
     .show-more {
       &:before {
         content: '... ';
         font-family: BVNPro-Regular;
       }
-
+      display: none;
       position: absolute;
       right: 0;
       bottom: 0;
@@ -301,7 +308,7 @@
   }
 
   .fancybox-bg {
-    background: none;
+    background: rgba(0, 0, 0, .7);
   }
 
   .fancybox-close-small {
