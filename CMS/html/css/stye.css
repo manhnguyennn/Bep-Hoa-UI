@@ -914,12 +914,21 @@ body i {
 
 .flatpickr-date-time.food-date {
   padding: 0;
-  width: 130px;
+  width: 120px;
   color: var(--color111) !important;
   font-size: 0.9rem;
+  box-shadow: none;
   background: none !important;
   border: none !important;
   outline: none !important;
+}
+
+.input-date-food.active .icn {
+  display: block;
+}
+.input-date-food .icn {
+  display: none;
+  color: var(--colorPurple);
 }
 
 /* --------------------------------
@@ -1744,6 +1753,15 @@ Generated using nucleoapp.com
   border-radius: 5px;
   background: #999999;
   display: block;
+}
+
+.food-qedit-btn {
+  display: block;
+}
+.food-qedit-btn .icn {
+  color: var(--color111);
+  display: block;
+  font-size: 0.9rem;
 }
 
 .name-cusomter.unset {

@@ -1062,10 +1062,24 @@ body {
 
 .flatpickr-date-time.food-date {
   padding: 0;
-  width: 130px;
+  width: 120px;
   color: var(--color111) !important;
   font-size: 0.9rem;
+  box-shadow: none;
   background: none !important;
   border: none !important;
   outline: none !important;
+}
+
+.input-date-food {
+  &.active {
+    .icn {
+      display: block;
+    }
+  }
+
+  .icn {
+    display: none;
+    color: var(--colorPurple);
+  }
 }
