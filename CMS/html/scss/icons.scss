@@ -127,6 +127,8 @@ $icon-down-arrow: unicode(ea19);
 $icon-c-add: unicode(ea1a);
 $icon-calendar-date-2: unicode(ea1b);
 $icon-pin-angle-fill: unicode(ea1c);
+$icon-floppy-disk: unicode(ea1d);
+$icon-pen-01: unicode(ea1e);
 
 .icon-right-arrow::before {
   content: $icon-right-arrow;
@@ -234,5 +236,13 @@ $icon-pin-angle-fill: unicode(ea1c);
 
 .icon-pin-angle-fill::before {
   content: $icon-pin-angle-fill;
+}
+
+.icon-floppy-disk::before {
+  content: $icon-floppy-disk;
+}
+
+.icon-pen-01::before {
+  content: $icon-pen-01;
 }
 

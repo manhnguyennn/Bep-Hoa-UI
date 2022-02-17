@@ -12,7 +12,8 @@
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
     <!-- END: Vendor CSS-->
-
+    <link rel="stylesheet" type="text/css" href="css/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
@@ -24,7 +25,8 @@
     <link rel="stylesheet" type="text/css" href="css/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
     <!-- END: Page CSS-->
-
+    <link rel="stylesheet" type="text/css" href="css/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="css/form-pickadate.css">
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/stye.css">
     <!-- END: Custom CSS-->
@@ -325,6 +327,11 @@
                                     </th>
                                     <th scope="col" class="text-nowrap">
                                         <a href="javascript:;" class="btn-sort-table ">
+                                            <span class="txt">Ngày xuất bản</span>
+                                        </a>
+                                    </th>
+                                    <th scope="col" class="text-nowrap">
+                                        <a href="javascript:;" class="btn-sort-table ">
                                             <span class="txt">Ghim</span>
                                             <span class="icn icon-increase"></span>
                                         </a>
@@ -350,9 +357,17 @@
                                         </div>
                                     </td>
                                     <td class="text-nowrap">
-                                        <div class="status bh-stt-green">
-                                            <div class="color"></div>
-                                            <div class="text">Đang bán</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-1">
+                                                <div class="status bh-stt-green">
+                                                    <div class="color"></div>
+                                                    <div class="text">Đang bán</div>
+                                                </div>
+                                            </div>
+                                            <a class="food-qedit-btn" href="javascript:;" data-bs-toggle="modal"
+                                               data-bs-target="#edit-quick">
+                                                <span class="icn icon-pen-01"></span>
+                                            </a>
                                         </div>
                                     </td>
                                     <td class="text-nowrap">
@@ -366,6 +381,14 @@
                                     </td>
                                     <td class="text-nowrap">
                                         <div class="bh-text-111 ">1,200,000 đ</div>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <div class="input-date-food d-flex align-items-center">
+                                            <input type="text" id="fp-date-time" class="form-control flatpickr-date-time food-date" value="2020-01-12 12:00" placeholder="YYYY-MM-DD HH:MM" />
+                                            <a href="javascript:;" class="saveBtn">
+                                                <span class="icn icon-floppy-disk"></span>
+                                            </a>
+                                        </div>
                                     </td>
                                     <td class="text-nowrap">
 
@@ -394,8 +417,6 @@
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-end"
                                                      aria-labelledby="dropdownMenuButton6" style="">
-                                                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
-                                                       data-bs-target="#edit-quick">Sửa nhanh</a>
                                                     <a class="dropdown-item" href="#">Xóa</a>
 
                                                 </div>
@@ -403,214 +424,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th class="text-nowrap">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1">
-                                        </div>
-                                    </th>
 
-                                    <td class="text-nowrap">
-                                        <div class="menu-total-product">
-                                            <div class="ava">
-                                                <img src="img/menu-ava.png" alt="">
-                                            </div>
-                                            <div class="name">Thịt quay mắc mật giòn bì</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="status bh-stt-red">
-                                            <div class="color"></div>
-                                            <div class="text">Không bán</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">0</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">12</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">124</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="bh-text-111 ">200,000 đ</div>
-                                    </td>
-                                    <td class="text-nowrap">
-
-                                        <div class="funcsRow d-flex justify-content-start">
-                                            <a href="javascript:;"
-                                               class="btn mr-1 btn-pin waves-effect waves-float waves-light">
-                                                <span class="icn icon-pin-angle-fill"></span>
-                                            </a>
-                                            <a href="javascript:;" class="btn btn-outline-primary edit-btn"
-                                               data-bs-toggle="modal"
-                                               data-bs-target="#exampleModalCenter">Sửa</a>
-                                            <div class="btn-group">
-                                                <a href="javascript:;"
-                                                   class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                                   type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                                   aria-expanded="false">
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                              fill="#666666"/>
-                                                    </svg>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-end"
-                                                     aria-labelledby="dropdownMenuButton6" style="">
-                                                    <a class="dropdown-item" href="#">Sửa nhanh</a>
-                                                    <a class="dropdown-item" href="#">Xóa</a>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                                   value="checked"
-                                                   checked="">
-                                        </div>
-                                    </th>
-
-                                    <td class="text-nowrap">
-                                        <div class="menu-total-product">
-                                            <div class="ava">
-                                                <img src="web_images/menu-ava-default.png" alt="">
-                                            </div>
-                                            <div class="name">Salad lườn vịt</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="status bh-stt-blue">
-                                            <div class="color"></div>
-                                            <div class="text">Có cơ sở hết</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">0</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">12</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">124</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="bh-text-111 ">1,200,000 đ</div>
-                                    </td>
-                                    <td class="text-nowrap">
-
-                                        <div class="funcsRow d-flex justify-content-start">
-                                            <a href="javascript:;"
-                                               class="btn mr-1 btn-pin waves-effect waves-float waves-light">
-                                                <span class="icn icon-pin-angle-fill"></span>
-                                            </a>
-                                            <a href="javascript:;" class="btn btn-outline-primary edit-btn"
-                                               data-bs-toggle="modal"
-                                               data-bs-target="#exampleModalCenter">Sửa</a>
-                                            <div class="btn-group">
-                                                <a href="javascript:;"
-                                                   class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                                   type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                                   aria-expanded="false">
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                              fill="#666666"/>
-                                                    </svg>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-end"
-                                                     aria-labelledby="dropdownMenuButton6" style="">
-                                                    <a class="dropdown-item" href="#">Sửa nhanh</a>
-                                                    <a class="dropdown-item" href="#">Xóa</a>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="text-nowrap">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                                   value="checked"
-                                                   checked="">
-                                        </div>
-                                    </th>
-
-                                    <td class="text-nowrap">
-                                        <div class="menu-total-product">
-                                            <div class="ava">
-                                                <img src="web_images/menu-ava-default.png" alt="">
-                                            </div>
-                                            <div class="name">Cua Cà Mau hấp</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="status bh-stt-orange">
-                                            <div class="color"></div>
-                                            <div class="text">Đã xóa</div>
-                                        </div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">0</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">12</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class=" text-center">124</div>
-                                    </td>
-                                    <td class="text-nowrap">
-                                        <div class="bh-text-111 ">1,200,000 đ</div>
-                                    </td>
-                                    <td class="text-nowrap">
-
-                                        <div class="funcsRow d-flex justify-content-start">
-                                            <a href="javascript:;"
-                                               class="btn mr-1 btn-pin waves-effect waves-float waves-light">
-                                                <span class="icn icon-pin-angle-fill"></span>
-                                            </a>
-                                            <a href="javascript:;" class="btn btn-outline-primary edit-btn"
-                                               data-bs-toggle="modal"
-                                               data-bs-target="#exampleModalCenter">Sửa</a>
-                                            <div class="btn-group">
-                                                <a href="javascript:;"
-                                                   class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                                   type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                                   aria-expanded="false">
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                              fill="#666666"/>
-                                                        <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                              fill="#666666"/>
-                                                    </svg>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-end"
-                                                     aria-labelledby="dropdownMenuButton6" style="">
-                                                    <a class="dropdown-item" href="#">Sửa nhanh</a>
-                                                    <a class="dropdown-item" href="#">Xóa</a>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -922,34 +736,39 @@
 
 
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item edit">
                                                     <h4>Chỉnh sửa</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item edit">
                                                     <h4>Chỉnh sửa</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item edit">
                                                     <h4>Chỉnh sửa</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
                                                     <div class="text">
-                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b> thành <b>Nhậu</b>
+                                                        <span>Sale - Đức Thịnh</span> chỉnh sửa <b>Tên danh mục</b>
+                                                        thành <b>Nhậu</b>
                                                     </div>
                                                 </div>
                                                 <div class="logs-item create">
                                                     <h4>Tạo mới</h4>
                                                     <div class="time ">08/11/2021 - 09:14</div>
-                                                    <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span></div>
+                                                    <div class="text">Tạo mới danh mục bởi <span>QL - Hùng Hà</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1058,9 +877,16 @@
 <script src="js/form-select2.min.js"></script>
 <!-- BEGIN: Page Vendor JS-->
 <!-- END: Page Vendor JS-->
-
+<script src="js/picker.js"></script>
+<script src="js/picker.date.js"></script>
+<script src="js/picker.time.js"></script>
+<script src="js/legacy.js"></script>
+<script src="js/flatpickr.min.js"></script>
 <!-- BEGIN: Theme JS-->
+<script src="js/form-pickers.js"></script>
+
 <script src="js/app.js"></script>
+
 <!-- END: Theme JS-->
 
 <!-- BEGIN: Page JS-->

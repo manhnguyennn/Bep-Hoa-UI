@@ -601,6 +601,7 @@ body {
         font-family: Roboto-Regular;
       }
     }
+
     .text {
       color: #fff;
       display: block;
@@ -1051,9 +1052,20 @@ body {
       z-index: 1;
     }
   }
+
   &.select2-container--default .select2-selection--single, &.select2-container--default.select2-container--focus .select2-selection--multiple {
     background: transparent;
     z-index: 2;
     position: relative;
   }
+}
+
+.flatpickr-date-time.food-date {
+  padding: 0;
+  width: 130px;
+  color: var(--color111) !important;
+  font-size: 0.9rem;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
 }
