@@ -378,6 +378,7 @@ body i {
 }
 
 .selectBox {
+  background: #fff;
   position: relative;
   z-index: 10;
   cursor: pointer;
@@ -1035,7 +1036,7 @@ body i {
   top: 90px;
 }
 
-.selectBox:has(.select2-container) {
+.selectBox:has(.select2) {
   background: #fff;
 }
 
