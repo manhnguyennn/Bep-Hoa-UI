@@ -399,6 +399,12 @@ body {
     background: #FFFFFF;
     position: relative;
 
+    &.non-arrow {
+      &:after {
+        display: none;
+      }
+    }
+
     &.before-select {
 
       .text, .required {
@@ -1033,6 +1039,13 @@ body {
 
 .sticky-top.sticky-top-90 {
   top: 90px;
+}
+
+.selectBox {
+  &:has(.select2-container) {
+    background: #fff;
+  }
+
 }
 
 .select2-container {

@@ -405,6 +405,9 @@ body i {
   background: #FFFFFF;
   position: relative;
 }
+.selectBox .selected.non-arrow:after {
+  display: none;
+}
 .selectBox .selected.before-select .text, .selectBox .selected.before-select .required {
   display: block;
   opacity: 0.4;
@@ -1030,6 +1033,10 @@ body i {
 
 .sticky-top.sticky-top-90 {
   top: 90px;
+}
+
+.selectBox:has(.select2-container) {
+  background: #fff;
 }
 
 .select2-container .selection {
@@ -3347,19 +3354,19 @@ Generated using nucleoapp.com
   border-radius: 5px 5px 0 0;
 }
 .select-address .input-select::-webkit-input-placeholder {
-  opacity: 0.3;
+  color: var(--colorRed);
 }
 .select-address .input-select::-moz-placeholder {
-  opacity: 0.3;
+  color: var(--colorRed);
 }
 .select-address .input-select:-ms-input-placeholder {
-  opacity: 0.3;
+  color: var(--colorRed);
 }
 .select-address .input-select::-ms-input-placeholder {
-  opacity: 0.3;
+  color: var(--colorRed);
 }
 .select-address .input-select::placeholder {
-  opacity: 0.3;
+  color: var(--colorRed);
 }
 .select-address .list-search-drop {
   opacity: 0;

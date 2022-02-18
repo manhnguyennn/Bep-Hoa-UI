@@ -971,7 +971,8 @@
     line-height: 16px;
     color: #111111;
     &::placeholder {
-      opacity: 0.3;
+
+      color: var(--colorRed);
     }
   }
   .list-search-drop {
