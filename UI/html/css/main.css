@@ -3679,7 +3679,6 @@ svg {
   width: 768px;
   margin: 0 auto;
   max-width: 100%;
-  padding-top: 30px;
 }
 .fn-content .icon-success {
   width: 86px;
@@ -3857,6 +3856,10 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
+  .bh-finish_wrapper.bh-wrapper {
+    padding-top: 0;
+  }
+
   .fn-content {
     padding-top: 0px;
   }
