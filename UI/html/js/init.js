@@ -64,7 +64,7 @@
             $('.address-store .dropdown-box').toggleClass('active');
         })
 
-        let swiperBannerHome = new Swiper(".swiper-hbanner", {
+        let swiperbnerHome = new Swiper(".swiper-hbner", {
             slidesPerView: 1,
             spaceBetween: 10,
             autoplay: {
@@ -72,8 +72,18 @@
             },
             loop: true,
             pagination: {
-                el: ".swiper-hbanner .swiper-pagination",
+                el: ".swiper-hbner .swiper-pagination",
             },
+        });
+
+        let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            autoplay: {
+                delay: 3000
+            },
+            centeredSlides: true,
+            loop: true,
         });
 
         let swiperMenuTags = new Swiper(".menu__tags-list", {
@@ -172,6 +182,8 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
+
+
 
             // $(".tagBox").sticky({topSpacing: 70});
 
@@ -291,7 +303,8 @@
         } else {
             // $(".tagBox").sticky({topSpacing: 60});
 
-            $('.address-store').insertBefore('.bannerBox');
+
+            $('.address-store').insertBefore('.bnerBox');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
 

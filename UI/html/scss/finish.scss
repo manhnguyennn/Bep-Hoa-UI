@@ -1,4 +1,8 @@
 .bh-finish_wrapper {
+  &.bh-wrapper {
+    padding-top: 30px;
+  }
+
   background: #fff;
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -45,10 +49,12 @@
   margin: 0 auto;
   max-width: 100%;
   padding-top: 30px;
+
   .icon-success {
-    width: 100px;
-    margin: 0 auto 30px;
+    width: 86px;
+    margin: 0 auto 20px;
   }
+
   .title {
     width: 256px;
     margin: 0 auto 10px;
@@ -59,9 +65,10 @@
     text-align: center;
 
   }
+
   .des {
     width: 311px;
-    margin: 0 auto 43px;
+    margin: 0 auto 30px;
     font-size: 13px;
     line-height: 140%;
     font-family: BVNPro-Regular;
@@ -80,6 +87,7 @@
       text-align: center;
 
     }
+
     .id-numb {
       font-size: 18px;
       line-height: 100%;
@@ -95,10 +103,12 @@
     overflow: hidden;
     text-align: center;
     margin-bottom: 30px;
+
     .icn-top, .icn-bottom {
       width: 768px;
       margin-left: calc((100vw - 768px) / 2);
     }
+
     .total {
       padding: 15px 0;
       background: #FFF6ED;
@@ -109,24 +119,28 @@
       line-height: 130%;
       font-family: BVNPro-SemiBold;
       width: 220px;
-      margin: 0 auto 31px;
+      margin: 0 auto 20px;
       color: #111111;
     }
+
     .price {
       font-size: 22px;
       line-height: 100%;
       font-family: BVNPro-SemiBold;
       color: #356721;
-      margin-bottom: 32px;
+      margin-bottom: 20px;
     }
+
     .note-pickup {
       font-size: 13px;
       line-height: 150%;
       font-family: BVNPro-SemiBold;
       text-transform: uppercase;
+
       span {
         color: #B5292F;
       }
+
       color: #111111;
     }
 
@@ -144,7 +158,8 @@
 
   .od-total {
     padding: 0 20px;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
+
     h4 {
       font-size: 14px;
       line-height: 140%;
@@ -154,12 +169,15 @@
       margin-bottom: 26px;
       color: #222222;
     }
+
     .total-flx {
       & + .total-flx {
         margin-top: 12px;
       }
+
       display: flex;
     }
+
     .type {
       font-size: 13px;
       line-height: 100%;
@@ -169,6 +187,7 @@
       margin-right: 11px;
       width: 92px;
     }
+
     .txt {
       font-size: 13px;
       line-height: 130%;
@@ -181,31 +200,38 @@
     width: 335px;
     margin: 0 auto;
   }
+
   .fn-funcs {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &.save-bill {
       background: #B5292F;
       border: 1.5px solid #B5292F;
 
     }
+
     &.back-home {
       background: #FFFFFF;
       border: 1px solid #CBCBCB;
+
       .txt {
         color: #111111;
       }
     }
+
     height: 40px;
     box-sizing: border-box;
     border-radius: 33px;
     margin-bottom: 16px;
+
     .icn {
       width: 14px;
       display: block;
       margin-right: 9px;
     }
+
     .txt {
       font-size: 14px;
       line-height: 100%;
@@ -214,6 +240,7 @@
       display: block;
     }
   }
+
   .view-detail {
     font-size: 13px;
     line-height: 140%;
@@ -227,6 +254,7 @@
 @media screen and (min-width: 768px) {
   .fn-content {
     padding-top: 0px;
+
     .title {
       width: 100%;
     }
