@@ -674,6 +674,7 @@
       padding: 15px;
       box-sizing: border-box;
       perspective: 305px;
+      height: auto;
 
       &.swiper-slide-active {
         padding: 0;
@@ -688,6 +689,12 @@
       box-sizing: border-box;
       box-shadow: 0 6px 30px rgba(241, 221, 202, 0.51);
       border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       img {
         width: 100%;

@@ -1558,6 +1558,7 @@ svg {
           box-sizing: border-box;
   -webkit-perspective: 305px;
           perspective: 305px;
+  height: auto;
 }
 .bh-bner-footer .swiper-bner-footer .swiper-slide.swiper-slide-active {
   padding: 0;
@@ -1573,6 +1574,21 @@ svg {
   -webkit-box-shadow: 0 6px 30px rgba(241, 221, 202, 0.51);
           box-shadow: 0 6px 30px rgba(241, 221, 202, 0.51);
   border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .bh-bner-footer .swiper-bner-footer .slide-bner-footer img {
   width: 100%;
