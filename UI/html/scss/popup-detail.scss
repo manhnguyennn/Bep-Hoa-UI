@@ -4,8 +4,8 @@
   .popup-detailfood-content {
     position: relative;
     padding-bottom: 100px;
-    height: 100vh;
-    min-height: -webkit-fill-available;
+    min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 
@@ -22,7 +22,7 @@
 
   .content-pop {
     flex-grow: 1;
-    padding-bottom: 67px;
+
   }
 
   .funcsFixed {
@@ -179,17 +179,21 @@
         display: -webkit-box;
         overflow: visible;
         -webkit-line-clamp: unset;
+
         .show-more {
           display: none;
         }
       }
+
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+
       .show-more {
         display: block;
       }
     }
+
     margin-top: 15px;
     position: relative;
     font-size: 14px;
@@ -205,6 +209,7 @@
         content: '... ';
         font-family: BVNPro-Regular;
       }
+
       display: none;
       position: absolute;
       right: 0;
@@ -332,11 +337,13 @@
 
     .popup-detailfood-content {
       max-height: calc(100vh - 60px);
+      min-height: unset;
 
       .content-pop {
         overflow-y: scroll;
         overflow-y: overlay;
         padding-bottom: 0;
+
         &::-webkit-scrollbar {
           width: 5px;
           height: 0;
