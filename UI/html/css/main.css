@@ -1495,6 +1495,9 @@ svg {
   color: #629050;
 }
 
+.bh-bner-footer {
+  margin-bottom: 22px;
+}
 .bh-bner-footer .heading {
   display: -webkit-box;
   display: -ms-flexbox;
