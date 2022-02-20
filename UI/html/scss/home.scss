@@ -285,13 +285,23 @@
     .menu__tags-list {
       padding: 10px 0;
 
+      .swiper-wrapper {
+        white-space: nowrap;
+        width: 100vw;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
       .swiper-slide {
         &:nth-child(1) {
           margin-left: 20px;
         }
 
         &:nth-last-child(1) {
-          margin-right: 60px;
+          margin-right: 20px;
         }
 
         width: auto;
@@ -324,6 +334,8 @@
       }
 
       .swiper-button-next {
+        display: none;
+
         &.swiper-button-disabled {
           opacity: 0;
           visibility: hidden;
@@ -867,6 +879,11 @@
       top: 70px;
 
       .menu__tags-list {
+        .swiper-wrapper {
+          white-space: unset;
+          width: 100%;
+          overflow: unset;
+        }
 
         .swiper-slide {
           &:nth-child(1) {

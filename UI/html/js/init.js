@@ -80,22 +80,14 @@
             slidesPerView: 'auto',
             spaceBetween: 0,
             autoplay: {
-                delay: 3000
+                delay: 3000,
+                disableOnInteraction: false,
             },
-            disableOnInteraction: false,
             centeredSlides: true,
             loop: true,
         });
 
-        let swiperMenuTags = new Swiper(".menu__tags-list", {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            freeMode: true,
-            navigation: {
-                nextEl: ".menu__tags-list .swiper-button-next",
-                prevEl: ".menu__tags-list .swiper-button-prev",
-            },
-        });
+
 
         $('.tags-filter').each(function () {
             $(this).click(function () {
@@ -183,7 +175,15 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
-
+            let swiperMenuTags = new Swiper(".menu__tags-list", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                freeMode: true,
+                navigation: {
+                    nextEl: ".menu__tags-list .swiper-button-next",
+                    prevEl: ".menu__tags-list .swiper-button-prev",
+                },
+            });
 
             // $(".tagBox").sticky({topSpacing: 70});
 

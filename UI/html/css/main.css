@@ -1136,6 +1136,14 @@ svg {
 .bh-home-menu .tagBox .menu__tags-list {
   padding: 10px 0;
 }
+.bh-home-menu .tagBox .menu__tags-list .swiper-wrapper {
+  white-space: nowrap;
+  width: 100vw;
+  overflow: scroll;
+}
+.bh-home-menu .tagBox .menu__tags-list .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
 .bh-home-menu .tagBox .menu__tags-list .swiper-slide {
   width: auto;
   margin-left: 8px;
@@ -1144,7 +1152,7 @@ svg {
   margin-left: 20px;
 }
 .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-last-child(1) {
-  margin-right: 60px;
+  margin-right: 20px;
 }
 .bh-home-menu .tagBox .menu__tags-list .tags-filter {
   -webkit-transition: 0.3s;
@@ -1176,6 +1184,7 @@ svg {
   display: none;
 }
 .bh-home-menu .tagBox .menu__tags-list .swiper-button-next {
+  display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   visibility: visible;
@@ -1734,6 +1743,11 @@ svg {
   }
   .bh-home-menu .tagBox {
     top: 70px;
+  }
+  .bh-home-menu .tagBox .menu__tags-list .swiper-wrapper {
+    white-space: unset;
+    width: 100%;
+    overflow: unset;
   }
   .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-child(1) {
     margin-left: 0;
