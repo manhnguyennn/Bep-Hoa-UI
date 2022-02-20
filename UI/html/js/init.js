@@ -82,6 +82,7 @@
             autoplay: {
                 delay: 3000
             },
+            disableOnInteraction: false,
             centeredSlides: true,
             loop: true,
         });
@@ -182,7 +183,6 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
-
 
 
             // $(".tagBox").sticky({topSpacing: 70});
