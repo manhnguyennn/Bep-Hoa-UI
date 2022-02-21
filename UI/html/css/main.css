@@ -623,6 +623,10 @@ svg {
     display: block;
     width: 50px;
     margin-right: 100px; }
+    .bh-footer-content .bh-footer-logo svg path:nth-child(1) {
+      fill: #fff; }
+    .bh-footer-content .bh-footer-logo svg path:nth-child(2) {
+      fill: var(--colorRed); }
   .bh-footer-content .logo-text {
     display: none; }
   .bh-footer-content .list-info-footer {

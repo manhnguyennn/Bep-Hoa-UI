@@ -13,6 +13,16 @@
     display: block;
     width: 50px;
     margin-right: 100px;
+    svg {
+      path {
+        &:nth-child(1) {
+          fill: #fff;
+        }
+        &:nth-child(2) {
+          fill: var(--colorRed);
+        }
+      }
+    }
   }
 
   .logo-text {
