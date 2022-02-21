@@ -714,6 +714,9 @@ svg {
       -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
       margin-bottom: 30px; }
+    .bh-footer-content li:nth-child(1) .info-footer .text {
+      color: var(--colorRed);
+      display: block; }
     .bh-footer-content .info-footer {
       color: #111;
       font-size: 13px; }

@@ -131,7 +131,14 @@
       margin-bottom: 30px;
     }
 
-
+    li:nth-child(1) {
+      .info-footer {
+        .text {
+          color: var(--colorRed);
+          display: block;
+        }
+      }
+    }
     .info-footer {
       color: #111;
       font-size: 13px;
