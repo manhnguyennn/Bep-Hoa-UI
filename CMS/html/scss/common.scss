@@ -400,6 +400,10 @@ body {
     background: #FFFFFF;
     position: relative;
 
+    &.disable-bg {
+      background: #f8f8f8;
+    }
+
     &.non-arrow {
       &:after {
         display: none;
