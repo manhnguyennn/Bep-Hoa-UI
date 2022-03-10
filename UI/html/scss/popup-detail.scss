@@ -84,7 +84,31 @@
       display: block;
       @include img-border-gallery();
 
+      &.loading-food {
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: 99999;
+          top: calc((100% - 2rem) / 2);
+          left: calc((100% - 2rem) / 2);
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          vertical-align: -0.125em;
+          border: 0.15em solid var(--colorRed);
+          border-right-color: transparent;
+          border-radius: 50%;
+          animation: 0.75s linear infinite spinner-border;
+        }
+
+        i {
+          opacity: 0;
+          transition: opacity .5s ease;
+        }
+      }
+
       i {
+        transition: opacity .5s ease;
         width: 100%;
         padding-top: 58.66%;
         @include bg-thumb;
