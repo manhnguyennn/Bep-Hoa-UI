@@ -4,6 +4,10 @@
 }
 
 .address-store {
+  &.disable {
+    display: none;
+  }
+
   position: relative;
 
   .dropdown-btn {
@@ -47,6 +51,7 @@
       visibility: visible;
     }
 
+    z-index: 2;
     position: absolute;
     top: 100%;
     padding-top: 5px;
@@ -176,6 +181,10 @@
 }
 
 .bh-home-contact {
+  &.disable {
+    display: none;
+  }
+
   background: #FFFFFF;
   width: 335px;
   border: 0.7px solid #D0D0D0;

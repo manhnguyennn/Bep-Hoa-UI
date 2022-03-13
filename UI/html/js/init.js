@@ -29,17 +29,17 @@
     },
 
     common: function () {
-        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-        let vh = window.innerHeight * 0.01;
-        // Then we set the value in the --vh custom property to the root of the document
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-        // We listen to the resize event
-        window.addEventListener('resize', () => {
-            // We execute the same script as before
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        $.each($('.searchBtn'), function (i, v) {
+            $(v).off('click').click(function () {
+                event.stopPropagation();
+                if ($(this).parent().hasClass('active')) {
+                    $(this).parent().removeClass('active');
+                } else {
+                    $(this).parent().addClass('active');
+                }
+            });
         });
+
 
         let me = this;
 
@@ -47,6 +47,36 @@
 
         } else {
 
+
+        }
+    },
+    search: function () {
+        // Dropdown change location
+
+        $('.address-store').addClass('disable');
+
+        let me = this;
+
+        if (me.windowW > 800) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+            $('.bh-home-contact').insertBefore('.searchBox');
+            $('.bh-cart-total').insertAfter('.searchBox');
+        } else {
+            $('.bh-home-contact').addClass('disable');
 
         }
     },
