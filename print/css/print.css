@@ -163,10 +163,12 @@ body {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .body-bill .money-bill .type-money.big-type .type {
-        font-size: 15px; }
-      .body-bill .money-bill .type-money.big-type .money {
-        font-size: 16px; }
+      .body-bill .money-bill .type-money.big-type {
+        margin: 12px 0; }
+        .body-bill .money-bill .type-money.big-type .type {
+          font-size: 15px; }
+        .body-bill .money-bill .type-money.big-type .money {
+          font-size: 16px; }
       .body-bill .money-bill .type-money.italic-type {
         font-family: Roboto-Italic; }
       .body-bill .money-bill .type-money .type {
