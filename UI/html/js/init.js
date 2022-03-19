@@ -104,19 +104,11 @@
             pagination: {
                 el: ".swiper-hbner .swiper-pagination",
             },
+            navigation: {
+                nextEl: ".swiper-hbner .swiper-button-next",
+                prevEl: ".swiper-hbner .swiper-button-prev"
+            }
         });
-
-        let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            centeredSlides: true,
-            loop: true,
-        });
-
 
 
         $('.tags-filter').each(function () {
@@ -214,7 +206,18 @@
                     prevEl: ".menu__tags-list .swiper-button-prev",
                 },
             });
-
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                speed: 3500,
+                centeredSlides: true,
+                loop: true,
+            });
             // $(".tagBox").sticky({topSpacing: 70});
 
 
@@ -333,7 +336,17 @@
         } else {
             // $(".tagBox").sticky({topSpacing: 60});
 
-
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                centeredSlides: true,
+                loop: true,
+            });
             $('.address-store').insertBefore('.bnerBox');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
