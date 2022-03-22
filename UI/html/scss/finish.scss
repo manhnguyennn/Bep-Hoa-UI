@@ -53,10 +53,28 @@
     width: 86px;
     margin: 0 auto 20px;
   }
+  .icon-fail {
+    width: 80px;
+    margin: 0 auto 30px;
+  }
+  .icon-success-momo {
+    padding-left: 25px;
+    width: 120px;
+    margin: 0 auto 20px;
+  }
 
   .title {
     width: 256px;
     margin: 0 auto 10px;
+    font-size: 22px;
+    line-height: 100%;
+    font-family: BVNPro-SemiBold;
+    color: #222222;
+    text-align: center;
+
+  }
+  .title-fail {
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 100%;
     font-family: BVNPro-SemiBold;
@@ -74,7 +92,15 @@
     text-align: center;
     color: #666666;
   }
-
+  .des-fail {
+    width: 311px;
+    margin: 0 auto 20px;
+    font-size: 13px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    text-align: center;
+    color: #666666;
+  }
   .od-id {
     .text {
       font-size: 10px;
@@ -91,10 +117,20 @@
       font-size: 18px;
       line-height: 100%;
       font-family: BVNPro-SemiBold;
-      margin-bottom: 34px;
+      margin-bottom: 10px;
       text-align: center;
       color: #222222;
     }
+
+    .price {
+      font-size: 14px;
+      text-align: center;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+      color: #356721;
+      margin-bottom: 20px;
+    }
+    margin-bottom: 34px;
   }
 
   .warning {
@@ -109,7 +145,7 @@
     }
 
     .total {
-      padding: 15px 0;
+      padding: 30px 0;
       background: #FFF6ED;
     }
 
@@ -120,14 +156,6 @@
       width: 220px;
       margin: 0 auto 20px;
       color: #111111;
-    }
-
-    .price {
-      font-size: 22px;
-      line-height: 100%;
-      font-family: BVNPro-SemiBold;
-      color: #356721;
-      margin-bottom: 20px;
     }
 
     .note-pickup {
@@ -210,7 +238,11 @@
       border: 1.5px solid #B5292F;
 
     }
+    &.repayment {
+      background: #B5292F;
+      border: 1.5px solid #B5292F;
 
+    }
     &.back-home {
       background: #FFFFFF;
       border: 1px solid #CBCBCB;
