@@ -1178,7 +1178,6 @@
     flex-shrink: 0;
   }
 
-
 }
 
 .chatBox {
@@ -1229,5 +1228,23 @@
     line-height: 150%;
     font-family: Roboto-Regular;
     color: #444444;
+  }
+}
+
+.momo-log {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 180%;
+  color: #111;
+  .type {
+    width: 100px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    font-family: Roboto-Medium;
+  }
+  span {
+    flex-grow: 1;
+    display: block;
   }
 }

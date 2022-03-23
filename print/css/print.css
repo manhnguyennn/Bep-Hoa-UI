@@ -1,235 +1,185 @@
 @font-face {
   font-family: Roboto-Medium;
-  src: url("../fonts/Roboto-Medium.ttf");
-}
+  src: url("../fonts/Roboto-Medium.ttf"); }
 @font-face {
   font-family: Roboto-Regular;
-  src: url("../fonts/Roboto-Regular.ttf");
-}
+  src: url("../fonts/Roboto-Regular.ttf"); }
 @font-face {
   font-family: Roboto-Italic;
-  src: url("../fonts/Roboto-Italic.ttf");
-}
+  src: url("../fonts/Roboto-Italic.ttf"); }
 @font-face {
   font-family: Roboto-Bold;
-  src: url("../fonts/Roboto-Bold.ttf");
-}
+  src: url("../fonts/Roboto-Bold.ttf"); }
 html > * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .body-bill {
-  width: 300px;
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
   color: #111;
   font-family: Roboto-Medium;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 150%;
   background: #fff;
-  padding: 30px 25px;
-}
-.body-bill .header {
-  display: flex;
-  align-items: center;
-  padding-bottom: 13px;
-  border-bottom: 3px solid #222;
-  margin-bottom: 17px;
-}
-.body-bill .logo {
-  width: 39px;
-  margin-right: 15px;
-}
-.body-bill .logo svg {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-.body-bill .total {
-  display: block;
-}
-.body-bill .total .name {
-  font-size: 17px;
-  line-height: 100%;
-  color: #222222;
-  margin-bottom: 8px;
-}
-.body-bill .total .contact-flex {
-  display: flex;
-}
-.body-bill .total .contact-total {
-  display: flex;
-  align-items: center;
-}
-.body-bill .total .contact-total + .contact-total {
-  margin-left: 14px;
-}
-.body-bill .total .icn {
-  width: 11px;
-  margin-right: 5px;
-}
-.body-bill .total .icn svg {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-.body-bill .total .txt {
-  color: #222222;
-}
-.body-bill .total-bill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 13px;
-  border-bottom: 2px solid #222;
-  margin-bottom: 17px;
-}
-.body-bill .total-bill .text {
-  font-size: 12px;
-  line-height: 130%;
-  margin-bottom: 5px;
-}
-.body-bill .total-bill .code {
-  font-size: 15px;
-  font-family: Roboto-Bold;
-  margin-bottom: 4px;
-}
-.body-bill .total-bill .date {
-  font-size: 12px;
-}
-.body-bill .qr-code {
-  width: 60px;
-}
-.body-bill .qr-code img {
-  width: 100%;
-  display: block;
-}
-.body-bill .detail-bill {
-  padding-bottom: 13px;
-  border-bottom: 2px solid #222;
-  margin-bottom: 17px;
-}
-.body-bill .detail-bill h2 {
-  font-size: 15px;
-  font-family: Roboto-Bold;
-  margin-bottom: 14px;
-}
-.body-bill .detail-bill .list-order {
-  list-style-type: none;
-  padding: 0;
-}
-.body-bill .detail-bill .list-order li + li {
-  margin-top: 13px;
-}
-.body-bill .detail-bill .order-info {
-  flex-grow: 1;
-}
-.body-bill .detail-bill .order-detail {
-  display: flex;
-}
-.body-bill .detail-bill .order-detail .quantity {
-  font-size: 12px;
-  width: 26px;
-  flex-shrink: 0;
-}
-.body-bill .detail-bill .order-detail .name-food {
-  font-family: Roboto-Bold;
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-.body-bill .detail-bill .order-detail .price-original {
-  font-size: 12px;
-  font-family: Roboto-Regular;
-}
-.body-bill .detail-bill .price-result {
-  font-family: Roboto-Bold;
-  width: 70px;
-  flex-shrink: 0;
-  margin-left: 10px;
-  text-align: right;
-  font-size: 12px;
-}
-.body-bill .money-bill {
-  padding-bottom: 13px;
-  border-bottom: 2px solid #222;
-  margin-bottom: 17px;
-}
-.body-bill .money-bill .type-money {
-  font-family: Roboto-Bold;
-  margin-bottom: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.body-bill .money-bill .type-money.big-type {
-  margin: 12px 0;
-}
-.body-bill .money-bill .type-money.big-type .type {
-  font-size: 15px;
-}
-.body-bill .money-bill .type-money.big-type .money {
-  font-size: 16px;
-}
-.body-bill .money-bill .type-money.italic-type {
-  font-family: Roboto-Italic;
-}
-.body-bill .money-bill .type-money .type {
-  font-size: 12px;
-}
-.body-bill .money-bill .type-money .money {
-  font-size: 12px;
-}
-.body-bill .member-total {
-  padding-bottom: 13px;
-  border-bottom: 2px solid #222;
-  margin-bottom: 17px;
-}
-.body-bill .member-total .member-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 13px;
-}
-.body-bill .member-total .member-info .name {
-  font-size: 15px;
-  flex-grow: 1;
-}
-.body-bill .member-total .member-info .phone {
-  font-size: 14px;
-  color: #222222;
-  width: 78px;
-  flex-shrink: 0;
-  text-align: right;
-  margin-left: 10px;
-}
-.body-bill .member-total .member-add {
-  font-size: 12px;
-  margin-bottom: 14px;
-  font-family: Roboto-Bold;
-}
-.body-bill .member-total .info-flex {
-  display: flex;
-  margin-bottom: 7px;
-}
-.body-bill .member-total .info-flex .type {
-  width: 88px;
-  flex-shrink: 0;
-  margin-right: 13px;
-}
-.body-bill .member-total .info-flex .text {
-  font-family: Roboto-Bold;
-  flex-grow: 1;
-}
-.body-bill .text-bottom {
-  font-size: 13px;
-  text-align: center;
-  font-family: Roboto-Bold;
-}
+  padding: 30px 25px; }
+  .body-bill .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+    border-bottom: 3px solid #222;
+    margin-bottom: 17px; }
+  .body-bill .logo {
+    width: 39px;
+    margin-right: 15px; }
+    .body-bill .logo svg {
+      width: 100%;
+      display: block;
+      height: auto; }
+  .body-bill .total {
+    display: block; }
+    .body-bill .total .name {
+      font-size: 17px;
+      line-height: 100%;
+      color: #222222;
+      margin-bottom: 8px; }
+    .body-bill .total .contact-flex {
+      display: flex; }
+    .body-bill .total .contact-total {
+      display: flex;
+      align-items: center; }
+      .body-bill .total .contact-total + .contact-total {
+        margin-left: 14px; }
+    .body-bill .total .icn {
+      width: 11px;
+      margin-right: 5px; }
+      .body-bill .total .icn svg {
+        width: 100%;
+        display: block;
+        height: auto; }
+    .body-bill .total .txt {
+      color: #222222; }
+  .body-bill .total-bill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 17px; }
+    .body-bill .total-bill .text {
+      font-size: 15px;
+      line-height: 130%;
+      margin-bottom: 5px; }
+    .body-bill .total-bill .code {
+      font-size: 16px;
+      font-family: Roboto-Bold;
+      margin-bottom: 4px; }
+    .body-bill .total-bill .date {
+      font-size: 15px; }
+  .body-bill .qr-code {
+    width: 60px; }
+    .body-bill .qr-code img {
+      width: 100%;
+      display: block; }
+  .body-bill .detail-bill {
+    padding-bottom: 13px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 17px; }
+    .body-bill .detail-bill h2 {
+      font-size: 16px;
+      font-family: Roboto-Bold;
+      margin-bottom: 14px; }
+    .body-bill .detail-bill .list-order {
+      list-style-type: none;
+      padding: 0; }
+      .body-bill .detail-bill .list-order li + li {
+        margin-top: 13px; }
+    .body-bill .detail-bill .order-info {
+      flex-grow: 1; }
+    .body-bill .detail-bill .order-detail {
+      display: flex; }
+      .body-bill .detail-bill .order-detail .quantity {
+        font-size: 15px;
+        width: 26px;
+        flex-shrink: 0; }
+      .body-bill .detail-bill .order-detail .name-food {
+        font-family: Roboto-Bold;
+        font-size: 15px;
+        margin-bottom: 4px; }
+      .body-bill .detail-bill .order-detail .price-original {
+        font-size: 14px;
+        font-family: Roboto-Regular; }
+    .body-bill .detail-bill .price-result {
+      font-family: Roboto-Bold;
+      width: 70px;
+      flex-shrink: 0;
+      margin-left: 10px;
+      text-align: right;
+      font-size: 15px; }
+  .body-bill .money-bill {
+    padding-bottom: 13px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 17px; }
+    .body-bill .money-bill .type-money {
+      font-family: Roboto-Bold;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .body-bill .money-bill .type-money.big-type {
+        margin: 12px 0; }
+        .body-bill .money-bill .type-money.big-type .type {
+          font-size: 16px; }
+        .body-bill .money-bill .type-money.big-type .money {
+          font-size: 16px; }
+      .body-bill .money-bill .type-money.italic-type {
+        font-family: Roboto-Italic; }
+      .body-bill .money-bill .type-money .type {
+        font-size: 15px; }
+      .body-bill .money-bill .type-money .money {
+        font-size: 15px; }
+  .body-bill .member-total {
+    padding-bottom: 13px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 17px; }
+    .body-bill .member-total .member-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 13px; }
+      .body-bill .member-total .member-info .name {
+        font-size: 16px;
+        flex-grow: 1; }
+      .body-bill .member-total .member-info .phone {
+        font-size: 15px;
+        color: #222222;
+        width: 78px;
+        flex-shrink: 0;
+        text-align: right;
+        margin-left: 10px; }
+    .body-bill .member-total .member-add {
+      font-size: 15px;
+      margin-bottom: 14px;
+      font-family: Roboto-Bold; }
+    .body-bill .member-total .info-flex {
+      display: flex;
+      margin-bottom: 7px; }
+      .body-bill .member-total .info-flex .type {
+        width: 100px;
+        flex-shrink: 0;
+        margin-right: 13px; }
+      .body-bill .member-total .info-flex .text {
+        font-family: Roboto-Bold;
+        flex-grow: 1; }
+  .body-bill .text-bottom {
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto-Bold; }
 
 /*# sourceMappingURL=print.css.map */

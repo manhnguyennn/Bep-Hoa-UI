@@ -29,12 +29,13 @@ body {
 }
 
 .body-bill {
-  width: 300px;
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
   color: #111;
   font-family: Roboto-Medium;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 150%;
   background: #fff;
   padding: 30px 25px;
@@ -97,17 +98,17 @@ body {
     border-bottom: 2px solid #222;
     margin-bottom: 17px;
     .text {
-      font-size: 12px;
+      font-size: 15px;
       line-height: 130%;
       margin-bottom: 5px;
     }
     .code {
-      font-size: 15px;
+      font-size: 16px;
       font-family: Roboto-Bold;
       margin-bottom: 4px;
     }
     .date {
-      font-size: 12px;
+      font-size: 15px;
 
     }
   }
@@ -124,7 +125,7 @@ body {
     border-bottom: 2px solid #222;
     margin-bottom: 17px;
     h2 {
-      font-size: 15px;
+      font-size: 16px;
       font-family: Roboto-Bold;
       margin-bottom: 14px;
     }
@@ -143,18 +144,18 @@ body {
       display: flex;
 
       .quantity {
-        font-size: 12px;
+        font-size: 15px;
         width: 26px;
         flex-shrink: 0;
       }
 
       .name-food {
         font-family: Roboto-Bold;
-        font-size: 12px;
+        font-size: 15px;
         margin-bottom: 4px;
       }
       .price-original {
-        font-size: 12px;
+        font-size: 14px;
         font-family: Roboto-Regular;
       }
     }
@@ -164,7 +165,7 @@ body {
       flex-shrink: 0;
       margin-left: 10px;
       text-align: right;
-      font-size: 12px;
+      font-size: 15px;
 
     }
   }
@@ -178,7 +179,7 @@ body {
       &.big-type {
         margin: 12px 0;
         .type {
-          font-size: 15px;
+          font-size: 16px;
         }
         .money {
           font-size: 16px;
@@ -193,11 +194,11 @@ body {
       align-items: center;
       justify-content: space-between;
       .type {
-        font-size: 12px;
+        font-size: 15px;
 
       }
       .money {
-        font-size: 12px;
+        font-size: 15px;
       }
     }
   }
@@ -211,11 +212,11 @@ body {
       justify-content: space-between;
       margin-bottom: 13px;
       .name {
-        font-size: 15px;
+        font-size: 16px;
         flex-grow: 1;
       }
       .phone {
-        font-size: 14px;
+        font-size: 15px;
         color: #222222;
         width: 78px;
         flex-shrink: 0;
@@ -224,7 +225,7 @@ body {
       }
     }
     .member-add {
-      font-size: 12px;
+      font-size: 15px;
       margin-bottom: 14px;
       font-family: Roboto-Bold;
     }
@@ -232,7 +233,7 @@ body {
       display: flex;
       margin-bottom: 7px;
       .type {
-        width: 88px;
+        width: 100px;
         flex-shrink: 0;
         margin-right: 13px;
       }
@@ -243,7 +244,7 @@ body {
     }
   }
   .text-bottom {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     font-family: Roboto-Bold;
   }
