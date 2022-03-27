@@ -3956,6 +3956,9 @@ svg {
   margin: 0 auto;
   max-width: 100%;
 }
+.fn-content.fn-print {
+  padding: 30px 0;
+}
 .fn-content .icon-success {
   width: 86px;
   margin: 0 auto 20px;
