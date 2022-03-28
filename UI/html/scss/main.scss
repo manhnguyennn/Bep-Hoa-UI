@@ -6,11 +6,9 @@
 @import "mixins";
 @import "commons";
 @import "fonts";
-
 //Layout
 @import "header";
 @import "footer";
-
 //Page
 @import "home";
 @import "popup-cart";
@@ -25,13 +23,11 @@
 }
 
 .widthCT {
-  width: 100%;
+  min-width: 1080px;
   max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .bh-wrapper {
@@ -39,7 +35,7 @@
 
   }
   .widthCT {
-    width: 836px;
+    width: 1080px;
     padding: 0 20px;
   }
 }
