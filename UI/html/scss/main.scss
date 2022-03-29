@@ -45,3 +45,9 @@
     width: 63.17vw;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .widthCT {
+    min-width: 100%;
+  }
+}

@@ -197,14 +197,27 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
+
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#head-menu').offset().top;
+
+                if (top > ruler) {
+                    $('.tagBox').addClass('active');
+                } else {
+                    $('.tagBox').removeClass('active');
+                }
+            });
+
+
             let swiperMenuTags = new Swiper(".menu__tags-list", {
                 slidesPerView: 'auto',
                 spaceBetween: 0,
                 freeMode: true,
                 navigation: {
-                    nextEl: ".menu__tags-list .swiper-button-next",
-                    prevEl: ".menu__tags-list .swiper-button-prev",
-                },
+                    nextEl: ".tagBox .swiper-button-next",
+                    prevEl: ".tagBox .swiper-button-prev"
+                }
             });
             let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
                 slidesPerView: 'auto',
