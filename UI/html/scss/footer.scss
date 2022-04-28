@@ -13,11 +13,13 @@
     display: block;
     width: 50px;
     margin-right: 100px;
+
     svg {
       path {
         &:nth-child(1) {
           fill: #fff;
         }
+
         &:nth-child(2) {
           fill: var(--colorRed);
         }
@@ -35,7 +37,7 @@
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 18px;
+    grid-row-gap: 25px;
   }
 
   .info-footer {
@@ -69,6 +71,18 @@
 
     width: 24px;
     display: block;
+  }
+
+  .policy {
+    width: 159px;
+    font-size: 12px;
+    line-height: 130%;
+    font-family: BVNPro-Regular;
+    text-align: right;
+    display: block;
+    margin: auto 0;
+    color: #FFFFFF;
+
   }
 
   .credit {
@@ -149,6 +163,7 @@
         }
       }
     }
+
     .info-footer {
       color: #111;
       font-size: 13px;
@@ -156,13 +171,14 @@
     }
 
     .socialsBox {
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .list-socials {
-
+      order: 3;
     }
 
     .social-link {
@@ -187,9 +203,17 @@
       }
     }
 
+    .policy {
+      order: 1;
+      width: 100%;
+      margin-bottom: 15px;
+      color: #78614B;
+      text-align: left;
+    }
+
     .credit {
       color: #78614B;
-
+      order: 2;
     }
   }
 

@@ -683,7 +683,7 @@
       border-radius: 6px;
       display: flex;
       align-items: center;
-      padding: 16px 20px;
+      padding: 16px 14px;
 
       .icn {
         width: 18px;
@@ -746,6 +746,20 @@
         color: #629050;
       }
     }
+  }
+
+  .policy-note {
+    font-size: 12px;
+    line-height: 140%;
+    font-family: BVNPro-Regular;
+    margin-top: 23px;
+
+    a {
+      color: var(--colorRed);
+    }
+
+    color: #666666;
+
   }
 
   .voucherBox {
@@ -976,8 +990,9 @@
           font-family: BVNPro-Medium;
         }
       }
-      .choose-time-order{
-        .select-timeBox{
+
+      .choose-time-order {
+        .select-timeBox {
           height: auto;
           width: 130px;
         }
