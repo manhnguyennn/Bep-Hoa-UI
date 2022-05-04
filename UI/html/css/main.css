@@ -2151,6 +2151,13 @@ svg {
   .address-store .dropdown-box .loca-change {
     font-size: 13px;
   }
+
+  .bh-home_bner-top .swiper-hbner .bg-blur {
+    height: 15px;
+  }
+  .bh-home_bner-top .swiper-hbner .paginationBox {
+    height: 15px;
+  }
 }
 .PopUp-cart {
   width: 100vw;

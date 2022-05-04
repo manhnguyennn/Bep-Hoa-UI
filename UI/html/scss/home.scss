@@ -96,9 +96,11 @@
   padding: 16px 20px 0;
   position: relative;
   margin-bottom: 30px;
+
   .bnerBox {
     @extend .widthCT;
   }
+
   &:before {
     width: 100%;
     height: calc(100% - 20px);
@@ -249,6 +251,7 @@
     align-items: center;
     margin-bottom: 10px;
     @extend .widthCT;
+
     .icn {
       flex-grow: 1;
       height: 4px;
@@ -296,10 +299,12 @@
     left: 0;
     background: #ffffff;
     z-index: 99 !important;
+
     .swiperBox {
       @extend .widthCT;
       position: relative;
     }
+
     .swiper-button-prev {
       display: none;
     }
@@ -364,7 +369,9 @@
   &.bh-loading {
     min-height: 70vh;
   }
+
   @extend .widthCT;
+
   li {
     &:nth-child(1) {
       @extend .bt05;
@@ -636,6 +643,7 @@
 .bh-bner-footer {
   margin-bottom: 22px;
   @extend .widthCT;
+
   .heading {
     display: flex;
     justify-content: center;
@@ -776,6 +784,7 @@
       border-radius: 0 5px 5px 0;
 
     }
+
     .swiper-container {
       &:hover {
         .swiper-button-next, .swiper-button-prev {
@@ -783,6 +792,7 @@
         }
       }
     }
+
     .swiper-button-next, .swiper-button-prev {
       transition: opacity .15s;
       width: 27px;
@@ -801,6 +811,7 @@
         width: 12px;
         height: auto;
         display: block;
+
         path {
           fill: #FFFFFF;
         }
@@ -847,6 +858,7 @@
     .swiper-container-free-mode > .swiper-wrapper {
       transition-timing-function: linear;
     }
+
     .swiper-bner-footer {
       .swiper-slide {
         padding: 0;
@@ -934,13 +946,16 @@
       &.active {
         border-bottom: 1px solid rgba(0, 0, 0, .1);
       }
+
       padding: 10px 0;
 
       top: 70px;
       margin: 20px 0;
+
       .swiper-button-next {
         right: -25px;
       }
+
       .swiper-button-prev {
         left: -25px;
       }
@@ -949,6 +964,7 @@
         &.swiper-button-disabled {
           opacity: .2;
         }
+
         display: block;
         background: none;
         border: none;
@@ -958,22 +974,27 @@
         width: 34px;
         height: 34px;
         opacity: 1;
+
         svg {
           width: 100%;
           display: block;
           height: auto;
         }
       }
+
       .menu__tags-list {
         padding: 0;
+
         .swiper-wrapper {
           white-space: unset;
           width: 100%;
           overflow: unset;
         }
+
         .tags-filter {
           height: 34px;
         }
+
         .swiper-slide {
           &:nth-child(1) {
             margin-left: 0;
@@ -1168,4 +1189,20 @@
     }
   }
 
+  .bh-home_bner-top {
+    .swiper-hbner {
+
+
+      .bg-blur {
+        height: 15px;
+      }
+
+      .paginationBox {
+        height: 15px;
+
+      }
+
+
+    }
+  }
 }
