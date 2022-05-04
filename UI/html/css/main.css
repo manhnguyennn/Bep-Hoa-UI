@@ -4095,7 +4095,7 @@ svg {
   color: #222222;
 }
 .fn-content .od-id .price {
-  font-size: 14px;
+  font-size: 24px;
   text-align: center;
   line-height: 100%;
   font-family: BVNPro-SemiBold;
@@ -4125,7 +4125,7 @@ svg {
   color: #111111;
 }
 .fn-content .warning .price {
-  font-size: 14px;
+  font-size: 24px;
   text-align: center;
   line-height: 100%;
   font-family: BVNPro-SemiBold;
