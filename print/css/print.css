@@ -1,12 +1,10 @@
 html > * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .body-bill {
   width: 303px;
@@ -17,206 +15,186 @@ body {
   font-size: 12px;
   line-height: 130%;
   background: #fff;
-  padding: 0 5px;
-}
-.body-bill .header {
-  display: flex;
-  align-items: center;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #000;
-  margin-bottom: 3px;
-}
-.body-bill .logo {
-  width: 30px;
-  margin-right: 10px;
-}
-.body-bill .logo svg {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-.body-bill .total {
-  display: block;
-}
-.body-bill .total .name {
-  font-size: 15px;
-  line-height: 100%;
-  color: #000000;
-  margin-bottom: 3px;
-  font-weight: 700;
-}
-.body-bill .total .contact-flex {
-  display: flex;
-}
-.body-bill .total .contact-total {
-  display: flex;
-  align-items: center;
-}
-.body-bill .total .contact-total + .contact-total {
-  margin-left: 14px;
-}
-.body-bill .total .icn {
-  width: 11px;
-  margin-right: 5px;
-}
-.body-bill .total .icn svg {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-.body-bill .total .txt {
-  color: #000000;
-}
-.body-bill .total-bill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #000;
-  margin-bottom: 5px;
-}
-.body-bill .total-bill .text {
-  font-size: 12px;
-  line-height: 130%;
-  margin-bottom: 5px;
-}
-.body-bill .total-bill .code {
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-.body-bill .total-bill .date {
-  font-size: 12px;
-}
-.body-bill .qr-code {
-  width: 60px;
-}
-.body-bill .qr-code img {
-  width: 100%;
-  display: block;
-}
-.body-bill .detail-bill {
-  border-bottom: 1px solid #000;
-  margin-bottom: 5px;
-}
-.body-bill .detail-bill h2 {
-  font-size: 13px;
-  font-weight: 700;
-  margin: 0 auto 5px;
-}
-.body-bill .detail-bill .list-order {
-  margin: 2px 0;
-  list-style-type: none;
-  padding: 0;
-}
-.body-bill .detail-bill .list-order li + li {
-  margin-top: 2px;
-}
-.body-bill .detail-bill .order-info {
-  flex-grow: 1;
-}
-.body-bill .detail-bill .order-detail {
-  display: flex;
-}
-.body-bill .detail-bill .order-detail .quantity {
-  font-size: 12px;
-  width: 26px;
-  flex-shrink: 0;
-}
-.body-bill .detail-bill .order-detail .name-food {
-  font-weight: 700;
-  font-size: 12px;
-}
-.body-bill .detail-bill .order-detail .price-original {
-  font-size: 11px;
-  font-family: Roboto-Regular;
-}
-.body-bill .detail-bill .price-result {
-  font-weight: 700;
-  width: 65px;
-  flex-shrink: 0;
-  margin-left: 10px;
-  text-align: right;
-  font-size: 12px;
-}
-.body-bill .money-bill {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #000;
-  margin-bottom: 5px;
-}
-.body-bill .money-bill .type-money {
-  font-weight: 700;
-  margin-bottom: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.body-bill .money-bill .type-money.big-type {
-  margin: 2px 0;
-}
-.body-bill .money-bill .type-money.big-type .type {
-  font-size: 13px;
-}
-.body-bill .money-bill .type-money.big-type .money {
-  font-size: 13px;
-}
-.body-bill .money-bill .type-money.italic-type {
-  font-style: italic;
-  font-weight: 500;
-}
-.body-bill .money-bill .type-money .type {
-  font-size: 12px;
-}
-.body-bill .money-bill .type-money .money {
-  font-size: 12px;
-}
-.body-bill .member-total {
-  border-bottom: 1px solid #000;
-  margin-bottom: 3px;
-}
-.body-bill .member-total .member-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2px;
-}
-.body-bill .member-total .member-info .name {
-  font-size: 13px;
-  line-height: 17px;
-  font-weight: 700;
-  flex-grow: 1;
-}
-.body-bill .member-total .member-info .phone {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 700;
-  width: 78px;
-  flex-shrink: 0;
-  text-align: right;
-  margin-left: 10px;
-}
-.body-bill .member-total .member-add {
-  font-size: 12px;
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-.body-bill .member-total .info-flex {
-  display: flex;
-  margin-bottom: 3px;
-}
-.body-bill .member-total .info-flex .type {
-  width: 80px;
-  flex-shrink: 0;
-  margin-right: 10px;
-}
-.body-bill .member-total .info-flex .text {
-  font-weight: 700;
-  flex-grow: 1;
-}
-.body-bill .text-bottom {
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  font-weight: 700;
-}
+  padding: 0 5px; }
+  .body-bill .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000;
+    margin-bottom: 3px; }
+  .body-bill .logo {
+    width: 30px;
+    margin-right: 10px; }
+    .body-bill .logo svg {
+      width: 100%;
+      display: block;
+      height: auto; }
+  .body-bill .total {
+    display: block; }
+    .body-bill .total .name {
+      font-size: 15px;
+      line-height: 100%;
+      color: #000000;
+      margin-bottom: 3px;
+      font-weight: 700; }
+    .body-bill .total .contact-flex {
+      display: flex; }
+    .body-bill .total .contact-total {
+      display: flex;
+      align-items: center; }
+      .body-bill .total .contact-total + .contact-total {
+        margin-left: 14px; }
+    .body-bill .total .icn {
+      width: 11px;
+      margin-right: 5px; }
+      .body-bill .total .icn svg {
+        width: 100%;
+        display: block;
+        height: auto; }
+    .body-bill .total .txt {
+      color: #000000; }
+  .body-bill .total-bill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px; }
+    .body-bill .total-bill .text {
+      font-size: 12px;
+      line-height: 130%;
+      margin-bottom: 5px; }
+    .body-bill .total-bill .code {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 4px; }
+    .body-bill .total-bill .date {
+      font-size: 12px; }
+  .body-bill .qr-code {
+    width: 60px; }
+    .body-bill .qr-code img {
+      width: 100%;
+      display: block; }
+  .body-bill .detail-bill {
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px; }
+    .body-bill .detail-bill h2 {
+      font-size: 13px;
+      font-weight: 700;
+      margin: 0 auto 5px; }
+    .body-bill .detail-bill .list-order {
+      margin: 2px 0;
+      list-style-type: none;
+      padding: 0; }
+      .body-bill .detail-bill .list-order li + li {
+        margin-top: 2px; }
+    .body-bill .detail-bill .order-info {
+      flex-grow: 1; }
+    .body-bill .detail-bill .order-detail {
+      display: flex; }
+      .body-bill .detail-bill .order-detail .quantity {
+        font-size: 12px;
+        width: 26px;
+        flex-shrink: 0; }
+      .body-bill .detail-bill .order-detail .name-food {
+        font-weight: 700;
+        font-size: 12px; }
+      .body-bill .detail-bill .order-detail .opt-food {
+        margin: 2px 0;
+        padding-left: 10px;
+        position: relative;
+        font-weight: 600;
+        font-size: 10px; }
+        .body-bill .detail-bill .order-detail .opt-food:before {
+          width: 3px;
+          height: 3px;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          display: block;
+          border-radius: 50%;
+          box-sizing: border-box;
+          content: '';
+          background: #000; }
+      .body-bill .detail-bill .order-detail .note-food {
+        font-size: 10px;
+        font-style: italic;
+        margin-bottom: 3px; }
+      .body-bill .detail-bill .order-detail .price-original {
+        font-size: 11px;
+        font-family: Roboto-Regular; }
+    .body-bill .detail-bill .price-result {
+      text-align: right;
+      width: 65px;
+      flex-shrink: 0;
+      margin-left: 10px; }
+    .body-bill .detail-bill .price-ori {
+      font-weight: 700;
+      font-size: 12px; }
+    .body-bill .detail-bill .price-opt {
+      font-size: 9px;
+      font-weight: 600; }
+  .body-bill .money-bill {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px; }
+    .body-bill .money-bill .type-money {
+      font-weight: 700;
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .body-bill .money-bill .type-money.big-type {
+        margin: 2px 0; }
+        .body-bill .money-bill .type-money.big-type .type {
+          font-size: 13px; }
+        .body-bill .money-bill .type-money.big-type .money {
+          font-size: 13px; }
+      .body-bill .money-bill .type-money.italic-type {
+        font-style: italic;
+        font-weight: 500; }
+      .body-bill .money-bill .type-money .type {
+        font-size: 12px; }
+      .body-bill .money-bill .type-money .money {
+        font-size: 12px; }
+  .body-bill .member-total {
+    border-bottom: 1px solid #000;
+    margin-bottom: 3px; }
+    .body-bill .member-total .member-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2px; }
+      .body-bill .member-total .member-info .name {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 700;
+        flex-grow: 1; }
+      .body-bill .member-total .member-info .phone {
+        font-size: 13px;
+        color: #000000;
+        font-weight: 700;
+        width: 78px;
+        flex-shrink: 0;
+        text-align: right;
+        margin-left: 10px; }
+    .body-bill .member-total .member-add {
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-weight: 700; }
+    .body-bill .member-total .info-flex {
+      display: flex;
+      margin-bottom: 3px; }
+      .body-bill .member-total .info-flex .type {
+        width: 80px;
+        flex-shrink: 0;
+        margin-right: 10px; }
+      .body-bill .member-total .info-flex .text {
+        font-weight: 700;
+        flex-grow: 1; }
+  .body-bill .text-bottom {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: 700; }
 
 /*# sourceMappingURL=print.css.map */
