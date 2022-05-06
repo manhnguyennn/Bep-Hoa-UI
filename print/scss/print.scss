@@ -158,6 +158,10 @@ body {
         position: relative;
         font-weight: 600;
         font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         &:before {
           width: 3px;
           height: 3px;
@@ -170,6 +174,18 @@ body {
           content: '';
           background: #000;
         }
+      }
+      .opt-list {
+        width: calc(100% + 75px);
+        list-style-type: none;
+        padding: 0;
+        li {
+          padding: 0;
+        }
+      }
+      .prc-opt {
+        font-size: 9px;
+        font-weight: 600;
       }
       .note-food {
         font-size: 10px;
@@ -193,10 +209,6 @@ body {
       font-weight: 700;
 
       font-size: 12px;
-    }
-    .price-opt {
-      font-size: 9px;
-      font-weight: 600;
     }
 
   }
