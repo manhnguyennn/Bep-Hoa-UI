@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html > * {
   margin: 0;
   padding: 0;
@@ -136,7 +137,7 @@ body {
   justify-content: space-between;
 }
 .body-bill .detail-bill .order-detail .opt-food:before {
-  content: "-";
+  content: "●";
   position: absolute;
   left: 0;
 }
