@@ -20,6 +20,10 @@
 
 .bh-wrapper {
   padding-top: 60px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
 }
 
