@@ -4,6 +4,7 @@
   &.fancybox-content {
     background: transparent;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
     height: -webkit-fill-available;
   }
@@ -930,8 +931,7 @@
   .Popup-checkout {
 
     &.fancybox-content {
-      height: 100vh;
-      overflow: scroll;
+
     }
 
     .infoBox {

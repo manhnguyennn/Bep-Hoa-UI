@@ -2176,6 +2176,7 @@ svg {
   .Popup-checkout.fancybox-content {
     background: transparent;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
     height: -webkit-fill-available; }
   .Popup-checkout .popup-content {
@@ -2953,9 +2954,6 @@ svg {
   display: none; }
 
 @media screen and (min-width: 768px) {
-  .Popup-checkout.fancybox-content {
-    height: 100vh;
-    overflow: scroll; }
   .Popup-checkout .infoBox {
     border: 0.5px solid rgba(0, 0, 0, 0.15);
     -webkit-box-sizing: border-box;
