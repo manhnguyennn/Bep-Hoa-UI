@@ -3,9 +3,9 @@
 
   &.fancybox-content {
     background: transparent;
-    overflow: hidden;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    overflow-y: scroll;
+    height: 100vh;
+    height: -webkit-fill-available;
   }
 
   .popup-content {
@@ -156,7 +156,6 @@
 
       }
     }
-
 
     .date-order {
       display: flex;
@@ -394,7 +393,6 @@
       & + .form-input {
         margin-top: 15px;
       }
-
 
       &.error {
         .warning {
