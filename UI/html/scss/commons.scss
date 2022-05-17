@@ -190,7 +190,6 @@ svg {
   animation: 0.75s linear infinite spinner-border;
 }
 
-
 .bh-loading {
   position: relative;
   cursor: default;
@@ -226,6 +225,25 @@ svg {
   }
 }
 
+.btn-loading {
+  position: relative;
+  cursor: default;
+  color: transparent !important;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 99999;
+    top: calc((100% - 16px) / 2);
+    left: calc((100% - 16px) / 2);
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: 0.75s linear infinite spinner-border;
+  }
+}
 
 /* Custom radio options order */
 .form-radio {
