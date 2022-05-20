@@ -13,6 +13,30 @@
   }
 }
 
+.cateBox {
+  background: #F8F8F8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.list-cate-child {
+  &.active {
+    max-height: 1000px;
+  }
+  margin-bottom: 0;
+  transition: all .5s;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 56px;
+  list-style-type: none;
+  li {
+    padding-top: 1rem;
+  }
+}
+
 .upload-food {
   width: 340px;
   padding-right: 1rem;
@@ -78,7 +102,6 @@
 
       }
 
-
       li {
         width: 100%;
       }
@@ -86,7 +109,6 @@
       .images-box {
         display: flex;
         flex-wrap: wrap;
-
 
       }
       .images-fd {
@@ -102,7 +124,7 @@
           border: 1px solid #D8D6DE;
           box-sizing: border-box;
           background: #fff;
-          color:  var(--colorPurple);
+          color: var(--colorPurple);
           font-family: Roboto-Medium;
           border-radius: 50%;
           display: flex;
@@ -527,9 +549,9 @@
   }
 }
 
-.food-qedit-btn{
+.food-qedit-btn {
   display: block;
-  .icn{
+  .icn {
     color: var(--color111);
     display: block;
     font-size: 0.9rem;
