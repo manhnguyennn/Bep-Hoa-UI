@@ -43,6 +43,15 @@ svg {
   align-items: center;
 }
 
+@keyframes mover {
+  0% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 /* Custom input number order */
 .number-order {
   display: flex;
@@ -201,7 +210,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 99;
+    z-index: 99999;
     background: rgba(255, 255, 255, .65);
     display: flex;
     align-items: center;
