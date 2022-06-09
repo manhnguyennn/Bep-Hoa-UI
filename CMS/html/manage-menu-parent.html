@@ -229,7 +229,7 @@
             <div class="funcs-contanier container mb-2">
                 <div class="row">
 
-                    <div class="col-3 d-flex">
+                    <div class="col-6 d-flex">
                         <div class="dropdown">
                             <a href="javascript:;" type="button" class="btn btn-outline-primary dropdown-toggle"
                                id="dropdownMenuButton"
@@ -244,8 +244,104 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9 d-flex justify-content-end">
-                        <a href="javascript:;" type="button" class="btn bg-primary text-white btn-add"
+                    <div class="col-3">
+                        <a href="javascript:;" type="button" class="btn btn-dark w-100 text-white "
+                           data-bs-toggle="modal"
+                           data-bs-target="#ModalDraggable">
+                            Sắp xếp thứ tự danh mục
+                        </a>
+                        <div class="modal fade" id="ModalDraggable" tabindex="-1"
+                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalDraggableTitle">Sắp xếp thứ tự danh mục</h5>
+                                        <a href="javascript:;" data-bs-dismiss="modal"
+                                           aria-label="Close" class="btn-close-modal icon-e-remove-2">
+
+
+                                        </a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group" id="basic-list-group">
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text">Món mới</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text">Món chính</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text">Lẩu</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text">Món nướng</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text">Hải sản</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item draggable">
+                                                <div class="cate-name-drag bh-text-111">
+                                                    <div class="text"> Ăn vặt</div>
+                                                    <div class="icon">
+                                                        <i></i>
+                                                        <i></i>
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <a href="javascript:;" type="button"
+                                           class=" btn btn-outline-secondary waves-effect"
+                                           data-bs-dismiss="modal">Đóng
+                                        </a>
+                                        <a href="javascript:;" type="button"
+                                           class="btn btn-primary waves-effect waves-float waves-light"
+                                           data-bs-dismiss="modal">Lưu
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <a href="javascript:;" type="button" class="btn bg-primary w-100 text-white btn-add"
                            data-bs-toggle="modal"
                            data-bs-target="#exampleModalCenter">
                             <span class="txt">
@@ -256,7 +352,7 @@
                         <!-- Vertically centered scrollable modal -->
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1"
                              aria-labelledby="exampleModalScrollableTitle" style="display: none;" aria-hidden="true">
-                            <div class="modal-dialog modal-md modal-dialog-centered modal-manage-food">
+                            <div class="modal-dialog modal-md modal-dialog-centered modal-manage-food modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalCenterTitle">Tạo nhóm sản phẩm mới</h5>
@@ -301,6 +397,118 @@
                                                             </li>
 
                                                         </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-input mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="form-check form-check-success form-switch">
+                                                            <input type="checkbox" checked="" class="form-check-input" id="customSwitch4">
+                                                        </div>
+                                                        <b class="bh-text-111 fs-6 ml-75">Hiển thị ngoài trang</b>
+                                                    </div>
+                                                </div>
+                                                <div class="form-input mb-2">
+                                                    <label class="form-label" for="basicInput">
+                                                        Avatar Web <span>*</span>
+                                                    </label>
+                                                    <div class="upload-food w-100">
+                                                        <div class="upload-images">
+                                                            <a href="javascript:;" class="upload-btn btn btn-primary btn-group align-items-center justify-content-center mb-1 waves-effect waves-float waves-light">
+                                                    <span class="txt">
+                                                        Tải ảnh lên
+                                                    </span>
+                                                                <span class="icn icon-move-up"></span>
+                                                            </a>
+                                                            <div class="text text-center">
+                                                                Tải lên tối đa 1 ảnh <br>
+                                                                Dung lượng mỗi ảnh dưới 2MB
+                                                            </div>
+                                                        </div>
+                                                        <ul class="list-images">
+                                                            <li>
+                                                                <div class="images-box active">
+                                                                    <div class="images-fd">
+                                                                        <img src="img/menu-ava.png" alt="">
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" class="choose-ava ">
+                                                                            <span class="icn icon-check"></span>
+                                                                            <span class="txt">Avatar</span>
+                                                                        </a>
+                                                                        <a href="javascript:;" class="upload-btn">
+                                                                            <span class="icn icon-move-up"></span>
+                                                                        </a>
+                                                                        <a href="javascript:;" class="remove-btn">
+                                                                            <span class="icn icon-e-remove-2"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="upload-images uploaded">
+                                                            <a href="javascript:;" class="upload-btn btn btn-primary btn-group align-items-center justify-content-center mb-1 waves-effect waves-float waves-light">
+                                                    <span class="txt">
+                                                        Tải ảnh lên
+                                                    </span>
+                                                                <span class="icn icon-move-up"></span>
+                                                            </a>
+                                                            <div class="text text-center">
+                                                                Tải lên tối đa 6 ảnh <br>
+                                                                Dung lượng mỗi ảnh dưới 2MB
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-input mb-2">
+                                                    <label class="form-label" for="basicInput">
+                                                        Avatar Mobile <span>*</span>
+                                                    </label>
+                                                    <div class="upload-food w-100">
+                                                        <div class="upload-images">
+                                                            <a href="javascript:;" class="upload-btn btn btn-primary btn-group align-items-center justify-content-center mb-1 waves-effect waves-float waves-light">
+                                                    <span class="txt">
+                                                        Tải ảnh lên
+                                                    </span>
+                                                                <span class="icn icon-move-up"></span>
+                                                            </a>
+                                                            <div class="text text-center">
+                                                                Tải lên tối đa 1 ảnh <br>
+                                                                Dung lượng mỗi ảnh dưới 2MB
+                                                            </div>
+                                                        </div>
+                                                        <ul class="list-images">
+                                                            <li>
+                                                                <div class="images-box active">
+                                                                    <div class="images-fd">
+                                                                        <img src="img/menu-ava.png" alt="">
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <a href="javascript:;" class="choose-ava ">
+                                                                            <span class="icn icon-check"></span>
+                                                                            <span class="txt">Avatar</span>
+                                                                        </a>
+                                                                        <a href="javascript:;" class="upload-btn">
+                                                                            <span class="icn icon-move-up"></span>
+                                                                        </a>
+                                                                        <a href="javascript:;" class="remove-btn">
+                                                                            <span class="icn icon-e-remove-2"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="upload-images uploaded">
+                                                            <a href="javascript:;" class="upload-btn btn btn-primary btn-group align-items-center justify-content-center mb-1 waves-effect waves-float waves-light">
+                                                    <span class="txt">
+                                                        Tải ảnh lên
+                                                    </span>
+                                                                <span class="icn icon-move-up"></span>
+                                                            </a>
+                                                            <div class="text text-center">
+                                                                Tải lên tối đa 6 ảnh <br>
+                                                                Dung lượng mỗi ảnh dưới 2MB
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-input mb-2">
@@ -398,6 +606,7 @@
                             <th scope="col" class="text-nowrap bh-text-111">Hoạt động</th>
                             <th scope="col" class="text-nowrap bh-text-111">Tên nhóm sản phẩm</th>
                             <th scope="col" class="text-nowrap bh-text-111 ">Danh mục con</th>
+                            <th scope="col" class="text-nowrap bh-text-111 text-center">Hiển thị ngoài trang</th>
 
                             <th scope="col" class="text-nowrap bh-text-111 ">Ngày tạo</th>
 
@@ -426,7 +635,9 @@
                                 <div class="bh-text-666  ">30</div>
                             </td>
 
-
+                            <td class="text-nowrap">
+                                <div class="bh-text-666  text-center">Có</div>
+                            </td>
                             <td class="text-nowrap">
                                 <div class="bh-text-666">08/11/2021</div>
                             </td>
@@ -481,7 +692,9 @@
                                 <div class="bh-text-666  ">10</div>
                             </td>
 
-
+                            <td class="text-nowrap">
+                                <div class="bh-text-666  text-center">Không</div>
+                            </td>
                             <td class="text-nowrap">
                                 <div class="bh-text-666 ">08/11/2021</div>
                             </td>
@@ -535,7 +748,9 @@
                             <td class="text-nowrap">
                                 <div class="bh-text-666  ">130</div>
                             </td>
-
+                            <td class="text-nowrap">
+                                <div class="bh-text-666  text-center">Có</div>
+                            </td>
 
                             <td class="text-nowrap">
                                 <div class="bh-text-666 ">08/11/2021</div>

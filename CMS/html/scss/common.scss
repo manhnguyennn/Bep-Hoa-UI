@@ -58,6 +58,17 @@ body {
   background-color: #B5292F;
 }
 
+.select-city-btn {
+  padding: 1rem 0;
+  font-weight: 500;
+  background: #fff;
+  font-size: 1.1rem;
+  border: 2px solid #EAEAEA;
+  &:hover {
+    border: 2px solid #7367F0;
+  }
+}
+
 .icn {
   display: block;
   font-family: Nucleo;
