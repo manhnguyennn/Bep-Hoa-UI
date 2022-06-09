@@ -799,6 +799,11 @@
 
       display: block;
       box-sizing: border-box;
+      &.active {
+        .icn {
+          opacity: 1;
+        }
+      }
       &.disabled {
         filter: grayscale(1);
         opacity: .4;
@@ -814,12 +819,7 @@
           }
         }
       }
-      &.active {
-        .icn {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
+
       .thumb {
         display: block;
         width: 100%;
@@ -856,9 +856,8 @@
         left: calc((100% - 14px) / 2);
         z-index: 2;
         opacity: 0;
-        visibility: hidden;
         animation: mover 0.5s infinite alternate;
-        transition: opacity .3s ease, visibility .3s ease;
+        transition: opacity .3s ease;
       }
     }
   }

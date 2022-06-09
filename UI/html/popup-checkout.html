@@ -216,10 +216,35 @@
                                 <input type="text" class="input-user-info" placeholder="Địa chỉ">
                             </div>
                         </div>
+                        <div class="form-input">
+                            <div class="dropdown-city active">
 
+                                <a href="javascript:;" class="dropdown-btn">
+                                    <span class="value">Hà Nội</span>
+                                    <span class="txt">Lựa chọn</span>
+                                </a>
+
+                                <div class="droplist-city">
+                                    <div class="label-drop">
+                                        Chọn Tỉnh / TP
+                                    </div>
+                                    <div class="droplist-content">
+                                        <ul class="city-pick">
+                                            <li>
+                                                <a href="javascript:;" class="city-btn">Hà Nội</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;" class="city-btn open-fancy-switch">Hồ Chí
+                                                    Minh</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-input">
                             <div class="input-user select-user">
-                                <div class="city">Hà Nội</div>
+
                                 <select class="select-dict" name="">
                                     <option value="AL" selected disabled>Chọn Quận hoặc Huyện</option>
                                     <option value="WY">Wyoming</option>
@@ -628,5 +653,57 @@
         </div>
     </div>
 </div>
+<div class="Popup-switch" id="popup-switch">
+    <div class="popup-content">
+        <div class="switchBox">
+            <div class="heading">Xác nhận chuyển khu vực</div>
+            <a href="javascript:;" data-fancybox-close="#popup-switch" class="close-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#CBCBCB"/>
+                    <path d="M12.9166 7.08325L7.08325 12.9166" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                    <path d="M12.9166 12.9166L7.08325 7.08325" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                </svg>
+            </a>
+            <div class="content-text">
+                Vì lí do thực đơn mỗi khu vực khác nhau, <br>
+                nên quý khách cần chọn lại món ăn trong giỏ
+            </div>
+            <div class="funcsBox">
+                <a href="javascript:;" data-fancybox-close="#popup-switch" class="cancel-btn">Hủy</a>
+                <a href="javascript:;" class="confirm-btn">Đồng ý</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.open-fancy-switch').off('click').click(function () {
+
+
+        $.fancybox.open({
+            src: '#popup-switch',
+            type: 'inline',
+            opts: {
+                protect: true,
+                animationDuration: 500,
+                touch: false,
+                beforeShow: function () {
+                    $('body').addClass('popup-switch-active');
+
+
+                },
+                afterShow: function () {
+
+
+                },
+                afterClose: function () {
+                    $('body').removeClass('popup-switch-active');
+                }
+            },
+        });
+    });
+
+</script>
 </body>
 </html>
