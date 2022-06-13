@@ -121,7 +121,17 @@
     }
 
   }
+  .bct-hl {
+    width: 150px;
+    display: block;
+    margin-left: 40px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
   .info-company {
+    flex-grow: 1;
     font-size: 12px;
     line-height: 130%;
     font-family: BVNPro-Regular;
@@ -308,6 +318,10 @@
       flex-direction: column;
       gap: 5px;
       opacity: 1;
+      margin-bottom: 20px;
+    }
+    .bct-hl {
+      margin-left: 0;
     }
   }
 }
