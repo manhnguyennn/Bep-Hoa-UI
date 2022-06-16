@@ -387,7 +387,95 @@
     }
 
   }
+  .dropdown-city {
+    &.mb-20{
+      margin-bottom: 20px;
+    }
+    &.active {
+      border-left: 0.5px solid #B5292F;
+      border-right: 0.5px solid #B5292F;
+      border-top: 0.5px solid #B5292F;
+      border-radius: 6px 6px 0 0;
+      .droplist-city {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    transition: .3s ease;
+    background: #FFFFFF;
+    border: 0.5px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    .dropdown-btn {
+      display: block;
+      padding: 12px 0;
+      .value {
+        z-index: 2;
+        position: relative;
+        font-size: 14px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+        left: 0;
+        padding-left: 13px;
+      }
+      .txt {
+        position: absolute;
+        z-index: 1;
+        font-size: 12px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        display: block;
+        right: 14px;
+        top: 14px;
+        color: #B5292F;
 
+      }
+    }
+    .droplist-city {
+      transition: .3s ease;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 0 0 6px 6px;
+      overflow: hidden;
+      box-sizing: border-box;
+      z-index: 10;
+      position: absolute;
+      top: calc(100% + 1px);
+      left: -1px;
+      width: calc(100% + 2px);
+      background: #fff;
+      border-left: 0.5px solid #B5292F;
+      border-right: 0.5px solid #B5292F;
+      border-bottom: 0.5px solid #B5292F;
+      .droplist-content {
+
+      }
+      .label-drop {
+        padding: 10px;
+        user-select: none;
+        font-size: 14px;
+        line-height: 119%;
+        font-family: BVNPro-Regular;
+        color: #999;
+      }
+      .city-btn {
+        &:hover {
+          background: #f1f1f1;
+        }
+        transition: .3s ease;
+        background: #fff;
+        display: block;
+        font-size: 14px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+        padding: 10px;
+      }
+    }
+  }
   .form-input-user {
     padding: 20px;
 
@@ -513,92 +601,7 @@
       display: none;
     }
 
-    .dropdown-city {
-      &.active {
-        border-left: 0.5px solid #B5292F;
-        border-right: 0.5px solid #B5292F;
-        border-top: 0.5px solid #B5292F;
-        border-radius: 6px 6px 0 0;
-        .droplist-city {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-      transition: .3s ease;
-      background: #FFFFFF;
-      border: 0.5px solid #C7C7C7;
-      box-sizing: border-box;
-      border-radius: 6px;
-      position: relative;
-      width: 100%;
-      .dropdown-btn {
-        display: block;
-        padding: 12px 0;
-        .value {
-          z-index: 2;
-          position: relative;
-          font-size: 14px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          color: #222222;
-          left: 0;
-          padding-left: 13px;
-        }
-        .txt {
-          position: absolute;
-          z-index: 1;
-          font-size: 12px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          display: block;
-          right: 14px;
-          top: 14px;
-          color: #B5292F;
 
-        }
-      }
-      .droplist-city {
-        transition: .3s ease;
-        opacity: 0;
-        visibility: hidden;
-        border-radius: 0 0 6px 6px;
-        overflow: hidden;
-        box-sizing: border-box;
-        z-index: 10;
-        position: absolute;
-        top: calc(100% + 1px);
-        left: -1px;
-        width: calc(100% + 2px);
-        background: #fff;
-        border-left: 0.5px solid #B5292F;
-        border-right: 0.5px solid #B5292F;
-        border-bottom: 0.5px solid #B5292F;
-        .droplist-content {
-
-        }
-        .label-drop {
-          padding: 10px;
-          user-select: none;
-          font-size: 14px;
-          line-height: 119%;
-          font-family: BVNPro-Regular;
-          color: #999;
-        }
-        .city-btn {
-          &:hover {
-            background: #f1f1f1;
-          }
-          transition: .3s ease;
-          background: #fff;
-          display: block;
-          font-size: 14px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          color: #222222;
-          padding: 10px;
-        }
-      }
-    }
 
     .new-address {
       display: flex;

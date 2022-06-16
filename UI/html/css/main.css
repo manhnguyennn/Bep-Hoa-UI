@@ -2732,6 +2732,91 @@ svg {
       opacity: 0.5; }
     .Popup-checkout .infoGroup .note-order::placeholder {
       opacity: 0.5; }
+  .Popup-checkout .dropdown-city {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    background: #FFFFFF;
+    border: 0.5px solid #C7C7C7;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    width: 100%; }
+    .Popup-checkout .dropdown-city.mb-20 {
+      margin-bottom: 20px; }
+    .Popup-checkout .dropdown-city.active {
+      border-left: 0.5px solid #B5292F;
+      border-right: 0.5px solid #B5292F;
+      border-top: 0.5px solid #B5292F;
+      border-radius: 6px 6px 0 0; }
+      .Popup-checkout .dropdown-city.active .droplist-city {
+        opacity: 1;
+        visibility: visible; }
+    .Popup-checkout .dropdown-city .dropdown-btn {
+      display: block;
+      padding: 12px 0; }
+      .Popup-checkout .dropdown-city .dropdown-btn .value {
+        z-index: 2;
+        position: relative;
+        font-size: 14px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+        left: 0;
+        padding-left: 13px; }
+      .Popup-checkout .dropdown-city .dropdown-btn .txt {
+        position: absolute;
+        z-index: 1;
+        font-size: 12px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        display: block;
+        right: 14px;
+        top: 14px;
+        color: #B5292F; }
+    .Popup-checkout .dropdown-city .droplist-city {
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 0 0 6px 6px;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      z-index: 10;
+      position: absolute;
+      top: calc(100% + 1px);
+      left: -1px;
+      width: calc(100% + 2px);
+      background: #fff;
+      border-left: 0.5px solid #B5292F;
+      border-right: 0.5px solid #B5292F;
+      border-bottom: 0.5px solid #B5292F; }
+      .Popup-checkout .dropdown-city .droplist-city .label-drop {
+        padding: 10px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 14px;
+        line-height: 119%;
+        font-family: BVNPro-Regular;
+        color: #999; }
+      .Popup-checkout .dropdown-city .droplist-city .city-btn {
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        background: #fff;
+        display: block;
+        font-size: 14px;
+        line-height: 100%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+        padding: 10px; }
+        .Popup-checkout .dropdown-city .droplist-city .city-btn:hover {
+          background: #f1f1f1; }
   .Popup-checkout .form-input-user {
     padding: 20px; }
     .Popup-checkout .form-input-user .form-input + .form-input {
@@ -2833,89 +2918,6 @@ svg {
         outline: none; }
     .Popup-checkout .form-input-user .select2-container--default .select2-selection--single .select2-selection__arrow {
       display: none; }
-    .Popup-checkout .form-input-user .dropdown-city {
-      -webkit-transition: .3s ease;
-      -o-transition: .3s ease;
-      transition: .3s ease;
-      background: #FFFFFF;
-      border: 0.5px solid #C7C7C7;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      border-radius: 6px;
-      position: relative;
-      width: 100%; }
-      .Popup-checkout .form-input-user .dropdown-city.active {
-        border-left: 0.5px solid #B5292F;
-        border-right: 0.5px solid #B5292F;
-        border-top: 0.5px solid #B5292F;
-        border-radius: 6px 6px 0 0; }
-        .Popup-checkout .form-input-user .dropdown-city.active .droplist-city {
-          opacity: 1;
-          visibility: visible; }
-      .Popup-checkout .form-input-user .dropdown-city .dropdown-btn {
-        display: block;
-        padding: 12px 0; }
-        .Popup-checkout .form-input-user .dropdown-city .dropdown-btn .value {
-          z-index: 2;
-          position: relative;
-          font-size: 14px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          color: #222222;
-          left: 0;
-          padding-left: 13px; }
-        .Popup-checkout .form-input-user .dropdown-city .dropdown-btn .txt {
-          position: absolute;
-          z-index: 1;
-          font-size: 12px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          display: block;
-          right: 14px;
-          top: 14px;
-          color: #B5292F; }
-      .Popup-checkout .form-input-user .dropdown-city .droplist-city {
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease;
-        opacity: 0;
-        visibility: hidden;
-        border-radius: 0 0 6px 6px;
-        overflow: hidden;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        z-index: 10;
-        position: absolute;
-        top: calc(100% + 1px);
-        left: -1px;
-        width: calc(100% + 2px);
-        background: #fff;
-        border-left: 0.5px solid #B5292F;
-        border-right: 0.5px solid #B5292F;
-        border-bottom: 0.5px solid #B5292F; }
-        .Popup-checkout .form-input-user .dropdown-city .droplist-city .label-drop {
-          padding: 10px;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          font-size: 14px;
-          line-height: 119%;
-          font-family: BVNPro-Regular;
-          color: #999; }
-        .Popup-checkout .form-input-user .dropdown-city .droplist-city .city-btn {
-          -webkit-transition: .3s ease;
-          -o-transition: .3s ease;
-          transition: .3s ease;
-          background: #fff;
-          display: block;
-          font-size: 14px;
-          line-height: 100%;
-          font-family: BVNPro-Regular;
-          color: #222222;
-          padding: 10px; }
-          .Popup-checkout .form-input-user .dropdown-city .droplist-city .city-btn:hover {
-            background: #f1f1f1; }
     .Popup-checkout .form-input-user .new-address {
       display: -webkit-box;
       display: -ms-flexbox;
