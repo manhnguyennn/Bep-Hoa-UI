@@ -766,55 +766,32 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 18px;
   padding: 30px 0;
+
   li {
-    &:nth-child(1) {
-      .menu-tab {
-        .thumb {
-          i {
-            border: 1.5px solid #F1D6BB;
-          }
-        }
-      }
-    }
-    &:nth-child(2) {
-      .menu-tab {
-        .thumb {
-          i {
-            border: 1.5px solid #C4EDF5;
-          }
-        }
-      }
-    }
-    &:nth-child(3) {
-      .menu-tab {
-        .thumb {
-          i {
-            border: 1.5px solid #D2ECC8;
-          }
-        }
-      }
-    }
+
     .menu-tab {
       position: relative;
 
       display: block;
       box-sizing: border-box;
+
       &.active {
         .icn {
           opacity: 1;
         }
       }
+
       &.disabled {
         filter: grayscale(1);
         opacity: .4;
         cursor: default;
       }
+
       &:not(.disabled) {
         &:hover, &.active {
           .thumb {
             i {
-              border: 1.5px solid #000000;
-
+              border: 2px solid #000000;
             }
           }
         }
@@ -823,17 +800,19 @@
       .thumb {
         display: block;
         width: 100%;
+
         i {
           transition: .15s ease;
           border-radius: 6px;
           overflow: hidden;
           box-sizing: border-box;
-
+          border: 2px solid transparent;
           width: 100%;
           padding-top: 25.45%;
           @include bg-thumb();
         }
       }
+
       .name {
         position: absolute;
         left: 0;
@@ -849,6 +828,7 @@
         display: block;
         color: #111111;
       }
+
       .icn {
         position: absolute;
         width: 14px;
@@ -857,7 +837,7 @@
         z-index: 2;
         opacity: 0;
         animation: mover 0.5s infinite alternate;
-        transition: opacity .3s ease;
+        transition: opacity .75s ease;
       }
     }
   }
@@ -1322,6 +1302,7 @@
   .list-menu-tab {
     padding: 25px 20px;
     grid-gap: 10px;
+
     li {
 
       .menu-tab {
@@ -1333,6 +1314,7 @@
             padding-top: 67.31%;
           }
         }
+
         .name {
           font-size: 14px;
           padding: 0 10px;
@@ -1340,6 +1322,7 @@
           transform: none;
           bottom: 6px;
         }
+
         .icn {
 
         }
