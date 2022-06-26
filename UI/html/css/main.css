@@ -4328,6 +4328,9 @@ svg {
   padding: 15px;
   gap: 11px;
 }
+.PopUp-location .loca-btn:hover {
+  background: #f9f9f9;
+}
 .PopUp-location .loca-btn .icn {
   width: 16px;
   display: block;

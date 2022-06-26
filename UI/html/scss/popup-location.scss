@@ -34,6 +34,9 @@
     }
   }
   .loca-btn {
+    &:hover{
+      background: #f9f9f9;
+    }
     display: flex;
     align-items: center;
     padding: 15px;
