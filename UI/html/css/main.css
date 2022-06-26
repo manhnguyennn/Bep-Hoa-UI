@@ -2387,16 +2387,21 @@ svg {
     color: #B5292F;
   }
   .address-store .dropdown-box {
-    width: 100px;
+    width: 130px;
     top: 15px;
   }
   .address-store .dropdown-box .droplist {
-    background: rgba(241, 250, 237, 0.9);
+    background: #fff;
     -webkit-backdrop-filter: blur(18px);
             backdrop-filter: blur(18px);
   }
   .address-store .dropdown-box .loca-change {
-    font-size: 13px;
+    font-size: 15px;
+    padding: 5px 0;
+  }
+  .address-store .dropdown-box .loca-change + .loca-change {
+    margin-top: 8px;
+    padding-top: 10px;
   }
 
   .bh-home_bner-top .swiper-hbner .bg-blur {

@@ -1270,16 +1270,22 @@
     }
 
     .dropdown-box {
-      width: 100px;
+      width: 130px;
       top: 15px;
 
       .droplist {
-        background: rgba(241, 250, 237, 0.9);
+        background: #fff;
         backdrop-filter: blur(18px);
       }
 
       .loca-change {
-        font-size: 13px;
+        & + .loca-change {
+          margin-top: 8px;
+          padding-top: 10px;
+        }
+
+        font-size: 15px;
+        padding: 5px 0;
       }
     }
   }
