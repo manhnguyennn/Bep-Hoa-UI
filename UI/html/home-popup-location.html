@@ -1037,15 +1037,7 @@
 <div class="PopUp-location" id="PopUp-location" style="display:none;">
     <div class="popup-content">
         <div class="locationBox">
-            <a href="javascript:;" data-fancybox-close class="close-btn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="10" fill="#CBCBCB"/>
-                    <path d="M12.9167 7.08331L7.08337 12.9166" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
-                          stroke-linecap="square"/>
-                    <path d="M12.9167 12.9166L7.08337 7.08331" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
-                          stroke-linecap="square"/>
-                </svg>
-            </a>
+
             <div class="heading">
                 Lựa chọn khu vực
             </div>
@@ -1083,6 +1075,12 @@
             protect: true,
             animationDuration: 500,
             touch: false,
+            clickSlide : 'false',
+            clickOutside : 'false',
+            mobile: {
+                clickSlide: false,
+                touch: false
+            },
             beforeShow: function () {
                 $('body').addClass('popup-loca-active');
             },

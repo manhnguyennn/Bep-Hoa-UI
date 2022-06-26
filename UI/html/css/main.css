@@ -4316,7 +4316,7 @@ svg {
   border-bottom: 1px solid #E7E7E7;
 }
 .PopUp-location .list-loca li {
-  border-bottom: 1px solid #E7E7E7;
+  border-bottom: 1px solid #f5f5f5;
 }
 .PopUp-location .loca-btn {
   display: -webkit-box;
@@ -4348,6 +4348,9 @@ svg {
   color: #222222;
 }
 
+.popup-loca-active {
+  overflow: hidden;
+}
 .popup-loca-active .fancybox-slide--html {
   padding: 0;
 }
