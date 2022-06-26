@@ -1167,7 +1167,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 102px;
+  min-width: 120px;
   height: 30px;
   background: #FFFFFF;
   border: 1px solid #E0E0E0;
@@ -1728,7 +1728,7 @@ svg {
   overflow: hidden;
   display: block;
   content: "";
-  background: #f1faed;
+  background: rgb(241, 250, 237);
   border-radius: 29px;
   -webkit-filter: blur(30px);
           filter: blur(30px);
@@ -2426,7 +2426,7 @@ svg {
   width: 100vw;
 }
 .PopUp-cart .popup-cart-content {
-  height: calc(calc(var(--vh, 1vh) * 100) - 92px);
+  height: calc(var(--vh, 1vh) * 100 - 92px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
