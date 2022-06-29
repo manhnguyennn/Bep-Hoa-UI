@@ -319,11 +319,11 @@
                         animationDuration: 500,
                         touch: false,
                         animationEffect: 'slide-in-out-right',
-                        beforeLoad: function () {
+                        beforeShow: function () {
                             $('body').addClass('popup-checkout-active');
                             $('.footer-bill').appendTo('.right-web');
-                            $('.bill-payment').insertBefore('.footer-bill .total-checkout');
-                            $('.billGroup').insertBefore('.bill-payment');
+                            $('.bill-payment').insertBefore('.footer-bill .total-checkout')
+                            $('.billGroup').insertBefore('.bill-payment')
                             var textarea = document.querySelector('.note-order');
 
                             textarea.addEventListener('keydown', autosize);
@@ -332,9 +332,6 @@
                                 dropdownParent: $('#open-popup-checkout .select-timeBox'),
                                 minimumResultsForSearch: -1,
                             });
-                        },
-                        beforeShow: function () {
-
 
                         },
                         afterShow: function () {
@@ -444,9 +441,9 @@
                         animationEffect: 'slide-in-out-right',
                         beforeShow: function () {
                             $('body').addClass('popup-checkout-active');
-                            var textarea = document.querySelector('.note-order');
-
-                            textarea.addEventListener('keydown', autosize);
+                            // var textarea = document.querySelector('.note-order');
+                            //
+                            // textarea.addEventListener('keydown', autosize);
 
                         },
                         afterShow: function () {
