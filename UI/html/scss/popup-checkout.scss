@@ -388,7 +388,7 @@
 
   }
   .dropdown-city {
-    &.mb-20{
+    &.mb-20 {
       margin-bottom: 20px;
     }
     &.active {
@@ -506,7 +506,7 @@
     }
 
     .input-user {
-      padding: 12px 13px;
+      padding: 0 13px;
       background: #FFFFFF;
       border: 0.5px solid #C7C7C7;
       box-sizing: border-box;
@@ -534,10 +534,11 @@
       flex-grow: 1;
       border: none;
       font-size: 14px;
-      line-height: 117%;
+      padding: 0;
+      line-height: 40px;
       font-family: BVNPro-Regular;
       color: #222222;
-
+      box-sizing: border-box;
       &.select2-hidden-accessible {
         display: none;
       }
@@ -600,8 +601,6 @@
     .select2-container--default .select2-selection--single .select2-selection__arrow {
       display: none;
     }
-
-
 
     .new-address {
       display: flex;
