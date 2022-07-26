@@ -198,6 +198,28 @@
           display: block;
         }
       }
+
+
+    }
+
+    .warning {
+      &.active{
+        display: block;
+      }
+
+      display: none;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 19px;
+      background: #FFF6ED;
+      border-radius: 6px;
+      color: #B5292F;
+      padding: 10px 14px;
+      font-family: BVNPro-Regular;
+
+      b {
+        font-family: BVNPro-SemiBold;
+      }
     }
 
     .time-order {
@@ -387,20 +409,24 @@
     }
 
   }
+
   .dropdown-city {
     &.mb-20 {
       margin-bottom: 20px;
     }
+
     &.active {
       border-left: 0.5px solid #B5292F;
       border-right: 0.5px solid #B5292F;
       border-top: 0.5px solid #B5292F;
       border-radius: 6px 6px 0 0;
+
       .droplist-city {
         opacity: 1;
         visibility: visible;
       }
     }
+
     transition: .3s ease;
     background: #FFFFFF;
     border: 0.5px solid #C7C7C7;
@@ -408,9 +434,11 @@
     border-radius: 6px;
     position: relative;
     width: 100%;
+
     .dropdown-btn {
       display: block;
       padding: 12px 0;
+
       .value {
         z-index: 2;
         position: relative;
@@ -421,6 +449,7 @@
         left: 0;
         padding-left: 13px;
       }
+
       .txt {
         position: absolute;
         z-index: 1;
@@ -434,6 +463,7 @@
 
       }
     }
+
     .droplist-city {
       transition: .3s ease;
       opacity: 0;
@@ -450,9 +480,11 @@
       border-left: 0.5px solid #B5292F;
       border-right: 0.5px solid #B5292F;
       border-bottom: 0.5px solid #B5292F;
+
       .droplist-content {
 
       }
+
       .label-drop {
         padding: 10px;
         user-select: none;
@@ -461,10 +493,12 @@
         font-family: BVNPro-Regular;
         color: #999;
       }
+
       .city-btn {
         &:hover {
           background: #f1f1f1;
         }
+
         transition: .3s ease;
         background: #fff;
         display: block;
@@ -476,6 +510,7 @@
       }
     }
   }
+
   .form-input-user {
     padding: 20px;
 
@@ -539,6 +574,7 @@
       font-family: BVNPro-Regular;
       color: #222222;
       box-sizing: border-box;
+
       &.select2-hidden-accessible {
         display: none;
       }
@@ -1002,16 +1038,19 @@
   .fancybox-slide--html {
     padding: 0;
   }
+
   &.popup-switch-active {
     .fancybox-is-open {
       .fancybox-bg {
         background: rgba(0, 0, 0, .75);
       }
     }
+
     .fancybox-content {
       vertical-align: middle;
     }
   }
+
   .fancybox-content {
     padding: 0;
     vertical-align: top;

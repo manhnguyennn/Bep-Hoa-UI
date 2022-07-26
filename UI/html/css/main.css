@@ -3013,6 +3013,23 @@ svg {
 .Popup-checkout .infoGroup .date-order .pick-date .date {
   display: block;
 }
+.Popup-checkout .infoGroup .warning {
+  display: none;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  background: #FFF6ED;
+  border-radius: 6px;
+  color: #B5292F;
+  padding: 10px 14px;
+  font-family: BVNPro-Regular;
+}
+.Popup-checkout .infoGroup .warning.active {
+  display: block;
+}
+.Popup-checkout .infoGroup .warning b {
+  font-family: BVNPro-SemiBold;
+}
 .Popup-checkout .infoGroup .choose-time-order {
   display: -webkit-box;
   display: -ms-flexbox;
