@@ -4560,6 +4560,10 @@ svg {
   background: #B5292F;
   border: 1.5px solid #B5292F;
 }
+.bh-finish_wrapper .fn-funcs.cod {
+  background: #111;
+  border: 1.5px solid #111;
+}
 .bh-finish_wrapper .fn-funcs.back-home {
   background: #FFFFFF;
   border: 1px solid #CBCBCB;
