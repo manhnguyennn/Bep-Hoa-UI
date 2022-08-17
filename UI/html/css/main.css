@@ -3606,6 +3606,10 @@ svg {
   font-family: BVNPro-Regular;
   display: block;
   color: #111111;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .Popup-checkout .total-bill-order {
   margin-bottom: 20px;
