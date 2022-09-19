@@ -2,14 +2,12 @@
 @import "mixins";
 @import "common";
 @import "icons";
-
 //Layout
 @import "page-manage-systems";
 @import "page-manage-menu";
 @import "page-manage-customer";
 @import "manage-order-list";
 @import "manage-order";
-
 
 .table-user-group, .table-bh {
   .role {
@@ -87,8 +85,10 @@
 
     .name {
       font-size: .9rem;
-      line-height: 101%;
+      line-height: 168%;
       color: #111111;
+      max-width: 170px;
+      white-space: initial;
     }
   }
 }
@@ -109,10 +109,8 @@
     margin-top: 12px;
   }
 
-
-
-
 }
+
 .filter-funcs {
   display: flex;
   justify-content: space-between;
@@ -132,22 +130,22 @@
       display: block;
     }
   }
-  .btn-filter-action{
+  .btn-filter-action {
     width: calc(100% - 115px);
     box-sizing: border-box;
   }
 }
 
-.btn-filter-adv{
+.btn-filter-adv {
   margin-left: auto;
   display: flex;
   align-items: center;
-  .txt{
+  .txt {
     color: #111111;
     margin-right: 7px;
     display: block;
   }
-  .icn{
+  .icn {
     font-family: Nucleo;
     display: block;
     font-size: 9px;
