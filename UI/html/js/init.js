@@ -210,8 +210,9 @@
             });
 
             let swiperDiscountFood = new Swiper(".swiper-discount", {
-                slidesPerView: 1,
-                spaceBetween: 0,
+                slidesPerView: 4,
+                spaceBetween: 25,
+                slidesPerGroup: 4,
                 navigation: {
                     nextEl: ".md-list .swiper-button-next",
                     prevEl: ".md-list .swiper-button-prev"

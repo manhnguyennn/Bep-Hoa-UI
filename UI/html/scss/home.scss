@@ -299,7 +299,7 @@
     position: relative;
     @extend .widthCT;
     padding: 0 20px;
-    &.non-js{
+    &.non-js {
       .swiper-button-next, .swiper-button-prev {
         display: none;
       }
@@ -337,15 +337,18 @@
   .waiting-card {
     background: #F8F8F8;
     border-radius: 6px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .swiper-discount {
-
+  .swiper-slide {
+    height: auto;
+  }
   .slide-food {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1619,7 +1622,6 @@
     }
     .waiting-card {
       width: 155px;
-      height: auto;
     }
   }
 }

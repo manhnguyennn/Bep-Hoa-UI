@@ -1293,14 +1293,16 @@ svg {
         height: auto; }
   .bh-home-discount .waiting-card {
     background: #F8F8F8;
-    border-radius: 6px; }
+    border-radius: 6px;
+    width: 100%;
+    height: 100%; }
+
+.swiper-discount .swiper-slide {
+  height: auto; }
 
 .swiper-discount .slide-food {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px; }
+  width: 100%;
+  height: 100%; }
 
 .bh-home-menu {
   position: relative; }
@@ -2330,8 +2332,7 @@ svg {
       .bh-home-discount .md-list .swiper-button-next, .bh-home-discount .md-list .swiper-button-prev {
         display: none; }
     .bh-home-discount .waiting-card {
-      width: 155px;
-      height: auto; } }
+      width: 155px; } }
 
 .PopUp-cart {
   width: 100vw; }
