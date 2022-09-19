@@ -242,6 +242,113 @@
   }
 }
 
+.bh-home-discount {
+  position: relative;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend .widthCT;
+
+    .icn {
+      flex-grow: 1;
+      height: 4px;
+      position: relative;
+
+      &:before {
+        width: 100%;
+        height: 1px;
+        background: #B5292F;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: '';
+      }
+
+      &:after {
+        width: 100%;
+        height: 1px;
+        background: #B5292F;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+      }
+    }
+
+    .txt {
+      flex-shrink: 0;
+      font-size: 15px;
+      line-height: 100%;
+      font-family: BVNPro-SemiBold;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 17px;
+      color: #222222;
+    }
+  }
+
+  .md-list {
+    position: relative;
+    @extend .widthCT;
+    padding: 0 20px;
+    &.non-js{
+      .swiper-button-next, .swiper-button-prev {
+        display: none;
+      }
+    }
+    .swiper-button-next {
+      right: -25px;
+    }
+
+    .swiper-button-prev {
+      left: -25px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      &.swiper-button-disabled {
+        opacity: .2;
+      }
+
+      display: block;
+      background: none;
+      border: none;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      width: 34px;
+      height: 34px;
+      opacity: 1;
+
+      svg {
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+    }
+  }
+  .waiting-card {
+    background: #F8F8F8;
+    border-radius: 6px;
+  }
+}
+
+.swiper-discount {
+
+  .slide-food {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
 .bh-home-menu {
   position: relative;
 
@@ -391,7 +498,13 @@
       visibility: visible;
     }
   }
+  &.sale {
+    .status {
+      opacity: 1;
+      visibility: visible;
+    }
 
+  }
   .thumb {
 
     width: 26.86%;
@@ -1269,7 +1382,6 @@
     background: none;
   }
 
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -1284,7 +1396,93 @@
       right: 0 !important;
     }
   }
+  .food-card.sale {
+    position: relative;
+    height: auto;
+    width: 155px;
+    flex-direction: column;
 
+    .thumb {
+      margin-right: 0;
+      width: 100%;
+
+      i {
+        border-radius: 6px 6px 0px 0px;
+
+        &:before {
+          border-radius: 6px 6px 0px 0px;
+        }
+
+        padding-top: 63.45%;
+      }
+    }
+
+    .total-food {
+      display: flex;
+      flex-direction: column;
+      border-right: 0.5px solid rgba(0, 0, 0, 0.15);
+      border-left: 0.5px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+      padding: 9px 12px 10px;
+      border-radius: 0px 0px 6px 6px;
+    }
+
+    .status {
+      top: 10px;
+    }
+
+    .name {
+      font-size: 13.5px;
+    }
+
+    .price {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .voucher {
+      & + .voucher {
+        display: none;
+      }
+
+      display: flex;
+      position: absolute;
+      background: linear-gradient(359.36deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 97.27%);
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      padding: 20px 7px 7px;
+      width: 100%;
+
+      .icn {
+        svg {
+          path {
+            fill: #FFE600;
+          }
+        }
+      }
+
+      .text {
+        color: #fff;
+      }
+    }
+
+    .funcsBox {
+      margin-top: auto;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .add-to-card, .buy-now {
+      width: 120px;
+    }
+
+    .buy-now {
+      background: none;
+      margin-top: 5px;
+    }
+  }
   .address-store {
     z-index: 10;
 
@@ -1359,7 +1557,6 @@
 
       .menu-tab {
 
-
         .thumb {
 
           i {
@@ -1382,5 +1579,47 @@
     }
 
   }
+  .bh-home-discount {
+    margin-bottom: 30px;
+    .heading {
 
+    }
+
+    .md-list {
+      padding: 0;
+      .swiper-discount {
+
+        .swiper-wrapper {
+          overflow-x: scroll;
+          gap: 12px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+        }
+        .swiper-slide {
+          display: inline-block;
+          width: auto;
+          &:nth-child(1) {
+            margin-left: 20px;
+          }
+          &:nth-last-child(1) {
+            margin-right: 20px;
+          }
+        }
+        .slide-food {
+          display: inline-flex;
+          grid-template-columns: unset;
+          gap: 12px;
+        }
+      }
+      .swiper-button-next, .swiper-button-prev {
+        display: none;
+      }
+    }
+    .waiting-card {
+      width: 155px;
+      height: auto;
+    }
+  }
 }

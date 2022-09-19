@@ -209,6 +209,14 @@
                 }
             });
 
+            let swiperDiscountFood = new Swiper(".swiper-discount", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: ".md-list .swiper-button-next",
+                    prevEl: ".md-list .swiper-button-prev"
+                }
+            });
 
             let swiperMenuTags = new Swiper(".menu__tags-list", {
                 slidesPerView: 'auto',
