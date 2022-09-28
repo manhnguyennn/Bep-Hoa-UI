@@ -420,7 +420,6 @@
   }
 
   .tagBox {
-    margin-top: 10px;
     position: sticky;
     top: 60px;
     left: 0;
@@ -925,6 +924,12 @@
 
 .menu-tab-group {
   @extend .widthCT;
+
+  &.four-child {
+    .list-menu-tab {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 .list-menu-tab {
@@ -932,6 +937,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 18px;
   padding: 30px 0 10px;
+
 
   li {
 
@@ -1574,10 +1580,42 @@
 
     }
   }
+  .menu-tab-group {
+    &.four-child {
+      padding: 25px 0;
+      max-width: 100%;
+      overflow-y: hidden;
 
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .list-menu-tab {
+        padding: 0;
+        display: inline-flex;
+        grid-gap: unset;
+      }
+
+      li {
+        width: 104px;
+        flex-shrink: 0;
+
+        &:nth-child(1) {
+          margin-left: 20px;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 20px;
+        }
+
+        margin-right: 10px;
+      }
+    }
+  }
   .list-menu-tab {
-    padding: 25px 20px 15px;
+    padding: 25px 20px ;
     grid-gap: 10px;
+
 
     li {
 
