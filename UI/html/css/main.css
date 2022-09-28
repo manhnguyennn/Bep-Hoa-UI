@@ -2106,7 +2106,7 @@ svg {
   width: 42px;
 }
 
-.menu-tab-group.four-child .list-menu-tab {
+.menu-tab-group.child-4 .list-menu-tab {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
 }
@@ -2677,31 +2677,31 @@ svg {
     height: 15px;
   }
 
-  .menu-tab-group.four-child {
+  .menu-tab-group.child-4 {
     padding: 25px 0;
     max-width: 100%;
     overflow-y: hidden;
   }
-  .menu-tab-group.four-child::-webkit-scrollbar {
+  .menu-tab-group.child-4::-webkit-scrollbar {
     display: none;
   }
-  .menu-tab-group.four-child .list-menu-tab {
+  .menu-tab-group.child-4 .list-menu-tab {
     padding: 0;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     grid-gap: unset;
   }
-  .menu-tab-group.four-child li {
+  .menu-tab-group.child-4 li {
     width: 104px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin-right: 10px;
   }
-  .menu-tab-group.four-child li:nth-child(1) {
+  .menu-tab-group.child-4 li:nth-child(1) {
     margin-left: 20px;
   }
-  .menu-tab-group.four-child li:nth-last-child(1) {
+  .menu-tab-group.child-4 li:nth-last-child(1) {
     margin-right: 20px;
   }
 
