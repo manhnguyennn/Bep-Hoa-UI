@@ -925,7 +925,7 @@
 .menu-tab-group {
   @extend .widthCT;
 
-  &.four-child {
+  &.child-4 {
     .list-menu-tab {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -1581,7 +1581,7 @@
     }
   }
   .menu-tab-group {
-    &.four-child {
+    &.child-4 {
       padding: 25px 0;
       max-width: 100%;
       overflow-y: hidden;
