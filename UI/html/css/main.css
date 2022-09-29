@@ -2134,23 +2134,27 @@ svg {
   opacity: 0.4;
   cursor: default;
 }
-.list-menu-tab li .menu-tab:not(.disabled):hover .thumb i, .list-menu-tab li .menu-tab:not(.disabled).active .thumb i {
+.list-menu-tab li .menu-tab:not(.disabled):hover .thumb, .list-menu-tab li .menu-tab:not(.disabled).active .thumb {
   border: 2px solid #000000;
 }
 .list-menu-tab li .menu-tab .thumb {
   display: block;
   width: 100%;
-}
-.list-menu-tab li .menu-tab .thumb i {
-  -webkit-transition: 0.15s ease;
-  transition: 0.15s ease;
+  border: 2px solid transparent;
   border-radius: 6px;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid transparent;
+}
+.list-menu-tab li .menu-tab .thumb i {
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding-top: 25.45%;
+  border-radius: 6px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

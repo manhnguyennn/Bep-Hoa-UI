@@ -962,9 +962,7 @@
       &:not(.disabled) {
         &:hover, &.active {
           .thumb {
-            i {
-              border: 2px solid #000000;
-            }
+            border: 2px solid #000000;
           }
         }
       }
@@ -972,15 +970,18 @@
       .thumb {
         display: block;
         width: 100%;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        overflow: hidden;
+        box-sizing: border-box;
 
         i {
           transition: .15s ease;
-          border-radius: 6px;
           overflow: hidden;
           box-sizing: border-box;
-          border: 2px solid transparent;
           width: 100%;
           padding-top: 25.45%;
+          border-radius: 6px;
           @include bg-thumb();
         }
       }
@@ -1613,7 +1614,7 @@
     }
   }
   .list-menu-tab {
-    padding: 25px 20px ;
+    padding: 25px 20px;
     grid-gap: 10px;
 
 
