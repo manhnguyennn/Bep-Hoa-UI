@@ -1509,7 +1509,7 @@ svg {
 }
 
 .swiper-discount.swiper-container {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .swiper-discount .swiper-slide {
   height: auto;
@@ -1517,6 +1517,14 @@ svg {
 .swiper-discount .slide-food {
   width: 100%;
   height: 100%;
+  padding-top: 5px;
+  padding-bottom: 0;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+.swiper-discount .slide-food:hover {
+  padding-top: 0;
+  padding-bottom: 5px;
 }
 
 .bh-home-menu {
@@ -2422,14 +2430,17 @@ svg {
     grid-gap: 25px;
   }
   .bh-menu-list li {
-    background: #FFFFFF;
     border: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
     border-radius: 6px;
-    padding: 0;
+    padding: 5px 0 0 0;
+  }
+  .bh-menu-list li:hover {
+    padding-top: 0;
+    padding-bottom: 5px;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
   }
 
   .go-to-top {
@@ -2437,12 +2448,20 @@ svg {
   }
 
   .food-card {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
     position: relative;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .food-card:hover {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
   }
   .food-card .thumb {
     margin-right: 0;
@@ -2754,6 +2773,10 @@ svg {
     -ms-grid-columns: unset;
     grid-template-columns: unset;
     gap: 12px;
+    padding: 0;
+  }
+  .bh-home-discount .md-list .swiper-discount .slide-food:hover {
+    padding: 0;
   }
   .bh-home-discount .md-list .swiper-button-next, .bh-home-discount .md-list .swiper-button-prev {
     display: none;
