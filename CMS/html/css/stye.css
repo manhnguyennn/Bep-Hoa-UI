@@ -291,7 +291,7 @@ body i {
   margin: 0;
 }
 .bh-cms-wrapper .table-responsive table.table-order-list tbody td {
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
   vertical-align: top;
 }
 .bh-cms-wrapper .table-responsive table .title-col {
@@ -1987,6 +1987,22 @@ Generated using nucleoapp.com
   bottom: -2.5rem;
   left: 0;
   font-size: 0.7rem;
+}
+
+.tags-type {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  font-size: 0.7rem;
+  background: rgba(115, 103, 240, 0.08);
+  border: 1px solid #7367F0;
+  box-sizing: border-box;
+  border-radius: 53px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  color: #7367F0;
+  padding: 3px 12px 4px;
 }
 
 .order-user {
