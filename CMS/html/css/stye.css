@@ -1990,9 +1990,6 @@ Generated using nucleoapp.com
 }
 
 .tags-type {
-  position: absolute;
-  bottom: -5rem;
-  left: 0;
   font-size: 0.7rem;
   background: rgba(115, 103, 240, 0.08);
   border: 1px solid #7367F0;
@@ -2002,7 +1999,15 @@ Generated using nucleoapp.com
   display: inline-flex;
   justify-content: center;
   color: #7367F0;
-  padding: 3px 12px 4px;
+  padding: 3px 5px;
+}
+
+.tagBox {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  display: flex;
+  gap: 5px;
 }
 
 .order-user {

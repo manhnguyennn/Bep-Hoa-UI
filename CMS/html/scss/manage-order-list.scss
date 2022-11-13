@@ -1,5 +1,6 @@
 .form-date {
   padding: 11px 15px;
+
   input {
     flex-grow: 1;
     height: 100%;
@@ -45,10 +46,9 @@
     font-size: .7rem;
   }
 }
-.tags-type{
-  position: absolute;
-  bottom: -5rem;
-  left: 0;
+
+.tags-type {
+
   font-size: .7rem;
   background: rgba(115, 103, 240, 0.08);
   border: 1px solid #7367F0;
@@ -58,8 +58,17 @@
   display: inline-flex;
   justify-content: center;
   color: #7367F0;
-  padding: 3px 12px 4px;
+  padding: 3px 5px;
 }
+
+.tagBox {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  display: flex;
+  gap: 5px;
+}
+
 .order-user {
   position: relative;
 
