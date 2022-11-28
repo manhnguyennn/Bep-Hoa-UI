@@ -2442,6 +2442,9 @@ svg {
     -webkit-transition: 0.1s linear;
     transition: 0.1s linear;
   }
+  .bh-menu-list li:nth-child(1) {
+    border: none;
+  }
 
   .go-to-top {
     margin-top: 30px;
@@ -5294,6 +5297,96 @@ svg {
   color: #222222;
 }
 
+.bh-landing-Tet {
+  background: #A71616;
+}
+
+.coverTet {
+  background: #FFDCB7;
+}
+.coverTet .cover-image {
+  margin: 0 auto;
+  width: 960px;
+  max-width: 100%;
+}
+.coverTet i {
+  width: 100%;
+  padding-top: 46.97%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  background-image: url("../img/cover_tet-web.png");
+}
+
+.menuBox-Tet {
+  background: #A71616;
+  border-top: 2px solid #EB8A0E;
+}
+.menuBox-Tet .bh-home-menu .tagBox {
+  background: #A71616;
+}
+.menuBox-Tet .bh-home-menu .tagBox .tags-filter {
+  color: #FFFFFF;
+  background: #CC2C2C;
+}
+.menuBox-Tet .bh-home-menu .tagBox .tags-filter.active {
+  background: #FFBF3D;
+  color: #111111;
+}
+.menuBox-Tet .bh-home-menu .swiper-button-prev.swiper-button-disabled, .menuBox-Tet .bh-home-menu .swiper-button-next.swiper-button-disabled {
+  opacity: 0.2;
+}
+.menuBox-Tet .bh-home-menu .swiper-button-prev svg path, .menuBox-Tet .bh-home-menu .swiper-button-next svg path {
+  fill: #FFDCB7;
+}
+.menuBox-Tet .food-card .total-food {
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 760px) {
+  .bh-landing-Tet .bh-home_wrapper-content {
+    background: #fff;
+  }
+  .bh-landing-Tet .bh-main-header {
+    background: #A71616;
+  }
+
+  .coverTet i {
+    padding-top: 114.4%;
+    background-image: url("../img/cover_tet-mob.jpg");
+  }
+
+  .menuBox-Tet {
+    background: none;
+    margin-top: -19vw;
+    border: none;
+  }
+
+  .bh-menu-list {
+    background: #fff;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .bh-menu-list li:nth-child(1) {
+    border: none;
+  }
+
+  .bh-home-menu {
+    border: none;
+  }
+  .bh-home-menu .tagBox {
+    background: #A71616;
+    margin-bottom: 10px;
+  }
+  .bh-home-menu .tagBox .tags-filter {
+    color: #FFFFFF;
+    background: #CC2C2C;
+  }
+  .bh-home-menu .tagBox .tags-filter.active {
+    background: #FFBF3D;
+    color: #111111;
+  }
+}
 .bh-wrapper {
   padding-top: 60px;
   min-height: 100vh;

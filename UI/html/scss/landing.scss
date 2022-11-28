@@ -1,0 +1,118 @@
+.bh-landing-Tet {
+  background: #A71616;
+}
+
+.coverTet {
+  background: #FFDCB7;
+
+  .cover-image {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+  }
+
+  i {
+    width: 100%;
+    padding-top: 46.97%;
+    @include bg-thumb();
+    background-image: url('../img/cover_tet-web.png');
+  }
+}
+
+.menuBox-Tet {
+  background: #A71616;
+  border-top: 2px solid #EB8A0E;
+
+  .bh-home-menu {
+    .tagBox {
+      background: #A71616;
+
+      .tags-filter {
+        &.active {
+          background: #FFBF3D;
+          color: #111111;
+        }
+
+        color: #FFFFFF;
+        background: #CC2C2C;
+      }
+
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      &.swiper-button-disabled {
+        opacity: .2;
+      }
+
+      svg {
+        path {
+          fill: #FFDCB7;
+        }
+      }
+    }
+  }
+
+  .food-card {
+    .total-food {
+      background: #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .bh-landing-Tet {
+    .bh-home_wrapper-content {
+      background: #fff;
+    }
+    .bh-main-header{
+      background: #A71616;
+    }
+  }
+  .coverTet {
+
+
+    .cover-image {
+
+    }
+
+    i {
+      padding-top: 114.4%;
+      background-image: url('../img/cover_tet-mob.jpg');
+    }
+  }
+  .menuBox-Tet {
+    background: none;
+    margin-top: -19vw;
+    border: none;
+  }
+  .bh-menu-list {
+    background: #fff;
+    border-radius: 15px 15px 0px 0px;
+
+    li {
+      &:nth-child(1) {
+        border: none;
+      }
+    }
+  }
+  .bh-home-menu {
+    border: none;
+
+
+    .tagBox {
+      background: #A71616;
+      margin-bottom: 10px;
+
+      .tags-filter {
+        &.active {
+          background: #FFBF3D;
+          color: #111111;
+        }
+
+        color: #FFFFFF;
+        background: #CC2C2C;
+      }
+
+    }
+  }
+}

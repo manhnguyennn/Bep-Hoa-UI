@@ -1321,6 +1321,10 @@
         transition: .1s linear;
       }
 
+      &:nth-child(1) {
+        border: none;
+      }
+
       //background: #FFFFFF;
       border: none;
       box-sizing: border-box;
