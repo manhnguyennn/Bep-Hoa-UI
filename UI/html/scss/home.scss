@@ -8,6 +8,7 @@
     display: none;
   }
 
+
   position: relative;
 
   .dropdown-btn {
@@ -1240,7 +1241,7 @@
       padding: 10px 0;
 
       top: 70px;
-      margin: 20px 0;
+      margin: 20px 0 15px;
 
       .swiper-button-next {
         right: -25px;
@@ -1542,6 +1543,17 @@
   }
   .address-store {
     z-index: 10;
+
+    &.landingAD {
+      padding: 10px 16px;
+
+      background: #FFE6CE;
+
+      .dropdown-btn {
+        margin: 0;
+      }
+
+    }
 
     .dropdown-btn {
       width: 100%;

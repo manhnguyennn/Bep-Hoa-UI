@@ -17,11 +17,12 @@
 
     <script>
         $(document).ready(function () {
-            App.initHelpers(['search']);
+            App.initHelpers(['landing']);
         });
     </script>
 </head>
 <body>
+
 <div class="bh-wrapper bh-home_wrapper bh-landing-Tet">
     <div id="trigger-header"></div>
     <div class="bh-main-header">
@@ -158,7 +159,8 @@
         </div>
         <div class="coverTet">
             <div class="cover-image">
-                <i></i>
+                <video src="" poster="" loop muted playsinline
+                       preload autoplay></video>
             </div>
         </div>
         <div class="menuBox-Tet">
@@ -815,5 +817,20 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+
+        var windowW = $(window).width();
+
+        if (windowW > 800) {
+            $('.coverTet video').attr('src', "https://image.bephoa.vn/Data/video/web-final-2023.mp4");
+            $('.coverTet video').attr('poster', "https://image.bephoa.vn/Data/images/tet2023/tet-2023-web.png");
+        } else {
+            $('.coverTet video').attr('src', "https://image.bephoa.vn/Data/video/Tet_2023_Mobile.mp4");
+            $('.coverTet video').attr('poster', "https://image.bephoa.vn/Data/images/tet2023/Tet-2023-mobile.jpg");
+
+        }
+    })
+</script>
 </body>
 </html>

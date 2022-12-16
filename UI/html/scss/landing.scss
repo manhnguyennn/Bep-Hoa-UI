@@ -6,16 +6,13 @@
   background: #FFDCB7;
 
   .cover-image {
-    margin: 0 auto;
-    width: 960px;
-    max-width: 100%;
+    @extend .widthCT;
   }
 
-  i {
+  video {
     width: 100%;
-    padding-top: 46.97%;
-    @include bg-thumb();
-    background-image: url('../img/cover_tet-web.png');
+    display: block;
+    height: auto;
   }
 }
 
@@ -64,7 +61,8 @@
     .bh-home_wrapper-content {
       background: #fff;
     }
-    .bh-main-header{
+
+    .bh-main-header {
       background: #A71616;
     }
   }
@@ -81,38 +79,40 @@
     }
   }
   .menuBox-Tet {
-    background: none;
-    margin-top: -19vw;
-    border: none;
-  }
-  .bh-menu-list {
-    background: #fff;
-    border-radius: 15px 15px 0px 0px;
-
-    li {
-      &:nth-child(1) {
-        border: none;
-      }
-    }
-  }
-  .bh-home-menu {
     border: none;
 
+    .bh-home-menu {
+      border: none;
 
-    .tagBox {
-      background: #A71616;
-      margin-bottom: 10px;
 
-      .tags-filter {
-        &.active {
-          background: #FFBF3D;
-          color: #111111;
+      .tagBox {
+        background: #A71616;
+        margin-bottom: 10px;
+
+        .tags-filter {
+          &.active {
+            background: #FFBF3D;
+            color: #111111;
+          }
+
+          color: #FFFFFF;
+          background: #CC2C2C;
         }
 
-        color: #FFFFFF;
-        background: #CC2C2C;
       }
-
     }
+
+    .bh-menu-list {
+      background: #fff;
+      border-radius: 15px 15px 0px 0px;
+      li {
+        &:nth-child(1) {
+          border: none;
+          padding: 20px;
+        }
+      }
+    }
+
   }
+
 }
