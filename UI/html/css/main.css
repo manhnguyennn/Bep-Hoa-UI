@@ -3273,12 +3273,11 @@ svg {
   color: #222222;
 }
 .Popup-checkout .infoGroup .date-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 .Popup-checkout .infoGroup .date-order .pick-date {
   width: 100%;
@@ -3307,9 +3306,6 @@ svg {
   padding: 10px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.Popup-checkout .infoGroup .date-order .pick-date + .pick-date {
-  margin-left: 20px;
 }
 .Popup-checkout .infoGroup .date-order .pick-date.active, .Popup-checkout .infoGroup .date-order .pick-date:hover {
   background: var(--colorRed);

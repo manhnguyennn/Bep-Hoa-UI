@@ -160,13 +160,11 @@
     }
 
     .date-order {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
 
       .pick-date {
-        & + .pick-date {
-          margin-left: 20px;
-        }
 
         width: 100%;
         display: flex;
@@ -203,7 +201,7 @@
     }
 
     .warning {
-      &.active{
+      &.active {
         display: block;
       }
 
