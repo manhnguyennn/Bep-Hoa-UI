@@ -296,6 +296,29 @@
     }
   }
 
+  .view-all {
+    &:hover {
+      background: #B5292F;
+      color: #fff;
+    }
+
+    transition: .15s ease;
+    background: #F6F6F6;
+    border-radius: 25px;
+    margin: -15px auto 0;
+    width: 180px;
+    height: 40px;
+    max-width: 100%;
+    font-family: BVNPro-Medium;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .md-list {
     position: relative;
     @extend .widthCT;

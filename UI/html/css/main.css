@@ -1451,6 +1451,34 @@ svg {
   margin: 0 17px;
   color: #222222;
 }
+.bh-home-discount .view-all {
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+  background: #F6F6F6;
+  border-radius: 25px;
+  margin: -15px auto 0;
+  width: 180px;
+  height: 40px;
+  max-width: 100%;
+  font-family: BVNPro-Medium;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bh-home-discount .view-all:hover {
+  background: #B5292F;
+  color: #fff;
+}
 .bh-home-discount .md-list {
   position: relative;
   padding: 0 20px;
