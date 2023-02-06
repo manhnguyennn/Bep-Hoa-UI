@@ -679,7 +679,44 @@
     }
   }
 }
+.input-tools{
+  .inputCB {
+    display: flex;
+    padding: 12px 15px;
+    gap: 10px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D8D6DE;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
 
+    input {
+      width: 100%;
+      background: none;
+      border: none;
+      line-height: 120%;
+      flex-grow: 1;
+      font-family: Roboto-Medium;
+      font-size: 16px;
+      color: #111;
+      outline: none;
+
+      &::placeholder {
+        color: #666;
+      }
+    }
+
+    .type-value {
+      flex-shrink: 0;
+      font-size: 15px;
+      line-height: 101%;
+      font-family: Roboto-Medium;
+      color: #000000;
+
+    }
+  }
+}
 .date-create-order {
   font-size: 12px;
 }
