@@ -4,6 +4,10 @@ svg {
   display: block;
 }
 
+.hidden {
+  display: none!important;
+}
+
 /* Custom animation fancybox */
 .fancybox-fx-slide-in-out.fancybox-slide--previous {
   transform: translateY(100%);
@@ -238,6 +242,7 @@ svg {
   position: relative;
   cursor: default;
   color: transparent !important;
+
   &:after {
     content: '';
     position: absolute;
@@ -255,7 +260,7 @@ svg {
 }
 
 /* Custom radio options order */
-.form-radio {
+.form-radio, .form-radio-opt {
   &.small {
     [type="radio"]:checked + label:before,
     [type="radio"]:not(:checked) + label:before {
@@ -341,6 +346,68 @@ svg {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+.form-radio-opt {
+  display: flex;
+
+  & + .form-radio-opt {
+    padding-top: 15px;
+    margin-top: 15px;
+    @extend .bt05;
+  }
+
+  label {
+    &:before {
+      content: '';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1.5px solid #000000;
+      border-radius: 3px;
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    width: 100%;
+    box-sizing: border-box;
+    position: relative !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    span {
+      display: block;
+    }
+
+    .txt {
+      margin-right: auto;
+      margin-left: 0;
+      font-size: 13px;
+      line-height: 140%;
+      font-family: BVNPro-Regular;
+      color: #222222;
+
+    }
+
+    .price {
+      font-size: 12px;
+      line-height: 140%;
+      font-family: BVNPro-Regular;
+      text-align: right;
+      color: #666666;
+
+      //&.plus-price {
+      //  font-family: BVNPro-Medium;
+      //  color: #222222;
+      //}
+    }
   }
 }
 
