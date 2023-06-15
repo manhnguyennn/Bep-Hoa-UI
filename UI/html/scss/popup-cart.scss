@@ -212,8 +212,42 @@
     display: block;
   }
 
+  .price-item {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    line-height: 140%;
+    font-family: BVNPro-Medium;
+    gap: 3px;
+    margin-bottom: 8px;
+
+    &.sale {
+      .price-sale {
+        color: #78614B;
+        display: block;
+      }
+
+      .price-original {
+        text-decoration-line: line-through;
+        color: #999;
+      }
+    }
+
+    .price-sale {
+      display: none;
+
+    }
+
+    .price-original {
+      color: #78614B;
+    }
+  }
+
   .opts-list {
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .opts {
@@ -221,6 +255,17 @@
     line-height: 170%;
     font-family: BVNPro-Regular;
     color: #666666;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price-opt {
+    font-size: 10px;
+    line-height: 170%;
+    /* identical to box height, or 17px */
+    padding-left: 12px;
+    font-family: BVNPro-Regular;
+    color: #999999;
   }
 
   .od-note {

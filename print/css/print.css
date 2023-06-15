@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html > * {
   margin: 0;
   padding: 0;
@@ -131,13 +130,12 @@ body {
   margin: 2px 0;
   padding-left: 10px;
   position: relative;
-  font-weight: 600;
   font-size: 10px;
+  gap: 3px;
   display: flex;
-  justify-content: space-between;
 }
 .body-bill .detail-bill .order-detail .opt-food:before {
-  content: "●";
+  content: "+";
   position: absolute;
   left: 0;
 }
@@ -151,11 +149,7 @@ body {
 }
 .body-bill .detail-bill .order-detail .prc-opt {
   font-size: 9px;
-  font-weight: 600;
-  width: 65px;
   flex-shrink: 0;
-  margin-left: 10px;
-  text-align: right;
 }
 .body-bill .detail-bill .order-detail .note-food {
   font-size: 11px;
@@ -164,9 +158,18 @@ body {
   margin-bottom: 3px;
   line-height: 14px;
 }
-.body-bill .detail-bill .order-detail .price-original {
+.body-bill .detail-bill .order-detail .price-item {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+}
+.body-bill .detail-bill .order-detail .price-item.sale .price-original {
+  text-decoration: line-through;
   font-size: 11px;
-  font-family: Roboto-Regular;
+}
+.body-bill .detail-bill .order-detail .price-original {
+  font-size: 12px;
+  font-family: Tahoma;
 }
 .body-bill .detail-bill .price-result {
   text-align: right;
