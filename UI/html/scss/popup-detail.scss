@@ -411,10 +411,11 @@
       }
 
       .close-popup {
-        right: 60px;
         left: auto;
         width: 50px;
-        top: 40px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
       }
     }
   }
