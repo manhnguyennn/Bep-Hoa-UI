@@ -5999,6 +5999,12 @@ svg {
           flex-direction: column;
 }
 
+body.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .coverTet .cover-image {
   min-width: 1080px;
   max-width: 100%;

@@ -31,6 +31,14 @@
 
 }
 
+body {
+  &.no-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 .widthCT {
   min-width: 1080px;
   max-width: 100%;
