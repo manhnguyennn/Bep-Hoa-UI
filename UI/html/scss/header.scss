@@ -4,7 +4,6 @@
 
 .bh-main-header {
   &.active {
-    box-shadow: inset 0px -0.5px 0px #E6E6E6;
 
     .header-content {
       height: 70px;
@@ -14,6 +13,8 @@
       width: 164px;
     }
   }
+
+  box-shadow: inset 0px -0.5px 0px #E6E6E6;
 
   position: fixed;
   top: 0;
@@ -149,6 +150,233 @@
     }
 
 
+  }
+
+  .menu-web {
+    @extend .widthCT;
+
+    .menu-web-content {
+      padding-top: 9px;
+      padding-bottom: 12px;
+      display: flex;
+      gap: 25px;
+      position: relative;
+    }
+  }
+
+  .src-web {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      .txt {
+        color: #B5292F;
+      }
+    }
+
+    .icn {
+      width: 16px;
+      display: block;
+    }
+
+    .txt {
+      color: #222;
+      font-size: 14px;
+      font-family: BVNPro-Medium;
+      line-height: 130%;
+    }
+  }
+
+  .list-menu-fix {
+    display: flex;
+    gap: 25px;
+  }
+
+  .menu-link-fix {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    &:hover {
+      .txt {
+        color: #B5292F;
+      }
+    }
+
+    .icn {
+      width: 16px;
+      display: block;
+    }
+
+    .txt {
+      color: #222;
+      font-size: 14px;
+      font-family: BVNPro-Medium;
+      line-height: 130%;
+      display: block;
+    }
+  }
+
+  .list-menu-expand {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    transition: .1s;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu-parent {
+      &.active {
+        max-height: 312px;
+        border-right: 0 solid #D9D9D9;
+
+      }
+
+      border-bottom: 1px solid #D9D9D9;
+      border-left: 1px solid #D9D9D9;
+      border-right: 1px solid #D9D9D9;
+      transition: max-height .3s;
+      padding: 15px 0;
+      width: 250px;
+      box-sizing: border-box;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-height: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      overflow-y: overlay;
+      box-sizing: border-box;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 0;
+      }
+
+      &::-webkit-scrollbar-track {
+        margin: 20px 0 0;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.0);
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+      }
+
+      &:hover::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.25)
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.25)
+      }
+    }
+
+    .menu-parent-link {
+
+      padding: 8px 20px;
+      box-sizing: border-box;
+      background: #fff;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      &:hover, &.active {
+        .icn, .txt {
+          color: #B5292F;
+        }
+
+        background: #F5F5F5;
+
+      }
+
+      .icn {
+        width: 18px;
+        display: block;
+        color: #222;
+      }
+
+      .txt {
+        color: #222;
+        font-size: 14px;
+        font-family: BVNPro-Regular;
+        line-height: 130%;
+        display: block;
+      }
+    }
+
+    .menu-child {
+      &.active {
+        max-width: 250px;
+      }
+
+      border-bottom: 1px solid #D9D9D9;
+      border-right: 1px solid #D9D9D9;
+      transition: max-width .3s;
+      max-width: 0;
+      max-height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 20px 0;
+      background: #F5F5F5;
+      overflow-y: overlay;
+      box-sizing: border-box;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 0;
+      }
+
+      &::-webkit-scrollbar-track {
+        margin: 345px 0 0;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.0);
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+      }
+
+      &:hover::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.45)
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.85)
+      }
+    }
+
+    .list-child-item {
+      display: flex;
+      width: 250px;
+      box-sizing: border-box;
+      gap: 12px;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    .child-item {
+      &:hover {
+        color: #B5292F;
+
+      }
+
+      display: block;
+      color: #222;
+      font-size: 13px;
+      font-family: BVNPro-Regular;
+      line-height: 130%;
+    }
   }
 }
 
