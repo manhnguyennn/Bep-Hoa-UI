@@ -302,18 +302,21 @@
       color: #fff;
     }
 
+    border-radius: 6px;
+    border: 1px solid rgba(120, 97, 75, 0.30);
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
     transition: .15s ease;
-    background: #F6F6F6;
-    border-radius: 25px;
     margin: -15px auto 0;
     width: 180px;
-    height: 40px;
+    height: 35px;
+    color: #222;
+    text-align: center;
+    font-size: 15px;
+    line-height: 130%;
     max-width: 100%;
-    font-family: BVNPro-Medium;
-    font-size: 14px;
-    line-height: 100%;
+    font-family: BVNPro-Regular;
     /* identical to box height, or 14px */
-    color: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,6 +376,45 @@
     svg {
       width: 58px;
       height: auto;
+      display: block;
+    }
+  }
+
+  .view-all-card {
+    background: #fff;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    gap: 15px;
+
+    &:hover {
+      .icn {
+        path {
+          fill: var(--colorRed);
+        }
+      }
+
+      .txt {
+        color: var(--colorRed);
+      }
+    }
+
+    .icn {
+      width: 58px;
+      display: block;
+    }
+
+    .txt {
+      color: #666;
+      font-size: 13px;
+      font-family: BVNPro-Regular;
+      line-height: 100%;
       display: block;
     }
   }
@@ -1756,7 +1798,7 @@
       }
     }
 
-    .waiting-card {
+    .waiting-card, .view-all-card {
       width: 155px;
     }
   }
