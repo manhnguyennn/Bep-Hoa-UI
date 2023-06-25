@@ -1,0 +1,1061 @@
+/*--------------------------------
+
+Nucleo Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'Nucleo';
+  src: url('../../fonts/Nucleo.eot');
+  src: url('../../fonts/Nucleo.eot') format('embedded-opentype'), url('../../fonts/Nucleo.woff2') format('woff2'), url('../../fonts/Nucleo.woff') format('woff'), url('../../fonts/Nucleo.ttf') format('truetype'), url('../../fonts/Nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------------------------------
+
+Reset
+
+-------------------------------- */
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+* {
+  font: inherit;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: system-ui, sans-serif;
+  color: hsl(240, 4%, 20%);
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main, form legend {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  margin: 0;
+}
+
+a {
+  color: hsl(230, 93%, 66%);
+}
+
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+header {
+  text-align: center;
+  margin: 3em auto;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: 1em;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li {
+  border-radius: .4em;
+  transition: background-color .2s;
+  user-select: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 1em;
+}
+
+ul li:hover {
+  background: hsla(0, 0%, 0%, 0.05);
+}
+
+ul p, ul em, ul input {
+  display: block;
+  font-size: 0.75rem;
+  color: hsla(0, 0%, 0%, 0.5);
+  user-select: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  max-width: 6rem;
+}
+
+ul p {
+  padding: 8px 0 4px;
+}
+
+ul p::selection, ul em::selection {
+  background: hsl(230, 93%, 66%);
+  color: #fff;
+}
+
+ul p::-moz-selection, ul em::-moz-selection {
+  background: hsl(230, 93%, 66%);
+  color: #fff;
+}
+
+ul em {
+  margin-bottom: 4px;
+}
+
+ul em::before {
+  content: '[';
+}
+ul em::after {
+  content: ']';
+}
+
+ul input {
+  text-align: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  font-family: auto;
+}
+
+/* --------------------------------
+
+icons
+
+-------------------------------- */
+.icon {
+  display: inline-block;
+  font: normal normal normal 32px/1 'Nucleo';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  font icons
+-------------------------*/
+
+.icon-star::before {
+  content: "\ea66";
+}
+
+.icon-new::before {
+  content: "\ea67";
+}
+
+.icon-sale::before {
+  content: "\ea68";
+}
+
+.icon-discount-2::before {
+  content: "\ea69";
+}
+
+.icon-tag-loyalty::before {
+  content: "\ea6a";
+}
+
+.icon-tag-sale::before {
+  content: "\ea6b";
+}
+
+.icon-tag::before {
+  content: "\ea6c";
+}
+
+.icon-percentage-39::before {
+  content: "\ea6d";
+}
+
+.icon-percentage-38::before {
+  content: "\ea6e";
+}
+
+.icon-present::before {
+  content: "\ea6f";
+}
+
+.icon-box-3d-50::before {
+  content: "\ea70";
+}
+
+.icon-hut::before {
+  content: "\ea71";
+}
+
+.icon-farmer-market::before {
+  content: "\ea72";
+}
+
+.icon-fruit-picking::before {
+  content: "\ea73";
+}
+
+.icon-fruit-crate::before {
+  content: "\ea74";
+}
+
+.icon-toaster::before {
+  content: "\ea75";
+}
+
+.icon-romantic-restaurant::before {
+  content: "\ea76";
+}
+
+.icon-romantic-dinner::before {
+  content: "\ea77";
+}
+
+.icon-wedding-cake::before {
+  content: "\ea78";
+}
+
+.icon-toast::before {
+  content: "\ea79";
+}
+
+.icon-roast-turkey::before {
+  content: "\ea7a";
+}
+
+.icon-pie::before {
+  content: "\ea7b";
+}
+
+.icon-pumpkin::before {
+  content: "\ea7c";
+}
+
+.icon-hazelnut::before {
+  content: "\ea7d";
+}
+
+.icon-blender::before {
+  content: "\ea7e";
+}
+
+.icon-drinking-bottle::before {
+  content: "\ea7f";
+}
+
+.icon-diet-food::before {
+  content: "\ea80";
+}
+
+.icon-soft-drink::before {
+  content: "\ea81";
+}
+
+.icon-peas::before {
+  content: "\ea82";
+}
+
+.icon-boiling-water::before {
+  content: "\ea83";
+}
+
+.icon-grain::before {
+  content: "\ea84";
+}
+
+.icon-shell::before {
+  content: "\ea85";
+}
+
+.icon-name-card::before {
+  content: "\ea86";
+}
+
+.icon-butter::before {
+  content: "\ea87";
+}
+
+.icon-oil-2::before {
+  content: "\ea88";
+}
+
+.icon-takeaway::before {
+  content: "\ea89";
+}
+
+.icon-can::before {
+  content: "\ea8a";
+}
+
+.icon-eggs::before {
+  content: "\ea8b";
+}
+
+.icon-mortar::before {
+  content: "\ea8c";
+}
+
+.icon-mayo::before {
+  content: "\ea8d";
+}
+
+.icon-bakery::before {
+  content: "\ea8e";
+}
+
+.icon-ketchup::before {
+  content: "\ea8f";
+}
+
+.icon-pasta::before {
+  content: "\ea90";
+}
+
+.icon-organic-2::before {
+  content: "\ea91";
+}
+
+.icon-yogurt::before {
+  content: "\ea92";
+}
+
+.icon-timer::before {
+  content: "\ea93";
+}
+
+.icon-popcorn::before {
+  content: "\ea94";
+}
+
+.icon-tea-bag::before {
+  content: "\ea95";
+}
+
+.icon-soy-sauce::before {
+  content: "\ea96";
+}
+
+.icon-lollipop::before {
+  content: "\ea97";
+}
+
+.icon-soup::before {
+  content: "\ea98";
+}
+
+.icon-rice::before {
+  content: "\ea99";
+}
+
+.icon-pickle::before {
+  content: "\ea9a";
+}
+
+.icon-bag-delivery::before {
+  content: "\ea9b";
+}
+
+.icon-sugar::before {
+  content: "\ea9c";
+}
+
+.icon-pepper::before {
+  content: "\ea9d";
+}
+
+.icon-aubergine::before {
+  content: "\ea9e";
+}
+
+.icon-onion::before {
+  content: "\ea9f";
+}
+
+.icon-corn::before {
+  content: "\eaa0";
+}
+
+.icon-potato::before {
+  content: "\eaa1";
+}
+
+.icon-garlic::before {
+  content: "\eaa2";
+}
+
+.icon-kiwi::before {
+  content: "\eaa3";
+}
+
+.icon-blueberries::before {
+  content: "\eaa4";
+}
+
+.icon-orange::before {
+  content: "\eaa5";
+}
+
+.icon-pear::before {
+  content: "\eaa6";
+}
+
+.icon-lemon::before {
+  content: "\eaa7";
+}
+
+.icon-pineapple::before {
+  content: "\eaa8";
+}
+
+.icon-smoothie::before {
+  content: "\eaa9";
+}
+
+.icon-picnic-basket::before {
+  content: "\eaaa";
+}
+
+.icon-peanut::before {
+  content: "\eaab";
+}
+
+.icon-choco-cream::before {
+  content: "\eaac";
+}
+
+.icon-churros::before {
+  content: "\eaad";
+}
+
+.icon-cupcake::before {
+  content: "\eaae";
+}
+
+.icon-jelly::before {
+  content: "\eaaf";
+}
+
+.icon-ice-cream::before {
+  content: "\eab0";
+}
+
+.icon-honey::before {
+  content: "\eab1";
+}
+
+.icon-chocolate-mousse::before {
+  content: "\eab2";
+}
+
+.icon-waffle::before {
+  content: "\eab3";
+}
+
+.icon-crepe::before {
+  content: "\eab4";
+}
+
+.icon-crumpet::before {
+  content: "\eab5";
+}
+
+.icon-brioche::before {
+  content: "\eab6";
+}
+
+.icon-organic::before {
+  content: "\eab7";
+}
+
+.icon-glass-water::before {
+  content: "\eab8";
+}
+
+.icon-tomato::before {
+  content: "\eab9";
+}
+
+.icon-detox::before {
+  content: "\eaba";
+}
+
+.icon-snack::before {
+  content: "\eabb";
+}
+
+.icon-vegan::before {
+  content: "\eabc";
+}
+
+.icon-diet-plan::before {
+  content: "\eabd";
+}
+
+.icon-food-scale::before {
+  content: "\eabe";
+}
+
+.icon-juice::before {
+  content: "\eabf";
+}
+
+.icon-nutrition::before {
+  content: "\eac0";
+}
+
+.icon-energy::before {
+  content: "\eac1";
+}
+
+.icon-diet::before {
+  content: "\eac2";
+}
+
+.icon-recipe-create::before {
+  content: "\eac3";
+}
+
+.icon-recipe::before {
+  content: "\eac4";
+}
+
+.icon-salad::before {
+  content: "\eac5";
+}
+
+.icon-bill::before {
+  content: "\eac6";
+}
+
+.icon-drink-list::before {
+  content: "\eac7";
+}
+
+.icon-opening-times::before {
+  content: "\eac8";
+}
+
+.icon-roast-chicken::before {
+  content: "\eac9";
+}
+
+.icon-acorn::before {
+  content: "\eaca";
+}
+
+.icon-dish::before {
+  content: "\eacb";
+}
+
+.icon-wine-list::before {
+  content: "\eacc";
+}
+
+.icon-restaurant-menu::before {
+  content: "\eacd";
+}
+
+.icon-reservation::before {
+  content: "\eace";
+}
+
+.icon-chef::before {
+  content: "\eacf";
+}
+
+.icon-terrace::before {
+  content: "\ead0";
+}
+
+.icon-cutlery::before {
+  content: "\ead1";
+}
+
+.icon-coffee-bean::before {
+  content: "\ead2";
+}
+
+.icon-avocado::before {
+  content: "\ead3";
+}
+
+.icon-pancake::before {
+  content: "\ead4";
+}
+
+.icon-steak-2::before {
+  content: "\ead5";
+}
+
+.icon-whisk::before {
+  content: "\ead6";
+}
+
+.icon-watermelon::before {
+  content: "\ead7";
+}
+
+.icon-vest-31::before {
+  content: "\ead8";
+}
+
+.icon-temperature-2::before {
+  content: "\ead9";
+}
+
+.icon-tea::before {
+  content: "\eada";
+}
+
+.icon-tacos::before {
+  content: "\eadb";
+}
+
+.icon-sushi::before {
+  content: "\eadc";
+}
+
+.icon-food-supplement::before {
+  content: "\eadd";
+}
+
+.icon-strawberry::before {
+  content: "\eade";
+}
+
+.icon-store::before {
+  content: "\eadf";
+}
+
+.icon-steak::before {
+  content: "\eae0";
+}
+
+.icon-shrimp::before {
+  content: "\eae1";
+}
+
+.icon-shop::before {
+  content: "\eae2";
+}
+
+.icon-sausage::before {
+  content: "\eae3";
+}
+
+.icon-shaker::before {
+  content: "\eae4";
+}
+
+.icon-scotch::before {
+  content: "\eae5";
+}
+
+.icon-scale-3::before {
+  content: "\eae6";
+}
+
+.icon-salt::before {
+  content: "\eae7";
+}
+
+.icon-rolling-pin::before {
+  content: "\eae8";
+}
+
+.icon-recipe-book-47::before {
+  content: "\eae9";
+}
+
+.icon-recipe-book-46::before {
+  content: "\eaea";
+}
+
+.icon-prosciutto::before {
+  content: "\eaeb";
+}
+
+.icon-pot::before {
+  content: "\eaec";
+}
+
+.icon-plate::before {
+  content: "\eaed";
+}
+
+.icon-pizza::before {
+  content: "\eaee";
+}
+
+.icon-pizza-slice::before {
+  content: "\eaef";
+}
+
+.icon-hob::before {
+  content: "\eaf0";
+}
+
+.icon-pan::before {
+  content: "\eaf1";
+}
+
+.icon-oven::before {
+  content: "\eaf2";
+}
+
+.icon-mug::before {
+  content: "\eaf3";
+}
+
+.icon-muffin::before {
+  content: "\eaf4";
+}
+
+.icon-moka::before {
+  content: "\eaf5";
+}
+
+.icon-hand-mixer::before {
+  content: "\eaf6";
+}
+
+.icon-milk::before {
+  content: "\eaf7";
+}
+
+.icon-microwave::before {
+  content: "\eaf8";
+}
+
+.icon-meat-spit::before {
+  content: "\eaf9";
+}
+
+.icon-measuring-cup::before {
+  content: "\eafa";
+}
+
+.icon-matches::before {
+  content: "\eafb";
+}
+
+.icon-lobster::before {
+  content: "\eafc";
+}
+
+.icon-lighter::before {
+  content: "\eafd";
+}
+
+.icon-lemon-slice::before {
+  content: "\eafe";
+}
+
+.icon-knife::before {
+  content: "\eaff";
+}
+
+.icon-apron::before {
+  content: "\eb00";
+}
+
+.icon-kitchen-fan::before {
+  content: "\eb01";
+}
+
+.icon-kettle::before {
+  content: "\eb02";
+}
+
+.icon-jam::before {
+  content: "\eb03";
+}
+
+.icon-ice-cream-72::before {
+  content: "\eb04";
+}
+
+.icon-ice-cream-22::before {
+  content: "\eb05";
+}
+
+.icon-hot-dog::before {
+  content: "\eb06";
+}
+
+.icon-grape::before {
+  content: "\eb07";
+}
+
+.icon-glass::before {
+  content: "\eb08";
+}
+
+.icon-fridge::before {
+  content: "\eb09";
+}
+
+.icon-fishbone::before {
+  content: "\eb0a";
+}
+
+.icon-fish::before {
+  content: "\eb0b";
+}
+
+.icon-energy-drink::before {
+  content: "\eb0c";
+}
+
+.icon-energy-shaker::before {
+  content: "\eb0d";
+}
+
+.icon-egg::before {
+  content: "\eb0e";
+}
+
+.icon-cocktail::before {
+  content: "\eb0f";
+}
+
+.icon-donut::before {
+  content: "\eb10";
+}
+
+.icon-dishwasher::before {
+  content: "\eb11";
+}
+
+.icon-cutlery-77::before {
+  content: "\eb12";
+}
+
+.icon-cutlery-76::before {
+  content: "\eb13";
+}
+
+.icon-cutlery-75::before {
+  content: "\eb14";
+}
+
+.icon-croissant::before {
+  content: "\eb15";
+}
+
+.icon-crab::before {
+  content: "\eb16";
+}
+
+.icon-food-course::before {
+  content: "\eb17";
+}
+
+.icon-cookies::before {
+  content: "\eb18";
+}
+
+.icon-coffee::before {
+  content: "\eb19";
+}
+
+.icon-coffee-long::before {
+  content: "\eb1a";
+}
+
+.icon-coffe-long::before {
+  content: "\eb1b";
+}
+
+.icon-drink::before {
+  content: "\eb1c";
+}
+
+.icon-cheese-87::before {
+  content: "\eb1d";
+}
+
+.icon-chips::before {
+  content: "\eb1e";
+}
+
+.icon-chocolate::before {
+  content: "\eb1f";
+}
+
+.icon-noodles::before {
+  content: "\eb20";
+}
+
+.icon-chili::before {
+  content: "\eb21";
+}
+
+.icon-chicken::before {
+  content: "\eb22";
+}
+
+.icon-cherry::before {
+  content: "\eb23";
+}
+
+.icon-chef-hat::before {
+  content: "\eb24";
+}
+
+.icon-cheeseburger::before {
+  content: "\eb25";
+}
+
+.icon-cheese::before {
+  content: "\eb26";
+}
+
+.icon-champagne::before {
+  content: "\eb27";
+}
+
+.icon-carrot::before {
+  content: "\eb28";
+}
+
+.icon-candy::before {
+  content: "\eb29";
+}
+
+.icon-candle::before {
+  content: "\eb2a";
+}
+
+.icon-cake::before {
+  content: "\eb2b";
+}
+
+.icon-cake-slice::before {
+  content: "\eb2c";
+}
+
+.icon-cake-2::before {
+  content: "\eb2d";
+}
+
+.icon-cake-13::before {
+  content: "\eb2e";
+}
+
+.icon-broccoli::before {
+  content: "\eb2f";
+}
+
+.icon-bread::before {
+  content: "\eb30";
+}
+
+.icon-bowl::before {
+  content: "\eb31";
+}
+
+.icon-bottle::before {
+  content: "\eb32";
+}
+
+.icon-bottle-wine::before {
+  content: "\eb33";
+}
+
+.icon-beverage::before {
+  content: "\eb34";
+}
+
+.icon-beer-96::before {
+  content: "\eb35";
+}
+
+.icon-beer-95::before {
+  content: "\eb36";
+}
+
+.icon-barbecue::before {
+  content: "\eb37";
+}
+
+.icon-barbecue-tools::before {
+  content: "\eb38";
+}
+
+.icon-barbecue-15::before {
+  content: "\eb39";
+}
+
+.icon-banana::before {
+  content: "\eb3a";
+}
+
+.icon-baguette::before {
+  content: "\eb3b";
+}
+
+.icon-bacon::before {
+  content: "\eb3c";
+}
+
+.icon-feeding-bottle::before {
+  content: "\eb3d";
+}
+
+.icon-baby-bottle::before {
+  content: "\eb3e";
+}
+
+.icon-pacifier::before {
+  content: "\eb3f";
+}
+
+.icon-apple-2::before {
+  content: "\eb40";
+}
+
+.icon-alcohol::before {
+  content: "\eb41";
+}
+
