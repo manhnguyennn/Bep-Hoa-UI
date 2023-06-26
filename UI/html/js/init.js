@@ -80,6 +80,37 @@
 
         }
     },
+    listCate: function () {
+        // Dropdown change location
+
+
+        let me = this;
+
+        if (me.windowW > 800) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+            $('.bh-home-contact').insertBefore('.searchBox');
+            $('.bh-cart-total').insertAfter('.searchBox');
+        } else {
+            $('.address-store').insertBefore('.cate-info');
+            $('.bh-home-contact').addClass('disable');
+
+
+        }
+    },
     landing: function () {
         // Dropdown change location
 

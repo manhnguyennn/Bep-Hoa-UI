@@ -5920,6 +5920,131 @@ Generated using nucleoapp.com
   color: #222222;
 }
 
+.cate-info {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.cate-info .name-cate {
+  color: #222;
+  text-align: center;
+  font-size: 30px;
+  font-family: BVNPro-SemiBold;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+.cate-info .des {
+  color: #888;
+  text-align: center;
+  font-size: 15px;
+  font-family: BVNPro-Regular;
+  line-height: 130%;
+}
+
+.list-cate-link .list-ctl {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  background: #FBFBFB;
+  padding: 20px 40px;
+  grid-column-gap: 25px;
+  grid-row-gap: 12px;
+}
+.list-cate-link .cate-link {
+  color: #222;
+  font-size: 13.5px;
+  font-family: BVNPro-Regular;
+  display: block;
+  line-height: 130%;
+}
+.list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
+  color: #B5292F;
+}
+
+@media screen and (max-width: 768px) {
+  .cateBox {
+    padding: 0 20px;
+    position: relative;
+  }
+  .cateBox:before {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    background: linear-gradient(179deg, #FFE6CE 36.4%, rgba(255, 230, 206, 0) 100%);
+    content: "";
+  }
+
+  .cate-info {
+    padding: 0;
+    margin-bottom: 17px;
+  }
+  .cate-info .name-cate {
+    font-size: 24px;
+    text-align: left;
+  }
+  .cate-info .des {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .list-cate-link {
+    position: sticky;
+    width: 100vw;
+    margin-left: -20px;
+    top: 60px;
+    left: 0;
+    z-index: 99;
+  }
+  .list-cate-link .list-ctl {
+    background: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    width: 100%;
+    overflow-x: scroll;
+    border: none;
+    margin-bottom: 0;
+  }
+  .list-cate-link .list-ctl::-webkit-scrollbar {
+    display: none;
+  }
+  .list-cate-link .list-ctl li {
+    flex-shrink: 0;
+  }
+  .list-cate-link .list-ctl li:nth-child(1) {
+    margin-left: 20px;
+  }
+  .list-cate-link .list-ctl li:nth-last-child(1) {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .list-cate-link .cate-link {
+    display: inline-flex;
+    height: 30px;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #F6F6F6;
+    font-size: 13px;
+  }
+  .list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
+    background: #B5292F;
+    color: #fff;
+  }
+
+  .bh-list-cate_wrapper .address-store {
+    padding: 12px 0;
+  }
+}
 .bh-landing-Tet {
   background: #A71616;
 }
@@ -6012,7 +6137,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .coverTet .cover-image {
+.widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .coverTet .cover-image {
   min-width: 1080px;
   max-width: 100%;
   margin: 0 auto;
@@ -6024,18 +6149,18 @@ body.no-scroll {
     padding: 0;
   }
 
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .coverTet .cover-image {
     width: 1080px;
     padding: 0 20px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .coverTet .cover-image {
     width: 63.17vw;
   }
 }
 @media screen and (max-width: 760px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .coverTet .cover-image {
     min-width: 100%;
   }
 }
