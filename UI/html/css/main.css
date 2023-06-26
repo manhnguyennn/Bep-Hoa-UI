@@ -1502,6 +1502,126 @@ Generated using nucleoapp.com
   content: "\eb41";
 }
 
+.icon-blog::before {
+  content: "\eb42";
+}
+
+.icon-pen-01::before {
+  content: "\eb43";
+}
+
+.icon-floppy-disk::before {
+  content: "\eb44";
+}
+
+.icon-down-arrow::before {
+  content: "\eb45";
+}
+
+.icon-c-add::before {
+  content: "\eb46";
+}
+
+.icon-e-remove-2::before {
+  content: "\eb47";
+}
+
+.icon-right-arrow::before {
+  content: "\eb48";
+}
+
+.icon-refresh::before {
+  content: "\eb49";
+}
+
+.icon-wrench::before {
+  content: "\eb4a";
+}
+
+.icon-gear::before {
+  content: "\eb4b";
+}
+
+.icon-check-in::before {
+  content: "\eb4c";
+}
+
+.icon-shop-location::before {
+  content: "\eb4d";
+}
+
+.icon-account::before {
+  content: "\eb4e";
+}
+
+.icon-multiple-11::before {
+  content: "\eb4f";
+}
+
+.icon-shop-1::before {
+  content: "\eb50";
+}
+
+.icon-discount-2-1::before {
+  content: "\eb51";
+}
+
+.icon-users-wm::before {
+  content: "\eb52";
+}
+
+.icon-salad-1::before {
+  content: "\eb53";
+}
+
+.icon-basket::before {
+  content: "\eb54";
+}
+
+.icon-unlocked::before {
+  content: "\eb55";
+}
+
+.icon-lock::before {
+  content: "\eb56";
+}
+
+.icon-increase::before {
+  content: "\eb57";
+}
+
+.icon-time-clock::before {
+  content: "\eb58";
+}
+
+.icon-print::before {
+  content: "\eb59";
+}
+
+.icon-zoom::before {
+  content: "\eb5a";
+}
+
+.icon-e-remove-1::before {
+  content: "\eb5b";
+}
+
+.icon-move-up::before {
+  content: "\eb5c";
+}
+
+.icon-check::before {
+  content: "\eb5d";
+}
+
+.icon-calendar-date-2::before {
+  content: "\eb5e";
+}
+
+.icon-pin-angle-fill::before {
+  content: "\eb5f";
+}
+
 .bh-main-header {
   box-shadow: inset 0px -0.5px 0px #E6E6E6;
   position: fixed;
