@@ -97,7 +97,18 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
-
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                speed: 3500,
+                centeredSlides: true,
+                loop: true,
+            });
             $(".food-card").each(function () {
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
@@ -108,7 +119,95 @@
             $('.address-store').insertBefore('.cate-info');
             $('.bh-home-contact').addClass('disable');
 
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                centeredSlides: true,
+                loop: true,
+            });
+        }
+    },
+    foodDetail: function () {
+        // Dropdown change location
 
+        // Plus and Minus order in PopUp Detail
+        $('.minus').click(function () {
+            let $input = $(this).parent().find('input');
+            let count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            let $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+
+        let swiperGallery = new Swiper(".swiper-gallery", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".galleryBox .swiper-pagination",
+                type: "fraction",
+            },
+            initialSlide: 0,
+        });
+
+        let me = this;
+
+        if (me.windowW > 800) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                speed: 3500,
+                centeredSlides: true,
+                loop: true,
+            });
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+            $('.bh-home-contact').insertBefore('.searchBox');
+            $('.bh-cart-total').insertAfter('.searchBox');
+        } else {
+            $('.address-store').insertBefore('.galleryBox');
+            $('.bh-home-contact').addClass('disable');
+
+            let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                centeredSlides: true,
+                loop: true,
+            });
         }
     },
     landing: function () {
