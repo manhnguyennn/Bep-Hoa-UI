@@ -250,6 +250,15 @@
   flex-direction: column;
   gap: 30px;
 
+  .des {
+    color: #888;
+    text-align: center;
+    font-family: BVNPro-Regular;
+    font-size: 13px;
+    margin-top: -20px;
+    line-height: 130%;
+  }
+
   .heading {
     display: flex;
     justify-content: center;
@@ -286,20 +295,20 @@
 
     .txt {
       flex-shrink: 0;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 100%;
       font-family: BVNPro-SemiBold;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       margin: 0 17px;
       color: #222222;
+      display: block;
     }
   }
 
   .view-all {
     &:hover {
-      background: #B5292F;
-      color: #fff;
+      border: 1px solid rgba(120, 97, 75, 1);
     }
 
     border-radius: 6px;
@@ -372,6 +381,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
 
     svg {
       width: 58px;
@@ -382,6 +392,7 @@
 
   .view-all-card {
     background: #fff;
+    margin-top: 5px;
     border-radius: 6px;
     width: 100%;
     height: 100%;
@@ -389,7 +400,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 0.5px solid rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     gap: 15px;
 
@@ -397,6 +407,10 @@
       .icn {
         path {
           fill: var(--colorRed);
+        }
+
+        circle {
+          fill: #F8F8F8;
         }
       }
 
@@ -1800,6 +1814,7 @@
 
     .waiting-card, .view-all-card {
       width: 155px;
+      margin-top: 0;
     }
   }
 }

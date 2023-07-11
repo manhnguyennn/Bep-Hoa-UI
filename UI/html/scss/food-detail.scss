@@ -13,7 +13,7 @@
   }
 
   .galleryBox {
-    width: 350px;
+    width: 40%;
     flex-shrink: 0;
     max-width: 100%;
 
@@ -117,9 +117,9 @@
       font-size: 22px;
       line-height: 130%;
       /* or 25px */
-      padding-right: 55px;
       color: #222222;
       font-family: BVNPro-SemiBold;
+      margin-bottom: 14px;
     }
 
     .note-food {
@@ -150,6 +150,13 @@
         margin-left: 11px;
         color: #999999;
       }
+    }
+
+    .flexPrice-qtt {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      margin-bottom: 24px;
     }
 
     .sapo {
@@ -324,6 +331,10 @@
     }
 
     .atc-btn {
+      &:hover {
+        background: #A3272D;
+      }
+
       display: inline-flex;
       padding: 12px 28px;
       font-size: 15px;
@@ -335,6 +346,9 @@
     }
 
     .buy-now {
+      &:hover {
+        background: #333333;
+      }
       display: inline-flex;
       padding: 12px 28px;
       font-size: 15px;
@@ -351,6 +365,7 @@
 .bh-home-menu {
   &.bh-suggest-detail {
     margin-bottom: 50px;
+
     .heading {
       margin-bottom: 25px;
     }
@@ -435,6 +450,13 @@
 
     .infoBox {
       padding: 15px 20px;
+
+      .flexPrice-qtt {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
 
       .name {
         font-size: 19px;
