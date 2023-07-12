@@ -528,7 +528,7 @@
                 centeredSlides: true,
                 loop: true,
             });
-            $('.address-store').insertBefore('.bnerBox');
+            $('.address-store').insertBefore('.bh-home_bner-top');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
 

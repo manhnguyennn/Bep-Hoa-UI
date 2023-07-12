@@ -2834,7 +2834,7 @@ Generated using nucleoapp.com
 }
 
 .bh-home_bner-top {
-  padding: 16px 20px 0;
+  padding: 0 20px 0;
   position: relative;
   margin-bottom: 30px;
 }
@@ -3000,14 +3000,14 @@ Generated using nucleoapp.com
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 .bh-home-discount .des {
   color: #888;
   text-align: center;
   font-family: BVNPro-Regular;
   font-size: 13px;
-  margin-top: -20px;
+  margin-top: -10px;
   line-height: 130%;
 }
 .bh-home-discount .heading {
@@ -3068,7 +3068,7 @@ Generated using nucleoapp.com
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
-  margin: -15px auto 0;
+  margin: -5px auto 0;
   width: 180px;
   height: 35px;
   color: #222;
@@ -4234,7 +4234,7 @@ Generated using nucleoapp.com
   .fb_reset iframe {
     right: 0 !important;
   }
-  .food-card.sale {
+  .food-card.sale, .food-card.vertical {
     position: relative;
     height: auto;
     width: 155px;
@@ -4243,18 +4243,18 @@ Generated using nucleoapp.com
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .food-card.sale .thumb {
+  .food-card.sale .thumb, .food-card.vertical .thumb {
     margin-right: 0;
     width: 100%;
   }
-  .food-card.sale .thumb i {
+  .food-card.sale .thumb i, .food-card.vertical .thumb i {
     border-radius: 6px 6px 0px 0px;
     padding-top: 63.45%;
   }
-  .food-card.sale .thumb i:before {
+  .food-card.sale .thumb i:before, .food-card.vertical .thumb i:before {
     border-radius: 6px 6px 0px 0px;
   }
-  .food-card.sale .total-food {
+  .food-card.sale .total-food, .food-card.vertical .total-food {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4268,23 +4268,23 @@ Generated using nucleoapp.com
     padding: 9px 12px 10px;
     border-radius: 0px 0px 6px 6px;
   }
-  .food-card.sale .status {
+  .food-card.sale .status, .food-card.vertical .status {
     top: 15px;
   }
-  .food-card.sale .name {
+  .food-card.sale .name, .food-card.vertical .name {
     font-size: 13.5px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .food-card.sale .price {
+  .food-card.sale .price, .food-card.vertical .price {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 15px;
   }
-  .food-card.sale .voucher {
+  .food-card.sale .voucher, .food-card.vertical .voucher {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4298,16 +4298,16 @@ Generated using nucleoapp.com
     padding: 20px 7px 7px;
     width: 100%;
   }
-  .food-card.sale .voucher + .voucher {
+  .food-card.sale .voucher + .voucher, .food-card.vertical .voucher + .voucher {
     display: none;
   }
-  .food-card.sale .voucher .icn svg path {
+  .food-card.sale .voucher .icn svg path, .food-card.vertical .voucher .icn svg path {
     fill: #FFE600;
   }
-  .food-card.sale .voucher .text {
+  .food-card.sale .voucher .text, .food-card.vertical .voucher .text {
     color: #fff;
   }
-  .food-card.sale .funcsBox {
+  .food-card.sale .funcsBox, .food-card.vertical .funcsBox {
     margin-top: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -4317,10 +4317,10 @@ Generated using nucleoapp.com
         -ms-flex-align: center;
             align-items: center;
   }
-  .food-card.sale .add-to-card, .food-card.sale .buy-now {
+  .food-card.sale .add-to-card, .food-card.sale .buy-now, .food-card.vertical .add-to-card, .food-card.vertical .buy-now {
     width: 120px;
   }
-  .food-card.sale .buy-now {
+  .food-card.sale .buy-now, .food-card.vertical .buy-now {
     background: none;
     margin-top: 5px;
   }
@@ -6403,8 +6403,8 @@ Generated using nucleoapp.com
 .PopUp-location {
   width: 400px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 .PopUp-location .locationBox {
@@ -7065,6 +7065,7 @@ Generated using nucleoapp.com
 }
 .list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
   color: #B5292F;
+  font-family: BVNPro-Medium;
 }
 
 @media screen and (max-width: 768px) {
@@ -7153,9 +7154,11 @@ Generated using nucleoapp.com
   .list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
     background: #B5292F;
     color: #fff;
+    font-family: BVNPro-Regular;
   }
   .bh-list-cate_wrapper .address-store {
     padding: 12px 0;
+    background: none;
   }
 }
 .bh-detail-food_wrapper {
@@ -7540,7 +7543,7 @@ Generated using nucleoapp.com
     padding: 0 0 50px;
   }
   .address-store {
-    padding: 12px 20px;
+    padding: 16px 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;

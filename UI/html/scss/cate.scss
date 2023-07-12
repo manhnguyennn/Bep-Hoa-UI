@@ -42,6 +42,7 @@
   .cate-link {
     &:hover, &.active {
       color: #B5292F;
+      font-family: BVNPro-Medium;
     }
 
     color: #222;
@@ -138,6 +139,7 @@
       &:hover, &.active {
         background: #B5292F;
         color: #fff;
+        font-family: BVNPro-Regular;
       }
 
     }
@@ -148,6 +150,7 @@
 
     .address-store {
       padding: 12px 0;
+      background: none;
     }
 
     .cateBox {
