@@ -2154,20 +2154,19 @@ Generated using nucleoapp.com
   }
   .bh-main-header .menu-mob.active {
     visibility: visible;
-    -webkit-transition: 0.8s ease;
-    transition: 0.8s ease;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .bh-main-header .menu-mob.active .backdrop-menu {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .bh-main-header .menu-mob.active .menu-content {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: 0.8s ease;
-    transition: 0.8s ease;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    opacity: 1;
   }
   .bh-main-header .menu-mob .backdrop-menu {
     position: absolute;
@@ -2181,13 +2180,12 @@ Generated using nucleoapp.com
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.8s ease;
-    transition: 0.8s ease;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
   }
   .bh-main-header .menu-mob .menu-content {
     background: #fff;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    opacity: 0;
     width: 100%;
     height: 100%;
     position: relative;
@@ -2298,6 +2296,10 @@ Generated using nucleoapp.com
     display: block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    font-family: "Nucleo";
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
   }
   .bh-main-header .menu-mob .menu-box .nav-link-mob .txt {
     -webkit-box-flex: 1;
@@ -2336,7 +2338,7 @@ Generated using nucleoapp.com
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     background: #F5F5F5;
   }
   .bh-main-header .menu-mob .menu-box .list-nav-child .nav-child {
@@ -2459,15 +2461,26 @@ Generated using nucleoapp.com
 .bh-footer-content .logo-text {
   display: none;
 }
+.bh-footer-content .info-foodBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  margin-right: auto;
+  gap: 25px;
+}
 .bh-footer-content .list-info-footer {
-  width: 500px;
+  width: 250px;
   max-width: 100%;
   margin-right: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
 }
 .bh-footer-content .info-footer {
   font-size: 12px;
@@ -2478,6 +2491,10 @@ Generated using nucleoapp.com
 .bh-footer-content .info-footer .type {
   font-family: BVNPro-SemiBold;
   margin-bottom: 5px;
+}
+.bh-footer-content .info-footer .text {
+  color: #fff;
+  display: block;
 }
 .bh-footer-content .socialsBox {
   height: auto;
@@ -2621,6 +2638,13 @@ Generated using nucleoapp.com
     display: block;
     width: 147px;
   }
+  .bh-footer-content .info-foodBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
   .bh-footer-content .list-info-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2633,44 +2657,18 @@ Generated using nucleoapp.com
             column-gap: 60px;
     margin-bottom: 30px;
   }
-  .bh-footer-content li:nth-child(1) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .bh-footer-content li:nth-child(2) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .bh-footer-content li:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  .bh-footer-content li:nth-child(4) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-  .bh-footer-content li:nth-child(5) {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
-  }
-  .bh-footer-content li:nth-child(6) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 100%;
-  }
-  .bh-footer-content li:nth-child(3) .info-footer .text, .bh-footer-content li:nth-child(4) .info-footer .text, .bh-footer-content li:nth-child(5) .info-footer .text {
-    color: var(--colorRed);
-    display: block;
+  .bh-footer-content .list-info-footer:nth-child(1) {
+    margin-bottom: 25px;
   }
   .bh-footer-content .info-footer {
     color: #111;
     font-size: 13px;
+  }
+  .bh-footer-content .info-footer .text {
+    color: #111;
+  }
+  .bh-footer-content .info-footer .text.red {
+    color: var(--colorRed);
   }
   .bh-footer-content .socialsBox {
     -webkit-box-orient: horizontal;
@@ -3006,7 +3004,7 @@ Generated using nucleoapp.com
   color: #888;
   text-align: center;
   font-family: BVNPro-Regular;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: -10px;
   line-height: 130%;
 }
@@ -3415,6 +3413,9 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .food-card .price .current-price {
   font-size: 13px;
@@ -3466,7 +3467,7 @@ Generated using nucleoapp.com
           justify-content: space-between;
   margin-top: 12px;
 }
-.food-card .buy-now, .food-card .add-to-card {
+.food-card .buy-now, .food-card .add-to-card, .food-card .view-detail {
   width: calc((100% - 12px) / 2);
   font-size: 13px;
   line-height: 100%;
@@ -3482,10 +3483,19 @@ Generated using nucleoapp.com
       -ms-flex-pack: center;
           justify-content: center;
   font-family: BVNPro-Regular;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .food-card .buy-now {
   background: #F7F7F7;
   color: #666666;
+}
+.food-card .view-detail {
+  color: #666666;
+  border: 1px solid rgba(120, 97, 75, 0.3);
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
 }
 .food-card .add-to-card {
   background: var(--colorRed);
@@ -4210,8 +4220,12 @@ Generated using nucleoapp.com
         -ms-flex-align: center;
             align-items: center;
   }
-  .food-card .add-to-card, .food-card .buy-now {
+  .food-card .add-to-card, .food-card .buy-now, .food-card .view-detail {
     width: 120px;
+  }
+  .food-card .view-detail {
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
   .food-card .buy-now {
     background: none;
@@ -4234,7 +4248,7 @@ Generated using nucleoapp.com
   .fb_reset iframe {
     right: 0 !important;
   }
-  .food-card.sale, .food-card.vertical {
+  .food-card.vertical {
     position: relative;
     height: auto;
     width: 155px;
@@ -4243,18 +4257,18 @@ Generated using nucleoapp.com
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .food-card.sale .thumb, .food-card.vertical .thumb {
+  .food-card.vertical .thumb {
     margin-right: 0;
     width: 100%;
   }
-  .food-card.sale .thumb i, .food-card.vertical .thumb i {
+  .food-card.vertical .thumb i {
     border-radius: 6px 6px 0px 0px;
     padding-top: 63.45%;
   }
-  .food-card.sale .thumb i:before, .food-card.vertical .thumb i:before {
+  .food-card.vertical .thumb i:before {
     border-radius: 6px 6px 0px 0px;
   }
-  .food-card.sale .total-food, .food-card.vertical .total-food {
+  .food-card.vertical .total-food {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4268,23 +4282,23 @@ Generated using nucleoapp.com
     padding: 9px 12px 10px;
     border-radius: 0px 0px 6px 6px;
   }
-  .food-card.sale .status, .food-card.vertical .status {
-    top: 15px;
+  .food-card.vertical .status {
+    top: 10px;
   }
-  .food-card.sale .name, .food-card.vertical .name {
+  .food-card.vertical .name {
     font-size: 13.5px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .food-card.sale .price, .food-card.vertical .price {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .food-card.vertical .price {
     margin-bottom: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .food-card.sale .voucher, .food-card.vertical .voucher {
+  .food-card.vertical .voucher {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4298,16 +4312,16 @@ Generated using nucleoapp.com
     padding: 20px 7px 7px;
     width: 100%;
   }
-  .food-card.sale .voucher + .voucher, .food-card.vertical .voucher + .voucher {
+  .food-card.vertical .voucher + .voucher {
     display: none;
   }
-  .food-card.sale .voucher .icn svg path, .food-card.vertical .voucher .icn svg path {
+  .food-card.vertical .voucher .icn svg path {
     fill: #FFE600;
   }
-  .food-card.sale .voucher .text, .food-card.vertical .voucher .text {
+  .food-card.vertical .voucher .text {
     color: #fff;
   }
-  .food-card.sale .funcsBox, .food-card.vertical .funcsBox {
+  .food-card.vertical .funcsBox {
     margin-top: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -4317,10 +4331,10 @@ Generated using nucleoapp.com
         -ms-flex-align: center;
             align-items: center;
   }
-  .food-card.sale .add-to-card, .food-card.sale .buy-now, .food-card.vertical .add-to-card, .food-card.vertical .buy-now {
+  .food-card.vertical .add-to-card, .food-card.vertical .buy-now {
     width: 120px;
   }
-  .food-card.sale .buy-now, .food-card.vertical .buy-now {
+  .food-card.vertical .buy-now {
     background: none;
     margin-top: 5px;
   }
@@ -4424,9 +4438,23 @@ Generated using nucleoapp.com
   }
   .bh-home-discount {
     margin-bottom: 30px;
+    gap: 20px;
+  }
+  .bh-home-discount .heading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bh-home-discount .heading .txt {
+    font-size: 16px;
+  }
+  .bh-home-discount .des {
+    font-size: 12px;
   }
   .bh-home-discount .md-list {
     padding: 0;
+  }
+  .bh-home-discount .md-list .swiper-discount.swiper-container {
+    padding-bottom: 0;
   }
   .bh-home-discount .md-list .swiper-discount .swiper-wrapper {
     overflow-x: scroll;
@@ -4459,6 +4487,10 @@ Generated using nucleoapp.com
   }
   .bh-home-discount .md-list .swiper-button-next, .bh-home-discount .md-list .swiper-button-prev {
     display: none;
+  }
+  .bh-home-discount .view-all {
+    width: calc(100% - 40px);
+    margin: 0 auto;
   }
   .bh-home-discount .waiting-card, .bh-home-discount .view-all-card {
     width: 155px;
@@ -6388,7 +6420,7 @@ Generated using nucleoapp.com
   }
   .PopUp-detail .popup-detailfood-content .close-popup {
     left: auto;
-    width: 50px;
+    width: 35px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -7090,6 +7122,7 @@ Generated using nucleoapp.com
   }
   .cate-info .name-cate {
     font-size: 24px;
+    margin-top: 10px;
     text-align: left;
   }
   .cate-info .des {

@@ -254,7 +254,7 @@
     color: #888;
     text-align: center;
     font-family: BVNPro-Regular;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: -10px;
     line-height: 130%;
   }
@@ -668,6 +668,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+    justify-content: center;
 
     .current-price {
       font-size: 13px;
@@ -715,7 +716,7 @@
     margin-top: 12px;
   }
 
-  .buy-now, .add-to-card {
+  .buy-now, .add-to-card, .view-detail {
     width: calc((100% - 12px) / 2);
     font-size: 13px;
     line-height: 100%;
@@ -725,11 +726,19 @@
     align-items: center;
     justify-content: center;
     font-family: BVNPro-Regular;
+    box-sizing: border-box;
   }
 
   .buy-now {
     background: #F7F7F7;
     color: #666666;
+  }
+
+  .view-detail {
+    color: #666666;
+    border: 1px solid rgba(120, 97, 75, 0.30);
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
   }
 
   .add-to-card {
@@ -1501,8 +1510,13 @@
       align-items: center;
     }
 
-    .add-to-card, .buy-now {
+    .add-to-card, .buy-now, .view-detail {
       width: 120px;
+    }
+
+    .view-detail {
+      margin-top: 25px;
+      margin-bottom: 15px;
     }
 
     .buy-now {
@@ -1531,7 +1545,7 @@
       right: 0 !important;
     }
   }
-  .food-card.sale, .food-card.vertical {
+  .food-card.vertical {
     position: relative;
     height: auto;
     width: 155px;
@@ -1563,7 +1577,7 @@
     }
 
     .status {
-      top: 15px;
+      top: 10px;
     }
 
     .name {
@@ -1575,8 +1589,8 @@
     }
 
     .price {
-      justify-content: center;
       margin-bottom: 15px;
+      justify-content: flex-start;
     }
 
     .voucher {
@@ -1763,15 +1777,28 @@
   }
   .bh-home-discount {
     margin-bottom: 30px;
+    gap: 20px;
 
     .heading {
+      padding-left: 20px;
+      padding-right: 20px;
 
+      .txt {
+        font-size: 16px;
+      }
+    }
+
+    .des {
+      font-size: 12px;
     }
 
     .md-list {
       padding: 0;
 
       .swiper-discount {
+        &.swiper-container {
+          padding-bottom: 0;
+        }
 
         .swiper-wrapper {
           overflow-x: scroll;
@@ -1811,6 +1838,11 @@
       .swiper-button-next, .swiper-button-prev {
         display: none;
       }
+    }
+
+    .view-all {
+      width: calc(100% - 40px);
+      margin: 0 auto;
     }
 
     .waiting-card, .view-all-card {

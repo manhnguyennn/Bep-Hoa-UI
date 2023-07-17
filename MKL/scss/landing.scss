@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 3vh;
+  padding: 3vh 3vh 3vh 65px;
 
   box-sizing: border-box;
 
@@ -53,48 +53,82 @@
 .about-section {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+
   position: relative;
-  padding: 17vh 3.64vw 0;
   box-sizing: border-box;
 
-  .txt-left, .txt-right {
-    width: 50vh;
+  .info {
+    padding: 0 65px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .txt-left, {
+    width: 33.85vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+
+  }
+
+  .text-box {
+    padding: 2.08vw;
+    border-radius: 10px;
+    border: 1px solid #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+  }
+
+  .img-box {
+    position: sticky;
+    right: 0;
+    top: 20vh;
+    width: 100%;
+
   }
 
   .img-center {
-    width: auto;
-    position: absolute;
-    left: 54vh;
-    bottom: 0;
-    z-index: -1;
+    width: 47.60vw;
+    height: auto;
+    position: relative;
 
     img {
       width: auto;
-      height: 78vh;
+      max-width: 100%;
+      height: 80vh;
       display: block;
+      object-fit: cover;
     }
   }
 
   .heading {
+    padding: 17vh 65px 35px;
+    position: sticky;
+    top: 0;
+    left: 0;
     color: #111;
     font-family: PlusJaS-Regular;
-    font-size: 4.2vh;
-    margin-bottom: 7.2vh;
+    font-size: 2.1vw;
+
+    margin-bottom: 26px;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(30px);
   }
 
   .titl {
     color: #111;
     font-family: PlusJaS-SemiBold;
-    font-size: 3.2vh;
-    margin-bottom: 22px;
+    font-size: 1.2vw;
   }
 
   .des {
     color: #555;
     font-family: PlusJaS-Regular;
-    font-size: 2vh;
+    font-size: 0.8vw;
     line-height: 140%;
 
     & + .titl {
@@ -108,20 +142,26 @@
   width: 100%;
 
   position: relative;
-  padding: 17vh 3.64vw 5vh;
+  padding: 0 0 5vh;
   box-sizing: border-box;
 
   .heading {
+    padding: 17vh 65px 35px;
+    position: sticky;
+    top: 0;
+    left: 0;
     color: #111;
     font-family: PlusJaS-Regular;
     font-size: 2.1vw;
-    margin-bottom: 35px;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(30px);
   }
 
   .list-brand {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding: 0 65px;
 
     li {
       & + li {
@@ -223,7 +263,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 17vh 3.64vw 5vh;
+  padding: 17vh 65px 5vh;
   box-sizing: border-box;
 
   .heading {
@@ -277,7 +317,7 @@
   justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
-  padding: 7.6vh 11.66vh;
+  padding: 7.6vh 65px;
 
   &:before {
     height: 100%;
@@ -330,7 +370,7 @@
     line-height: 140%;
     max-width: 100%;
     margin-bottom: 25px;
-
+    opacity: 0.699999988079071;
   }
 
   .view-job {
@@ -386,6 +426,9 @@
       font-size: 1.7vh;
       line-height: 150%;
       display: block;
+      &.credit{
+        font-size: 1.5vh;
+      }
     }
   }
 }
