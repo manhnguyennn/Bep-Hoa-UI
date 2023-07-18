@@ -2251,6 +2251,10 @@ Generated using nucleoapp.com
     display: block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    font-family: "Nucleo";
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
   }
   .bh-main-header .menu-mob .nav-parent .txt {
     -webkit-box-flex: 1;
