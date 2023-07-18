@@ -10,6 +10,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/fullpage.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
 
 </head>
 <body>
@@ -110,7 +111,7 @@
     </div>
 
     <div class="mkl-container" id="fullpage">
-        <div class="section">
+        <div class="section" id="section0">
             <div class="intro-section">
                 <div class="content">
                     <div class="text ">Câu chuyện của chúng tôi
@@ -127,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="section fp-auto-height">
+        <div class="section fp-auto-height" id="section1">
             <div class="about-section">
                 <div class="heading">Về chúng tôi</div>
                 <div class="info">
@@ -188,7 +189,7 @@
 
             </div>
         </div>
-        <div class="section fp-auto-height">
+        <div class="section fp-auto-height" id="section2">
             <div class="brand-section">
                 <div class="heading">Thương hiệu của chúng tôi</div>
                 <ul class="list-brand">
@@ -581,7 +582,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="section3">
             <div class="number-section">
                 <div class="heading">Chúng tôi qua những con số</div>
                 <div class="numb-gr">
@@ -623,7 +624,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="section4">
             <div class="contact-section">
                 <div class="text-left">
                     <div class="heading">
@@ -653,6 +654,7 @@
                     </div>
                     <div class="info-type">
                         <div class="txt credit">© 2021 - minhkhanhlong.vn</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -715,6 +717,41 @@
             });
 
 
+        } else {
+            $(".mkl-header").sticky({topSpacing: 0});
+            $('.src-btn').click(function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $('.menu-expand').removeClass('active');
+
+
+                } else {
+                    $(this).addClass('active');
+                    $('.menu-expand').addClass('active');
+                }
+            })
+            $('.backdrop-menu').click(function () {
+                $('.src-btn').removeClass('active');
+                $('.menu-expand').removeClass('active');
+            })
+
+            // $("#click").click(function () {
+            //
+            // });
+            $(".nav-link").each(function (i, v) {
+                $(this).click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#section" + i).offset().top - 49,
+                    }, 1000);
+                    $('.src-btn').removeClass('active');
+                    $('.menu-expand').removeClass('active');
+                });
+            });
+
+            // $('.nav-link').click(function () {
+            //     $('.src-btn').removeClass('active');
+            //     $('.menu-expand').removeClass('active');
+            // })
         }
 
     });

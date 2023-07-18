@@ -426,7 +426,8 @@
       font-size: 1.7vh;
       line-height: 150%;
       display: block;
-      &.credit{
+
+      &.credit {
         font-size: 1.5vh;
       }
     }
@@ -449,7 +450,7 @@
 @media screen and (max-width: 800px) {
   .intro-section {
     height: auto;
-    padding: 25px;
+    padding: 0 25px 25px;
     flex-direction: column-reverse;
     gap: 20px;
 
@@ -517,6 +518,11 @@
 
     .txt-left, .txt-right {
       width: 100%;
+      gap: 25px;
+    }
+
+    .text-box {
+      padding: 20px;
     }
 
     .img-center {
@@ -526,7 +532,7 @@
       left: auto;
       bottom: auto;
       z-index: 1;
-
+      margin-bottom: 25px;
       img {
         height: auto;
         width: 100%;
@@ -535,9 +541,11 @@
 
     .heading {
       font-size: 26px;
-      margin-bottom: 20px;
       padding-left: 13px;
       position: relative;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 30px;
 
       &:before {
         width: 3px;
@@ -550,6 +558,11 @@
         content: '';
         background: #BF1818;
       }
+    }
+
+    .info {
+      padding: 0;
+      flex-direction: column-reverse;
     }
 
     .titl {
@@ -575,10 +588,11 @@
       font-size: 26px;
       margin-bottom: 30px;
       padding-left: 13px;
-      width: 183px;
       box-sizing: border-box;
       line-height: 120%;
-
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 260px;
       &:before {
         width: 3px;
         height: 90%;
@@ -593,7 +607,7 @@
     }
 
     .list-brand {
-
+      padding: 0;
 
       li {
         padding-top: 30px;
