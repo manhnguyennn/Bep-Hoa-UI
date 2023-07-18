@@ -668,7 +668,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    justify-content: center;
 
     .current-price {
       font-size: 13px;
@@ -716,7 +715,8 @@
     margin-top: 12px;
   }
 
-  .buy-now, .add-to-card, .view-detail {
+
+  .buy-now, .add-to-card, .view-detail, .view-btn {
     width: calc((100% - 12px) / 2);
     font-size: 13px;
     line-height: 100%;
@@ -729,9 +729,31 @@
     box-sizing: border-box;
   }
 
+  .disalbe-cart {
+    font-size: 13px;
+    line-height: 100%;
+    border-radius: 25px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: BVNPro-Regular;
+    box-sizing: border-box;
+    cursor: default;
+    padding: 12px 28px;
+    color: #666;
+    border: 1px solid #ECECEC;
+    background: #F6F6F6;
+  }
+
   .buy-now {
     background: #F7F7F7;
     color: #666666;
+  }
+
+  .view-btn {
+    color: #666666;
+    display: none;
   }
 
   .view-detail {
@@ -1508,11 +1530,17 @@
       margin-top: auto;
       flex-direction: column-reverse;
       align-items: center;
+
     }
 
     .add-to-card, .buy-now, .view-detail {
       width: 120px;
     }
+
+    .view-btn {
+      display: flex;
+    }
+
 
     .view-detail {
       margin-top: 25px;
@@ -1842,6 +1870,8 @@
 
     .view-all {
       width: calc(100% - 40px);
+      height: 30px;
+      font-size: 14px;
       margin: 0 auto;
     }
 

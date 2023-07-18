@@ -349,6 +349,7 @@
       &:hover {
         background: #333333;
       }
+
       display: inline-flex;
       padding: 12px 28px;
       font-size: 15px;
@@ -357,6 +358,20 @@
       color: #FFFFFF;
       border-radius: 34px;
       background: #444;
+    }
+
+    .disalbe-cart {
+
+      cursor: default;
+      display: inline-flex;
+      padding: 12px 28px;
+      font-size: 15px;
+      line-height: 100%;
+      font-family: BVNPro-Medium;
+      color: #666;
+      border-radius: 25px;
+      border: 1px solid #ECECEC;
+      background: #F6F6F6;
     }
   }
 
@@ -561,8 +576,9 @@
       gap: 20px;
 
       .price-total {
-        .txt {
 
+        .txt {
+          text-align: center;
 
         }
 

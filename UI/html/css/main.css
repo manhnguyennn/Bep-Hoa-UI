@@ -3413,9 +3413,6 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .food-card .price .current-price {
   font-size: 13px;
@@ -3467,7 +3464,7 @@ Generated using nucleoapp.com
           justify-content: space-between;
   margin-top: 12px;
 }
-.food-card .buy-now, .food-card .add-to-card, .food-card .view-detail {
+.food-card .buy-now, .food-card .add-to-card, .food-card .view-detail, .food-card .view-btn {
   width: calc((100% - 12px) / 2);
   font-size: 13px;
   line-height: 100%;
@@ -3486,9 +3483,36 @@ Generated using nucleoapp.com
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.food-card .disalbe-cart {
+  font-size: 13px;
+  line-height: 100%;
+  border-radius: 25px;
+  height: 28px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: BVNPro-Regular;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: default;
+  padding: 12px 28px;
+  color: #666;
+  border: 1px solid #ECECEC;
+  background: #F6F6F6;
+}
 .food-card .buy-now {
   background: #F7F7F7;
   color: #666666;
+}
+.food-card .view-btn {
+  color: #666666;
+  display: none;
 }
 .food-card .view-detail {
   color: #666666;
@@ -4223,6 +4247,11 @@ Generated using nucleoapp.com
   .food-card .add-to-card, .food-card .buy-now, .food-card .view-detail {
     width: 120px;
   }
+  .food-card .view-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .food-card .view-detail {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -4490,6 +4519,8 @@ Generated using nucleoapp.com
   }
   .bh-home-discount .view-all {
     width: calc(100% - 40px);
+    height: 30px;
+    font-size: 14px;
     margin: 0 auto;
   }
   .bh-home-discount .waiting-card, .bh-home-discount .view-all-card {
@@ -7563,6 +7594,20 @@ Generated using nucleoapp.com
 .food-detail_wrapper .funcsFixed .buy-now:hover {
   background: #333333;
 }
+.food-detail_wrapper .funcsFixed .disalbe-cart {
+  cursor: default;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 28px;
+  font-size: 15px;
+  line-height: 100%;
+  font-family: BVNPro-Medium;
+  color: #666;
+  border-radius: 25px;
+  border: 1px solid #ECECEC;
+  background: #F6F6F6;
+}
 
 .bh-home-menu.bh-suggest-detail {
   margin-bottom: 50px;
@@ -7642,6 +7687,9 @@ Generated using nucleoapp.com
         -ms-flex-align: center;
             align-items: center;
     gap: 20px;
+  }
+  .food-detail_wrapper .funcsFixed .price-total .txt {
+    text-align: center;
   }
   .food-detail_wrapper .funcsFixed .atc-btn {
     width: 130px;
