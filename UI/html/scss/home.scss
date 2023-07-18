@@ -734,13 +734,13 @@
     line-height: 100%;
     border-radius: 25px;
     height: 28px;
+    width: 120px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-family: BVNPro-Regular;
     box-sizing: border-box;
     cursor: default;
-    padding: 12px 28px;
     color: #666;
     border: 1px solid #ECECEC;
     background: #F6F6F6;
@@ -1547,7 +1547,7 @@
       margin-bottom: 15px;
     }
 
-    .buy-now {
+    .buy-now, .view-btn {
       background: none;
       margin-top: 5px;
     }

@@ -465,7 +465,8 @@
 
     .infoBox {
       padding: 15px 20px;
-
+      box-sizing: border-box;
+      width: 100%;
       .flexPrice-qtt {
         flex-direction: row;
         justify-content: space-between;
