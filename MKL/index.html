@@ -111,7 +111,7 @@
     </div>
 
     <div class="mkl-container" id="fullpage">
-        <div class="section" id="section0">
+        <div class="section" id="">
             <div class="intro-section">
                 <div class="content">
                     <div class="text ">Câu chuyện của chúng tôi
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="section fp-auto-height" id="section1">
+        <div class="section fp-auto-height" id="">
             <div class="about-section">
                 <div class="heading">Về chúng tôi</div>
                 <div class="info">
@@ -189,7 +189,7 @@
 
             </div>
         </div>
-        <div class="section fp-auto-height" id="section2">
+        <div class="section fp-auto-height" id="">
             <div class="brand-section">
                 <div class="heading">Thương hiệu của chúng tôi</div>
                 <ul class="list-brand">
@@ -582,7 +582,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section" id="">
             <div class="number-section">
                 <div class="heading">Chúng tôi qua những con số</div>
                 <div class="numb-gr">
@@ -624,7 +624,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section4">
+        <div class="section" id="">
             <div class="contact-section">
                 <div class="text-left">
                     <div class="heading">
@@ -723,21 +723,29 @@
                 if ($(this).hasClass('active')) {
                     $(this).removeClass('active');
                     $('.menu-expand').removeClass('active');
+                    $('.mkl-wrapper').removeClass('non-scroll');
 
 
                 } else {
                     $(this).addClass('active');
                     $('.menu-expand').addClass('active');
+                    $('.mkl-wrapper').addClass('non-scroll');
                 }
             })
             $('.backdrop-menu').click(function () {
                 $('.src-btn').removeClass('active');
                 $('.menu-expand').removeClass('active');
+                $('.mkl-wrapper').removeClass('non-scroll');
             })
 
             // $("#click").click(function () {
             //
             // });
+
+            $('.section').each(function (i, v) {
+                $(this).attr('id', 'section' + i);
+            })
+
             $(".nav-link").each(function (i, v) {
                 $(this).click(function () {
                     $('html, body').animate({
@@ -745,9 +753,15 @@
                     }, 1000);
                     $('.src-btn').removeClass('active');
                     $('.menu-expand').removeClass('active');
+                    $('.mkl-wrapper').removeClass('non-scroll');
                 });
             });
+            $('.logo').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#section0").offset().top,
+                }, 1000);
 
+            });
             // $('.nav-link').click(function () {
             //     $('.src-btn').removeClass('active');
             //     $('.menu-expand').removeClass('active');

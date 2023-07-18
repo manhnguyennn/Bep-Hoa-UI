@@ -1084,6 +1084,10 @@ a {
     width: 100%;
     overflow: hidden;
   }
+  .mkl-wrapper.non-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
   .menu-expand .menu-content {
     padding: 50px 25px;
   }
