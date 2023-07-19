@@ -74,6 +74,20 @@
     border-radius: 34px;
   }
 
+  .disalbe-cart {
+
+    cursor: default;
+    display: inline-flex;
+    padding: 12px 28px;
+    font-size: 15px;
+    line-height: 100%;
+    font-family: BVNPro-Medium;
+    color: #666;
+    border-radius: 25px;
+    border: 1px solid #ECECEC;
+    background: #F6F6F6;
+  }
+
   .galleryBox {
     flex-shrink: 0;
     position: relative;

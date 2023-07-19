@@ -6123,6 +6123,20 @@ Generated using nucleoapp.com
 .PopUp-detail .atc-btn.save-edit, .PopUp-detail .buy-now.save-edit {
   background: #222222;
 }
+.PopUp-detail .disalbe-cart {
+  cursor: default;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 28px;
+  font-size: 15px;
+  line-height: 100%;
+  font-family: BVNPro-Medium;
+  color: #666;
+  border-radius: 25px;
+  border: 1px solid #ECECEC;
+  background: #F6F6F6;
+}
 .PopUp-detail .galleryBox {
   -ms-flex-negative: 0;
       flex-shrink: 0;
