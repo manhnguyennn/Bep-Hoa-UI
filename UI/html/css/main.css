@@ -4735,6 +4735,33 @@ Generated using nucleoapp.com
   display: -ms-flexbox;
   display: flex;
 }
+.PopUp-cart .order-info.order-warning {
+  padding-bottom: 57px;
+  position: relative;
+}
+.PopUp-cart .order-info.order-warning .warning {
+  position: absolute;
+  left: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 21px;
+}
+.PopUp-cart .order-info .warning {
+  display: none;
+  padding: 4px 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #FF6161;
+  background: #FDECEC;
+  color: #FE3E3E;
+  font-family: BVNPro-Regular;
+  font-size: 9px;
+  line-height: 135%; /* 12.15px */
+}
 .PopUp-cart .od-count {
   width: 32px;
   height: 26px;
@@ -6290,6 +6317,23 @@ Generated using nucleoapp.com
   margin-left: 11px;
   color: #999999;
 }
+.PopUp-detail .warning {
+  margin-top: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #FFE600;
+  color: #111;
+  font-family: BVNPro-Medium;
+  font-size: 11px;
+  line-height: 135%; /* 14.85px */
+}
 .PopUp-detail .sapo {
   margin-top: 15px;
   position: relative;
@@ -6609,6 +6653,9 @@ Generated using nucleoapp.com
   text-align: center;
   color: #333333;
   border-bottom: 1px solid #E7E7E7;
+}
+.Popup-switch .content-text span {
+  color: #B5292F;
 }
 .Popup-switch .funcsBox {
   padding: 15px;
@@ -7387,6 +7434,22 @@ Generated using nucleoapp.com
   color: #B5292F;
   margin-top: 7px;
   margin-bottom: 10px;
+}
+.food-detail_wrapper .infoBox .warning {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #FFE600;
+  color: #111;
+  font-family: BVNPro-Medium;
+  font-size: 11px;
+  line-height: 135%; /* 14.85px */
 }
 .food-detail_wrapper .infoBox .priceBox {
   display: -webkit-box;

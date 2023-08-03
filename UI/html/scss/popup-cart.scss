@@ -171,6 +171,31 @@
 
   .order-info {
     display: flex;
+
+    &.order-warning {
+      padding-bottom: 57px;
+      position: relative;
+      .warning {
+        position: absolute;
+        left: 48px;
+        display: inline-flex;
+        bottom: 21px;
+      }
+    }
+
+    .warning {
+      display: none;
+      padding: 4px 8px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 20px;
+      border: 1px solid #FF6161;
+      background: #FDECEC;
+      color: #FE3E3E;
+      font-family: BVNPro-Regular;
+      font-size: 9px;
+      line-height: 135%; /* 12.15px */
+    }
   }
 
   .od-count {

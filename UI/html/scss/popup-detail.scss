@@ -228,6 +228,20 @@
     }
   }
 
+  .warning {
+    margin-top: 15px;
+    display: inline-flex;
+    padding: 4px 9px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFE600;
+    color: #111;
+    font-family: BVNPro-Medium;
+    font-size: 11px;
+    line-height: 135%; /* 14.85px */
+  }
+
   .sapo {
 
     &.has-expand {

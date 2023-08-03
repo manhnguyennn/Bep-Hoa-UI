@@ -131,6 +131,19 @@
       margin-bottom: 10px;
     }
 
+    .warning {
+      display: inline-flex;
+      padding: 4px 9px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 20px;
+      background: #FFE600;
+      color: #111;
+      font-family: BVNPro-Medium;
+      font-size: 11px;
+      line-height: 135%; /* 14.85px */
+    }
+
     .priceBox {
       display: flex;
       align-items: center;
@@ -467,6 +480,7 @@
       padding: 15px 20px;
       box-sizing: border-box;
       width: 100%;
+
       .flexPrice-qtt {
         flex-direction: row;
         justify-content: space-between;
