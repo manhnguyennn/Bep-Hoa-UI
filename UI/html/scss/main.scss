@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+//Components
+@import "reset";
+@import "colors";
+@import "mixins";
+@import "commons";
+@import "fonts";
+@import "icons";
+//Layout
+@import "header";
+@import "footer";
+//Page
+@import "home";
+@import "popup-cart";
+@import "popup-checkout";
+@import "popup-detail";
+@import "popup-location";
+@import "popup-switch";
+@import "finish";
+@import "search";
+@import "policy";
+@import "cate";
+@import "food-detail";
+
+@import "landing";
+
+.bh-wrapper {
+  padding-top: 60px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  &.no-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.widthCT {
+  min-width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .bh-wrapper {
+    padding: 0;
+
+  }
+  .widthCT {
+    width: 1080px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .widthCT {
+    width: 63.17vw;
+  }
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+  .widthCT {
+    min-width: 100%;
+  }
+}
