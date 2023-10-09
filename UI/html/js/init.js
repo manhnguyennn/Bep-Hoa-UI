@@ -253,21 +253,7 @@
             $('.address-store .dropdown-box').toggleClass('active');
         })
 
-        let swiperbnerHome = new Swiper(".swiper-hbner", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            autoplay: {
-                delay: 3000
-            },
-            loop: true,
-            pagination: {
-                el: ".swiper-hbner .swiper-pagination",
-            },
-            navigation: {
-                nextEl: ".swiper-hbner .swiper-button-next",
-                prevEl: ".swiper-hbner .swiper-button-prev"
-            }
-        });
+
 
 
         $('.tags-filter').each(function () {
@@ -346,6 +332,22 @@
 
 
         if (me.windowW > 760) {
+            let swiperbnerHome = new Swiper(".swiper-hbner", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3000
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-hbner .swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-hbner .swiper-button-next",
+                    prevEl: ".swiper-hbner .swiper-button-prev"
+                }
+            });
+
             $(window).scroll(function () {
                 let top = $(window).scrollTop();
                 let ruler = $('#trigger-header').offset().top;
@@ -515,6 +517,38 @@
 
 
         } else {
+            let swiperbnerHome = new Swiper(".swiper-hbner", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3000
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-hbner .swiper-pagination",
+                    type: 'fraction',
+                    renderFraction: function (currentClass, totalClass) {
+                        return '<span class="icn"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                            '<g clip-path="url(#clip0_2316_1981)">\n' +
+                            '<path d="M5 3.75H0.625C0.25 3.75 0 4 0 4.375V9.375C0 9.75 0.25 10 0.625 10H5C5.375 10 5.625 9.75 5.625 9.375V4.375C5.625 4 5.375 3.75 5 3.75Z" fill="white"/>\n' +
+                            '<path d="M6.875 1.875H1.875V3.125H6.25V8.125H7.5V2.5C7.5 2.125 7.25 1.875 6.875 1.875Z" fill="white"/>\n' +
+                            '<path d="M8.75 0H3.75V1.25H8.125V6.25H9.375V0.625C9.375 0.25 9.125 0 8.75 0Z" fill="white"/>\n' +
+                            '</g>\n' +
+                            '<defs>\n' +
+                            '<clipPath id="clip0_2316_1981">\n' +
+                            '<rect width="10" height="10" fill="white"/>\n' +
+                            '</clipPath>\n' +
+                            '</defs>\n' +
+                            '</svg>\n</span> <span class="' + currentClass + '"></span>' +
+                            ' / ' +
+                            '<span class="' + totalClass + '"></span>';
+                    }
+                },
+                navigation: {
+                    nextEl: ".swiper-hbner .swiper-button-next",
+                    prevEl: ".swiper-hbner .swiper-button-prev"
+                }
+            });
             // $(".tagBox").sticky({topSpacing: 60});
 
             let swiperbnerFooter = new Swiper(".swiper-bner-footer", {

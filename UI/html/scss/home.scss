@@ -1727,15 +1727,49 @@
   }
 
   .bh-home_bner-top {
+    padding: 0;
+
+    .bg-blur {
+      display: none;
+    }
+
     .swiper-hbner {
+      border-radius: 0;
+
+      .bnerHome i {
+        padding-top: 72%;
+        border-radius: 0;
+      }
 
       .bg-blur {
         height: 15px;
       }
 
       .paginationBox {
+        font-family: BVNPro-Medium;
         height: 15px;
-
+        border-radius: 29px;
+        background: rgba(0, 0, 0, 0.82);
+        backdrop-filter: blur(15px);
+        position: absolute;
+        width: auto;
+        height: 22px;
+        box-sizing: border-box;
+        padding: 4px 13px 6px 10px;
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        font-size: 11px;
+        span{
+          display: block;
+        }
+        .icn{
+          display: block;
+          margin-right: 7px;
+        }
       }
 
     }
