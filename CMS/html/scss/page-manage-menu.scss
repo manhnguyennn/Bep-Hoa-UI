@@ -98,6 +98,17 @@
   }
 }
 
+.form-banner{
+  position: relative;
+  .btn-upload-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+  }
+}
+
 .upload-food {
   width: 340px;
   padding-right: 1rem;
@@ -210,6 +221,8 @@
           display: block;
           object-fit: cover;
         }
+
+
       }
     }
 

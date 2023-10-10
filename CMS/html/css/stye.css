@@ -31,7 +31,6 @@
   .bb05 {
     border-bottom: 0.5px solid #E7E7E7;
   }
-
   .bt05 {
     border-top: 0.5px solid #E7E7E7;
   }
@@ -373,7 +372,7 @@ body i {
 .selectBox.active .select-btn {
   border: 1px solid #7367F0;
   border-radius: 5px 5px 0px 0px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .selectBox .selected {
   height: 40px;
@@ -2316,6 +2315,17 @@ Generated using nucleoapp.com
 }
 .list-cate-child li {
   padding-top: 1rem;
+}
+
+.form-banner {
+  position: relative;
+}
+.form-banner .btn-upload-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
 }
 
 .upload-food {
