@@ -43,6 +43,11 @@
 
         let me = this;
 
+        // PA: 10/10/2023: Format all <i> with background responsive
+        $.each($('.bg-responsive'), function (i, v) {
+            $(v).css("background-image", `url('${$(v).attr((me.windowW > 800) ? "src-web" : "src-mob")}')`);
+        });
+
         if (me.windowW > 800) {
 
         } else {
@@ -252,8 +257,6 @@
         $('.address-store .loca-change').click(function () {
             $('.address-store .dropdown-box').toggleClass('active');
         })
-
-
 
 
         $('.tags-filter').each(function () {
