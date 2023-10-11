@@ -24,6 +24,10 @@
 @import "food-detail";
 @import "landing";
 
+.bh-wrapper_main {
+  transition: .15s;
+}
+
 .bh-wrapper {
   padding-top: 60px;
   min-height: 100vh;
@@ -63,8 +67,6 @@ body {
     width: 63.17vw;
   }
 }
-
-
 
 
 @media screen and (max-width: 760px) {

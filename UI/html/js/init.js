@@ -40,6 +40,21 @@
             });
         });
 
+        var Hnoti = $('.noti-header').innerHeight();
+
+        if ($('.noti-header').hasClass('active')) {
+            $('.bh-wrapper_main').css({'transform': 'translateY(' + Hnoti + 'px)'})
+
+            console.log('height noti' + Hnoti)
+
+        } else {
+
+        }
+        $('.close-noti').click(function () {
+            $('.bh-wrapper_main').css({'transform': 'translateY(0px)'})
+            $('.noti-header').removeClass('active')
+            // $('.noti-header').css('top', '0')
+        })
 
         let me = this;
 
@@ -362,16 +377,16 @@
                 }
             });
 
-            $(window).scroll(function () {
-                let top = $(window).scrollTop();
-                let ruler = $('#head-menu').offset().top;
-
-                if (top > ruler) {
-                    $('.tagBox').addClass('active');
-                } else {
-                    $('.tagBox').removeClass('active');
-                }
-            });
+            // $(window).scroll(function () {
+            //     let top = $(window).scrollTop();
+            //     let ruler = $('#head-menu').offset().top;
+            //
+            //     if (top > ruler) {
+            //         $('.tagBox').addClass('active');
+            //     } else {
+            //         $('.tagBox').removeClass('active');
+            //     }
+            // });
 
             let swiperDiscountFood = new Swiper(".swiper-discount", {
                 slidesPerView: 4,
