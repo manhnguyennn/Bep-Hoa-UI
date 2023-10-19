@@ -51,7 +51,6 @@
         //
         // }
         $('.close-noti').click(function () {
-            $('.bh-wrapper_main').css({'transform': 'translateY(0px)'})
             $('.noti-header').removeClass('active')
             // $('.noti-header').css('top', '0')
         })
