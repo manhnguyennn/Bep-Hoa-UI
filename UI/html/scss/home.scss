@@ -1146,7 +1146,6 @@
 @media screen and (min-width: 768px) {
 
   .bh-wrapper.bh-home_wrapper {
-    padding-top: 144px;
   }
   .bh-home_wrapper-content {
 
@@ -1763,10 +1762,12 @@
         align-items: center;
         color: #FFF;
         font-size: 11px;
-        span{
+
+        span {
           display: block;
         }
-        .icn{
+
+        .icn {
           display: block;
           margin-right: 7px;
         }

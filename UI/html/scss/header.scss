@@ -12,7 +12,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  background: #FFE600;
+  background: #B5292F;
   overflow: hidden;
   transition: .15s;
 
@@ -20,12 +20,13 @@
     &:hover {
       text-decoration: underline;
     }
+
     padding: 8px 20px;
     display: block;
-    color: #111;
+    color: #FFFFFF;
     text-align: center;
     font-family: BVNPro-Medium;
-    font-size: 13.5px;
+    font-size: 12.5px;
     line-height: 130%; /* 17.55px */
     text-transform: uppercase;
     z-index: 1;
@@ -44,6 +45,11 @@
     svg {
       width: 100%;
       display: block;
+      opacity: .4;
+
+      path {
+        fill: #fff;
+      }
     }
   }
 }
@@ -62,7 +68,7 @@
 
   box-shadow: inset 0px -1px 0px #E6E6E6;
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 9999 !important;
@@ -438,12 +444,16 @@
 
 @media screen and (max-width: 760px) {
 
+  .noti-header {
+    background: #8D2327;
+  }
+
   .bh-main-header {
     box-shadow: none;
     width: 100%;
     box-sizing: border-box;
     background: var(--colorRed);
-    position: fixed;
+    position: sticky;
     z-index: 999;
     left: 0;
     top: 0;

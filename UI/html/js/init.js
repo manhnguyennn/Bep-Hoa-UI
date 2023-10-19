@@ -40,16 +40,16 @@
             });
         });
 
-        var Hnoti = $('.noti-header').innerHeight();
-
-        if ($('.noti-header').hasClass('active')) {
-            $('.bh-wrapper_main').css({'transform': 'translateY(' + Hnoti + 'px)'})
-
-            console.log('height noti' + Hnoti)
-
-        } else {
-
-        }
+        // var Hnoti = $('.noti-header').innerHeight();
+        //
+        // if ($('.noti-header').hasClass('active')) {
+        //     $('.bh-wrapper_main').css({'transform': 'translateY(' + Hnoti + 'px)'})
+        //
+        //     console.log('height noti' + Hnoti)
+        //
+        // } else {
+        //
+        // }
         $('.close-noti').click(function () {
             $('.bh-wrapper_main').css({'transform': 'translateY(0px)'})
             $('.noti-header').removeClass('active')
