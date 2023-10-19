@@ -98,8 +98,9 @@
   }
 }
 
-.form-banner{
+.form-banner {
   position: relative;
+
   .btn-upload-banner {
     position: absolute;
     top: 50%;
@@ -631,5 +632,38 @@
     color: var(--color111);
     display: block;
     font-size: 0.9rem;
+  }
+}
+
+.countdown-box {
+  border-radius: 5px;
+  border: 1px solid #D8D6DE;
+  background: #FFF;
+  padding: 11px 17px;
+  justify-content: space-between;
+  align-items: center;
+  color: #111;
+  font-size: 14px;
+  font-family: Roboto-Regular;
+
+  &.active {
+    input {
+      color: #EA5455;
+    }
+    color: #EA5455;
+  }
+
+  input {
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 19px;
+    box-sizing: border-box;
+    color: #111;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    outline: none;
+
   }
 }

@@ -679,7 +679,8 @@
     }
   }
 }
-.input-tools{
+
+.input-tools {
   .inputCB {
     display: flex;
     padding: 12px 15px;
@@ -701,6 +702,7 @@
       font-size: 16px;
       color: #111;
       outline: none;
+      border-radius: 5px 5px 0px 0px;
 
       &::placeholder {
         color: #666;
@@ -717,12 +719,74 @@
     }
   }
 }
+
 .date-create-order {
   font-size: 12px;
 }
 
+.add-foodmenu-box {
+  padding: 15px 20px;
+}
+.table-addfood{
+  min-height: 500px;
+}
+
 .form-search-food {
   padding: 20px;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+  &.add-food-menu {
+    position: relative;
+    padding: 0;
+
+    &.active {
+
+      .form-input-search {
+
+        input {
+          border-radius: 5px 5px 0 0;
+          border: 1px solid #7367F0;
+        }
+
+
+      }
+      .list-food-search {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .form-input-search {
+
+      .icn {
+        right: auto;
+        left: 15px;
+        color: #7367F0;
+        z-index: 1;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 11px 15px 11px 40px;
+        z-index: 2;
+        position: relative;
+        background: none;
+      }
+
+
+    }
+
+    .list-food-search {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: .15s;
+    }
+  }
 
   .form-input-search {
     background: #FFFFFF;
