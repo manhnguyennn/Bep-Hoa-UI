@@ -6909,6 +6909,7 @@ Generated using nucleoapp.com
 }
 
 .fn-content {
+  padding-top: 80px;
   width: 768px;
   margin: 0 auto;
   max-width: 100%;
@@ -7083,7 +7084,7 @@ Generated using nucleoapp.com
     padding-top: 0;
   }
   .fn-content {
-    padding-top: 0px;
+    padding-top: 100px;
   }
   .fn-content .title {
     width: 100%;
