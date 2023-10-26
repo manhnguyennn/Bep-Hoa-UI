@@ -2552,6 +2552,7 @@ Generated using nucleoapp.com
 }
 
 .active-sell {
+  border: 2px solid #f8f8f8;
   display: block;
   background: #F8F8F8;
   border-radius: 5px;
@@ -2559,14 +2560,16 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
+  box-sizing: border-box;
 }
-.active-sell.active {
+.active-sell.active, .active-sell:hover {
   border: 2px solid #2DC56D;
   color: #2DC56D;
   background: #F3FFF9;
 }
 
 .stop-sell {
+  border: 2px solid #f8f8f8;
   display: block;
   background: #F8F8F8;
   border-radius: 5px;
@@ -2574,14 +2577,17 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
+  box-sizing: border-box;
 }
-.stop-sell.active {
+.stop-sell.active, .stop-sell:hover {
   border: 2px solid var(--colorRed);
   color: var(--colorRed);
   background: #FFF9F9;
 }
 
 .soon-sell {
+  border: 2px solid #f8f8f8;
+  box-sizing: border-box;
   display: block;
   background: #F8F8F8;
   border-radius: 5px;
@@ -2590,7 +2596,7 @@ Generated using nucleoapp.com
   line-height: 100%;
   color: #111111;
 }
-.soon-sell.active {
+.soon-sell.active, .soon-sell:hover {
   border: 2px solid #FF9F43;
   color: #FF9F43;
   background: #FFF9F3;
