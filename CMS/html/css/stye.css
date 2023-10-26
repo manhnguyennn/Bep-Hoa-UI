@@ -2551,6 +2551,21 @@ Generated using nucleoapp.com
   margin-top: 12px;
 }
 
+.active-sell {
+  display: block;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 11px 20px;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #111111;
+}
+.active-sell.active {
+  border: 2px solid #2DC56D;
+  color: #2DC56D;
+  background: #F3FFF9;
+}
+
 .stop-sell {
   display: block;
   background: #F8F8F8;
@@ -2563,6 +2578,22 @@ Generated using nucleoapp.com
 .stop-sell.active {
   border: 2px solid var(--colorRed);
   color: var(--colorRed);
+  background: #FFF9F9;
+}
+
+.soon-sell {
+  display: block;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 11px 20px;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #111111;
+}
+.soon-sell.active {
+  border: 2px solid #FF9F43;
+  color: #FF9F43;
+  background: #FFF9F3;
 }
 
 .noti-modal {
@@ -2787,6 +2818,35 @@ Generated using nucleoapp.com
   font-size: 14px;
   font-family: Roboto-Regular;
   outline: none;
+}
+
+.edit-status-food {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.edit-status-food.active .dot {
+  background: #28C76F;
+}
+.edit-status-food.soon .dot {
+  background: #FF9F43;
+}
+.edit-status-food.unactive .dot {
+  background: #EA5455;
+}
+.edit-status-food .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  background: #666;
+}
+.edit-status-food .text {
+  color: #666;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 101%; /* 13.13px */
 }
 
 .name-cusomter.unset {
