@@ -199,12 +199,16 @@
   }
 
   .note-food {
-    font-size: 16px;
-    line-height: 130%;
+    display: inline-flex;
+    padding: 4px 9px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #B5292F;
+    color: #fff;
     font-family: BVNPro-Medium;
-    color: #B5292F;
-    margin-top: 7px;
-    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 135%; /* 14.85px */
   }
 
   .priceBox {
@@ -229,7 +233,6 @@
   }
 
   .warning {
-    margin-top: 15px;
     display: inline-flex;
     padding: 4px 9px;
     align-items: center;
@@ -333,6 +336,200 @@
       text-transform: uppercase;
       color: #999999;
 
+    }
+  }
+
+  .suggest-food {
+    padding: 20px 0 35px 0;
+    border-bottom: 1px solid #E7E7E7;
+
+    .heading {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #999;
+      font-family: BVNPro-SemiBold;
+      font-size: 11px;
+      font-style: normal;
+      line-height: 100%; /* 11px */
+      letter-spacing: 0.44px;
+      text-transform: uppercase;
+    }
+
+    .swiper-funcs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      position: relative;
+      margin: 0;
+      background: none;
+      outline: none;
+      border: none;
+      width: 20px;
+      height: 20px;
+      top: auto;
+      left: auto;
+      right: auto;
+
+      &.swiper-button-disabled {
+        opacity: .2;
+      }
+    }
+
+  }
+
+  .sold-count {
+    margin-top: 5px;
+    color: #777;
+    font-family: BVNPro-Regular;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 100%; /* 9px */
+    margin-bottom: 20px;
+  }
+
+  .swiper-suggest {
+    .swiper-slide {
+      &:nth-child(1) {
+        margin-left: 20px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 20px;
+      }
+
+      height: auto;
+      width: 240px;
+
+    }
+  }
+
+  .waiting-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: #F6F6F6;
+  }
+
+  .suggest-card {
+    display: flex;
+    padding: 5px;
+    gap: 8px;
+    border: 0.8px solid #D0D0D0;
+    background: #FFF;
+    border-radius: 8px;
+
+    .thumb {
+      width: 68px;
+      flex-shrink: 0;
+      position: relative;
+      display: block;
+
+      i {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        @include bg-thumb();
+        @include img-border-inside();
+      }
+
+    }
+
+    &.hot {
+      .status {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.sale {
+      .status {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+    .status {
+      background: #FFE600;
+      border-radius: 0px 14px 14px 0px;
+      position: absolute;
+      left: 0;
+      display: inline-flex;
+      opacity: 0;
+      visibility: hidden;
+      line-height: 130%;
+      font-family: BVNPro-Medium;
+      color: #222222;
+      top: 5px;
+      font-size: 10px;
+      padding: 4px 7px;
+    }
+
+    .total-food {
+      flex-grow: 1;
+    }
+
+    .name {
+      font-size: 14px;
+      padding: 0;
+      line-height: 140%; /* 19.6px */
+      font-family: BVNPro-SemiBold;
+      display: block;
+      color: #222222;
+      margin-bottom: 3px;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+
+      .current-price {
+        font-size: 12px;
+        line-height: 140%; /* 14px */
+        font-family: BVNPro-Medium;
+        color: var(--colorRed);
+      }
+
+      .original-price {
+        font-size: 9px;
+        line-height: 140%; /* 14px */
+        font-family: BVNPro-Regular;
+        margin-left: 6px;
+        text-decoration-line: line-through;
+        color: #999999;
+      }
+    }
+
+    .voucher {
+      display: flex;
+      align-items: center;
+
+      .icn {
+        width: 12px;
+        margin-right: 6px;
+        flex-shrink: 0;
+      }
+
+      .text {
+        flex-grow: 1;
+        font-size: 10px;
+        line-height: 130%;
+        font-family: BVNPro-Medium;
+        color: #629050;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     }
   }
 
@@ -446,6 +643,8 @@
         top: 20px;
       }
     }
+
+
   }
   .popup-active {
     .fancybox-bg {
@@ -461,5 +660,131 @@
 @media screen and (min-width: 1280px) {
   .PopUp-detail .funcsFixed {
     //left: calc((100vw - 17px - 585px) / 2);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .PopUp-detail {
+    .suggest-food {
+      padding: 20px 0;
+      border-bottom: 1px solid #E7E7E7;
+
+      .heading {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        color: #999;
+        font-family: BVNPro-SemiBold;
+        font-size: 11px;
+        font-style: normal;
+        line-height: 100%; /* 11px */
+        letter-spacing: 0.44px;
+        text-transform: uppercase;
+      }
+
+      .swiper-funcs {
+        display: none;
+      }
+
+
+    }
+
+    .swiper-suggest {
+      .swiper-wrapper {
+        width: 100%;
+        overflow-y: scroll;
+        gap: 10px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .swiper-slide {
+        &:nth-child(1) {
+          margin-left: 20px;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 20px;
+        }
+
+        height: auto;
+        width: 200px;
+
+      }
+    }
+
+
+    .suggest-card {
+
+      border-radius: 6px;
+
+      .thumb {
+        width: 57px;
+
+        i {
+          border-radius: 3px;
+        }
+      }
+
+
+      .status {
+        top: 4px;
+        font-size: 8px;
+        padding: 2px 4px;
+      }
+
+      .total-food {
+        flex-grow: 1;
+      }
+
+      .name {
+        font-size: 12px;
+
+      }
+
+      .price {
+
+
+        .current-price {
+          font-size: 10px;
+
+        }
+
+        .original-price {
+          font-size: 9px;
+
+        }
+      }
+
+      .voucher {
+        display: flex;
+        align-items: center;
+
+        .icn {
+          width: 12px;
+          margin-right: 6px;
+          flex-shrink: 0;
+        }
+
+        .text {
+          flex-grow: 1;
+          font-size: 10px;
+          line-height: 130%;
+          font-family: BVNPro-Medium;
+          color: #629050;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
   }
 }

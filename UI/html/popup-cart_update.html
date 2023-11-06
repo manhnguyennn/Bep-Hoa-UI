@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bep Hoa UI</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            App.initHelpers(['home']);
+        });
+    </script>
+</head>
+<body>
+<div class="bh-wrapper bh-home_wrapper">
+    <a href="javascript:;" class="open-popup-cart">
+        OPEN POPUP
+    </a>
+</div>
+
+<div class="PopUp-cart" id="popup-cart" style="display:none;">
+    <div class="popup-cart-content">
+        <div class="header-cart">
+            <div class="heading">
+                <div class="icn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L10 2" stroke="#B5292F" stroke-width="1.8" stroke-miterlimit="10"/>
+                        <path d="M19 9L14 2" stroke="#B5292F" stroke-width="1.8" stroke-miterlimit="10"/>
+                        <path d="M17 21H6L2 9H22L17 21Z" stroke="#B5292F" stroke-width="1.8" stroke-miterlimit="10"
+                              stroke-linecap="square"/>
+                        <path d="M4 13H20" stroke="#B5292F" stroke-width="1.8"/>
+                    </svg>
+                </div>
+                <div class="txt">
+                    Giỏ hàng
+                </div>
+            </div>
+            <a href="javascript:;" data-fancybox-close class="close-popup">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15.1" fill="white" stroke="black" stroke-width="1.8"/>
+                    <path d="M20.6667 11.3333L11.3334 20.6667" stroke="black" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                    <path d="M20.6667 20.6667L11.3334 11.3333" stroke="black" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="order-cart-box">
+            <ul class="list-order">
+
+                <li>
+                    <div class="food-order ">
+                        <div class="order-info order-warning">
+                            <div class="ava-food">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                </div>
+                            </div>
+                            <div class="od-info">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="opts-list">
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                </div>
+                                <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+
+                                <div class="od-total">
+                                    <div class="od-price">1.070.000</div>
+                                    <div class="quantity">
+                                        <div class="number-order">
+                    <span class="minus">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                          </svg>
+
+                        </span>
+                                            <input type="number" value="1"/>
+                                            <span class="plus">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2464_37)">
+                                        <path d="M6 1.125V10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2464_37">
+                                            <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warning">
+                                    Sản phẩm chỉ được mua 1 lần trong 24h
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="od-funcs">
+                            <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                                <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="edit-od">Sửa</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="food-order ">
+                        <div class="order-info ">
+                            <div class="ava-food">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                </div>
+                            </div>
+                            <div class="od-info">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="opts-list">
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                </div>
+                                <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+
+                                <div class="od-total">
+                                    <div class="od-price">1.070.000</div>
+                                    <div class="quantity">
+                                        <div class="number-order">
+                    <span class="minus">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                          </svg>
+
+                        </span>
+                                            <input type="number" value="1"/>
+                                            <span class="plus">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2464_37)">
+                                        <path d="M6 1.125V10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2464_37">
+                                            <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warning">
+                                    Sản phẩm chỉ được mua 1 lần trong 24h
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="od-funcs">
+                            <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                                <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="edit-od">Sửa</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="food-order ">
+                        <div class="order-info ">
+                            <div class="ava-food">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                </div>
+                            </div>
+                            <div class="od-info">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="opts-list">
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                </div>
+                                <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+
+                                <div class="od-total">
+                                    <div class="od-price">1.070.000</div>
+                                    <div class="quantity">
+                                        <div class="number-order">
+                    <span class="minus">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                          </svg>
+
+                        </span>
+                                            <input type="number" value="1"/>
+                                            <span class="plus">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2464_37)">
+                                        <path d="M6 1.125V10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2464_37">
+                                            <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warning">
+                                    Sản phẩm chỉ được mua 1 lần trong 24h
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="od-funcs">
+                            <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                                <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="edit-od">Sửa</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="food-order ">
+                        <div class="order-info ">
+                            <div class="ava-food">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                </div>
+                            </div>
+                            <div class="od-info">
+                                <div class="name-food">Miến om cua Cà Mau ngon đỉnh của đỉnh</div>
+                                <div class="opts-list">
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                    <div class="opts">+ Thêm 1 con cua</div>
+                                </div>
+                                <div class="od-note">Không tương ớt, nghiều rau, bỏ riêng hành tây</div>
+
+                                <div class="od-total">
+                                    <div class="od-price">1.070.000</div>
+                                    <div class="quantity">
+                                        <div class="number-order">
+                    <span class="minus">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                          </svg>
+
+                        </span>
+                                            <input type="number" value="1"/>
+                                            <span class="plus">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2464_37)">
+                                        <path d="M6 1.125V10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M1.125 6H10.875" stroke="#222222" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2464_37">
+                                            <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="warning">
+                                    Sản phẩm chỉ được mua 1 lần trong 24h
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="od-funcs">
+                            <a href="javascript:;" class="cancel-od">
+                                <span class="txt">
+                                    Huỷ
+                                </span>
+                                <span class="icn">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.13797 0.862C7.01295 0.737019 6.84342 0.666809 6.66664 0.666809C6.48986 0.666809 6.32032 0.737019 6.19531 0.862L3.99997 3.05733L1.80464 0.862C1.6789 0.740561 1.5105 0.673365 1.33571 0.674884C1.16091 0.676403 0.993699 0.746516 0.870094 0.870121C0.746488 0.993726 0.676376 1.16093 0.674857 1.33573C0.673338 1.51053 0.740534 1.67893 0.861973 1.80467L3.05731 4L0.861973 6.19533C0.798299 6.25683 0.747511 6.33039 0.712572 6.41173C0.677632 6.49307 0.659242 6.58055 0.658472 6.66907C0.657703 6.75759 0.674571 6.84537 0.708092 6.9273C0.741612 7.00923 0.791114 7.08367 0.853709 7.14626C0.916304 7.20886 0.990739 7.25836 1.07267 7.29188C1.1546 7.3254 1.24239 7.34227 1.33091 7.3415C1.41943 7.34073 1.50691 7.32234 1.58824 7.2874C1.66958 7.25246 1.74314 7.20167 1.80464 7.138L3.99997 4.94267L6.19531 7.138C6.32104 7.25944 6.48944 7.32663 6.66424 7.32512C6.83904 7.3236 7.00625 7.25348 7.12985 7.12988C7.25346 7.00627 7.32357 6.83907 7.32509 6.66427C7.32661 6.48947 7.25941 6.32107 7.13797 6.19533L4.94264 4L7.13797 1.80467C7.26295 1.67965 7.33316 1.51011 7.33316 1.33333C7.33316 1.15656 7.26295 0.987019 7.13797 0.862Z"
+                                              fill="#999999"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="edit-od">Sửa</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="suggest-food">
+                <div class="heading">
+                    <div class="text">
+                        <div class="icn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2374_2032)">
+                                    <path d="M13.829 6.58748L12.2499 5.0084V2.33323C12.2499 2.01123 11.9886 1.7499 11.6666 1.7499H8.9914L7.41232 0.170818C7.18423 -0.057265 6.81557 -0.057265 6.58748 0.170818L5.0084 1.7499H2.33323C2.01123 1.7499 1.7499 2.01123 1.7499 2.33323V5.0084L0.170818 6.58748C-0.057265 6.81557 -0.057265 7.18423 0.170818 7.41232L1.7499 8.9914V11.6666C1.7499 11.9886 2.01123 12.2499 2.33323 12.2499H5.0084L6.58748 13.829C6.70123 13.9427 6.85057 13.9999 6.9999 13.9999C7.14923 13.9999 7.29857 13.9427 7.41232 13.829L8.9914 12.2499H11.6666C11.9886 12.2499 12.2499 11.9886 12.2499 11.6666V8.9914L13.829 7.41232C14.0571 7.18423 14.0571 6.81557 13.829 6.58748ZM4.95823 4.08323C5.44123 4.08323 5.83323 4.47523 5.83323 4.95823C5.83323 5.44123 5.44123 5.83323 4.95823 5.83323C4.47523 5.83323 4.08323 5.44123 4.08323 4.95823C4.08323 4.47523 4.47523 4.08323 4.95823 4.08323ZM9.04157 9.91657C8.55857 9.91657 8.16657 9.52457 8.16657 9.04157C8.16657 8.55857 8.55857 8.16657 9.04157 8.16657C9.52457 8.16657 9.91657 8.55857 9.91657 9.04157C9.91657 9.52457 9.52457 9.91657 9.04157 9.91657ZM4.66657 10.1581L3.84173 9.33323L9.33323 3.84173L10.1581 4.66657L4.66657 10.1581Z" fill="#B5292F"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2374_2032">
+                                        <rect width="14" height="14" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="txt">
+                            đừng bỏ lỡ ưu đãi
+                        </div>
+                    </div>
+                    <div class="swiper-funcs">
+                        <div class="swiper-button-prev">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17316C0.00433284 8.00043 -0.1937 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.9923 7.35022 18.9362 4.81118 17.0625 2.93749C15.1888 1.06381 12.6498 0.00774964 10 0ZM11.6875 13.3125C11.7467 13.3689 11.7939 13.4368 11.8261 13.512C11.8583 13.5872 11.8749 13.6682 11.8749 13.75C11.8749 13.8318 11.8583 13.9128 11.8261 13.988C11.7939 14.0632 11.7467 14.1311 11.6875 14.1875C11.6311 14.2467 11.5632 14.2939 11.488 14.3261C11.4128 14.3583 11.3318 14.3749 11.25 14.3749C11.1682 14.3749 11.0872 14.3583 11.012 14.3261C10.9368 14.2939 10.8689 14.2467 10.8125 14.1875L7.0625 10.4375C7.00328 10.3811 6.95614 10.3132 6.92392 10.238C6.89171 10.1628 6.8751 10.0818 6.8751 10C6.8751 9.91819 6.89171 9.83723 6.92392 9.76203C6.95614 9.68682 7.00328 9.61894 7.0625 9.5625L10.8125 5.8125C10.9289 5.6984 11.0857 5.63485 11.2487 5.63568C11.4117 5.6365 11.5678 5.70162 11.6831 5.8169C11.7984 5.93217 11.8635 6.08828 11.8643 6.25129C11.8651 6.41431 11.8016 6.57107 11.6875 6.6875L8.375 10L11.6875 13.3125Z"
+                                      fill="#666666"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2466_1551)">
+                                    <path d="M10 0C11.9778 0 13.9112 0.58649 15.5557 1.6853C17.2002 2.78412 18.4819 4.3459 19.2388 6.17317C19.9957 8.00043 20.1937 10.0111 19.8078 11.9509C19.422 13.8907 18.4696 15.6725 17.0711 17.0711C15.6725 18.4696 13.8907 19.422 11.9509 19.8079C10.0111 20.1937 8.00042 19.9957 6.17316 19.2388C4.3459 18.4819 2.78411 17.2002 1.6853 15.5557C0.586485 13.9112 -4.76837e-06 11.9778 -4.76837e-06 10C0.00774487 7.35022 1.0638 4.81118 2.93749 2.93749C4.81118 1.06381 7.35021 0.00774964 10 0V0ZM8.31249 13.3125C8.25327 13.3689 8.20613 13.4368 8.17391 13.512C8.1417 13.5872 8.12509 13.6682 8.12509 13.75C8.12509 13.8318 8.1417 13.9128 8.17391 13.988C8.20613 14.0632 8.25327 14.1311 8.31249 14.1875C8.36894 14.2467 8.43682 14.2939 8.51202 14.3261C8.58722 14.3583 8.66818 14.3749 8.75 14.3749C8.83181 14.3749 8.91277 14.3583 8.98797 14.3261C9.06317 14.2939 9.13105 14.2467 9.1875 14.1875L12.9375 10.4375C12.9967 10.3811 13.0439 10.3132 13.0761 10.238C13.1083 10.1628 13.1249 10.0818 13.1249 10C13.1249 9.91819 13.1083 9.83723 13.0761 9.76203C13.0439 9.68682 12.9967 9.61894 12.9375 9.5625L9.1875 5.8125C9.07106 5.6984 8.91431 5.63485 8.75129 5.63568C8.58827 5.6365 8.43216 5.70162 8.31689 5.8169C8.20162 5.93217 8.1365 6.08828 8.13567 6.25129C8.13485 6.41431 8.19839 6.57107 8.31249 6.6875L11.625 10L8.31249 13.3125Z"
+                                          fill="#666666"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2466_1551">
+                                        <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-suggest">
+                    <ul class="list-food swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#" class=" suggest-card hot">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                    <div class="status">Bán chạy</div>
+                                </div>
+                                <div class="total-food">
+                                    <div class="name">Set Lòng lợn siêu đỉnh</div>
+                                    <div class="price">
+                                        <div class="current-price">320.000đ</div>
+                                        <div class="original-price">820.000</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" class=" suggest-card sale">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                    <div class="status">-20%</div>
+                                </div>
+                                <div class="total-food">
+                                    <div class="name">Set Lòng lợn siêu đỉnh</div>
+                                    <div class="price">
+                                        <div class="current-price">320.000đ</div>
+                                        <div class="original-price">820.000</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" class=" suggest-card">
+                                <div class="thumb">
+                                    <i style="background-image: url('img/food-thumb.png')"></i>
+                                    <div class="status">Bán chạy</div>
+                                </div>
+                                <div class="total-food">
+                                    <div class="name">Set Lòng lợn siêu đỉnh</div>
+                                    <div class="price">
+                                        <div class="current-price">320.000đ</div>
+                                        <div class="original-price">820.000</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="waiting-card"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="waiting-card"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="waiting-card"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-cart">
+            <div class="total-bill">
+                <div class="count">
+                    <div class="text">Tiền hàng</div>
+                    <div class="quantity">6 món</div>
+                </div>
+                <div class="price-bill">
+                    1.460.000đ
+                </div>
+            </div>
+            <div class="funcsBtn">
+                <a href="javascript:;" data-fancybox-close class="add-more">
+                    <span class="icn">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.25 5.25H6.75V0.75C6.75 0.3 6.45 0 6 0C5.55 0 5.25 0.3 5.25 0.75V5.25H0.75C0.3 5.25 0 5.55 0 6C0 6.45 0.3 6.75 0.75 6.75H5.25V11.25C5.25 11.7 5.55 12 6 12C6.45 12 6.75 11.7 6.75 11.25V6.75H11.25C11.7 6.75 12 6.45 12 6C12 5.55 11.7 5.25 11.25 5.25Z"
+                                  fill="#222222"/>
+                        </svg>
+                    </span>
+                    <span class="txt">
+                        Thêm món
+                    </span>
+                </a>
+                <a href="javascript:;" class="payment">Thanh toán</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

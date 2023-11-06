@@ -5,7 +5,7 @@ svg {
 }
 
 .hidden {
-  display: none!important;
+  display: none !important;
 }
 
 /* Custom animation fancybox */
@@ -58,28 +58,40 @@ svg {
 
 /* Custom input number order */
 .number-order {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  background: #FFF;
 
   span {
     cursor: pointer;
   }
 
   .minus, .plus {
-    width: 28px;
-    display: block;
+    width: 32px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 12px;
+      display: block;
+      height: auto;
+    }
+
   }
 
   input {
-    margin: 0 10px;
-    height: 30px;
+    height: 34px;
     width: 38px;
     text-align: center;
     display: flex;
     align-items: center;
+    border: none;
     justify-content: center;
     background: #FFFFFF;
-    border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 14px;

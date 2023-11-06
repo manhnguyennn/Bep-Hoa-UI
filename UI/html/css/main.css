@@ -207,25 +207,22 @@ svg {
 }
 /* Custom input number order */
 .number-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  background: #FFF;
 }
 .number-order span {
   cursor: pointer;
 }
 .number-order .minus, .number-order .plus {
-  width: 28px;
-  display: block;
-}
-.number-order input {
-  margin: 0 10px;
-  height: 30px;
-  width: 38px;
-  text-align: center;
+  width: 32px;
+  height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,8 +232,27 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.number-order .minus svg, .number-order .plus svg {
+  width: 12px;
+  display: block;
+  height: auto;
+}
+.number-order input {
+  height: 34px;
+  width: 38px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #FFFFFF;
-  border: 1px solid #E0E0E0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -4643,13 +4659,14 @@ Generated using nucleoapp.com
           box-sizing: border-box;
   padding-bottom: 140px;
 }
-.PopUp-cart .list-order {
+.PopUp-cart .order-cart-box {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow-y: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-bottom: 60px;
 }
 .PopUp-cart .header-cart {
   position: absolute;
@@ -4815,9 +4832,6 @@ Generated using nucleoapp.com
   width: 32px;
   display: block;
 }
-.PopUp-cart .list-order {
-  padding-bottom: 60px;
-}
 .PopUp-cart .list-order li {
   padding: 20px;
 }
@@ -4825,20 +4839,13 @@ Generated using nucleoapp.com
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.PopUp-cart .order-info.order-warning {
-  padding-bottom: 57px;
-  position: relative;
+  gap: 15px;
 }
 .PopUp-cart .order-info.order-warning .warning {
-  position: absolute;
-  left: 48px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  bottom: 21px;
+  display: block;
 }
-.PopUp-cart .order-info .warning {
+.PopUp-cart .warning {
+  margin-bottom: 14px;
   display: none;
   padding: 4px 8px;
   -webkit-box-align: center;
@@ -4851,7 +4858,26 @@ Generated using nucleoapp.com
   color: #FE3E3E;
   font-family: BVNPro-Regular;
   font-size: 9px;
+  text-align: center;
   line-height: 135%; /* 12.15px */
+}
+.PopUp-cart .ava-food {
+  width: 38px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.PopUp-cart .ava-food .thumb {
+  width: 100%;
+  border-radius: 6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.PopUp-cart .ava-food .thumb i {
+  width: 100%;
+  padding-top: 100%;
+  display: block;
+  border-radius: 6px;
 }
 .PopUp-cart .od-count {
   width: 32px;
@@ -4876,25 +4902,24 @@ Generated using nucleoapp.com
       flex-shrink: 0;
 }
 .PopUp-cart .od-info {
-  padding-top: 3px;
-  width: 180px;
-  margin-right: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .PopUp-cart .od-total {
-  padding-top: 5px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
 }
 .PopUp-cart .name-food {
   font-size: 14px;
@@ -4955,6 +4980,17 @@ Generated using nucleoapp.com
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.PopUp-cart .od-funcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .PopUp-cart .price-opt {
   font-size: 10px;
   line-height: 170%;
@@ -4971,18 +5007,17 @@ Generated using nucleoapp.com
   margin-bottom: 8px;
 }
 .PopUp-cart .edit-od {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
   font-family: BVNPro-SemiBold;
   display: inline-block;
   color: var(--colorRed);
 }
 .PopUp-cart .od-price {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 150%;
   font-family: BVNPro-Medium;
   display: block;
-  margin-bottom: 8px;
   text-align: right;
   color: #666666;
 }
@@ -5006,6 +5041,213 @@ Generated using nucleoapp.com
 .PopUp-cart .cancel-od .icn {
   display: block;
   width: 8px;
+}
+.PopUp-cart .suggest-food {
+  padding: 15px 0;
+  background: #FFF6ED;
+}
+.PopUp-cart .suggest-food .heading {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.PopUp-cart .suggest-food .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.PopUp-cart .suggest-food .text .icn {
+  width: 14px;
+  display: block;
+  height: auto;
+}
+.PopUp-cart .suggest-food .text .txt {
+  color: #78614B;
+  font-family: BVNPro-SemiBold;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 114%; /* 11px */
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+}
+.PopUp-cart .suggest-food .swiper-funcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.PopUp-cart .suggest-food .swiper-button-prev, .PopUp-cart .suggest-food .swiper-button-next {
+  position: relative;
+  margin: 0;
+  background: none;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+.PopUp-cart .suggest-food .swiper-button-prev.swiper-button-disabled, .PopUp-cart .suggest-food .swiper-button-next.swiper-button-disabled {
+  opacity: 0.2;
+}
+.PopUp-cart .swiper-suggest .swiper-slide {
+  height: auto;
+  width: 200px;
+}
+.PopUp-cart .swiper-suggest .swiper-slide:nth-child(1) {
+  margin-left: 20px;
+}
+.PopUp-cart .swiper-suggest .swiper-slide:nth-last-child(1) {
+  margin-right: 20px;
+}
+.PopUp-cart .waiting-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #fff;
+}
+.PopUp-cart .suggest-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  gap: 8px;
+  border: 0.7px solid #D0D0D0;
+  background: #FFF;
+  border-radius: 6px;
+}
+.PopUp-cart .suggest-card .thumb {
+  width: 57px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: block;
+}
+.PopUp-cart .suggest-card .thumb i {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: relative;
+}
+.PopUp-cart .suggest-card .thumb i:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  content: "";
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+.PopUp-cart .suggest-card.hot .status {
+  opacity: 1;
+  visibility: visible;
+}
+.PopUp-cart .suggest-card.sale .status {
+  opacity: 1;
+  visibility: visible;
+}
+.PopUp-cart .suggest-card .status {
+  background: #FFE600;
+  border-radius: 0px 14px 14px 0px;
+  position: absolute;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+  top: 4px;
+  font-size: 9px;
+  padding: 2px 4px;
+}
+.PopUp-cart .suggest-card .total-food {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.PopUp-cart .suggest-card .name {
+  font-size: 12px;
+  padding: 0;
+  line-height: 140%; /* 19.6px */
+  font-family: BVNPro-SemiBold;
+  display: block;
+  color: #222222;
+  margin-bottom: 3px;
+}
+.PopUp-cart .suggest-card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.PopUp-cart .suggest-card .price .current-price {
+  font-size: 10px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Medium;
+  color: var(--colorRed);
+}
+.PopUp-cart .suggest-card .price .original-price {
+  font-size: 9px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Regular;
+  margin-left: 6px;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+.PopUp-cart .suggest-card .voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.PopUp-cart .suggest-card .voucher .icn {
+  width: 12px;
+  margin-right: 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.PopUp-cart .suggest-card .voucher .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 10px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #629050;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .popup-cart-active .fancybox-slide--html {
@@ -5050,6 +5292,9 @@ Generated using nucleoapp.com
 @media screen and (max-width: 768px) {
   .PopUp-cart .footer-cart {
     position: fixed;
+  }
+  .PopUp-cart .suggest-food .swiper-funcs {
+    display: none;
   }
 }
 .Popup-checkout {
@@ -6384,12 +6629,20 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
 }
 .PopUp-detail .note-food {
-  font-size: 16px;
-  line-height: 130%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #B5292F;
+  color: #fff;
   font-family: BVNPro-Medium;
-  color: #B5292F;
-  margin-top: 7px;
-  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 135%; /* 14.85px */
 }
 .PopUp-detail .priceBox {
   display: -webkit-box;
@@ -6414,7 +6667,6 @@ Generated using nucleoapp.com
   color: #999999;
 }
 .PopUp-detail .warning {
-  margin-top: 15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -6510,6 +6762,208 @@ Generated using nucleoapp.com
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #999999;
+}
+.PopUp-detail .suggest-food {
+  padding: 20px 0 35px 0;
+  border-bottom: 1px solid #E7E7E7;
+}
+.PopUp-detail .suggest-food .heading {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.PopUp-detail .suggest-food .text {
+  color: #999;
+  font-family: BVNPro-SemiBold;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 100%; /* 11px */
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+}
+.PopUp-detail .suggest-food .swiper-funcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.PopUp-detail .suggest-food .swiper-button-prev, .PopUp-detail .suggest-food .swiper-button-next {
+  position: relative;
+  margin: 0;
+  background: none;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+.PopUp-detail .suggest-food .swiper-button-prev.swiper-button-disabled, .PopUp-detail .suggest-food .swiper-button-next.swiper-button-disabled {
+  opacity: 0.2;
+}
+.PopUp-detail .sold-count {
+  margin-top: 5px;
+  color: #777;
+  font-family: BVNPro-Regular;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 100%; /* 9px */
+  margin-bottom: 20px;
+}
+.PopUp-detail .swiper-suggest .swiper-slide {
+  height: auto;
+  width: 240px;
+}
+.PopUp-detail .swiper-suggest .swiper-slide:nth-child(1) {
+  margin-left: 20px;
+}
+.PopUp-detail .swiper-suggest .swiper-slide:nth-last-child(1) {
+  margin-right: 20px;
+}
+.PopUp-detail .waiting-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #F6F6F6;
+}
+.PopUp-detail .suggest-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  gap: 8px;
+  border: 0.8px solid #D0D0D0;
+  background: #FFF;
+  border-radius: 8px;
+}
+.PopUp-detail .suggest-card .thumb {
+  width: 68px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: block;
+}
+.PopUp-detail .suggest-card .thumb i {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: relative;
+}
+.PopUp-detail .suggest-card .thumb i:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  content: "";
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+.PopUp-detail .suggest-card.hot .status {
+  opacity: 1;
+  visibility: visible;
+}
+.PopUp-detail .suggest-card.sale .status {
+  opacity: 1;
+  visibility: visible;
+}
+.PopUp-detail .suggest-card .status {
+  background: #FFE600;
+  border-radius: 0px 14px 14px 0px;
+  position: absolute;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+  top: 5px;
+  font-size: 10px;
+  padding: 4px 7px;
+}
+.PopUp-detail .suggest-card .total-food {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.PopUp-detail .suggest-card .name {
+  font-size: 14px;
+  padding: 0;
+  line-height: 140%; /* 19.6px */
+  font-family: BVNPro-SemiBold;
+  display: block;
+  color: #222222;
+  margin-bottom: 3px;
+}
+.PopUp-detail .suggest-card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.PopUp-detail .suggest-card .price .current-price {
+  font-size: 12px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Medium;
+  color: var(--colorRed);
+}
+.PopUp-detail .suggest-card .price .original-price {
+  font-size: 9px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Regular;
+  margin-left: 6px;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+.PopUp-detail .suggest-card .voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.PopUp-detail .suggest-card .voucher .icn {
+  width: 12px;
+  margin-right: 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.PopUp-detail .suggest-card .voucher .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 10px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #629050;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .PopUp-detail .noteBox {
   padding: 25px 20px;
@@ -6621,6 +7075,110 @@ Generated using nucleoapp.com
   }
   .popup-active .fancybox-content {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .PopUp-detail .suggest-food {
+    padding: 20px 0;
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .PopUp-detail .suggest-food .heading {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .PopUp-detail .suggest-food .text {
+    color: #999;
+    font-family: BVNPro-SemiBold;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 100%; /* 11px */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+  }
+  .PopUp-detail .suggest-food .swiper-funcs {
+    display: none;
+  }
+  .PopUp-detail .swiper-suggest .swiper-wrapper {
+    width: 100%;
+    overflow-y: scroll;
+    gap: 10px;
+  }
+  .PopUp-detail .swiper-suggest .swiper-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .PopUp-detail .swiper-suggest .swiper-slide {
+    height: auto;
+    width: 200px;
+  }
+  .PopUp-detail .swiper-suggest .swiper-slide:nth-child(1) {
+    margin-left: 20px;
+  }
+  .PopUp-detail .swiper-suggest .swiper-slide:nth-last-child(1) {
+    margin-right: 20px;
+  }
+  .PopUp-detail .suggest-card {
+    border-radius: 6px;
+  }
+  .PopUp-detail .suggest-card .thumb {
+    width: 57px;
+  }
+  .PopUp-detail .suggest-card .thumb i {
+    border-radius: 3px;
+  }
+  .PopUp-detail .suggest-card .status {
+    top: 4px;
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  .PopUp-detail .suggest-card .total-food {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .PopUp-detail .suggest-card .name {
+    font-size: 12px;
+  }
+  .PopUp-detail .suggest-card .price .current-price {
+    font-size: 10px;
+  }
+  .PopUp-detail .suggest-card .price .original-price {
+    font-size: 9px;
+  }
+  .PopUp-detail .suggest-card .voucher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .PopUp-detail .suggest-card .voucher .icn {
+    width: 12px;
+    margin-right: 6px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .PopUp-detail .suggest-card .voucher .text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 10px;
+    line-height: 130%;
+    font-family: BVNPro-Medium;
+    color: #629050;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 .PopUp-location {

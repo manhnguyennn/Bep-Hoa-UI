@@ -453,7 +453,15 @@
                                 },
                                 initialSlide: 0,
                             });
-
+                            swiperSuggest = new Swiper(".swiper-suggest", {
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                navigation: {
+                                    nextEl: ".suggest-food .swiper-button-next",
+                                    prevEl: ".suggest-food .swiper-button-prev"
+                                },
+                                initialSlide: 0,
+                            });
 
                         },
                         afterClose: function () {
@@ -484,7 +492,15 @@
                             $('body').addClass('popup-cart-active');
                         },
                         afterShow: function () {
-
+                            swiperSuggest = new Swiper(".swiper-suggest", {
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                navigation: {
+                                    nextEl: ".suggest-food .swiper-button-next",
+                                    prevEl: ".suggest-food .swiper-button-prev"
+                                },
+                                initialSlide: 0,
+                            });
 
                         },
                         afterClose: function () {
@@ -636,7 +652,15 @@
                             $('body').addClass('popup-cart-active');
                         },
                         afterShow: function () {
-
+                            swiperSuggest = new Swiper(".swiper-suggest", {
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                navigation: {
+                                    nextEl: ".suggest-food .swiper-button-next",
+                                    prevEl: ".suggest-food .swiper-button-prev"
+                                },
+                                initialSlide: 0,
+                            });
 
                         },
                         afterClose: function () {

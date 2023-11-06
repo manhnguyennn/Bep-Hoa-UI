@@ -12,10 +12,15 @@
   }
 
   .list-order {
+
+
+  }
+
+  .order-cart-box {
     flex-grow: 1;
     overflow-y: scroll;
     box-sizing: border-box;
-
+    padding-bottom: 60px;
   }
 
   .header-cart {
@@ -161,7 +166,6 @@
   }
 
   .list-order {
-    padding-bottom: 60px;
 
     li {
       @extend .bb05;
@@ -171,31 +175,47 @@
 
   .order-info {
     display: flex;
+    gap: 15px;
 
     &.order-warning {
-      padding-bottom: 57px;
-      position: relative;
-
       .warning {
-        position: absolute;
-        left: 48px;
-        display: inline-flex;
-        bottom: 21px;
+        display: block;
       }
     }
+  }
 
-    .warning {
-      display: none;
-      padding: 4px 8px;
-      align-items: center;
-      gap: 10px;
-      border-radius: 20px;
-      border: 1px solid #FF6161;
-      background: #FDECEC;
-      color: #FE3E3E;
-      font-family: BVNPro-Regular;
-      font-size: 9px;
-      line-height: 135%; /* 12.15px */
+  .warning {
+    margin-bottom: 14px;
+    display: none;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #FF6161;
+    background: #FDECEC;
+    color: #FE3E3E;
+    font-family: BVNPro-Regular;
+    font-size: 9px;
+    text-align: center;
+    line-height: 135%; /* 12.15px */
+  }
+
+  .ava-food {
+    width: 38px;
+    flex-shrink: 0;
+
+    .thumb {
+      width: 100%;
+      border-radius: 6px;
+      border: 0.5px solid rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+
+      i {
+        width: 100%;
+        padding-top: 100%;
+        display: block;
+        border-radius: 6px;
+      }
     }
   }
 
@@ -216,17 +236,15 @@
   }
 
   .od-info {
-    padding-top: 3px;
-    width: 180px;
-    margin-right: auto;
+    flex-grow: 1;
   }
 
   .od-total {
-    padding-top: 5px;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
   }
 
   .name-food {
@@ -285,6 +303,12 @@
     flex-direction: column;
   }
 
+  .od-funcs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .price-opt {
     font-size: 10px;
     line-height: 170%;
@@ -303,7 +327,7 @@
   }
 
   .edit-od {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 100%;
     font-family: BVNPro-SemiBold;
     display: inline-block;
@@ -311,13 +335,11 @@
   }
 
   .od-price {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
     font-family: BVNPro-Medium;
     display: block;
-    margin-bottom: 8px;
     text-align: right;
-
     color: #666666;
 
   }
@@ -339,6 +361,203 @@
     .icn {
       display: block;
       width: 8px;
+    }
+  }
+
+  .suggest-food {
+    padding: 15px 0;
+    background: #FFF6ED;
+
+    .heading {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .icn {
+        width: 14px;
+        display: block;
+        height: auto;
+      }
+
+      .txt {
+        color: #78614B;
+
+        font-family: BVNPro-SemiBold;
+        font-size: 11px;
+        font-style: normal;
+        line-height: 114%; /* 11px */
+        letter-spacing: 0.44px;
+        text-transform: uppercase;
+      }
+    }
+
+    .swiper-funcs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      position: relative;
+      margin: 0;
+      background: none;
+      outline: none;
+      border: none;
+      width: 20px;
+      height: 20px;
+      top: auto;
+      left: auto;
+      right: auto;
+
+      &.swiper-button-disabled {
+        opacity: .2;
+      }
+    }
+
+  }
+
+  .swiper-suggest {
+    .swiper-slide {
+      &:nth-child(1) {
+        margin-left: 20px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 20px;
+      }
+
+      height: auto;
+      width: 200px;
+
+    }
+  }
+
+  .waiting-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .suggest-card {
+    display: flex;
+    padding: 5px;
+    gap: 8px;
+    border: 0.7px solid #D0D0D0;
+    background: #FFF;
+    border-radius: 6px;
+
+    .thumb {
+      width: 57px;
+      flex-shrink: 0;
+      position: relative;
+      display: block;
+
+      i {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 3px;
+        overflow: hidden;
+        @include bg-thumb();
+        @include img-border-inside();
+      }
+
+    }
+
+    &.hot {
+      .status {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.sale {
+      .status {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+    .status {
+      background: #FFE600;
+      border-radius: 0px 14px 14px 0px;
+      position: absolute;
+      left: 0;
+      display: inline-flex;
+      opacity: 0;
+      visibility: hidden;
+      line-height: 130%;
+      font-family: BVNPro-Medium;
+      color: #222222;
+      top: 4px;
+      font-size: 9px;
+      padding: 2px 4px;
+    }
+
+    .total-food {
+      flex-grow: 1;
+    }
+
+    .name {
+      font-size: 12px;
+      padding: 0;
+      line-height: 140%; /* 19.6px */
+      font-family: BVNPro-SemiBold;
+      display: block;
+      color: #222222;
+      margin-bottom: 3px;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+
+      .current-price {
+        font-size: 10px;
+        line-height: 140%; /* 14px */
+        font-family: BVNPro-Medium;
+        color: var(--colorRed);
+      }
+
+      .original-price {
+        font-size: 9px;
+        line-height: 140%; /* 14px */
+        font-family: BVNPro-Regular;
+        margin-left: 6px;
+        text-decoration-line: line-through;
+        color: #999999;
+      }
+    }
+
+    .voucher {
+      display: flex;
+      align-items: center;
+
+      .icn {
+        width: 12px;
+        margin-right: 6px;
+        flex-shrink: 0;
+      }
+
+      .text {
+        flex-grow: 1;
+        font-size: 10px;
+        line-height: 130%;
+        font-family: BVNPro-Medium;
+        color: #629050;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     }
   }
 }
@@ -392,6 +611,21 @@
   .PopUp-cart {
     .footer-cart {
       position: fixed;
+
+    }
+    .suggest-food {
+
+
+      .heading {
+
+      }
+
+
+
+      .swiper-funcs {
+        display: none;
+      }
+
 
     }
   }

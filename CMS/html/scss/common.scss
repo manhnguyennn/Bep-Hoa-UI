@@ -64,6 +64,7 @@ body {
   background: #fff;
   font-size: 1.1rem;
   border: 2px solid #EAEAEA;
+
   &:hover {
     border: 2px solid #7367F0;
   }
@@ -1131,4 +1132,42 @@ body {
   justify-content: center;
   color: #7367F0;
   padding: 3px 12px 4px;
+}
+
+
+.tags-input-wrapper {
+  width: 100%;
+  padding: 11px 13px 10px 15px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #D8D6DE;
+  background: #FFF;
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 8px;
+    width: 120px;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #7367f0;
+    color: white;
+    border-radius: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 4px 3px 0px 7px;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    a {
+      margin: 0 7px 3px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
 }

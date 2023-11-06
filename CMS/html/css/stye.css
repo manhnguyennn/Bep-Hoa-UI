@@ -970,6 +970,41 @@ body i {
   padding: 3px 12px 4px;
 }
 
+.tags-input-wrapper {
+  width: 100%;
+  padding: 11px 13px 10px 15px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #D8D6DE;
+  background: #FFF;
+}
+.tags-input-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 8px;
+  width: 120px;
+}
+.tags-input-wrapper .tag {
+  display: inline-block;
+  background-color: #7367f0;
+  color: white;
+  border-radius: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 4px 3px 0px 7px;
+  font-family: "Roboto-Regular";
+  font-size: 13px;
+}
+.tags-input-wrapper .tag a {
+  margin: 0 7px 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+
 /*--------------------------------
 
 Nucleo icon font
@@ -2853,6 +2888,58 @@ Generated using nucleoapp.com
   font-size: 13px;
   font-style: normal;
   line-height: 101%; /* 13.13px */
+}
+
+.list-food-suggest {
+  list-style-type: none;
+  padding: 0;
+}
+.list-food-suggest .list-suggest-item {
+  width: 100%;
+  list-style-type: none;
+}
+.list-food-suggest .food-name-drag {
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid #EFEFEF;
+}
+.list-food-suggest .icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+}
+.list-food-suggest .icon i {
+  width: 100%;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  left: 0;
+}
+.list-food-suggest .icon i:nth-child(1) {
+  top: 0;
+}
+.list-food-suggest .icon i:nth-child(2) {
+  top: 6px;
+}
+.list-food-suggest .icon i:nth-last-child(1) {
+  bottom: 0;
+}
+.list-food-suggest .name-food {
+  flex-grow: 1;
+  color: #111;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 140%; /* 19.6px */
+}
+.list-food-suggest .remove-card {
+  padding: 0.8rem 2rem;
+  flex-shrink: 0;
 }
 
 .name-cusomter.unset {
