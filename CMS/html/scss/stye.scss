@@ -72,6 +72,7 @@
       height: 40px;
       overflow: hidden;
       margin-right: 12px;
+      flex-shrink: 0;
 
       img {
         width: 100%;
@@ -115,10 +116,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   .cancel-filter {
     width: 90px;
     box-sizing: border-box;
     padding: 0;
+
     .icn {
       font-family: Nucleo;
       font-size: 8px;
@@ -130,6 +133,7 @@
       display: block;
     }
   }
+
   .btn-filter-action {
     width: calc(100% - 115px);
     box-sizing: border-box;
@@ -140,11 +144,13 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+
   .txt {
     color: #111111;
     margin-right: 7px;
     display: block;
   }
+
   .icn {
     font-family: Nucleo;
     display: block;

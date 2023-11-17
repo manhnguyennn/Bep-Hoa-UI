@@ -8070,9 +8070,7 @@ Generated using nucleoapp.com
   width: 8px;
 }
 .food-detail_wrapper .infoBox {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: calc(60% - 33px);
 }
 .food-detail_wrapper .infoBox .name {
   font-size: 22px;
@@ -8219,6 +8217,201 @@ Generated using nucleoapp.com
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #999999;
+}
+.food-detail_wrapper .infoBox .suggest-food {
+  padding: 20px 0 35px 0;
+  border-bottom: 1px solid #E7E7E7;
+}
+.food-detail_wrapper .infoBox .suggest-food .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.food-detail_wrapper .infoBox .suggest-food .text {
+  color: #999;
+  font-family: BVNPro-SemiBold;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 100%; /* 11px */
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+}
+.food-detail_wrapper .infoBox .suggest-food .swiper-funcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.food-detail_wrapper .infoBox .suggest-food .swiper-button-prev, .food-detail_wrapper .infoBox .suggest-food .swiper-button-next {
+  position: relative;
+  margin: 0;
+  background: none;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+.food-detail_wrapper .infoBox .suggest-food .swiper-button-prev.swiper-button-disabled, .food-detail_wrapper .infoBox .suggest-food .swiper-button-next.swiper-button-disabled {
+  opacity: 0.2;
+}
+.food-detail_wrapper .infoBox .sold-count {
+  margin-top: 5px;
+  color: #777;
+  font-family: BVNPro-Regular;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 100%; /* 9px */
+  margin-bottom: 20px;
+}
+.food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
+  height: auto;
+  width: 240px;
+}
+.food-detail_wrapper .infoBox .waiting-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #F6F6F6;
+}
+.food-detail_wrapper .infoBox .suggest-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  gap: 8px;
+  border: 0.8px solid #D0D0D0;
+  background: #FFF;
+  border-radius: 8px;
+}
+.food-detail_wrapper .infoBox .suggest-card .thumb {
+  width: 68px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: block;
+}
+.food-detail_wrapper .infoBox .suggest-card .thumb i {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: relative;
+}
+.food-detail_wrapper .infoBox .suggest-card .thumb i:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  content: "";
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+.food-detail_wrapper .infoBox .suggest-card.hot .status {
+  opacity: 1;
+  visibility: visible;
+}
+.food-detail_wrapper .infoBox .suggest-card.sale .status {
+  opacity: 1;
+  visibility: visible;
+}
+.food-detail_wrapper .infoBox .suggest-card .status {
+  background: #FFE600;
+  border-radius: 0px 14px 14px 0px;
+  position: absolute;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+  top: 5px;
+  font-size: 10px;
+  padding: 4px 7px;
+}
+.food-detail_wrapper .infoBox .suggest-card .total-food {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.food-detail_wrapper .infoBox .suggest-card .name {
+  font-size: 14px;
+  padding: 0;
+  line-height: 140%; /* 19.6px */
+  font-family: BVNPro-SemiBold;
+  display: block;
+  color: #222222;
+  margin-bottom: 3px;
+}
+.food-detail_wrapper .infoBox .suggest-card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.food-detail_wrapper .infoBox .suggest-card .price .current-price {
+  font-size: 12px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Medium;
+  color: var(--colorRed);
+}
+.food-detail_wrapper .infoBox .suggest-card .price .original-price {
+  font-size: 9px;
+  line-height: 140%; /* 14px */
+  font-family: BVNPro-Regular;
+  margin-left: 6px;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+.food-detail_wrapper .infoBox .suggest-card .voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.food-detail_wrapper .infoBox .suggest-card .voucher .icn {
+  width: 12px;
+  margin-right: 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.food-detail_wrapper .infoBox .suggest-card .voucher .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 10px;
+  line-height: 130%;
+  font-family: BVNPro-Medium;
+  color: #629050;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .food-detail_wrapper .infoBox .noteBox {
   padding: 25px 0;
@@ -8415,6 +8608,110 @@ Generated using nucleoapp.com
   }
   .food-detail_wrapper .infoBox .name {
     font-size: 19px;
+  }
+  .food-detail_wrapper .infoBox .suggest-food {
+    padding: 20px 0;
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .food-detail_wrapper .infoBox .suggest-food .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .food-detail_wrapper .infoBox .suggest-food .text {
+    color: #999;
+    font-family: BVNPro-SemiBold;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 100%; /* 11px */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+  }
+  .food-detail_wrapper .infoBox .suggest-food .swiper-funcs {
+    display: none;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest {
+    width: 100vw;
+    margin-left: -20px;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-wrapper {
+    overflow-y: scroll;
+    gap: 10px;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
+    height: auto;
+    width: 200px;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-child(1) {
+    margin-left: 20px;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-last-child(1) {
+    margin-right: 20px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card {
+    border-radius: 6px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .thumb {
+    width: 57px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .thumb i {
+    border-radius: 3px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .status {
+    top: 4px;
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .total-food {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .name {
+    font-size: 12px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .price .current-price {
+    font-size: 10px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .price .original-price {
+    font-size: 9px;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .voucher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .voucher .icn {
+    width: 12px;
+    margin-right: 6px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .food-detail_wrapper .infoBox .suggest-card .voucher .text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 10px;
+    line-height: 130%;
+    font-family: BVNPro-Medium;
+    color: #629050;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .food-detail_wrapper .funcsFixed {
     -webkit-box-orient: vertical;

@@ -4420,6 +4420,7 @@ Generated using nucleoapp.com
   height: 40px;
   overflow: hidden;
   margin-right: 12px;
+  flex-shrink: 0;
 }
 .table-user-group .menu-total-product .ava img, .table-bh .menu-total-product .ava img {
   width: 100%;

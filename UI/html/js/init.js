@@ -193,6 +193,17 @@
                     $('.bh-main-header').removeClass('active');
                 }
             });
+
+            swiperSuggest = new Swiper(".swiper-suggest", {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".suggest-food .swiper-button-next",
+                    prevEl: ".suggest-food .swiper-button-prev"
+                },
+                initialSlide: 0,
+            });
+
             let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
                 slidesPerView: 'auto',
                 spaceBetween: 15,
@@ -205,6 +216,7 @@
                 centeredSlides: true,
                 loop: true,
             });
+
 
             $(".food-card").each(function () {
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
