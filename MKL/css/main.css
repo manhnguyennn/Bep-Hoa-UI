@@ -259,13 +259,20 @@ a {
   font-family: PlusJaS-Bold;
   font-size: 2.2vh;
 }
+.intro-section .swiper-gallery {
+  width: 47.81vw;
+  height: 100%;
+}
+.intro-section .swiper-gallery .swiper-slide {
+  height: auto;
+}
 .intro-section .des {
   color: #777;
   font-family: PlusJaS-Medium;
   font-size: 2vh;
 }
 .intro-section .imagesBox {
-  width: 47.81vw;
+  width: 100%;
   height: 100%;
 }
 .intro-section .imagesBox img {
@@ -347,6 +354,31 @@ a {
 .about-section .des + .titl {
   margin-top: 14.7vh;
 }
+.about-section .des .big-text {
+  line-height: 140%;
+  font-size: 1vw;
+}
+.about-section .des p + p {
+  margin-top: 15px;
+}
+.about-section .des p.dot {
+  padding-left: 15px;
+  position: relative;
+}
+.about-section .des p.dot:before {
+  width: 4px;
+  content: "";
+  height: 4px;
+  left: 0;
+  top: 7px;
+  border-radius: 50%;
+  background: #555;
+  display: block;
+  position: absolute;
+}
+.about-section .des p.dot b {
+  font-family: PlusJaS-Bold;
+}
 
 .brand-section {
   width: 100%;
@@ -400,6 +432,7 @@ a {
   color: #111;
   font-family: PlusJaS-Medium;
   font-size: 1.6vw;
+  line-height: 140%;
   font-weight: 500;
   display: block;
   margin-bottom: 10px;
@@ -510,19 +543,19 @@ a {
   display: block;
   top: 0;
   left: 0;
-  background-image: url("../web_images/contact-bg.png");
+  background-image: url("../web_images/contact-bg.webp");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   content: "";
 }
 .contact-section:after {
-  height: 100%;
+  height: 55%;
   width: 100%;
   position: absolute;
   z-index: 2;
   display: block;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
   content: "";
@@ -633,6 +666,9 @@ a {
   .intro-section .des {
     margin-top: -10px;
     font-size: 15px;
+  }
+  .intro-section .swiper-gallery {
+    width: 100%;
   }
   .intro-section .imagesBox {
     padding-top: 61.53%;

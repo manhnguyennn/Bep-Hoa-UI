@@ -30,6 +30,17 @@
     font-size: 2.2vh;
   }
 
+  .swiper-gallery {
+    width: 47.81vw;
+    height: 100%;
+
+    .swiper-slide {
+      height: auto;
+
+    }
+
+  }
+
   .des {
     color: #777;
     font-family: PlusJaS-Medium;
@@ -37,7 +48,7 @@
   }
 
   .imagesBox {
-    width: 47.81vw;
+    width: 100%;
     height: 100%;
 
     img {
@@ -134,6 +145,31 @@
     & + .titl {
       margin-top: 14.7vh;
     }
+    .big-text{
+      line-height: 140%;
+      font-size: 1vw;
+    }
+    p + p{
+      margin-top: 15px;
+    }
+    p.dot{
+      padding-left: 15px;
+      position: relative;
+      &:before{
+        width: 4px;
+        content: '';
+        height: 4px;
+        left: 0;
+        top: 7px;
+        border-radius: 50%;
+        background: #555;
+        display: block;
+        position: absolute;
+      }
+      b{
+        font-family: PlusJaS-Bold;
+      }
+    }
   }
 
 }
@@ -199,6 +235,7 @@
       color: #111;
       font-family: PlusJaS-Medium;
       font-size: 1.6vw;
+      line-height: 140%;
       font-weight: 500;
       display: block;
       margin-bottom: 10px;
@@ -327,7 +364,7 @@
     display: block;
     top: 0;
     left: 0;
-    background-image: url('../web_images/contact-bg.png');
+    background-image: url('../web_images/contact-bg.webp');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -335,12 +372,12 @@
   }
 
   &:after {
-    height: 100%;
+    height: 55%;
     width: 100%;
     position: absolute;
     z-index: 2;
     display: block;
-    top: 0;
+    bottom: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
     content: '';
@@ -472,6 +509,10 @@
       font-size: 15px;
     }
 
+    .swiper-gallery {
+      width: 100%;
+    }
+
     .imagesBox {
       padding-top: 61.53%;
       height: auto;
@@ -533,6 +574,7 @@
       bottom: auto;
       z-index: 1;
       margin-bottom: 25px;
+
       img {
         height: auto;
         width: 100%;
@@ -593,6 +635,7 @@
       padding-top: 0;
       padding-bottom: 0;
       width: 260px;
+
       &:before {
         width: 3px;
         height: 90%;
