@@ -905,6 +905,8 @@ a {
   }
   .contact-section:after {
     height: 82.4vw;
+    top: 18%;
+    bottom: auto;
   }
   .contact-section .text-left, .contact-section .info-right {
     width: 100%;
