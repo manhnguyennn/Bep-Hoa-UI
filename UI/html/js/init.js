@@ -467,7 +467,7 @@
                             });
                             swiperSuggest = new Swiper(".swiper-suggest", {
                                 slidesPerView: 'auto',
-                                spaceBetween: 10,
+                                spaceBetween: 0,
                                 navigation: {
                                     nextEl: ".suggest-food .swiper-button-next",
                                     prevEl: ".suggest-food .swiper-button-prev"

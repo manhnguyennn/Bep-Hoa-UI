@@ -759,6 +759,9 @@ a {
   .about-section .des + .titl {
     margin-top: 25px;
   }
+  .about-section .des .big-text {
+    font-size: 17px;
+  }
   .brand-section {
     padding: 25px;
   }
