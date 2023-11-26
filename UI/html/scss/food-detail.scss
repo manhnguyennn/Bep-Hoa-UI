@@ -409,6 +409,10 @@
         font-family: BVNPro-SemiBold;
         display: block;
         color: #222222;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
         margin-bottom: 3px;
       }
 

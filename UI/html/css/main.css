@@ -5183,7 +5183,7 @@ Generated using nucleoapp.com
   font-family: BVNPro-Medium;
   color: #222222;
   top: 4px;
-  font-size: 9px;
+  font-size: 8px;
   padding: 2px 4px;
 }
 .PopUp-cart .suggest-card .total-food {
@@ -5199,6 +5199,10 @@ Generated using nucleoapp.com
   display: block;
   color: #222222;
   margin-bottom: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .PopUp-cart .suggest-card .price {
   display: -webkit-box;
@@ -8371,6 +8375,10 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
   display: block;
   color: #222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-bottom: 3px;
 }
 .food-detail_wrapper .infoBox .suggest-card .price {

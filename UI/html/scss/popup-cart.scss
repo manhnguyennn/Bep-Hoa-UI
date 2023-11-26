@@ -498,7 +498,7 @@
       font-family: BVNPro-Medium;
       color: #222222;
       top: 4px;
-      font-size: 9px;
+      font-size: 8px;
       padding: 2px 4px;
     }
 
@@ -514,6 +514,10 @@
       display: block;
       color: #222222;
       margin-bottom: 3px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .price {
