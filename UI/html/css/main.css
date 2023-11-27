@@ -8287,8 +8287,12 @@ Generated using nucleoapp.com
   margin-bottom: 20px;
 }
 .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
+  margin-left: 10px;
   height: auto;
   width: 240px;
+}
+.food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-child(1) {
+  margin-left: 0;
 }
 .food-detail_wrapper .infoBox .waiting-card {
   width: 100%;

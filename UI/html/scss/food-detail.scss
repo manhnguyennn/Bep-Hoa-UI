@@ -324,11 +324,13 @@
     .swiper-suggest {
       .swiper-slide {
         &:nth-child(1) {
+          margin-left: 0;
         }
 
         &:nth-last-child(1) {
         }
 
+        margin-left: 10px;
         height: auto;
         width: 240px;
 
