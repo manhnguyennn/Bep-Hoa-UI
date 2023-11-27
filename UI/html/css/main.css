@@ -7117,7 +7117,7 @@ Generated using nucleoapp.com
     display: none;
   }
   .PopUp-detail .swiper-suggest {
-    padding-bottom: 5px;
+    padding-bottom: 13px;
   }
   .PopUp-detail .swiper-suggest .swiper-wrapper {
     width: 100%;
@@ -7139,6 +7139,7 @@ Generated using nucleoapp.com
     margin-right: 20px;
   }
   .PopUp-detail .suggest-card {
+    border: 1px solid #D0D0D0;
     border-radius: 6px;
   }
   .PopUp-detail .suggest-card .thumb {
