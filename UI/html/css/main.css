@@ -7089,7 +7089,7 @@ Generated using nucleoapp.com
 @media screen and (max-width: 780px) {
   .PopUp-detail .suggest-food {
     padding: 20px 0;
-    border-bottom: 1px solid #E7E7E7;
+    border-bottom: 0.5px solid #E7E7E7;
   }
   .PopUp-detail .suggest-food .heading {
     padding: 0 20px;
