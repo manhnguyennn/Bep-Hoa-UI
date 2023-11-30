@@ -4666,7 +4666,8 @@ Generated using nucleoapp.com
   overflow-y: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-bottom: 60px;
+  height: 100%;
+  padding-bottom: 107px;
 }
 .PopUp-cart .header-cart {
   position: absolute;
@@ -5045,6 +5046,9 @@ Generated using nucleoapp.com
 .PopUp-cart .suggest-food {
   padding: 15px 0;
   background: #FFF6ED;
+  position: absolute;
+  bottom: 104px;
+  width: 100%;
 }
 .PopUp-cart .suggest-food .heading {
   padding: 0 20px;
@@ -5104,11 +5108,9 @@ Generated using nucleoapp.com
   opacity: 0.2;
 }
 .PopUp-cart .swiper-suggest .swiper-slide {
+  margin-left: 20px;
   height: auto;
   width: 200px;
-}
-.PopUp-cart .swiper-suggest .swiper-slide:nth-child(1) {
-  margin-left: 20px;
 }
 .PopUp-cart .swiper-suggest .swiper-slide:nth-last-child(1) {
   margin-right: 20px;

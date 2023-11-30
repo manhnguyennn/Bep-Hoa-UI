@@ -20,7 +20,8 @@
     flex-grow: 1;
     overflow-y: scroll;
     box-sizing: border-box;
-    padding-bottom: 60px;
+    height: 100%;
+    padding-bottom: 107px;
   }
 
   .header-cart {
@@ -367,6 +368,9 @@
   .suggest-food {
     padding: 15px 0;
     background: #FFF6ED;
+    position: absolute;
+    bottom: 104px;
+    width: 100%;
 
     .heading {
       padding: 0 20px;
@@ -425,9 +429,9 @@
 
   .swiper-suggest {
     .swiper-slide {
-      &:nth-child(1) {
-        margin-left: 20px;
-      }
+
+
+      margin-left: 20px;
 
       &:nth-last-child(1) {
         margin-right: 20px;
@@ -617,13 +621,13 @@
       position: fixed;
 
     }
+
     .suggest-food {
 
 
       .heading {
 
       }
-
 
 
       .swiper-funcs {

@@ -478,7 +478,7 @@ a {
 
 .number-section {
   background-color: #BF1818;
-  background-image: url("../web_images/numb-img.png");
+  background-image: url("../https://image.bephoa.vn/data/mkl/numb-img.png");
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -543,7 +543,7 @@ a {
   display: block;
   top: 0;
   left: 0;
-  background-image: url("../web_images/contact-bg.webp");
+  background-image: url("../https://image.bephoa.vn/data/mkl/contact-bg.webp");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -839,7 +839,7 @@ a {
   .number-section:after {
     width: 100%;
     padding-top: 144.2vw;
-    background-image: url("../web_images/numb-img-mob.png");
+    background-image: url("../https://image.bephoa.vn/data/mkl/numb-img-mob.png");
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
