@@ -1,0 +1,398 @@
+.PopUp-cart {
+    width: 100vw;
+
+    .popup-cart-content {
+        height: calc(calc(var(--vh, 1vh) * 100) - 92px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 62px;
+        box-sizing: border-box;
+        padding-bottom: 140px;
+    }
+
+    .list-order {
+        flex-grow: 1;
+        overflow-y: scroll;
+        box-sizing: border-box;
+
+    }
+
+    .header-cart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #FFFFFF;
+        box-shadow: inset 0px -0.5px 0px #E6E6E6;
+        border-radius: 10px 10px 0 0;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-cart {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #FFFFFF;
+        box-shadow: inset 0px 0.5px 0px #A08C78;
+        padding: 15px 20px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .total-bill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .count {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 136%;
+            font-family: BVNPro-Regular;
+            display: block;
+            margin-right: 6px;
+            color: #222222;
+
+        }
+
+        .quantity {
+            font-size: 12px;
+            line-height: 100%;
+            font-family: BVNPro-Regular;
+            color: var(--colorRed);
+
+        }
+
+        .price-bill {
+            font-size: 16px;
+            line-height: 130%;
+            font-family: BVNPro-SemiBold;
+            text-align: right;
+            color: #222222;
+        }
+
+        .funcsBtn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .add-more {
+            width: calc((100% - 15px) / 2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            border: 1.5px solid #222222;
+            box-sizing: border-box;
+            height: 40px;
+            border-radius: 6px;
+
+            .icn {
+                width: 12px;
+                display: block;
+                margin-right: 6px;
+            }
+
+            .txt {
+                font-size: 15px;
+                line-height: 100%;
+                font-family: BVNPro-Medium;
+                display: block;
+                color: #222222;
+            }
+        }
+
+        .payment {
+            &.disabled {
+                opacity: .5;
+                cursor: default;
+            }
+
+            width: calc((100% - 15px) / 2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--colorRed);
+            box-sizing: border-box;
+            height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            line-height: 100%;
+            font-family: BVNPro-Medium;
+            color: #FFFFFF;
+
+        }
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+
+        .icn {
+            width: 24px;
+            display: block;
+            margin-right: 9px;
+        }
+
+        .txt {
+            font-size: 19px;
+            line-height: 100%;
+            font-family: BVNPro-SemiBold;
+            color: #222222;
+
+        }
+    }
+
+    .close-popup {
+        width: 32px;
+        display: block;
+    }
+
+    .list-order {
+        padding-bottom: 60px;
+
+        li {
+            @extend .bb05;
+            padding: 20px;
+        }
+    }
+
+    .order-info {
+        display: flex;
+
+        &.order-warning {
+            padding-bottom: 57px;
+            position: relative;
+
+            .warning {
+                position: absolute;
+                left: 48px;
+                display: inline-flex;
+                bottom: 21px;
+            }
+        }
+
+        .warning {
+            display: none;
+            padding: 4px 8px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 20px;
+            border: 1px solid #FF6161;
+            background: #FDECEC;
+            color: #FE3E3E;
+            font-family: BVNPro-Regular;
+            font-size: 9px;
+            line-height: 135%; /* 12.15px */
+        }
+    }
+
+    .od-count {
+        width: 32px;
+        height: 26px;
+        background: var(--colorRed);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        line-height: 130%;
+        font-family: BVNPro-Medium;
+        color: #FFFFFF;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .od-info {
+        padding-top: 3px;
+        width: 180px;
+        margin-right: auto;
+    }
+
+    .od-total {
+        padding-top: 5px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .name-food {
+        font-size: 14px;
+        line-height: 140%;
+        font-family: BVNPro-Medium;
+        color: #222222;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .price-item {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        line-height: 140%;
+        font-family: BVNPro-Medium;
+        gap: 3px;
+        margin-bottom: 8px;
+
+        &.sale {
+            .price-sale {
+                color: #78614B;
+                display: block;
+            }
+
+            .price-original {
+                text-decoration-line: line-through;
+                color: #999;
+            }
+        }
+
+        .price-sale {
+            display: none;
+
+        }
+
+        .price-original {
+            color: #78614B;
+        }
+    }
+
+    .opts-list {
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .opts {
+        font-size: 12px;
+        line-height: 170%;
+        font-family: BVNPro-Regular;
+        color: #666666;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-opt {
+        font-size: 10px;
+        line-height: 170%;
+        /* identical to box height, or 17px */
+        padding-left: 12px;
+        font-family: BVNPro-Regular;
+        color: #999999;
+    }
+
+    .od-note {
+        font-size: 12px;
+        line-height: 140%;
+        font-family: BVNPro-RegularItalic;
+        color: #666666;
+        margin-bottom: 8px;
+    }
+
+    .edit-od {
+        font-size: 12px;
+        line-height: 100%;
+        font-family: BVNPro-SemiBold;
+        display: inline-block;
+        color: var(--colorRed);
+    }
+
+    .od-price {
+        font-size: 12px;
+        line-height: 150%;
+        font-family: BVNPro-Medium;
+        display: block;
+        margin-bottom: 8px;
+        text-align: right;
+
+        color: #666666;
+
+    }
+
+    .cancel-od {
+        display: flex;
+        align-items: center;
+
+        .txt {
+            font-size: 12px;
+            line-height: 100%;
+            font-family: BVNPro-Regular;
+            text-align: right;
+            display: block;
+            margin-right: 3px;
+            color: #999999;
+        }
+
+        .icn {
+            display: block;
+            width: 8px;
+        }
+    }
+}
+
+.popup-cart-active {
+    .fancybox-slide--html {
+        padding: 0;
+    }
+
+    .fancybox-content {
+        margin-top: 92px;
+        padding: 0;
+        vertical-align: top;
+        background: #FFFFFF;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .fancybox-bg {
+        background: rgba(0, 0, 0, .7);
+    }
+
+    .fancybox-close-small {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .PopUp-cart {
+        width: 400px;
+
+        .popup-cart-content {
+            height: calc(100vh - 18px);
+        }
+    }
+    .popup-cart-active {
+        .fancybox-content {
+            margin-top: 9px;
+            border-radius: 6px;
+            margin-bottom: 9px;
+        }
+
+        .fancybox-slide {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PopUp-cart {
+        .footer-cart {
+            position: fixed;
+
+        }
+    }
+}
