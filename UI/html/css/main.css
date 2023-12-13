@@ -3485,6 +3485,15 @@ Generated using nucleoapp.com
   margin-bottom: 6px;
   color: #222222;
 }
+.food-card .sold-count {
+  color: #777;
+  font-family: BVNPro-Regular;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 100%; /* 9px */
+  margin-bottom: 16px;
+  text-align: left;
+}
 .food-card .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4280,6 +4289,9 @@ Generated using nucleoapp.com
     font-size: 11px;
     padding: 5px 10px;
   }
+  .food-card .sold-count {
+    text-align: center;
+  }
   .food-card .name {
     text-align: center;
   }
@@ -4399,7 +4411,7 @@ Generated using nucleoapp.com
     overflow: hidden;
   }
   .food-card.vertical .price {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

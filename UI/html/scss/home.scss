@@ -663,6 +663,15 @@
     margin-bottom: 6px;
     color: #222222;
   }
+  .sold-count {
+    color: #777;
+    font-family: BVNPro-Regular;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 100%; /* 9px */
+    margin-bottom: 16px;
+    text-align: left;
+  }
 
   .price {
     display: flex;
@@ -1488,6 +1497,10 @@
       font-size: 11px;
       padding: 5px 10px;
     }
+    .sold-count {
+     text-align: center;
+    }
+
 
     .name {
       text-align: center;
@@ -1618,7 +1631,7 @@
     }
 
     .price {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       justify-content: flex-start;
     }
 
