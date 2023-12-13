@@ -335,7 +335,7 @@ svg {
   left: 4px;
   width: 13px;
   height: 11px;
-  background-image: url("../img/checkbox-stick.svg");
+  background-image: url("https://image.bephoa.vn/data/web/checkbox-stick.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4886,6 +4886,10 @@ Generated using nucleoapp.com
   padding-top: 100%;
   display: block;
   border-radius: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
 }
 .PopUp-cart .od-count {
   width: 32px;
@@ -5429,16 +5433,16 @@ Generated using nucleoapp.com
   border-radius: 6px;
 }
 .Popup-checkout .infoGroup .choose-type-order.shipping .icn {
-  background-image: url("../img/shipping.png");
+  background-image: url("https://image.bephoa.vn/data/web/shipping.png");
 }
 .Popup-checkout .infoGroup .choose-type-order.shipping.active .icn {
-  background-image: url("../img/shipping-active.png");
+  background-image: url("https://image.bephoa.vn/data/web/shipping-active.png");
 }
 .Popup-checkout .infoGroup .choose-type-order.pickup .icn {
-  background-image: url("../img/pickup.png");
+  background-image: url("https://image.bephoa.vn/data/web/pickup.png");
 }
 .Popup-checkout .infoGroup .choose-type-order.pickup.active .icn {
-  background-image: url("../img/pickup-active.png");
+  background-image: url("https://image.bephoa.vn/data/web/pickup-active.png");
 }
 .Popup-checkout .infoGroup .choose-type-order.active, .Popup-checkout .infoGroup .choose-type-order:hover {
   background: #FFFFFF;
@@ -8834,7 +8838,7 @@ Generated using nucleoapp.com
   }
   .coverTet i {
     padding-top: 114.4%;
-    background-image: url("../img/cover_tet-mob.jpg");
+    background-image: url("https://image.bephoa.vn/data/web/cover_tet-mob.jpg");
   }
   .menuBox-Tet {
     border: none;

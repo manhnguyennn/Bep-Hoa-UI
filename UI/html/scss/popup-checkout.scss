@@ -105,24 +105,24 @@
     .choose-type-order {
       &.shipping {
         .icn {
-          background-image: url('../img/shipping.png');
+          background-image: url('https://image.bephoa.vn/data/web/shipping.png');
         }
 
         &.active {
           .icn {
-            background-image: url('../img/shipping-active.png');
+            background-image: url('https://image.bephoa.vn/data/web/shipping-active.png');
           }
         }
       }
 
       &.pickup {
         .icn {
-          background-image: url('../img/pickup.png');
+          background-image: url('https://image.bephoa.vn/data/web/pickup.png');
         }
 
         &.active {
           .icn {
-            background-image: url('../img/pickup-active.png');
+            background-image: url('https://image.bephoa.vn/data/web/pickup-active.png');
           }
         }
       }
