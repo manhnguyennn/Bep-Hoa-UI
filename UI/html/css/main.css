@@ -4294,6 +4294,10 @@ Generated using nucleoapp.com
   }
   .food-card .name {
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .food-card .price {
     -webkit-box-pack: center;
@@ -6447,7 +6451,7 @@ Generated using nucleoapp.com
 }
 .PopUp-detail .popup-detailfood-content {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 67px;
   min-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
