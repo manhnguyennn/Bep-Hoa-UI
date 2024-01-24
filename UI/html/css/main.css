@@ -1829,7 +1829,7 @@ Generated using nucleoapp.com
   display: none;
 }
 .bh-main-header .bh-logo {
-  width: 200px;
+  width: 310px;
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
   display: block;
@@ -7894,6 +7894,12 @@ Generated using nucleoapp.com
 .list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
   color: #B5292F;
   font-family: BVNPro-Medium;
+}
+
+.bh-list-cate_wrapper {
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {

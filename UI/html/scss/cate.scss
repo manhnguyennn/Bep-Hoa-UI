@@ -54,7 +54,9 @@
 }
 
 .bh-list-cate_wrapper {
-
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
@@ -98,6 +100,7 @@
     top: 60px;
     left: 0;
     z-index: 99;
+
     .list-ctl {
       background: #fff;
       padding: 10px 0;
@@ -108,9 +111,11 @@
       overflow-x: scroll;
       border: none;
       margin-bottom: 0;
+
       &::-webkit-scrollbar {
         display: none;
       }
+
       li {
         &:nth-child(1) {
           margin-left: 20px;
