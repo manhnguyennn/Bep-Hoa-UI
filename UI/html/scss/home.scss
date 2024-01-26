@@ -663,6 +663,7 @@
     margin-bottom: 6px;
     color: #222222;
   }
+
   .sold-count {
     color: #777;
     font-family: BVNPro-Regular;
@@ -1466,6 +1467,7 @@
     height: 100%;
     flex-direction: column;
     box-sizing: border-box;
+    background: #fff;
 
     .thumb {
       margin-right: 0;
@@ -1497,8 +1499,9 @@
       font-size: 11px;
       padding: 5px 10px;
     }
+
     .sold-count {
-     text-align: center;
+      text-align: center;
     }
 
 
