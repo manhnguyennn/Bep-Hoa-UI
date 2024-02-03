@@ -1,2 +1,156 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}textarea{resize:none}input{outline:none;-webkit-box-shadow:none;box-shadow:none;text-shadow:none}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}input[type=email],input[type=number],input[type=password],input[type=text],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;-moz-appearance:textfield;outline:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}a{text-decoration:none;cursor:pointer}@font-face{font-family:BVNPro-Regular;src:url("../fonts/BVNPro-Regular.ttf")}.ssp-wrapper{width:100vw;height:100vh;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#9E141A}.ssp-wrapper .ssp-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:34px;padding-top:19.92vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.ssp-wrapper .ssp-content .thumb{width:319px}.ssp-wrapper .ssp-content .thumb img{width:100%;display:block}.ssp-wrapper .ssp-content .text{font-family:BVNPro-Regular;width:482px;margin:0 auto;font-size:26px;line-height:130%;color:#fff;text-align:center}@media screen and (max-width:768px){.ssp-wrapper .ssp-content{gap:24px;padding:20vh 20px 0 20px}.ssp-wrapper .ssp-content .thumb{width:220px}.ssp-wrapper .ssp-content .text{font-family:BVNPro-Regular;font-size:17px;width:320px;max-width:100%}}
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+textarea, select {
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: BVNPro-Regular;
+  src: url("../fonts/BVNPro-Regular.ttf");
+}
+.ssp-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #9E141A;
+}
+.ssp-wrapper .ssp-content {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  padding-top: 19.92vh;
+  flex-direction: column;
+}
+.ssp-wrapper .ssp-content .thumb {
+  width: 319px;
+}
+.ssp-wrapper .ssp-content .thumb img {
+  width: 100%;
+  display: block;
+}
+.ssp-wrapper .ssp-content .text {
+  font-family: BVNPro-Regular;
+  width: 482px;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 130%;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ssp-wrapper .ssp-content {
+    gap: 24px;
+    padding: 20vh 20px 0 20px;
+  }
+  .ssp-wrapper .ssp-content .thumb {
+    width: 220px;
+  }
+  .ssp-wrapper .ssp-content .text {
+    font-family: BVNPro-Regular;
+    font-size: 17px;
+    width: 320px;
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

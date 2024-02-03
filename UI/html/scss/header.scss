@@ -40,12 +40,27 @@
     transform: translateY(-50%);
     right: 11px;
     z-index: 2;
-    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 32px;
+    width: 32px;
+
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
 
     svg {
-      width: 100%;
+      width: 14px;
+      height: 14px;
       display: block;
-      opacity: .4;
+      opacity: .7;
+
+      g {
+        opacity: 1;
+      }
 
       path {
         fill: #fff;
@@ -788,6 +803,9 @@
 
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 768px) {
+  .noti-header .close-noti {
+    width: 14px;
+    height: 14px;
+  }
 }

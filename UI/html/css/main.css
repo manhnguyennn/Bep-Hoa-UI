@@ -1664,12 +1664,23 @@ Generated using nucleoapp.com
   transform: translateY(-50%);
   right: 11px;
   z-index: 2;
-  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 32px;
+  width: 32px;
+}
+.noti-header .close-noti:hover svg {
+  opacity: 1;
 }
 .noti-header .close-noti svg {
-  width: 100%;
+  width: 14px;
+  height: 14px;
   display: block;
-  opacity: 0.4;
+  opacity: 0.7;
+}
+.noti-header .close-noti svg g {
+  opacity: 1;
 }
 .noti-header .close-noti svg path {
   fill: #fff;
@@ -2261,6 +2272,12 @@ Generated using nucleoapp.com
     width: 87px;
     height: 30px;
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .noti-header .close-noti {
+    width: 14px;
+    height: 14px;
   }
 }
 .bh-footer {
