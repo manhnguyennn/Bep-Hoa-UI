@@ -423,6 +423,43 @@
   box-sizing: border-box;
 }
 
+.select-frame {
+  &.active, &:hover {
+    border: 2px solid #2DC56D;
+    color: #2DC56D;
+    background: #F3FFF9;
+  }
+
+  border: 2px solid #f8f8f8;
+  display: block;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 11px 20px;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #111111;
+  box-sizing: border-box;
+}
+
+.no-frame {
+  &.active, &:hover {
+    border: 2px solid var(--colorRed);
+    color: var(--colorRed);
+    background: #FFF9F9;
+  }
+
+  border: 2px solid #f8f8f8;
+  display: block;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 11px 20px;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #111111;
+  box-sizing: border-box;
+}
+
+
 .soon-sell {
   &.active, &:hover {
     border: 2px solid #FF9F43;
