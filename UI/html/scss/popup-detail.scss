@@ -122,12 +122,32 @@
         }
       }
 
+      &.water-mark {
+        .frame-img {
+          display: block;
+        }
+      }
+
       i {
         transition: opacity .5s ease;
         width: 100%;
         padding-top: 58.66%;
         @include bg-thumb;
       }
+
+      .frame-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        background-position: top left;
+        background-repeat: no-repeat;
+        display: none;
+        z-index: 2;
+      }
+
     }
   }
 
@@ -701,6 +721,7 @@
 
     .swiper-suggest {
       padding-bottom: 5px;
+
       .swiper-wrapper {
         width: 100%;
         overflow-y: scroll;
@@ -717,6 +738,7 @@
         }
 
         margin-left: 0;
+
         &:nth-last-child(1) {
           margin-right: 20px;
         }
@@ -729,7 +751,7 @@
 
 
     .suggest-card {
-      border:1px solid #e1e1e1;
+      border: 1px solid #e1e1e1;
       border-radius: 6px;
 
       .thumb {
