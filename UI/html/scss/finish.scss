@@ -112,6 +112,7 @@
   &.fn-print {
     padding: 30px 0;
   }
+
   padding-top: 80px;
   width: 768px;
   margin: 0 auto;
@@ -266,6 +267,43 @@
     }
   }
 
+  .money-bill {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    .type-money {
+      &.red-text {
+        color: var(--colorRed);
+
+      }
+
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      line-height: 100%;
+      color: #666666;
+      flex-shrink: 0;
+
+      .type {
+        width: auto;
+        font-family: BVNPro-Regular;
+
+      }
+
+      .money {
+        width: auto;
+        font-family: BVNPro-SemiBold;
+      }
+    }
+  }
+
+
   .od-total {
     padding: 0 20px;
     margin-bottom: 30px;
@@ -274,7 +312,6 @@
       font-size: 14px;
       line-height: 140%;
       font-family: BVNPro-SemiBold;
-      text-align: center;
       text-transform: uppercase;
       margin-bottom: 26px;
       color: #222222;
@@ -303,6 +340,125 @@
       line-height: 130%;
       font-family: BVNPro-Regular;
       color: #222222;
+    }
+  }
+
+  .list-order {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+  }
+
+  .order-detail {
+    display: flex;
+
+    .quantity {
+      color: #666;
+      flex-shrink: 0;
+      width: 30px;
+      font-family: BVNPro-Regular;
+      font-size: 13px;
+      line-height: 130%;
+    }
+
+    .name-food {
+      color: #222;
+      font-family: BVNPro-Medium;
+      font-size: 13px;
+      line-height: 130%;
+    }
+
+    .opt-food {
+      margin: 2px 0;
+      padding-left: 10px;
+      position: relative;
+      font-size: 10px;
+
+      &:before {
+        content: '+';
+        position: absolute;
+        left: 0;
+        font-size: 13px;
+        line-height: 130%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+      }
+    }
+
+    .count {
+      color: #666;
+
+      font-family: BVNPro-Regular;
+      font-size: 12px;
+      line-height: 130%;
+    }
+
+    .price-result {
+      color: #222;
+      font-family: BVNPro-Medium;
+      font-size: 13px;
+      line-height: 130%;
+      text-align: right;
+      width: 93px;
+      flex-shrink: 0;
+    }
+
+    .opt-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 11px;
+
+      li {
+        margin-bottom: 7px;
+        padding: 0;
+      }
+    }
+
+    .prc-opt, .txt {
+      color: #333;
+      font-family: BVNPro-Regular;
+      font-size: 12px;
+      line-height: 130%;
+    }
+
+    .note-food {
+      font-size: 11px;
+      font-family: BVNPro-RegularItalic;
+      margin-bottom: 3px;
+      line-height: 14px;
+      color: #999999;
+    }
+
+    .price-item {
+      display: flex;
+      gap: 3px;
+      margin-top: 6px;
+
+      &.sale {
+        color: #222;
+        font-family: BVNPro-Medium;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 130%; /* 14.3px */
+        .price-original {
+          text-decoration: line-through;
+          color: #999;
+
+
+        }
+      }
+    }
+
+    .price-original {
+      font-size: 12px;
+      font-family: Tahoma;
+    }
+
+    .order-info {
+      flex-grow: 1;
     }
   }
 

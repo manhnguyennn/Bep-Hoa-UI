@@ -1,0 +1,287 @@
+.sb-wrapper {
+  width: 720px;
+
+  .sb-header {
+    .icn {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .header {
+      padding: 0 60px;
+
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 56px;
+
+      .logo {
+        width: 110px;
+      }
+
+      .logo-text {
+        width: 350px;
+      }
+    }
+
+    .order-info {
+      padding: 0 60px 50px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 1px solid #A08C78;
+      margin-bottom: 50px;
+    }
+
+    .or-id {
+
+      .txt {
+        color: #222;
+        font-family: BVNPro-Medium;
+        font-size: 32px;
+        line-height: 100%; /* 32px */
+        margin-bottom: 17px;
+      }
+
+      .txt-id {
+        color: #B5292F;
+        font-family: BVNPro-SemiBold;
+        font-size: 36px;
+        line-height: 100%; /* 36px */
+      }
+    }
+
+    .qr-box {
+      width: 110px;
+    }
+  }
+
+  .sb-content {
+    padding: 0 60px;
+    margin-bottom: 113px;
+  }
+
+  .money-bill {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .type-money {
+      &.red-text {
+        color: var(--colorRed);
+
+      }
+
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+      line-height: 100%;
+      color: #666666;
+      flex-shrink: 0;
+
+      .type {
+        width: auto;
+        font-family: BVNPro-Regular;
+
+      }
+
+      .money {
+        width: auto;
+        font-family: BVNPro-SemiBold;
+      }
+    }
+  }
+
+
+  h4 {
+    font-size: 24px;
+    line-height: 140%;
+    font-family: BVNPro-SemiBold;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    color: #222222;
+  }
+
+  .total-flx {
+    & + .total-flx {
+      margin-top: 24px;
+    }
+
+    display: flex;
+  }
+
+  .type {
+    font-size: 24px;
+    line-height: 100%;
+    font-family: BVNPro-Regular;
+    color: #666666;
+    flex-shrink: 0;
+    margin-right: 22px;
+    width: 184px;
+  }
+
+  .txt {
+    font-size: 24px;
+    line-height: 130%;
+    font-family: BVNPro-Regular;
+    color: #222222;
+  }
+
+
+  .list-order {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 40px;
+  }
+
+  .order-detail {
+    display: flex;
+
+    .quantity {
+      color: #666;
+      flex-shrink: 0;
+      width: 60px;
+      font-family: BVNPro-Regular;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    .name-food {
+      color: #222;
+      font-family: BVNPro-Medium;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    .opt-food {
+      margin: 4px 0;
+      padding-left: 20px;
+      position: relative;
+      font-size: 20px;
+
+      &:before {
+        content: '+';
+        position: absolute;
+        left: 0;
+        font-size: 24px;
+        line-height: 130%;
+        font-family: BVNPro-Regular;
+        color: #222222;
+      }
+    }
+
+    .count {
+      color: #666;
+
+      font-family: BVNPro-Regular;
+      font-size: 21px;
+      line-height: 130%;
+    }
+
+    .price-result {
+      color: #222;
+      font-family: BVNPro-Medium;
+      font-size: 24px;
+      line-height: 130%;
+      text-align: right;
+      width: 166px;
+      flex-shrink: 0;
+    }
+
+    .opt-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 22px;
+
+      li {
+        margin-bottom: 14px;
+        padding: 0;
+      }
+    }
+
+    .prc-opt, .txt {
+      color: #333;
+      font-family: BVNPro-Regular;
+      font-size: 21px;
+      line-height: 130%;
+    }
+
+    .note-food {
+      font-size: 21px;
+      font-family: BVNPro-RegularItalic;
+      margin-bottom: 3px;
+      line-height: 24px;
+      color: #999999;
+    }
+
+    .price-item {
+      display: flex;
+      gap: 6px;
+      margin-top: 12px;
+
+      &.sale {
+        color: #222;
+        font-family: BVNPro-Medium;
+        font-size: 21px;
+        font-style: normal;
+        line-height: 130%; /* 14.3px */
+        .price-original {
+          text-decoration: line-through;
+          color: #999;
+
+
+        }
+      }
+    }
+
+    .price-original {
+      font-size: 21px;
+      font-family: Tahoma;
+    }
+
+    .order-info {
+      flex-grow: 1;
+    }
+  }
+
+  .sb-footer {
+    position: relative;
+    .bg {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
+  }
+  .ct-type{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    .icn{
+      width: 30px;
+    }
+    .txt{
+      color: #222;
+      font-family: BVNPro-Regular;
+      font-size: 24px;
+      line-height: 130%; /* 31.2px */
+    }
+  }
+}
