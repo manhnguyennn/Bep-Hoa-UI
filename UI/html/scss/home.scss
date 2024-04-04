@@ -598,6 +598,29 @@
   }
 }
 
+.countdown-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  .icn {
+    width: 20px;
+  }
+
+  .countdown-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    font-family: BVNPro-Medium;
+    font-size: 18px;
+    line-height: 100%; /* 18px */
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+  }
+}
+
 .food-card {
   display: flex;
 
@@ -1504,7 +1527,8 @@
 
         padding-top: 63.45%;
       }
-      .frame-img{
+
+      .frame-img {
         border-radius: 6px 6px 0px 0px;
 
       }
@@ -1618,6 +1642,11 @@
   .fb_reset {
     iframe {
       right: 0 !important;
+    }
+  }
+  .countdown-box {
+    .countdown-group {
+      font-size: 16px;
     }
   }
   .food-card.vertical {

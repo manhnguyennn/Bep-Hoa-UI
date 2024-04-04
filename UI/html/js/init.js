@@ -40,6 +40,14 @@
             });
         });
 
+        $('.seacrh-input').on('focus', function(){
+            $('.search-suggest').addClass('active');
+        }).on('blur', function(){
+            $('.search-suggest').removeClass('active');
+        });
+        // $('.seacrh-input').outfocus(function () {
+        //     $('.search-suggest').removeClass('active')
+        // });
         // var Hnoti = $('.noti-header').innerHeight();
         //
         // if ($('.noti-header').hasClass('active')) {
@@ -93,9 +101,11 @@
             });
 
             $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.searchBox');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
         } else {
+
             $('.bh-home-contact').addClass('disable');
+            $('.searchBox').insertAfter('.header-content .bh-logo');
 
         }
     },
@@ -133,8 +143,10 @@
             });
 
             $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.searchBox');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
+
         } else {
+            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.cate-info');
             $('.bh-home-contact').addClass('disable');
 
@@ -223,8 +235,10 @@
             });
 
             $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.searchBox');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
+
         } else {
+            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.galleryBox');
             $('.bh-home-contact').addClass('disable');
 
@@ -264,8 +278,10 @@
             });
 
             $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.searchBox');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
+
         } else {
+            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.bh-home-contact').addClass('disable');
             $('.address-store').insertBefore('.coverTet').addClass('landingAD');
         }
@@ -438,7 +454,8 @@
             });
 
             $('.bh-home-contact').insertAfter('.address-store');
-            $('.bh-cart-total').insertAfter('.searchBox');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
+
 
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
@@ -607,6 +624,7 @@
                 centeredSlides: true,
                 loop: true,
             });
+            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.bh-home_bner-top');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {

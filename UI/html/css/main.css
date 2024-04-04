@@ -1872,16 +1872,14 @@ Generated using nucleoapp.com
           align-items: center;
 }
 .bh-main-header .searchBox {
-  margin-left: 40px;
+  margin-left: auto;
 }
 .bh-main-header .searchBox.active .searchGroup {
   opacity: 1;
   visibility: visible;
 }
 .bh-main-header .searchBox .searchBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1903,17 +1901,94 @@ Generated using nucleoapp.com
 }
 .bh-main-header .searchBox .searchGroup {
   background: #fff;
+  opacity: 1;
+  width: 300px;
+  position: relative;
+}
+.bh-main-header .searchBox .search-suggest {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  padding-top: 20px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bh-main-header .searchBox .search-suggest.active {
+  opacity: 1;
+  visibility: visible;
+}
+.bh-main-header .searchBox .search-suggest .list-linksearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.bh-main-header .searchBox .search-suggest .txt {
+  color: #999;
+  font-family: BVNPro-Regular;
+  font-size: 11px;
+  line-height: 130%; /* 14.3px */
+}
+.bh-main-header .searchBox .search-suggest .search-link {
+  color: #222;
+  font-family: BVNPro-Regular;
+  font-size: 13px;
+  line-height: 130%; /* 16.9px */
+  display: block;
+}
+.bh-main-header .searchBox .search-suggest .sg-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  top: 100%;
-  right: 0;
-  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-height: 450px;
+  padding: 12px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+.bh-main-header .searchBox .search-suggest .sg-content::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+.bh-main-header .searchBox .search-suggest .sg-content::-webkit-scrollbar-track {
+  margin: 20px 0 0;
+}
+.bh-main-header .searchBox .search-suggest .sg-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+}
+.bh-main-header .searchBox .search-suggest .sg-content:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+}
+.bh-main-header .searchBox .search-suggest .sg-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
 }
 .bh-main-header .searchBox .searchArea {
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1922,25 +1997,30 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
-  padding: 0 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
 }
 .bh-main-header .searchBox .searchArea input {
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #F9F9F9;
   font-size: 14px;
   line-height: 40px;
   color: #222222;
   font-family: BVNPro-Regular;
-  padding: 0 20px;
   outline: none;
-  height: 40px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  height: 34px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #B9B9B9;
-  border-radius: 58px;
+  padding: 0 33px 0 15px;
+  z-index: 1;
+}
+.bh-main-header .searchBox .searchArea input:focus, .bh-main-header .searchBox .searchArea input:hover {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .bh-main-header .searchBox .searchArea input::-webkit-input-placeholder {
   opacity: 0.4;
@@ -1958,7 +2038,12 @@ Generated using nucleoapp.com
   opacity: 0.4;
 }
 .bh-main-header .searchBox .searchSubmit {
-  background: #78614B;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #B5292F;
   border-radius: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1974,21 +2059,31 @@ Generated using nucleoapp.com
   color: #FFFFFF;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 15px;
-  width: 130px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   font-size: 15px;
+  z-index: 2;
+}
+.bh-main-header .searchBox .searchSubmit .txt {
+  display: none;
+}
+.bh-main-header .searchBox .searchSubmit .icn {
+  width: 12px;
+  display: block;
 }
 .bh-main-header .menu-mob {
   display: none;
 }
 .bh-main-header .menu-web .menu-web-content {
-  padding-top: 9px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 .bh-main-header .src-web {
@@ -2496,8 +2591,14 @@ Generated using nucleoapp.com
   .bh-main-header .bh-logo .icn-mob {
     display: block;
   }
+  .bh-main-header .list-nav {
+    display: none;
+  }
   .bh-main-header .searchBox {
     margin: 0;
+  }
+  .bh-main-header .searchBox .searchBtn {
+    display: block;
   }
   .bh-main-header .searchBox .searchBtn .icn {
     width: 24px;
@@ -2509,10 +2610,25 @@ Generated using nucleoapp.com
   .bh-main-header .searchBox .searchBtn .txt {
     display: none;
   }
+  .bh-main-header .searchBox .searchGroup {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    width: 100vw;
+  }
+  .bh-main-header .searchBox .searchGroup.active {
+    opacity: 1;
+    visibility: visible;
+  }
   .bh-main-header .searchBox .searchArea {
+    gap: 10px;
     height: 50px;
-    -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
-            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
     background: #ffffff;
   }
@@ -2523,11 +2639,40 @@ Generated using nucleoapp.com
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0;
+    border-radius: 0;
+  }
+  .bh-main-header .searchBox .searchArea input:hover, .bh-main-header .searchBox .searchArea input:focus {
+    border: none;
+    background: transparent;
   }
   .bh-main-header .searchBox .searchSubmit {
+    right: auto;
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    position: relative;
     width: 87px;
     height: 30px;
     font-size: 13px;
+    background: #78614B;
+  }
+  .bh-main-header .searchBox .searchSubmit .icn {
+    display: none;
+  }
+  .bh-main-header .searchBox .searchSubmit .txt {
+    display: block;
+  }
+  .bh-main-header .searchBox .search-suggest {
+    padding: 0;
+  }
+  .bh-main-header .searchBox .search-suggest .sg-content {
+    border-radius: 0;
+    border: none;
+    max-height: 350px;
+    border-bottom: 0.7px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   }
 }
 @media screen and (max-width: 768px) {
@@ -3432,6 +3577,39 @@ Generated using nucleoapp.com
 .bh-menu-list li {
   padding: 15px 20px;
 }
+.countdown-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+.countdown-box .icn {
+  width: 20px;
+}
+.countdown-box .countdown-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #222;
+  font-family: BVNPro-Medium;
+  font-size: 18px;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+
 .food-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4413,6 +4591,9 @@ Generated using nucleoapp.com
 @media screen and (max-width: 760px) {
   .fb_reset iframe {
     right: 0 !important;
+  }
+  .countdown-box .countdown-group {
+    font-size: 16px;
   }
   .food-card.vertical {
     position: relative;
@@ -9426,7 +9607,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+.widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
   min-width: 1080px;
   max-width: 100%;
   margin: 0 auto;
@@ -9438,18 +9619,18 @@ body.no-scroll {
   .bh-wrapper {
     padding: 0;
   }
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
     width: 1080px;
     padding: 0 20px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
     width: 63.17vw;
   }
 }
 @media screen and (max-width: 760px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .searchBox .searchArea, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
     min-width: 100%;
   }
 }
