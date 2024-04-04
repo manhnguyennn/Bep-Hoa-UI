@@ -4835,6 +4835,9 @@ Generated using nucleoapp.com
   }
   .bh-home-discount .heading .txt {
     font-size: 16px;
+    max-width: 70%;
+    text-align: center;
+    line-height: 139%;
   }
   .bh-home-discount .des {
     font-size: 12px;
