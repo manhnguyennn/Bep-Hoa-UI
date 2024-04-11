@@ -1927,20 +1927,31 @@ Generated using nucleoapp.com
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  width: 100%;
 }
 .bh-main-header .searchBox .search-suggest .txt {
   color: #999;
   font-family: BVNPro-Regular;
   font-size: 11px;
   line-height: 130%; /* 14.3px */
+  padding: 12px 15px;
 }
 .bh-main-header .searchBox .search-suggest .search-link {
   color: #222;
   font-family: BVNPro-Regular;
   font-size: 13px;
-  line-height: 130%; /* 16.9px */
-  display: block;
+  line-height: 35px; /* 16.9px */
+  padding: 0 15px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.bh-main-header .searchBox .search-suggest .search-link:hover {
+  background: #F9F9F9;
 }
 .bh-main-header .searchBox .search-suggest .sg-content {
   display: -webkit-box;
@@ -1950,7 +1961,6 @@ Generated using nucleoapp.com
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-height: 450px;
-  padding: 12px 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1958,7 +1968,6 @@ Generated using nucleoapp.com
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 10px;
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #FFF;
