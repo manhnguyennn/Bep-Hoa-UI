@@ -40,11 +40,12 @@
             });
         });
 
-        $('.seacrh-input').on('focus', function(){
+        $('.seacrh-input').on('focus', function () {
             $('.search-suggest').addClass('active');
-        }).on('blur', function(){
+        }).on('blur', function () {
             $('.search-suggest').removeClass('active');
         });
+
         // $('.seacrh-input').outfocus(function () {
         //     $('.search-suggest').removeClass('active')
         // });
@@ -71,10 +72,12 @@
         });
 
         if (me.windowW > 800) {
-
+            $('.bh-home-contact').insertAfter('.address-store');
+            $('.bh-cart-total').insertAfter('.bh-home-contact');
         } else {
 
-
+            $('.bh-home-contact').addClass('disable');
+            $('.searchBox').insertAfter('.header-content .bh-logo');
         }
     },
     search: function () {
@@ -100,12 +103,9 @@
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
-            $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.bh-home-contact');
         } else {
+            $('.searchBox').addClass('active')
 
-            $('.bh-home-contact').addClass('disable');
-            $('.searchBox').insertAfter('.header-content .bh-logo');
 
         }
     },
@@ -142,13 +142,9 @@
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
-            $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.bh-home-contact');
 
         } else {
-            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.cate-info');
-            $('.bh-home-contact').addClass('disable');
 
             let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
                 slidesPerView: 'auto',
@@ -234,13 +230,9 @@
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
-            $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.bh-home-contact');
 
         } else {
-            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.galleryBox');
-            $('.bh-home-contact').addClass('disable');
 
             let swiperbnerFooter = new Swiper(".swiper-bner-footer", {
                 slidesPerView: 'auto',
@@ -277,12 +269,8 @@
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
-            $('.bh-home-contact').insertBefore('.searchBox');
-            $('.bh-cart-total').insertAfter('.bh-home-contact');
 
         } else {
-            $('.searchBox').insertAfter('.header-content .bh-logo');
-            $('.bh-home-contact').addClass('disable');
             $('.address-store').insertBefore('.coverTet').addClass('landingAD');
         }
     },
@@ -453,9 +441,6 @@
                 $(this).find(".voucher").insertAfter($(this).find(".status"));
             });
 
-            $('.bh-home-contact').insertAfter('.address-store');
-            $('.bh-cart-total').insertAfter('.bh-home-contact');
-
 
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {
@@ -624,7 +609,6 @@
                 centeredSlides: true,
                 loop: true,
             });
-            $('.searchBox').insertAfter('.header-content .bh-logo');
             $('.address-store').insertBefore('.bh-home_bner-top');
             // Fancy Box Popup Detail
             $('.open-popup-atc').off('click').click(function () {

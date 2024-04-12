@@ -8096,6 +8096,17 @@ Generated using nucleoapp.com
     width: 100%;
   }
 }
+.search-wrapper .heading-search {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+  font-family: BVNPro-Regular;
+  margin: 35px 0;
+}
+.search-wrapper .heading-search span {
+  font-family: BVNPro-Medium;
+  color: #222222;
+}
 .search-wrapper .searchArea {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -8166,6 +8177,11 @@ Generated using nucleoapp.com
 @media screen and (max-width: 760px) {
   .search-wrapper {
     padding: 20px;
+  }
+  .search-wrapper .heading-search {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 60px 0 0;
   }
   .search-wrapper .searchArea {
     border: 0.5px solid #C7C7C7;
