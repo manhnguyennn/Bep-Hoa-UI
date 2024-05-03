@@ -294,7 +294,6 @@ body i {
   vertical-align: top;
 }
 .bh-cms-wrapper .table-responsive table .title-col {
-  font-family: Roboto-Medium;
   font-size: 0.9rem;
   color: #111;
   line-height: 110%;
@@ -4570,6 +4569,120 @@ Generated using nucleoapp.com
 .btn-frame.active svg path, .btn-frame:hover svg path {
   fill: #28C76F;
   fill-opacity: 1;
+}
+
+.list-food-voucher {
+  display: flex;
+  flex-direction: column;
+}
+.list-food-voucher .food-card-voucher {
+  border-bottom: 1px solid #EFEFEF;
+  align-items: center;
+  display: flex;
+  padding: 12px 0;
+}
+.list-food-voucher .thumb-food {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.list-food-voucher .thumb-food img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: cover;
+}
+.list-food-voucher .name-food {
+  padding: 0 18px;
+  box-sizing: border-box;
+  color: #111;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  flex-grow: 1;
+  line-height: 140%; /* 19.6px */
+}
+
+.label-voucher {
+  color: #222;
+  margin-bottom: 4px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.voucher-note {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 150%;
+}
+.voucher-note span {
+  color: #7367F0;
+  font-family: Roboto-Bold;
+}
+.voucher-note .vc-note {
+  position: relative;
+  padding-left: 25px;
+}
+.voucher-note .vc-note:before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #222;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  content: "";
+}
+
+.info-voucher-total {
+  background: #FFFFFF;
+  border: 1.5px solid #7367F0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.info-voucher-total .title-voucher {
+  padding: 15px 20px;
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 19px;
+  line-height: 100%;
+  font-family: Roboto-Medium;
+  color: #111111;
+  margin-bottom: 15px;
+}
+.info-voucher-total .content-voucher {
+  padding: 0 20px;
+}
+.info-voucher-total .voucherBox {
+  margin-bottom: 15px;
+}
+.info-voucher-total .voucher-total {
+  display: flex;
+  font-size: 13px;
+  line-height: 150%;
+  color: #111111;
+}
+.info-voucher-total .voucher-total + .voucher-total {
+  border-top: 1px solid #EFEFEF;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.info-voucher-total .voucher-total .type {
+  width: 35%;
+  flex-shrink: 0;
+  margin-right: 17px;
+  font-family: Roboto-Medium;
+}
+.info-voucher-total .voucher-total .text {
+  flex-grow: 1;
+}
+.info-voucher-total .voucher-total .text span {
+  color: #7367F0;
 }
 
 /*# sourceMappingURL=stye.css.map */
