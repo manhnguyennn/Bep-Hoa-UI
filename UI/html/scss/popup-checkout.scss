@@ -900,14 +900,35 @@
       flex-grow: 1;
 
       &.approved {
-        .checking-voucher {
+
+        .remove-vc{
+          &:hover{
+            opacity: 1;
+          }
+          opacity: .7;
+          visibility: visible;
+        }
+        .noti {
           display: block;
+          color: #629050;
         }
       }
 
       &.wrong {
+        .input-voucher{
+          border: 0.5px solid #FF9EA8;
+        }
+        .remove-vc{
+          &:hover{
+            opacity: 1;
+          }
+          opacity: .7;
+          visibility: visible;
+        }
         .noti {
           display: block;
+          color: #B5292F;
+
         }
       }
     }
@@ -929,15 +950,17 @@
       line-height: 140%;
       font-family: BVNPro-Regular;
       display: none;
-      color: #B5292F;
 
     }
 
-    .checking-voucher {
-      width: 16px;
-      display: none;
-      flex-shrink: 0;
-      margin-right: 8px;
+    .remove-vc {
+      color: #333;
+      display: block;
+      font-family: BVNPro-Regular;
+      font-size: 13px;
+      line-height: 140%;
+      opacity: 0;
+      visibility: hidden;
     }
 
     input {
