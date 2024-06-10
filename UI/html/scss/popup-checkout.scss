@@ -872,6 +872,15 @@
         display: block;
         color: #629050;
       }
+
+      .voucher {
+        & + .voucher {
+          margin-top: 5px;
+        }
+
+        display: block;
+        color: #629050;
+      }
     }
   }
 
@@ -901,13 +910,15 @@
 
       &.approved {
 
-        .remove-vc{
-          &:hover{
+        .remove-vc {
+          &:hover {
             opacity: 1;
           }
+
           opacity: .7;
           visibility: visible;
         }
+
         .noti {
           display: block;
           color: #629050;
@@ -915,16 +926,19 @@
       }
 
       &.wrong {
-        .input-voucher{
+        .input-voucher {
           border: 0.5px solid #FF9EA8;
         }
-        .remove-vc{
-          &:hover{
+
+        .remove-vc {
+          &:hover {
             opacity: 1;
           }
+
           opacity: .7;
           visibility: visible;
         }
+
         .noti {
           display: block;
           color: #B5292F;
@@ -945,7 +959,6 @@
 
     .noti {
       margin-top: 9px;
-      padding-left: 11px;
       font-size: 10px;
       line-height: 140%;
       font-family: BVNPro-Regular;
@@ -979,6 +992,11 @@
     }
 
     .confirm-btn {
+      &.disabled {
+        cursor: default;
+        opacity: .4;
+      }
+
       margin-left: 10px;
       flex-shrink: 0;
       background: #222222;
@@ -1089,7 +1107,6 @@
     display: none;
   }
 }
-
 
 
 @media screen and (min-width: 768px) {
