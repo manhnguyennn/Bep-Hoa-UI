@@ -395,89 +395,85 @@
                                                               placeholder="Nhập nội dung..."></textarea>
                                                 </div>
                                                 <div class="form-input mb-2">
-                                                    <label class="form-label" for="basicInput">
-                                                        Hẹn giờ đếm ngược
-                                                    </label>
-                                                    <div class="d-flex align-items-center mt-1 mb-1">
-                                                        <div class="form-check form-check-success form-switch">
-                                                            <input type="checkbox" checked="" class="form-check-input"
-                                                                   id="customSwitch4">
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="inlineRadioOptions" id="inlineRadio1"
-                                                                   value="option1" checked="">
-                                                            <label class="form-check-label" for="inlineRadio1">Chạy 1
-                                                                lần rồi dừng</label>
-                                                        </div>
+                                                    <label class="form-label" for="basicInput">Hẹn giờ đếm ngược</label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               name="radTimeCountdownType" id="radTimeCountdownType0"
+                                                               value="0" checked="">
+                                                        <label class="form-check-label" for="radTimeCountdownType0">Chạy
+                                                            1 lần rồi dừng</label>
+                                                    </div>
 
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="inlineRadioOptions" id="inlineRadio2"
-                                                                   value="option2">
-                                                            <label class="form-check-label" for="inlineRadio1">Chạy hàng
-                                                                ngày</label>
-                                                        </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                               name="radTimeCountdownType" id="radTimeCountdownType1"
+                                                               value="1">
+                                                        <label class="form-check-label" for="radTimeCountdownType1">Chạy
+                                                            hàng ngày</label>
                                                     </div>
 
                                                     <div class="d-flex gap-1 ">
-                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
-                                                            <input id="datepick-start" type="text" name="daterange"
-                                                                   autocomplete="off"
-                                                                   placeholder="Chọn thời gian..." value=""/>
-                                                            <div class="icn icon-calendar-date-2"></div>
+                                                        <div class="form-input flex-grow-1">
+                                                            <label for="" class="mb-1">Ngày bắt đầu</label>
+                                                            <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
+                                                                <input id="datepick-start" type="text" name="daterange"
+                                                                       autocomplete="off"
+                                                                       placeholder="Chọn thời gian..." value=""/>
+                                                                <div class="icn icon-calendar-date-2"></div>
+                                                            </div>
                                                         </div>
-
-                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
-                                                            <input id="datepick-end" type="text" name="daterange"
-                                                                   autocomplete="off"
-                                                                   placeholder="Chọn thời gian..." value=""/>
-                                                            <div class="icn icon-calendar-date-2"></div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="form-input mb-2">
-                                                    <label class="form-label" for="basicInput">
-                                                        Hẹn giờ đếm ngược
-                                                    </label>
-                                                    <div class="d-flex align-items-center mt-1 mb-1">
-                                                        <div class="form-check form-check-success form-switch">
-                                                            <input type="checkbox" checked="" class="form-check-input"
-                                                                   id="customSwitch4">
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="inlineRadioOptions" id="inlineRadio3"
-                                                                   value="option3">
-                                                            <label class="form-check-label" for="inlineRadio1">Chạy 1
-                                                                lần rồi dừng</label>
-                                                        </div>
-
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="inlineRadioOptions" id="inlineRadio4"
-                                                                   value="option4">
-                                                            <label class="form-check-label" for="inlineRadio1">Chạy hàng
-                                                                ngày</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex gap-1 ">
-                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
-                                                            <input id="start-time" type="text" name="daterange"
-                                                                   autocomplete="off"
-                                                                   placeholder="Chọn thời gian..." value=""/>
-                                                            <div class="icn icon-calendar-date-2"></div>
-                                                        </div>
-
-                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
-                                                            <input id="end-time" type="text" name="daterange"
-                                                                   autocomplete="off"
-                                                                   placeholder="Chọn thời gian..." value=""/>
-                                                            <div class="icn icon-calendar-date-2"></div>
+                                                        <div class="form-input flex-grow-1">
+                                                            <label for="" class="mb-1">Ngày kết thúc</label>
+                                                            <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
+                                                                <input id="datepick-end" type="text" name="daterange"
+                                                                       autocomplete="off"
+                                                                       placeholder="Chọn thời gian..." value=""/>
+                                                                <div class="icn icon-calendar-date-2"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!--                                                <div class="form-input mb-2">-->
+                                                <!--                                                    <label class="form-label" for="basicInput">-->
+                                                <!--                                                        Hẹn giờ đếm ngược-->
+                                                <!--                                                    </label>-->
+                                                <!--                                                    <div class="d-flex align-items-center mt-1 mb-1">-->
+                                                <!--                                                        <div class="form-check form-check-success form-switch">-->
+                                                <!--                                                            <input type="checkbox" checked="" class="form-check-input"-->
+                                                <!--                                                                   id="customSwitch4">-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                        <div class="form-check form-check-inline">-->
+                                                <!--                                                            <input class="form-check-input" type="radio"-->
+                                                <!--                                                                   name="inlineRadioOptions" id="inlineRadio3"-->
+                                                <!--                                                                   value="option3">-->
+                                                <!--                                                            <label class="form-check-label" for="inlineRadio1">Chạy 1-->
+                                                <!--                                                                lần rồi dừng</label>-->
+                                                <!--                                                        </div>-->
+
+                                                <!--                                                        <div class="form-check form-check-inline">-->
+                                                <!--                                                            <input class="form-check-input" type="radio"-->
+                                                <!--                                                                   name="inlineRadioOptions" id="inlineRadio4"-->
+                                                <!--                                                                   value="option4">-->
+                                                <!--                                                            <label class="form-check-label" for="inlineRadio1">Chạy hàng-->
+                                                <!--                                                                ngày</label>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                    <div class="d-flex gap-1 ">-->
+                                                <!--                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">-->
+                                                <!--                                                            <input id="start-time" type="text" name="daterange"-->
+                                                <!--                                                                   autocomplete="off"-->
+                                                <!--                                                                   placeholder="Chọn thời gian..." value=""/>-->
+                                                <!--                                                            <div class="icn icon-calendar-date-2"></div>-->
+                                                <!--                                                        </div>-->
+
+                                                <!--                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">-->
+                                                <!--                                                            <input id="end-time" type="text" name="daterange"-->
+                                                <!--                                                                   autocomplete="off"-->
+                                                <!--                                                                   placeholder="Chọn thời gian..." value=""/>-->
+                                                <!--                                                            <div class="icn icon-calendar-date-2"></div>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
                                                 <div class="form-input mb-2">
                                                     <label class="form-label" for="basicInput">
                                                         Trạng thái
@@ -1027,157 +1023,66 @@
             });
         }
     })*/
-    $('#datepick-start').daterangepicker({
-        "singleDatePicker": true,
-        ranges: {
-            'Hôm nay': [moment(), moment()],
-            'Ngày mai': [moment().add(1, 'days'), moment().add(1, 'days')],
-            'Ngày kia': [moment().add(2, 'days'), moment().add(2, 'days')],
-        },
-        "locale": {
-            "format": "DD/MM/YYYY",
-            "separator": " - ",
-            "applyLabel": "Đồng ý",
-            "cancelLabel": "Hủy",
-            "fromLabel": "Từ",
-            "toLabel": "Đến",
-            "customRangeLabel": "Tùy chỉnh",
-            "weekLabel": "W",
-            "daysOfWeek": [
-                "CN",
-                "T2",
-                "T3",
-                "T4",
-                "T5",
-                "T6",
-                "T7",
 
-            ],
-            "monthNames": [
-                "Tháng 1",
-                "Tháng 2",
-                "Tháng 3",
-                "Tháng 4",
-                "Tháng 5",
-                "Tháng 6",
-                "Tháng 7",
-                "Tháng 8",
-                "Tháng 9",
-                "Tháng 10",
-                "Tháng 11",
-                "Tháng 12"
-            ],
-            "firstDay": 1
-        },
-        "alwaysShowCalendars": true,
-        "maxSpan": {
-            "days": 3
-        },
-        "timePicker": true,
-        "timePicker24Hour": true,
-        "minDate": "23/3/2024",
-        "maxDate": "25/11/2024"
-    }, function (start, end, label) {
-        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-    });
 
-    $('#datepick-end').daterangepicker({
-        "singleDatePicker": true,
-        ranges: {
-            'Hôm nay': [moment(), moment()],
-            'Ngày mai': [moment().add(1, 'days'), moment().add(1, 'days')],
-            'Ngày kia': [moment().add(2, 'days'), moment().add(2, 'days')],
-        },
-        "locale": {
-            "format": "DD/MM/YYYY",
-            "separator": " - ",
-            "applyLabel": "Đồng ý",
-            "cancelLabel": "Hủy",
-            "fromLabel": "Từ",
-            "toLabel": "Đến",
-            "customRangeLabel": "Tùy chỉnh",
-            "weekLabel": "W",
-            "daysOfWeek": [
-                "CN",
-                "T2",
-                "T3",
-                "T4",
-                "T5",
-                "T6",
-                "T7",
+    function initSingleRunPicker() {
+        // Cấu hình cho chế độ "Chạy 1 lần rồi dừng"
+        $('#datepick-start, #datepick-end').daterangepicker({
+            "singleDatePicker": true,
+            "locale": {
+                "format": "DD/MM/YYYY HH:mm",  // Bao gồm cả giờ phút trong định dạng
+                "applyLabel": "Đồng ý",
+                "cancelLabel": "Hủy",
+                "daysOfWeek": ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+                "monthNames": ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+                "firstDay": 1
+            },
+            "alwaysShowCalendars": true,
+            "timePicker": true,                // Kích hoạt chọn thời gian
+            "timePicker24Hour": true,          // Sử dụng định dạng 24 giờ
+            "timePickerSeconds": false,        // Tùy chọn: Không cho phép chọn giây
+            "minDate": "23/03/2024",
+            "maxDate": "25/11/2024"
+        });
+    }
 
-            ],
-            "monthNames": [
-                "Tháng 1",
-                "Tháng 2",
-                "Tháng 3",
-                "Tháng 4",
-                "Tháng 5",
-                "Tháng 6",
-                "Tháng 7",
-                "Tháng 8",
-                "Tháng 9",
-                "Tháng 10",
-                "Tháng 11",
-                "Tháng 12"
-            ],
-            "firstDay": 1
-        },
-        "alwaysShowCalendars": true,
-        "maxSpan": {
-            "days": 3
-        },
-        "timePicker": true,
-        "timePicker24Hour": true,
-        "minDate": "23/3/2024",
-        "maxDate": "25/11/2024"
-    }, function (start, end, label) {
-        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-    });
-    $('#start-time').daterangepicker({
-        singleDatePicker: true,
-        timePicker: true,
-        timePicker24Hour: true,
-        timePickerIncrement: 1,
-        autoApply: true,
-        locale: {
-            format: 'HH:mm'
+
+    function initDailyRunPicker() {
+        // Cấu hình cho chế độ "Chạy hàng ngày"
+        $('#datepick-start, #datepick-end').daterangepicker({
+            singleDatePicker: true,
+            timePicker: true,
+            timePicker24Hour: true,
+            timePickerIncrement: 1,
+            autoApply: true,
+            locale: {
+                format: 'HH:mm'
+            }
+        }).on('show.daterangepicker', function (ev, picker) {
+            // Ẩn phần chọn ngày
+            picker.container.find(".calendar-table").hide();
+            $('.daterangepicker').css('padding-bottom', 0);
+        });
+    }
+
+    $('input[type=radio][name=radTimeCountdownType]').on('change', function () {
+        let radTimeCountdownType = $(this).val();
+
+        if (radTimeCountdownType == 0) { // Chạy 1 lần rồi dừng
+            $('#datepick-start, #datepick-end').val('').off().daterangepicker('destroy');
+            initSingleRunPicker();
+
+        } else { // Chạy hàng ngày
+            $('#datepick-start, #datepick-end').val('').off().daterangepicker('destroy');
+            initDailyRunPicker();
         }
-    }).on('show.daterangepicker', function (ev, picker) {
-        // Ẩn phần chọn ngày
-        $(picker.container.find(".calendar-table")).hide();
-        $('.daterangepicker').css('padding-bottom', 0)
     });
 
-    // Cấu hình cho chọn giờ kết thúc
-    $('#end-time').daterangepicker({
-        singleDatePicker: true,
-        timePicker: true,
-        timePicker24Hour: true,
-        timePickerIncrement: 1,
-        autoApply: true,
-        locale: {
-            format: 'HH:mm'
-        }
-    }).on('show.daterangepicker', function (ev, picker) {
-        // Ẩn phần chọn ngày
-        $(picker.container.find(".calendar-table")).hide();
-        $('.daterangepicker').css('padding-bottom', 0)
+    // Khởi tạo mặc định cho chế độ "Chạy 1 lần rồi dừng"
+    $(document).ready(function () {
+        initSingleRunPicker();
     });
 
-    $('#start-time').on('apply.daterangepicker', function (ev, picker) {
-        // Lấy ngày hiện tại
-        var currentDate = moment().format('YYYY-MM-DD');
-        var startTime = currentDate + ' ' + picker.startDate.format('HH:mm');
-        console.log('Start Time:', startTime);
-    });
-
-    $('#end-time').on('apply.daterangepicker', function (ev, picker) {
-        // Lấy ngày hiện tại
-        var currentDate = moment().format('YYYY-MM-DD');
-        var endTime = currentDate + ' ' + picker.endDate.format('HH:mm');
-        console.log('End Time:', endTime);
-    });
 </script>
 </body>
 <!-- END: Body-->
