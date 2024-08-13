@@ -421,7 +421,7 @@
                                                     </div>
                                                     <div class="d-flex gap-1 ">
                                                         <div class="form-input flex-grow-1">
-                                                            <label for="" class="mb-1">Ngày bắt đầu</label>
+                                                            <label class="mb-1">Ngày bắt đầu</label>
                                                             <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
                                                                 <input id="datepick-start" type="text" name="daterange"
                                                                        autocomplete="off"
@@ -430,7 +430,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-input flex-grow-1">
-                                                            <label for="" class="mb-1">Ngày kết thúc</label>
+                                                            <label class="mb-1">Ngày kết thúc</label>
                                                             <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">
                                                                 <input id="datepick-end" type="text" name="daterange"
                                                                        autocomplete="off"
@@ -440,47 +440,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--                                                <div class="form-input mb-2">-->
-                                                <!--                                                    <label class="form-label" for="basicInput">-->
-                                                <!--                                                        Hẹn giờ đếm ngược-->
-                                                <!--                                                    </label>-->
-                                                <!--                                                    <div class="d-flex align-items-center mt-1 mb-1">-->
-                                                <!--                                                        <div class="form-check form-check-success form-switch">-->
-                                                <!--                                                            <input type="checkbox" checked="" class="form-check-input"-->
-                                                <!--                                                                   id="customSwitch4">-->
-                                                <!--                                                        </div>-->
-                                                <!--                                                        <div class="form-check form-check-inline">-->
-                                                <!--                                                            <input class="form-check-input" type="radio"-->
-                                                <!--                                                                   name="inlineRadioOptions" id="inlineRadio3"-->
-                                                <!--                                                                   value="option3">-->
-                                                <!--                                                            <label class="form-check-label" for="inlineRadio1">Chạy 1-->
-                                                <!--                                                                lần rồi dừng</label>-->
-                                                <!--                                                        </div>-->
-
-                                                <!--                                                        <div class="form-check form-check-inline">-->
-                                                <!--                                                            <input class="form-check-input" type="radio"-->
-                                                <!--                                                                   name="inlineRadioOptions" id="inlineRadio4"-->
-                                                <!--                                                                   value="option4">-->
-                                                <!--                                                            <label class="form-check-label" for="inlineRadio1">Chạy hàng-->
-                                                <!--                                                                ngày</label>-->
-                                                <!--                                                        </div>-->
-                                                <!--                                                    </div>-->
-                                                <!--                                                    <div class="d-flex gap-1 ">-->
-                                                <!--                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">-->
-                                                <!--                                                            <input id="start-time" type="text" name="daterange"-->
-                                                <!--                                                                   autocomplete="off"-->
-                                                <!--                                                                   placeholder="Chọn thời gian..." value=""/>-->
-                                                <!--                                                            <div class="icn icon-calendar-date-2"></div>-->
-                                                <!--                                                        </div>-->
-
-                                                <!--                                                        <div class="form-date d-flex btn w-100 align-items-center btn-outline-secondary">-->
-                                                <!--                                                            <input id="end-time" type="text" name="daterange"-->
-                                                <!--                                                                   autocomplete="off"-->
-                                                <!--                                                                   placeholder="Chọn thời gian..." value=""/>-->
-                                                <!--                                                            <div class="icn icon-calendar-date-2"></div>-->
-                                                <!--                                                        </div>-->
-                                                <!--                                                    </div>-->
-                                                <!--                                                </div>-->
                                                 <div class="form-input mb-2">
                                                     <label class="form-label" for="basicInput">
                                                         Trạng thái
@@ -1030,8 +989,6 @@
             });
         }
     })*/
-
-
     function initSingleRunPicker() {
         // Cấu hình cho chế độ "Chạy 1 lần rồi dừng"
         $('#datepick-start, #datepick-end').daterangepicker({
@@ -1052,7 +1009,6 @@
             "maxDate": "25/11/2024"
         });
     }
-
 
     function initDailyRunPicker() {
         // Cấu hình cho chế độ "Chạy hàng ngày"
@@ -1075,12 +1031,12 @@
     $('input[type=radio][name=radTimeCountdownType]').on('change', function () {
         let radTimeCountdownType = $(this).val();
 
-        if (radTimeCountdownType == 0) { // Chạy 1 lần rồi dừng
-            $('#datepick-start, #datepick-end').val('').off().daterangepicker('destroy');
-            initSingleRunPicker();
+        // Hủy bỏ hoàn toàn daterangepicker và sự kiện liên quan
+        $('#datepick-start, #datepick-end').val('').off().data('daterangepicker').remove();
 
+        if (radTimeCountdownType == 0) { // Chạy 1 lần rồi dừng
+            initSingleRunPicker();
         } else { // Chạy hàng ngày
-            $('#datepick-start, #datepick-end').val('').off().daterangepicker('destroy');
             initDailyRunPicker();
         }
     });
@@ -1089,6 +1045,7 @@
     $(document).ready(function () {
         initSingleRunPicker();
     });
+
 
 </script>
 </body>
