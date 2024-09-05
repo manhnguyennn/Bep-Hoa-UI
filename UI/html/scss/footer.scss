@@ -62,6 +62,14 @@
     .text {
       color: #fff;
       display: block;
+
+      .red {
+        color: #fff;
+
+        u {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -251,8 +259,18 @@
 
       .text {
         color: #111;
+
         &.red {
           color: var(--colorRed);
+        }
+
+        .red {
+          color: var(--colorRed);
+          text-decoration: none;
+
+          u {
+            text-decoration: none;
+          }
         }
       }
     }
