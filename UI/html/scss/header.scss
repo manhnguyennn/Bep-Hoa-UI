@@ -81,6 +81,7 @@
     }
   }
 
+
   box-shadow: inset 0px -1px 0px #E6E6E6;
 
   position: sticky;
@@ -964,5 +965,18 @@
   .noti-header .close-noti {
     width: 14px;
     height: 14px;
+  }
+  .bh-main-header {
+    &.mid-autumn {
+      background: linear-gradient(180deg, #FAEBDE 0%, #FFC6A3 100%);
+
+      .searchBox .searchBtn .icn svg path {
+        stroke: #B5292F;
+      }
+      .burger i{
+        background: #B5292F;
+      }
+    }
+
   }
 }
