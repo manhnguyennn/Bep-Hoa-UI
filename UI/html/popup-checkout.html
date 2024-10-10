@@ -657,7 +657,35 @@
                                 </div>
                                 <a href="javascript:;" class="confirm-btn">Áp dụng</a>
                             </div>
-
+                            <div class="voucher-list">
+                                <div class="txt">Bạn đang có <span>2</span> mã Voucher chưa sử dụng</div>
+                                <div class="voucher-gr">
+                                    <div class="voucher-item">
+                                        <div class="info-vc">
+                                            <div class="name">Giam 10% gia tri don hang voi don hang toi thieu 100K
+                                            </div>
+                                            <div class="code">
+                                                ******
+                                            </div>
+                                        </div>
+                                        <div class="funs">
+                                            <a href="#" class="view-vc">Xem</a>
+                                        </div>
+                                    </div>
+                                    <div class="voucher-item">
+                                        <div class="info-vc">
+                                            <div class="name">Giam 10% gia tri don hang voi don hang toi thieu 100K
+                                            </div>
+                                            <div class="code">
+                                                40C8T1
+                                            </div>
+                                        </div>
+                                        <div class="funs">
+                                            <a href="#" class="apply-vc">Áp mã</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="policy-note">
                                 Bằng việc bấm vào nút “Đặt hàng”, tôi đồng ý với các <a href="#" target="_blank">điều
                                 kiện và điều khoản</a> sử dụng
@@ -707,6 +735,67 @@
         </div>
     </div>
 </div>
+
+<div class="Popup-switch voucher-otp" id="popup-voucher">
+    <div class="popup-content">
+        <div class="switchBox">
+            <div class="heading">Xác thực OTP</div>
+            <a href="javascript:;" data-fancybox-close="#popup-switch" class="close-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="#CBCBCB"/>
+                    <path d="M12.9166 7.08325L7.08325 12.9166" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                    <path d="M12.9166 12.9166L7.08325 7.08325" stroke="white" stroke-width="1.8" stroke-miterlimit="10"
+                          stroke-linecap="square"/>
+                </svg>
+            </a>
+            <div class="content-text">
+                <div class="votp-content">
+                    <div class="txt">
+                        Mã xác thực đã được gửi về số điện thoại <br>
+                        <span>
+                        09*******686
+                            </span>
+                    </div>
+                    <div class="form-input-otp">
+                        <input type="text" class="input-otp" >
+                        <div class="label-otp">
+                            Mã không đúng
+                        </div>
+                    </div>
+                    <div class="form-input-otp correct">
+                        <input type="text" class="input-otp " value="1201">
+                        <div class="label-otp">
+                            Mã không đúng
+                        </div>
+                    </div>
+                    <div class="form-input-otp incorrect">
+                        <input type="text" class="input-otp " value="1201">
+                        <div class="label-otp">
+                            Mã không đúng
+                        </div>
+                    </div>
+                    <div class="resent">
+                        <div class="txt">
+                            Bạn không nhận được mã?
+                        </div>
+                        <div class="noti">
+                            Gửi lại mã sau <span>300s</span>
+                        </div>
+                        <a href="#" class="resent-btn">Gửi lại</a>
+                        <div class="warning">
+                            Yêu cầu gửi mã quá nhiều lần, <br> vui lòng thử lại sau.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="funcsBox">-->
+            <!--                <a href="javascript:;" data-fancybox-close="#popup-switch" class="cancel-btn">Hủy</a>-->
+            <!--                <a href="javascript:;" class="confirm-btn">Đồng ý</a>-->
+            <!--            </div>-->
+        </div>
+    </div>
+</div>
 <script>
     $('.open-fancy-switch').off('click').click(function () {
 
@@ -733,7 +822,31 @@
             },
         });
     });
+    $('.view-vc').off('click').click(function () {
 
+
+        $.fancybox.open({
+            src: '#popup-voucher',
+            type: 'inline',
+            opts: {
+                protect: true,
+                animationDuration: 500,
+                touch: false,
+                beforeShow: function () {
+                    $('body').addClass('popup-switch-active');
+
+
+                },
+                afterShow: function () {
+
+
+                },
+                afterClose: function () {
+                    $('body').removeClass('popup-switch-active');
+                }
+            },
+        });
+    });
 </script>
 </body>
 </html>

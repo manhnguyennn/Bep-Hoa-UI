@@ -1014,6 +1014,89 @@
 
   }
 
+  .voucher-list {
+    margin-top: 21px;
+
+    .voucher-gr {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .txt {
+      color: #222;
+      font-family: BVNPro-Medium;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 100%; /* 14px */
+      margin-bottom: 14px;
+    }
+
+    .voucher-item {
+      display: flex;
+      width: 100%;
+
+      .info-vc {
+        flex-grow: 1;
+        border-radius: 6px;
+        border-top: 1px solid #AECCA2;
+        border-bottom: 1px solid #AECCA2;
+        border-left: 1px solid #AECCA2;
+        background: #FFF;
+        box-sizing: border-box;
+        display: flex;
+        padding: 8px 10px;
+        flex-direction: column;
+        gap: 4px;
+        background: #F7FFF4;
+
+        .name {
+          color: #666;
+          font-family: BVNPro-Medium;
+          font-size: 12px;
+          line-height: 120%; /* 14.4px */
+        }
+
+        .code {
+          color: #356721;
+          font-family: BVNPro-SemiBold;
+          font-size: 15px;
+          line-height: 120%; /* 18px */
+        }
+      }
+
+      .funs {
+        background: #F7FFF4;
+        height: auto;
+        width: 90px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border-top: 1px solid #AECCA2;
+        border-right: 1px solid #AECCA2;
+        border-bottom: 1px solid #AECCA2;
+        border-left: 1px dashed #AECCA2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .view-vc, .apply-vc {
+        display: inline-flex;
+        padding: 7px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 999px;
+        background: #356721;
+        color: #FFF;
+        font-family: BVNPro-Medium;
+        font-size: 12px;
+        line-height: 100%; /* 12px */
+      }
+    }
+  }
+
   .footer-bill {
     position: fixed;
     transition: bottom .2s ease;
@@ -1108,6 +1191,106 @@
   }
 }
 
+.votp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  .txt {
+    color: #333;
+    text-align: center;
+    font-family: BVNPro-Regular;
+    font-size: 14px;
+    line-height: 140%; /* 19.6px */
+    span {
+      font-family: BVNPro-Bold;
+      color: #333;
+    }
+  }
+
+  .form-input-otp {
+    &.correct{
+      input{
+        color: #356721;
+        background: #F7FFF4;
+        border: 0.5px solid #AECCA2;
+      }
+    }
+    &.incorrect{
+      input{
+        border: 0.5px solid #FF9EA8;
+      }
+      .label-otp{
+        display: block;
+      }
+    }
+    .label-otp{
+      display: none;
+      color: #FE3E3E;
+      text-align: center;
+      font-family: BVNPro-Regular;
+      font-size: 12px;
+      line-height: 140%; /* 16.8px */
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    input {
+      border-radius: 6px;
+      background: #fff;
+      border: 0.5px solid #C7C7C7;
+      width: 180px;
+      height: 48px;
+      padding: 12px;
+      box-sizing: border-box;
+      text-align: center;
+      font-family: BVNPro-Regular;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      color: #333;
+      &::placeholder {
+        color: #666;
+      }
+    }
+  }
+  .resent{
+.txt{
+  color: #333;
+  text-align: center;
+  font-family: BVNPro-Regular;
+  font-size: 14px;
+  line-height: 140%; /* 19.6px */
+}
+    .noti{
+      color: #777;
+      text-align: center;
+      font-family: BVNPro-SemiBold;
+      font-size: 14px;
+      line-height: 130%; /* 18.2px */
+      span{
+        color: #124CA4;
+      }
+    }
+    .resent-btn{
+      color: #124CA4;
+      text-align: center;
+      font-family: BVNPro-SemiBold;
+      font-size: 14px;
+      display: block;
+      line-height: 130%; /* 18.2px */
+    }
+    .warning{
+      color: #FE3E3E;
+      text-align: center;
+      font-family: BVNPro-SemiBold;
+      font-size: 14px;
+      line-height: 130%; /* 18.2px */
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   .Popup-checkout {
