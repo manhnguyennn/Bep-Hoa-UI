@@ -4701,4 +4701,49 @@ Generated using nucleoapp.com
   color: #7367F0;
 }
 
+.input-slink {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #666;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d8d6de;
+  appearance: none;
+  border-radius: 0.357rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+}
+.input-slink .url-txt {
+  position: absolute;
+  left: 0.571rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.input-slink input.form-short-link {
+  padding: 0.571rem 0 0.571rem 111px;
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  flex-grow: 1;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  color: #111;
+}
+.input-slink input.form-short-link::placeholder {
+  color: #666;
+}
+.input-slink .val-txt {
+  color: #111;
+  flex-shrink: 0;
+  display: flex;
+}
+
 /*# sourceMappingURL=stye.css.map */
