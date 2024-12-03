@@ -973,10 +973,14 @@
       .searchBox .searchBtn .icn svg path {
         stroke: #B5292F;
       }
-      .burger i{
+
+      .burger i {
         background: #B5292F;
       }
     }
 
+    &.xmas24 {
+      background: #f0223d;
+    }
   }
 }
