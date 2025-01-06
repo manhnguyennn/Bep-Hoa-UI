@@ -137,3 +137,306 @@
 
 }
 
+.table-booking {
+  background: #FFFFFF;
+  border-radius: 5px;
+
+  .filter-box {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    box-shadow: inset 0px -1px 0px #EFEFEF;
+    padding: 0 21px;
+  }
+
+  .filter-btn {
+    &.active, &:hover {
+      .txt {
+        font-family: Roboto-Medium;
+      }
+
+      &:before {
+        width: 100%;
+        height: 2px;
+        background: #7367F0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        position: absolute;
+      }
+
+      transition: all .15s;
+      opacity: 1;
+    }
+
+    &.active {
+      .count {
+        color: #7367F0;
+        display: block;
+      }
+    }
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: Roboto-Regular;
+    color: #111111;
+    opacity: 0.4;
+
+    .txt {
+      display: block;
+    }
+
+    .count {
+      display: none;
+    }
+  }
+
+  .table-header {
+    display: flex;
+    padding: 17px 21px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .checkbox {
+    width: 20px;
+    margin-right: 21px;
+    flex-shrink: 0;
+  }
+
+  .list-hd {
+    flex-grow: 1;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+
+    .tb-text {
+      font-family: Roboto-Medium;
+      font-size: 0.9rem;
+      color: #111;
+      line-height: 110%;
+      font-weight: normal;
+    }
+
+    li {
+      &:nth-child(1) {
+        width: 180px;
+      }
+
+      &:nth-child(2) {
+        width: 242px;
+      }
+
+      &:nth-child(3) {
+        width: 76px;
+      }
+
+      &:nth-child(4) {
+        width: 310px;
+      }
+    }
+  }
+
+  .tb-row {
+    display: flex;
+    padding: 17px 21px;
+    justify-content: space-between;
+    box-shadow: inset 0px 1px 0px #EFEFEF;
+
+  }
+
+  .detail-tb {
+    flex-grow: 1;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+    .info-booking {
+      width: 180px;
+    }
+
+    .id-book {
+      font-size: 11px;
+      line-height: 150%;
+      font-family: Roboto-Regular;
+      color: #7367F0;
+    }
+
+    .date-time-book {
+      font-size: 13px;
+      line-height: 150%;
+      font-family: Roboto-Bold;
+      color: #111111;
+      margin-bottom: 10px;
+
+      .time-book {
+        font-size: 13px;
+        line-height: 150%;
+        /* or 20px */
+        color: #555555;
+        font-family: Roboto-Regular;
+      }
+    }
+
+
+    .address-book {
+      font-size: 12px;
+      line-height: 101%;
+      font-family: Roboto-Regular;
+      color: #777777;
+
+    }
+
+    .info-cus {
+      width: 242px;
+      position: relative;
+      padding-bottom: 34px;
+    }
+
+    .extra-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 21px;
+
+      white-space: nowrap;
+
+    }
+
+    .name-cus {
+      font-size: 13px;
+      line-height: 101%;
+      font-family: Roboto-Regular;
+      margin-bottom: 10px;
+      color: #111111;
+    }
+
+    .phone-cus {
+      font-size: 14px;
+      line-height: 101%;
+      font-family: Roboto-Medium;
+      display: block;
+      color: #7367F0;
+
+    }
+
+    .view-menu {
+      font-size: 13px;
+      line-height: 101%;
+      font-family: Roboto-Regular;
+      display: block;
+      color: #FF9F43;
+    }
+
+    .note-book {
+      font-size: 13px;
+      line-height: 101%;
+      font-family: Roboto-Italic;
+      color: #666666;
+
+    }
+
+    .people {
+      width: 76px;
+      font-size: 14px;
+      line-height: 101%;
+      font-family: Roboto-Regular;
+      color: #666666;
+
+
+    }
+
+    .funcs-book-group {
+      width: 310px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .select-booking-stt {
+      width: 147px;
+      flex-shrink: 0;
+    }
+
+  }
+}
+
+.menu-booking-popup {
+  padding: 20px;
+  background: #fff;
+}
+
+.list-food-booking {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    & + li {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 0.7px dashed #DFDFDF;
+    }
+  }
+
+  .food-book {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .info {
+    flex-grow: 1;
+    display: block;
+  }
+
+  .name-food {
+    font-size: 15px;
+    line-height: 145%;
+    font-family: Roboto-Medium;
+    margin-bottom: 3px;
+    color: #222222;
+  }
+
+  .price-food {
+    font-size: 13px;
+    line-height: 100%;
+    font-family: Roboto-Regular;
+    color: #999999;
+  }
+
+  .quantity-food {
+    font-size: 14px;
+    line-height: 120%;
+    width: 18px;
+    text-align: right;
+    flex-shrink: 0;
+    color: #666666;
+  }
+
+  .price-final {
+    width: 90px;
+    font-size: 15px;
+    line-height: 100%;
+    font-family: Roboto-Medium;
+    flex-shrink: 0;
+    text-align: right;
+
+    color: #7367F0;
+
+  }
+}
+
