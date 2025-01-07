@@ -3354,13 +3354,13 @@ Generated using nucleoapp.com
   line-height: 150%;
   font-family: Roboto-Regular;
   color: #7367F0;
+  margin-bottom: 5px;
 }
 .table-booking .detail-tb .date-time-book {
   font-size: 13px;
   line-height: 150%;
   font-family: Roboto-Bold;
   color: #111111;
-  margin-bottom: 10px;
 }
 .table-booking .detail-tb .date-time-book .time-book {
   font-size: 13px;
@@ -3374,6 +3374,7 @@ Generated using nucleoapp.com
   line-height: 101%;
   font-family: Roboto-Regular;
   color: #777777;
+  margin-bottom: 5px;
 }
 .table-booking .detail-tb .info-cus {
   width: 242px;
@@ -4663,6 +4664,63 @@ Generated using nucleoapp.com
 }
 .momo-log span {
   flex-grow: 1;
+  display: block;
+}
+
+.content-booking-detail {
+  padding-bottom: 100px;
+}
+.content-booking-detail .logs-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 101%;
+  font-family: Roboto-Italic;
+  color: #999999;
+  width: 636px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.content-booking-detail .content-Box {
+  width: 636px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+}
+.content-booking-detail .heading {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px #EFEFEF;
+  border-radius: 5px 5px 0 0;
+  font-family: Roboto-Medium;
+  font-size: 19px;
+  line-height: 48px;
+  box-sizing: border-box;
+  color: #111111;
+  padding-left: 20px;
+}
+.content-booking-detail .heading:before {
+  width: 4px;
+  height: 16px;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #7367F0;
+}
+.content-booking-detail .price-total {
+  font-size: 15px;
+  line-height: 100%;
+  font-family: Roboto-Medium;
+  position: absolute;
+  right: 20px;
+  top: 19px;
+  color: #FD4949;
   display: block;
 }
 

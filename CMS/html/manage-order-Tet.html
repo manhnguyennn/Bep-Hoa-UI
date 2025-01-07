@@ -232,7 +232,7 @@
         <div class="content-body">
             <div class="funcs-contanier container mb-2">
                 <div class="row">
-                    <div class="col-6 d-flex">
+                    <div class="col-9 d-flex">
                         <div class="dropdown bh-dropdown">
                             <a href="javascript:;" type="button"
                                class="btn btn-outline-primary dropdown-toggle waves-effect" id="dropdownMenuButton"
@@ -258,17 +258,7 @@
                             <div class="icn icon-calendar-date-2"></div>
                         </div>
                     </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <a href="javascript:;" type="button"
-                           class="btn bg-primary w-100 text-white btn-add waves-effect waves-float waves-light"
-                           data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                            <span class="txt">
-                                Tạo đơn hàng mới
-                            </span>
-                            <span class="icn icon-c-add"></span>
-                        </a>
 
-                    </div>
                 </div>
             </div>
             <div class="container">
@@ -299,222 +289,7 @@
                         <a href="javascript:;" class="filter">
                             <span class="txt">Đơn huỷ</span>
                         </a>
-                        <a href="javascript:;" type="button" class="btn-filter-adv"
-                           data-bs-toggle="modal"
-                           data-bs-target="#exampleModalScrollable">
-                                    <span class="txt">
-                                        Lọc nâng cao
-                                    </span>
-                            <span class="icn icon-right-arrow"></span>
-                        </a>
 
-                        <!-- Modal -->
-                        <div class="modal right fade" id="exampleModalScrollable" tabindex="-1"
-                             aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalScrollable1">Lọc nâng cao</h5>
-                                        <a href="javascript:;" data-bs-dismiss="modal"
-                                           aria-label="Close" class="btn-close-modal icon-e-remove-1">
-
-                                        </a>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="filter-adv">
-
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Tình trạng đơn</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Chờ xử lý</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Đã lên đơn</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label" for="inlineCheckbox3">Hoàn
-                                                        tất</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label" for="inlineCheckbox3">Huỷ
-                                                        đơn</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Hình thức thanh toán</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">COD</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Momo</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Tình trạng thanh toán</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Đã thanh toán</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Chưa thanh toán</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Tình trạng giao hàng</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Đã giao hàng</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Chưa giao hàng</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Trả lại hàng</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Phương thức nhận hàng</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Giao tận nơi</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Tự đến lấy</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Nguồn đơn</h5>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Website</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Facebook</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox2" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox2">Zalo</label>
-                                                </div>
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox"
-                                                           id="inlineCheckbox3" value="unchecked">
-                                                    <label class="form-check-label"
-                                                           for="inlineCheckbox3">Hotline</label>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Giá trị đơn hàng</h5>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="input-group input-group-merge ">
-                                                        <input type="text" class="form-control" placeholder="000.000"
-                                                               aria-label="A">
-                                                        <span class="input-group-text">đ</span>
-                                                    </div>
-                                                    <div class="bh-text-111 ml-075 mr-075">-</div>
-                                                    <div class="input-group input-group-merge ">
-                                                        <input type="text" class="form-control" placeholder="000.000"
-                                                               aria-label="A">
-                                                        <span class="input-group-text">đ</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Nhân viên phụ trách</h5>
-                                                <select class="select2 form-select" id="default-select">
-                                                    <option value="square">Tất cả</option>
-                                                    <option value="rectangle">Rectangle</option>
-                                                    <option value="rombo">Rombo</option>
-                                                    <option value="romboid">Romboid</option>
-                                                    <option value="trapeze">Trapeze</option>
-                                                    <option value="traible">Triangle</option>
-                                                    <option value="polygon">Polygon</option>
-                                                </select>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Cơ sở phụ trách</h5>
-                                                <select class="select2 form-select" id="default-select2">
-                                                    <option value="square">Tất cả</option>
-                                                    <option value="rectangle">Rectangle</option>
-                                                    <option value="rombo">Rombo</option>
-                                                    <option value="romboid">Romboid</option>
-                                                    <option value="trapeze">Trapeze</option>
-                                                    <option value="traible">Triangle</option>
-                                                    <option value="polygon">Polygon</option>
-                                                </select>
-                                            </div>
-                                            <div class="filter-group">
-                                                <h5 class="bh-text-111">Tags</h5>
-                                                <select class="select2 form-select" id="default-select3">
-                                                    <option value="square">Tất cả</option>
-                                                    <option value="rectangle">Rectangle</option>
-                                                    <option value="rombo">Rombo</option>
-                                                    <option value="romboid">Romboid</option>
-                                                    <option value="trapeze">Trapeze</option>
-                                                    <option value="traible">Triangle</option>
-                                                    <option value="polygon">Polygon</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="modal-footer">
-
-                                        <div class="filter-funcs">
-                                            <a href="javascript:;" data-bs-dismiss="modal"
-                                               class="btn d-flex align-items-center justify-content-center btn-outline-secondary cancel-filter">
-                                                <span class="icn icon-refresh"></span>
-                                                <span class="txt">
-                                                            Bỏ lọc
-                                                        </span>
-                                            </a>
-                                            <a href="javascript:;" data-bs-dismiss="modal"
-                                               class="btn btn-primary btn-filter-action">Lọc kết quả</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                     <div class="table-header">
@@ -535,9 +310,9 @@
                                     Khách hàng
                                 </div>
                             </li>
-                            <li class="tb-hd">
+                            <li class="tb-hd text-nowrap">
                                 <a href="javascript:;" class="btn-sort-table ">
-                                    <span class="txt">Số khách </span>
+                                    <span class="txt">Tỉnh thành</span>
                                     <span class="icn icon-increase"></span>
                                 </a>
                             </li>
@@ -559,36 +334,34 @@
                             <div class="detail-tb">
 
                                 <div class="info-booking">
-                                    <div class="id-book">A123456</div>
+                                    <div class="id-book">DT-123456</div>
+                                    <div class="address-book">Ngày đặt đơn</div>
                                     <div class="date-time-book">
                                         <span class="date-book">T6 - 12/3/2023</span>
                                         <span> - </span>
                                         <span class="time-book">15:30</span>
                                     </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
+
                                 </div>
 
 
                                 <div class="info-cus">
                                     <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
                                     <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
+                                    <div class="bill-total d-flex g-1 fs-7 mt-1">
+                                        <div class="bh-text-111">Tổng đơn</div>
+                                        <div class="bh-text-666">1,200,000đ</div>
                                     </div>
                                 </div>
                                 <div class="people">
-                                    120 người
+                                    Cà Mau
                                 </div>
                                 <div class="funcs-book-group">
                                     <div class="select-booking-stt">
                                         <div class="vue-select-option-html" data-list="color"
                                              data-hiddenid="hidGroupColor" id="ddlStatus"></div>
                                     </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal">Xem</a>
                                     <div class="btn-group">
                                         <a href="javascript:;"
                                            class="btn btn-outline-secondary  waves-effect waves-float waves-light"
@@ -624,36 +397,34 @@
                             <div class="detail-tb">
 
                                 <div class="info-booking">
-                                    <div class="id-book">A123456</div>
+                                    <div class="id-book">DT-123456</div>
+                                    <div class="address-book">Ngày đặt đơn</div>
                                     <div class="date-time-book">
                                         <span class="date-book">T6 - 12/3/2023</span>
                                         <span> - </span>
                                         <span class="time-book">15:30</span>
                                     </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
+
                                 </div>
 
 
                                 <div class="info-cus">
                                     <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
                                     <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
+                                    <div class="bill-total d-flex g-1 fs-7 mt-1">
+                                        <div class="bh-text-111">Tổng đơn</div>
+                                        <div class="bh-text-666">1,200,000đ</div>
                                     </div>
                                 </div>
                                 <div class="people">
-                                    120 người
+                                    Cà Mau
                                 </div>
                                 <div class="funcs-book-group">
                                     <div class="select-booking-stt">
                                         <div class="vue-select-option-html" data-list="color"
                                              data-hiddenid="hidGroupColor" id="ddlStatus"></div>
                                     </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
+                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal">Xem</a>
                                     <div class="btn-group">
                                         <a href="javascript:;"
                                            class="btn btn-outline-secondary  waves-effect waves-float waves-light"
@@ -680,266 +451,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tb-row">
-                            <div class="checkbox">
-                                <div class="form-check form-check-inline d-flex align-items-center">
-                                    <input class="form-check-input" type="checkbox" id="" value="checked">
-                                </div>
-                            </div>
-                            <div class="detail-tb">
-
-                                <div class="info-booking">
-                                    <div class="id-book">A123456</div>
-                                    <div class="date-time-book">
-                                        <span class="date-book">T6 - 12/3/2023</span>
-                                        <span> - </span>
-                                        <span class="time-book">15:30</span>
-                                    </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
-                                </div>
 
 
-                                <div class="info-cus">
-                                    <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
-                                    <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    120 người
-                                </div>
-                                <div class="funcs-book-group">
-                                    <div class="select-booking-stt">
-                                        <div class="vue-select-option-html" data-list="color"
-                                             data-hiddenid="hidGroupColor" id="ddlStatus"></div>
-                                    </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
-                                    <div class="btn-group">
-                                        <a href="javascript:;"
-                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                      fill="#666666"/>
-                                            </svg>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end"
-                                             aria-labelledby="dropdownMenuButton6" style="">
-                                            <a class="dropdown-item" href="#">Hoàn tất</a>
-                                            <a class="dropdown-item" href="#">Khoá / Mở khoá</a>
-                                            <a class="dropdown-item" href="#">Xóa</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tb-row">
-                            <div class="checkbox">
-                                <div class="form-check form-check-inline d-flex align-items-center">
-                                    <input class="form-check-input" type="checkbox" id="" value="checked">
-                                </div>
-                            </div>
-                            <div class="detail-tb">
-
-                                <div class="info-booking">
-                                    <div class="id-book">A123456</div>
-                                    <div class="date-time-book">
-                                        <span class="date-book">T6 - 12/3/2023</span>
-                                        <span> - </span>
-                                        <span class="time-book">15:30</span>
-                                    </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
-                                </div>
-
-
-                                <div class="info-cus">
-                                    <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
-                                    <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    120 người
-                                </div>
-                                <div class="funcs-book-group">
-                                    <div class="select-booking-stt">
-                                        <div class="vue-select-option-html" data-list="color"
-                                             data-hiddenid="hidGroupColor" id="ddlStatus"></div>
-                                    </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
-                                    <div class="btn-group">
-                                        <a href="javascript:;"
-                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                      fill="#666666"/>
-                                            </svg>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end"
-                                             aria-labelledby="dropdownMenuButton6" style="">
-                                            <a class="dropdown-item" href="#">Hoàn tất</a>
-                                            <a class="dropdown-item" href="#">Khoá / Mở khoá</a>
-                                            <a class="dropdown-item" href="#">Xóa</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tb-row">
-                            <div class="checkbox">
-                                <div class="form-check form-check-inline d-flex align-items-center">
-                                    <input class="form-check-input" type="checkbox" id="" value="checked">
-                                </div>
-                            </div>
-                            <div class="detail-tb">
-
-                                <div class="info-booking">
-                                    <div class="id-book">A123456</div>
-                                    <div class="date-time-book">
-                                        <span class="date-book">T6 - 12/3/2023</span>
-                                        <span> - </span>
-                                        <span class="time-book">15:30</span>
-                                    </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
-                                </div>
-
-
-                                <div class="info-cus">
-                                    <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
-                                    <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    120 người
-                                </div>
-                                <div class="funcs-book-group">
-                                    <div class="select-booking-stt">
-                                        <div class="vue-select-option-html" data-list="color"
-                                             data-hiddenid="hidGroupColor" id="ddlStatus"></div>
-                                    </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
-                                    <div class="btn-group">
-                                        <a href="javascript:;"
-                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                      fill="#666666"/>
-                                            </svg>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end"
-                                             aria-labelledby="dropdownMenuButton6" style="">
-                                            <a class="dropdown-item" href="#">Hoàn tất</a>
-                                            <a class="dropdown-item" href="#">Khoá / Mở khoá</a>
-                                            <a class="dropdown-item" href="#">Xóa</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tb-row">
-                            <div class="checkbox">
-                                <div class="form-check form-check-inline d-flex align-items-center">
-                                    <input class="form-check-input" type="checkbox" id="" value="checked">
-                                </div>
-                            </div>
-                            <div class="detail-tb">
-
-                                <div class="info-booking">
-                                    <div class="id-book">A123456</div>
-                                    <div class="date-time-book">
-                                        <span class="date-book">T6 - 12/3/2023</span>
-                                        <span> - </span>
-                                        <span class="time-book">15:30</span>
-                                    </div>
-                                    <div class="address-book">112 Nguyễn Văn Tuyết</div>
-                                </div>
-
-
-                                <div class="info-cus">
-                                    <div class="name-cus">Nguyễn Mạnh Hoàng Hà</div>
-                                    <a href="tel:090 382 3486" class="phone-cus">090 382 3486</a>
-                                    <div class="extra-info">
-                                        <a href="javascript:;" class="view-menu" data-bs-toggle="modal"
-                                           data-bs-target="#modalBookingMenu">Thực đơn</a>
-                                        <div class="note-book">Muốn đặt bàn ngoài trời</div>
-                                    </div>
-                                </div>
-                                <div class="people">
-                                    120 người
-                                </div>
-                                <div class="funcs-book-group">
-                                    <div class="select-booking-stt">
-                                        <div class="vue-select-option-html" data-list="color"
-                                             data-hiddenid="hidGroupColor" id="ddlStatus"></div>
-                                    </div>
-                                    <a href="javascript:;" class="btn btn-outline-secondary edit-btn fw-normal"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#exampleModalCenter">Sửa</a>
-                                    <div class="btn-group">
-                                        <a href="javascript:;"
-                                           class="btn btn-outline-secondary  waves-effect waves-float waves-light"
-                                           type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M10.5 7.5C11.3284 7.5 12 6.82843 12 6C12 5.17157 11.3284 4.5 10.5 4.5C9.67157 4.5 9 5.17157 9 6C9 6.82843 9.67157 7.5 10.5 7.5Z"
-                                                      fill="#666666"/>
-                                                <path d="M1.5 7.5C2.32843 7.5 3 6.82843 3 6C3 5.17157 2.32843 4.5 1.5 4.5C0.671573 4.5 0 5.17157 0 6C0 6.82843 0.671573 7.5 1.5 7.5Z"
-                                                      fill="#666666"/>
-                                            </svg>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end"
-                                             aria-labelledby="dropdownMenuButton6" style="">
-                                            <a class="dropdown-item" href="#">Hoàn tất</a>
-                                            <a class="dropdown-item" href="#">Khoá / Mở khoá</a>
-                                            <a class="dropdown-item" href="#">Xóa</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
