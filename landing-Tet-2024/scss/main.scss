@@ -268,6 +268,76 @@
   }
 }
 
+.success-box {
+  width: 550px;
+  max-width: 100%;
+  margin: -200px auto;
+  border-radius: 20px;
+  border: 1px solid #E2D5C3;
+  background: #FFF;
+  padding: 32px;
+  box-sizing: border-box;
+
+  .success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icn {
+    width: 100px;
+    display: block;
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .message {
+    color: #222;
+    text-align: center;
+    font-family: BVNPro-SemiBold;
+    font-size: 26px;
+    line-height: 130%; /* 33.8px */
+    span {
+      color: #569371;
+
+    }
+  }
+
+  .txt {
+    color: #444;
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%; /* 19.6px */
+    span {
+      color: #569371;
+
+    }
+  }
+
+  .new-order {
+    display: flex;
+    height: 42px;
+    padding: 12px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: BVNPro-Bold;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: #F04D61;
+  }
+}
+
 
 /* Custom input number order */
 .number-order {
@@ -720,7 +790,27 @@
     }
 
     .form-input {
+      &.wrong {
+        .noti {
+          display: block;
+          color: #B5292F;
+        }
+        .input-tet, .sl-tet {
+          border: 0.5px solid #FF9EA8;
+        }
+      }
+
       width: 100%;
+
+      .noti {
+        margin-top: 9px;
+        font-size: 10px;
+        line-height: 140%;
+        font-family: BVNPro-Regular;
+        display: none;
+      }
+
+
     }
 
     .input-tet, .sl-tet {
@@ -785,3 +875,429 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+
+  .bh-tet24_wrapper {
+    padding-bottom: 140px;
+  }
+
+  .home-nav {
+    top: 20px;
+    left: 20px;
+    padding: 6px;
+
+    .icn {
+      width: 36px;
+    }
+
+    .txt {
+      display: none;
+    }
+  }
+
+  .top-cover {
+    .bg-img {
+      padding-top: 91%;
+      background-image: url('../img/mob_cv.png');
+    }
+  }
+  .menu-box {
+    width: calc(100vw - 40px);
+    margin: -11vw auto 0;
+    padding: 0;
+
+    .heading {
+      padding: 20px 0 14px 0;
+      margin: 0;
+      font-size: 12px;
+
+    }
+
+    .menu-list-item {
+
+    }
+
+    .food-item {
+
+      padding: 15px;
+      border-top: 1px solid #EFEFEF;
+
+      &.sale {
+        .priceBox {
+          .price-sale {
+
+          }
+
+          .price-ori {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .stt {
+        display: none;
+      }
+
+      .if-left {
+        gap: 14px;
+        width: 100%;
+      }
+
+      .if-right {
+        width: 100%;
+        padding-left: 78px;
+        box-sizing: border-box;
+        justify-content: flex-end;
+      }
+
+
+      .food-total {
+        flex-direction: column;
+        gap: 0;
+
+        .thumb {
+          width: 64px;
+
+          img {
+            height: 64px;
+          }
+        }
+
+
+      }
+
+      .total {
+
+        .name {
+          font-size: 14px;
+          -webkit-line-clamp: 2;
+        }
+      }
+
+      .priceBox {
+
+
+        .price-sale {
+          font-size: 12px;
+        }
+
+        .price-ori {
+          font-size: 12px;
+        }
+      }
+
+
+    }
+
+    .funcs-box {
+      width: 100%;
+
+      &.active {
+
+        .reset-cart {
+
+        }
+
+        .add-to-cart {
+
+        }
+      }
+
+      .add-to-cart, .reset-cart {
+
+      }
+
+      .add-to-cart {
+        &:hover {
+
+        }
+
+      }
+
+      .reset-cart {
+
+      }
+    }
+  }
+
+  .scroll-to-top {
+
+    margin: 22px auto;
+
+    .txt {
+
+
+    }
+
+    .icn {
+
+
+      svg {
+
+      }
+    }
+  }
+
+  .hotlineBox {
+
+
+    .cta {
+      height: 46px;
+      padding: 0 24px;
+
+      .icn {
+        width: 20px;
+
+
+      }
+
+      .txt {
+        font-size: 17px;
+      }
+    }
+
+    .text {
+
+    }
+  }
+
+  .cart-footer {
+
+    transform: translateY(50vw);
+
+    &.active {
+
+    }
+
+    .cf-content {
+      height: auto;
+      flex-direction: column;
+      padding: 14px 20px 40px 20px;
+      box-sizing: border-box;
+      width: 100%;
+      gap: 13px;
+    }
+
+    .total-cart {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .text {
+        font-size: 14px;
+      }
+
+      .price-total {
+
+
+      }
+    }
+
+    .checkout-btn {
+      width: 100%;
+
+      &:hover {
+        .txt {
+
+        }
+      }
+
+      .icn {
+
+
+      }
+
+      .txt {
+
+      }
+    }
+  }
+
+  /* Modal Styles */
+  .modal-overlay {
+    &.active {
+
+      .modal {
+        transform: translateY(0);
+        transition: .5s;
+      }
+    }
+
+    align-items: flex-end;
+
+    .modal {
+      max-height: 90vh;
+      border-radius: 8px 8px 0 0;
+      transform: translateY(90vh);
+      transition: .3s;
+    }
+
+    .modal-header {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .close-top {
+      position: relative;
+      top: auto;
+      right: auto;
+
+    }
+
+    .modal-footer {
+
+      .pick-more {
+        font-size: 15px;
+      }
+
+      .checkout-bill {
+
+      }
+    }
+
+    .modal-content {
+      padding: 0 20px 40px 20px;
+      gap: 15px;
+
+      &::-webkit-scrollbar {
+
+      }
+
+      &::-webkit-scrollbar-track {
+
+      }
+
+      &::-webkit-scrollbar-thumb {
+
+      }
+    }
+
+    .bill-total {
+      gap: 5px;
+
+      .price-total {
+
+        .txt {
+          font-size: 14px;
+        }
+
+        .bill-price {
+          font-size: 17px;
+        }
+      }
+
+      .note {
+
+      }
+    }
+
+    .bill-list {
+
+    }
+
+    .food-item {
+
+      .quantity {
+        font-size: 13px;
+        width: 26px;
+      }
+
+      .food-total {
+
+
+        .f-name {
+          font-size: 13px;
+        }
+
+        .f-price {
+
+        }
+      }
+
+      .price-food-total {
+
+      }
+    }
+
+    .cs-infoBox {
+
+
+      .heading {
+
+
+        &:before {
+
+        }
+      }
+
+      .form-input {
+
+      }
+
+      .input-tet, .sl-tet {
+        &:hover, &:focus {
+
+        }
+
+
+        &::placeholder {
+
+        }
+      }
+
+      .textarea-tet {
+        &:hover, &:focus {
+
+        }
+
+        &::placeholder {
+
+        }
+      }
+
+      .sl-tet {
+
+      }
+
+      .flex-slect {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  }
+
+  .success-box {
+    width: calc(100vw - 40px);
+    margin: -11vw auto 0;
+    padding: 16px;
+
+
+    .success-content {
+
+    }
+
+    .icn {
+      width: 80px;
+    }
+
+    .message {
+      font-size: 20px;
+    }
+
+    .txt {
+      font-size: 13px;
+    }
+
+    .new-order {
+      font-size: 16px;
+    }
+  }
+}

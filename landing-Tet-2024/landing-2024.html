@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Đem vị Tết tới 63 tỉnh thành</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.min.js"></script>
 </head>
@@ -459,17 +459,19 @@
                 </div>
                 <div class="cs-infoBox">
                     <div class="heading">Thông tin của bạn</div>
-                    <div class="form-input">
+                    <div class="form-input wrong">
                         <input type="text" class="input-tet" placeholder="Tên của bạn">
+                        <div class="noti">Vui lòng điền thông tin</div>
                     </div>
                     <div class="form-input">
                         <input type="text" class="input-tet" placeholder="Số điện thoại">
+                        <div class="noti">Vui lòng điền thông tin</div>
                     </div>
                 </div>
                 <div class="cs-infoBox">
                     <div class="heading">Địa chỉ nhận hàng</div>
                     <div class="flex-slect">
-                        <div class="form-input">
+                        <div class="form-input wrong">
                             <select class="sl-tet sl-city">
                                 <option value="" disabled selected>Tỉnh / TP</option>
                                 <option value="">Hà Nội</option>
@@ -480,6 +482,7 @@
                                 <option value="">Đà Nẵng</option>
                                 <option value="">Đà Nẵng</option>
                             </select>
+                            <div class="noti">Vui lòng chọn thông tin</div>
                         </div>
                         <div class="form-input">
                             <select class="sl-tet sl-dst">
@@ -492,6 +495,7 @@
                                 <option value="">Đà Nẵng</option>
                                 <option value="">Đà Nẵng</option>
                             </select>
+                            <div class="noti">Vui lòng chọn thông tin</div>
                         </div>
                         <div class="form-input">
                             <select class="sl-tet sl-str">
@@ -504,10 +508,12 @@
                                 <option value="">Đà Nẵng</option>
                                 <option value="">Đà Nẵng</option>
                             </select>
+                            <div class="noti">Vui lòng chọn thông tin</div>
                         </div>
                     </div>
                     <div class="form-input">
                         <input type="text" class="input-tet" placeholder="Địa chỉ">
+                        <div class="noti">Vui lòng điền thông tin</div>
                     </div>
                     <div class="form-input">
                         <textarea class="textarea-tet" placeholder="Ghi chú"></textarea>
