@@ -982,5 +982,17 @@
     &.xmas24 {
       background: #f0223d;
     }
+
+    &.tet24 {
+      background: linear-gradient(180deg, #FDFFEA -16.41%, #FFC1EA 100%);
+
+      .searchBox .searchBtn .icn svg path {
+        stroke: #e84b60;
+      }
+
+      .burger i {
+        background: #e84b60;
+      }
+    }
   }
 }
