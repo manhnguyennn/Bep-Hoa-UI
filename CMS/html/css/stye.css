@@ -3345,6 +3345,7 @@ Generated using nucleoapp.com
   display: flex;
   list-style-type: none;
   margin: 0;
+  align-items: center;
 }
 .table-booking .detail-tb .info-booking {
   width: 180px;
@@ -3379,7 +3380,6 @@ Generated using nucleoapp.com
 .table-booking .detail-tb .info-cus {
   width: 242px;
   position: relative;
-  padding-bottom: 34px;
 }
 .table-booking .detail-tb .extra-info {
   position: absolute;

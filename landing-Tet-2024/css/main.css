@@ -185,7 +185,7 @@ a {
   padding-top: 47.78%;
   width: 100%;
   display: block;
-  background-image: url("../img/web_cv.png");
+  background-image: url("../img/web_cv_v3.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1119,11 +1119,14 @@ a {
 }
 .modal-overlay .cs-infoBox .flex-slect {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 12px 1fr 12px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
 }
 
 .no-scroll {
@@ -1149,7 +1152,7 @@ a {
   }
   .top-cover .bg-img {
     padding-top: 91%;
-    background-image: url("../img/mob_cv.png");
+    background-image: url("../img/mob_cv_v3.webp");
   }
   .menu-box {
     width: calc(100vw - 40px);
@@ -1320,16 +1323,6 @@ a {
   }
   .modal-overlay .food-item .food-total .f-name {
     font-size: 13px;
-  }
-  .modal-overlay .cs-infoBox .flex-slect {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 12px;
   }
   .success-box {
     width: calc(100vw - 40px);

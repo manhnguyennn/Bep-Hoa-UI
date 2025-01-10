@@ -261,6 +261,7 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+    align-items: center;
 
     .info-booking {
       width: 180px;
@@ -302,7 +303,6 @@
     .info-cus {
       width: 242px;
       position: relative;
-      padding-bottom: 34px;
     }
 
     .extra-info {

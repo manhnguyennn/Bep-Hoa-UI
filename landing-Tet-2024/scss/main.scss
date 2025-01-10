@@ -55,7 +55,7 @@
     padding-top: 47.78%;
     width: 100%;
     display: block;
-    background-image: url('../img/web_cv.png');
+    background-image: url('../img/web_cv_v3.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -862,9 +862,9 @@
 
     .flex-slect {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
   }
 }
@@ -898,7 +898,7 @@
   .top-cover {
     .bg-img {
       padding-top: 91%;
-      background-image: url('../img/mob_cv.png');
+      background-image: url('../img/mob_cv_v3.webp');
     }
   }
   .menu-box {
@@ -1267,9 +1267,7 @@
       }
 
       .flex-slect {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+
       }
     }
   }
