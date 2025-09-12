@@ -1,0 +1,60 @@
+.policy-wrapper {
+  padding: 35px 20px;
+}
+.policy-wrapper .policy-content {
+  width: 660px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.policy-wrapper .content-section {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.policy-wrapper .content-section + .content-section {
+  padding-top: 35px;
+  border-top: 1px solid #C4C4C4;
+}
+.policy-wrapper .heading {
+  font-size: 19px;
+  line-height: 130%;
+  font-family: BVNPro-SemiBold;
+  color: #222222;
+}
+.policy-wrapper p {
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  color: #222222;
+}
+.policy-wrapper p + p {
+  margin-top: -10px;
+}
+.policy-wrapper p b {
+  font-family: BVNPro-SemiBold;
+}
+.policy-wrapper p a {
+  color: #B5292F;
+}
+.policy-wrapper p.dot {
+  padding-left: 20px;
+  position: relative;
+}
+.policy-wrapper p.dot:before {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #222;
+  top: 5px;
+  left: 3px;
+  display: block;
+  position: absolute;
+  content: "";
+}
+.policy-wrapper .sub-title {
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-SemiBold;
+  color: #222222;
+}/*# sourceMappingURL=policy.css.map */

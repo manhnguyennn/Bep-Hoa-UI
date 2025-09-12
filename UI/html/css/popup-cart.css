@@ -1,10 +1,9 @@
-/* Error: The target selector was not found.
- * Use "@extend .bb05 !optional" to avoid this error.
- *    ,
- * 51 |       @extend .bb05;
- *    |       ^^^^^^^^^^^^^
- *    '
- *   popup-cart.scss 51:7  root stylesheet */
+/* Error: Undefined mixin.
+ *     ,
+ * 219 |         @include bg-thumb();
+ *     |         ^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   UI/html/scss/popup-cart.scss 219:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend .bb05 !optional" to avoid this error.\a    \2577 \a 51 \2502        @extend .bb05;\d\a    \2502        ^^^^^^^^^^^^^\a    \2575 \a   popup-cart.scss 51:7  root stylesheet';
+  content: "Error: Undefined mixin.\a     \2577 \a 219 \2502          @include bg-thumb();\a     \2502          ^^^^^^^^^^^^^^^^^^^\a     \2575 \a   UI/html/scss/popup-cart.scss 219:9  root stylesheet";
 }

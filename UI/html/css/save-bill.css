@@ -1,166 +1,281 @@
+.sb-wrapper {
+  width: 720px;
+}
+
+.sb-wrapper .sb-header .icn {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sb-wrapper .sb-header .header {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.sb-wrapper .sb-header .header .logo {
+  width: 110px;
+}
+
+.sb-wrapper .sb-header .header .logo-text {
+  width: 350px;
+}
+
+.sb-wrapper .sb-header .order-info {
+  padding: 0 60px 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #A08C78;
+  margin-bottom: 50px;
+}
+
+.sb-wrapper .sb-header .or-id .txt {
+  color: #222;
+  font-family: BVNPro-Medium;
+  font-size: 32px;
+  line-height: 100%; /* 32px */
+  margin-bottom: 17px;
+}
+
+.sb-wrapper .sb-header .or-id .txt-id {
+  color: #B5292F;
+  font-family: BVNPro-SemiBold;
+  font-size: 36px;
+  line-height: 100%; /* 36px */
+}
+
+.sb-wrapper .sb-header .qr-box {
+  width: 110px;
+}
+
+.sb-wrapper .sb-content {
+  padding: 0 60px;
+  margin-bottom: 113px;
+}
+
 .sb-wrapper .money-bill {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 22px;
 }
+
 .sb-wrapper .money-bill .type-money {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 24px;
   line-height: 100%;
   color: #666666;
   flex-shrink: 0;
 }
+
 .sb-wrapper .money-bill .type-money.red-text {
   color: var(--colorRed);
 }
+
 .sb-wrapper .money-bill .type-money .type {
   width: auto;
   font-family: BVNPro-Regular;
 }
+
 .sb-wrapper .money-bill .type-money .money {
   width: auto;
   font-family: BVNPro-SemiBold;
 }
-.sb-wrapper .od-total {
-  padding: 0 20px;
-  margin-bottom: 30px;
-}
-.sb-wrapper .od-total h4 {
-  font-size: 14px;
+
+.sb-wrapper h4 {
+  font-size: 24px;
   line-height: 140%;
   font-family: BVNPro-SemiBold;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
   color: #222222;
 }
-.sb-wrapper .od-total .total-flx {
+
+.sb-wrapper .total-flx {
   display: flex;
 }
-.sb-wrapper .od-total .total-flx + .total-flx {
-  margin-top: 12px;
+
+.sb-wrapper .total-flx + .total-flx {
+  margin-top: 24px;
 }
-.sb-wrapper .od-total .type {
-  font-size: 13px;
+
+.sb-wrapper .type {
+  font-size: 24px;
   line-height: 100%;
   font-family: BVNPro-Regular;
   color: #666666;
   flex-shrink: 0;
-  margin-right: 11px;
-  width: 92px;
+  margin-right: 22px;
+  width: 184px;
 }
-.sb-wrapper .od-total .txt {
-  font-size: 13px;
+
+.sb-wrapper .txt {
+  font-size: 24px;
   line-height: 130%;
   font-family: BVNPro-Regular;
   color: #222222;
 }
+
 .sb-wrapper .list-order {
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  padding-bottom: 20px;
+  gap: 22px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
+
 .sb-wrapper .order-detail {
   display: flex;
 }
+
 .sb-wrapper .order-detail .quantity {
   color: #666;
   flex-shrink: 0;
-  width: 30px;
+  width: 60px;
   font-family: BVNPro-Regular;
-  font-size: 13px;
+  font-size: 24px;
   line-height: 130%;
 }
+
 .sb-wrapper .order-detail .name-food {
   color: #222;
   font-family: BVNPro-Medium;
-  font-size: 13px;
+  font-size: 24px;
   line-height: 130%;
 }
+
 .sb-wrapper .order-detail .opt-food {
-  margin: 2px 0;
-  padding-left: 10px;
+  margin: 4px 0;
+  padding-left: 20px;
   position: relative;
-  font-size: 10px;
-  gap: 3px;
-  display: flex;
+  font-size: 20px;
 }
+
 .sb-wrapper .order-detail .opt-food:before {
   content: "+";
   position: absolute;
   left: 0;
-  font-size: 13px;
+  font-size: 24px;
   line-height: 130%;
   font-family: BVNPro-Regular;
   color: #222222;
 }
+
 .sb-wrapper .order-detail .count {
   color: #666;
   font-family: BVNPro-Regular;
-  font-size: 12px;
+  font-size: 21px;
   line-height: 130%;
 }
+
 .sb-wrapper .order-detail .price-result {
   color: #222;
   font-family: BVNPro-Medium;
-  font-size: 13px;
+  font-size: 24px;
   line-height: 130%;
   text-align: right;
-  width: 93px;
+  width: 166px;
   flex-shrink: 0;
 }
+
 .sb-wrapper .order-detail .opt-list {
   list-style-type: none;
   padding: 0;
-  margin-top: 11px;
+  margin-top: 22px;
 }
+
 .sb-wrapper .order-detail .opt-list li {
-  margin-bottom: 7px;
+  margin-bottom: 14px;
   padding: 0;
 }
+
 .sb-wrapper .order-detail .prc-opt, .sb-wrapper .order-detail .txt {
   color: #333;
   font-family: BVNPro-Regular;
-  font-size: 12px;
+  font-size: 21px;
   line-height: 130%;
 }
+
 .sb-wrapper .order-detail .note-food {
-  font-size: 11px;
+  font-size: 21px;
   font-family: BVNPro-RegularItalic;
   margin-bottom: 3px;
-  line-height: 14px;
+  line-height: 24px;
   color: #999999;
 }
+
 .sb-wrapper .order-detail .price-item {
   display: flex;
-  gap: 3px;
-  margin-top: 6px;
+  gap: 6px;
+  margin-top: 12px;
 }
+
 .sb-wrapper .order-detail .price-item.sale {
   color: #222;
   font-family: BVNPro-Medium;
-  font-size: 12px;
+  font-size: 21px;
   font-style: normal;
   line-height: 130%; /* 14.3px */
 }
+
 .sb-wrapper .order-detail .price-item.sale .price-original {
   text-decoration: line-through;
   color: #999;
 }
+
 .sb-wrapper .order-detail .price-original {
-  font-size: 12px;
+  font-size: 21px;
   font-family: Tahoma;
 }
+
 .sb-wrapper .order-detail .order-info {
   flex-grow: 1;
 }
+
+.sb-wrapper .sb-footer {
+  position: relative;
+}
+
+.sb-wrapper .sb-footer .bg {
+  width: 100%;
+}
+
+.sb-wrapper .contact {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 67px;
+}
+
+.sb-wrapper .ct-type {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.sb-wrapper .ct-type .icn {
+  width: 30px;
+}
+
+.sb-wrapper .ct-type .txt {
+  color: #222;
+  font-family: BVNPro-Regular;
+  font-size: 24px;
+  line-height: 130%; /* 31.2px */
+} 
 
 /*# sourceMappingURL=save-bill.css.map */

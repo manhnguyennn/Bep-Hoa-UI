@@ -18,6 +18,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  outline: none;
 }
 
 textarea {
@@ -30,14 +31,29 @@ input {
   text-shadow: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 input[type=text],
+input[type=number],
 input[type=email],
 input[type=password],
-textarea {
+textarea, select {
   /* Remove First */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: textfield;
+  outline: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -83,6 +99,6 @@ table {
 a {
   text-decoration: none;
   cursor: pointer;
-}
+} 
 
 /*# sourceMappingURL=reset.css.map */

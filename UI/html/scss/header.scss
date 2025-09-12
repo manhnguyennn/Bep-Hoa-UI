@@ -994,5 +994,17 @@
         background: #e84b60;
       }
     }
+    &.tt25 {
+      background: #fff;
+
+      .searchBox .searchBtn .icn svg path {
+        stroke: #B5292F;
+      }
+
+      .burger i {
+        background: #B5292F;
+      }
+      
+    }
   }
 }

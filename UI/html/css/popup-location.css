@@ -1,3 +1,97 @@
+.PopUp-location {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
 
+.PopUp-location .locationBox {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.PopUp-location .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
+  width: 20px;
+}
+
+.PopUp-location .close-btn svg {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.PopUp-location .heading {
+  font-size: 16px;
+  line-height: 130%;
+  font-family: BVNPro-SemiBold;
+  color: #222222;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.PopUp-location .list-loca li {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.PopUp-location .loca-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 11px;
+}
+
+.PopUp-location .loca-btn:hover {
+  background: #f9f9f9;
+}
+
+.PopUp-location .loca-btn .icn {
+  width: 16px;
+  display: block;
+}
+
+.PopUp-location .loca-btn .icn svg {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.PopUp-location .loca-btn .txt {
+  font-size: 16px;
+  line-height: 130%;
+  font-family: BVNPro-Regular;
+  display: block;
+  color: #222222;
+}
+
+.popup-loca-active {
+  overflow: hidden;
+}
+
+.popup-loca-active .fancybox-slide--html {
+  padding: 0;
+}
+
+.popup-loca-active .fancybox-content {
+  padding: 0;
+}
+
+.popup-loca-active .fancybox-bg {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-loca-active .fancybox-close-small {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .PopUp-location {
+    width: 250px;
+  }
+} 
 
 /*# sourceMappingURL=popup-location.css.map */
