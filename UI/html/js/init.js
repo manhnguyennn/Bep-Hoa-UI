@@ -131,7 +131,8 @@
                 spaceBetween: 15,
                 autoplay: {
                     delay: 0,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
+                    allowTouchMove: false,
                 },
                 freeMode: true,
                 speed: 3500,
@@ -151,7 +152,8 @@
                 spaceBetween: 0,
                 autoplay: {
                     delay: 2000,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
+                     allowTouchMove: false,
                 },
                 freeMode: true,
                 centeredSlides: true,
