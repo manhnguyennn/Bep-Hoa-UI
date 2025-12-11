@@ -1,0 +1,44 @@
+html body .app-content.content:has(.scan-content_wrapper) {
+   background: #fff;
+   min-height: 100vh;
+   min-height: 100dvh;
+   box-sizing: border-box;
+}
+
+.scan-content_wrapper{
+    min-height: 100%;
+}
+
+.scan-step-1 {
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .button-scan {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 3px solid #7367f0;
+    background: linear-gradient(180deg, #fff 0%, #f5f4ff 100%);
+    box-shadow: 0 4px 20px 0 rgba(135, 124, 255, 0.2);
+    gap: 29px;
+    padding: 50px 30px;
+
+    .icn {
+      display: block;
+      width: 45px;
+    }
+    .txt {
+      color: #111;
+      text-align: center;
+      font-family: "Roboto-Bold";
+      font-size: 25px;
+      display: block;
+      line-height: 100%; /* 25.809px */
+    }
+  }
+}

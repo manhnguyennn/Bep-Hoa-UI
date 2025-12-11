@@ -8,8 +8,11 @@
 @import "page-manage-customer";
 @import "manage-order-list";
 @import "manage-order";
+@import "scan";
+
 
 .table-user-group, .table-bh {
+
   .role {
     &.adm {
       color: var(--colorRed);
