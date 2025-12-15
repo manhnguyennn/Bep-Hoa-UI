@@ -180,38 +180,23 @@ body i {
   left: 260px;
   z-index: 99;
   width: calc(100% - 260px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 60px;
   padding: 0 28px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-fixed-top .user-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: Roboto-Medium;
 }
 .header-fixed-top .user-info .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #111;
 }
 .header-fixed-top .user-info .text {
@@ -244,23 +229,15 @@ body i {
   left: 260px;
   z-index: 99;
   width: calc(100% - 260px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 60px;
   padding: 0 28px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: inset 0px 1px 0px #efefef;
-          box-shadow: inset 0px 1px 0px #efefef;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0px 1px 0px #efefef;
 }
 
 .main-menu ul.navigation-main > li + li {
@@ -285,8 +262,7 @@ body i {
 .bh-cms-wrapper .table-responsive {
   margin-bottom: 2rem;
   background: #ffffff;
-  -webkit-box-shadow: inset 0px -1px 0px #efefef;
-          box-shadow: inset 0px -1px 0px #efefef;
+  box-shadow: inset 0px -1px 0px #efefef;
   border-radius: 5px;
 }
 .bh-cms-wrapper .table-responsive .form-check-inline {
@@ -336,23 +312,14 @@ body i {
 .bh-cms-wrapper .filter-table {
   padding: 0 1rem;
   background: #ffffff;
-  -webkit-box-shadow: inset 0px -1px 0px #efefef;
-          box-shadow: inset 0px -1px 0px #efefef;
+  box-shadow: inset 0px -1px 0px #efefef;
   border-radius: 5px 5px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .bh-cms-wrapper .filter-table .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1rem 0;
   font-size: 0.9rem;
   line-height: 100%;
@@ -380,12 +347,8 @@ body i {
   font-family: Roboto-Medium;
   color: #111;
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 0.75rem;
 }
 .form-label span {
@@ -446,8 +409,7 @@ body i {
   height: 11px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0.75rem;
   padding: 0;
   margin: 0;
@@ -460,14 +422,9 @@ body i {
 }
 .selectBox .selected,
 .selectBox .select-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   border-radius: 5px;
   font-size: 0.9rem;
   line-height: 1.1rem;
@@ -476,8 +433,7 @@ body i {
 }
 .selectBox .selected .icn,
 .selectBox .select-type .icn {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -521,12 +477,8 @@ body i {
 }
 .selectBox .select-btn {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px solid #d8d6de;
   padding: 0 1.25rem;
   background: #ffffff;
@@ -549,8 +501,7 @@ body i {
   height: 11px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0.75rem;
   padding: 0;
   margin: 0;
@@ -576,8 +527,7 @@ body i {
   border-left: 1px solid #d8d6de;
   border-right: 1px solid #d8d6de;
   border-bottom: 1px solid #d8d6de;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
   border-radius: 0px 0px 5px 5px;
 }
@@ -590,23 +540,13 @@ body i {
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid #d8d6de;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 0px;
   font-size: 14px;
   line-height: 16px;
   color: #111111;
 }
-.selectBox .list-selectBox input::-webkit-input-placeholder {
-  opacity: 0.3;
-}
 .selectBox .list-selectBox input::-moz-placeholder {
-  opacity: 0.3;
-}
-.selectBox .list-selectBox input:-ms-input-placeholder {
-  opacity: 0.3;
-}
-.selectBox .list-selectBox input::-ms-input-placeholder {
   opacity: 0.3;
 }
 .selectBox .list-selectBox input::placeholder {
@@ -638,14 +578,9 @@ body i {
 
 .value-btn {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   font-size: 13px;
   line-height: 14px;
 }
@@ -654,9 +589,7 @@ body i {
   font-family: Roboto-Medium;
 }
 .value-btn .total {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   display: block;
 }
 .value-btn .text {
@@ -671,8 +604,7 @@ body i {
 }
 .value-btn .numb {
   display: inline-block;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-left: 10px;
   color: #ff9f43;
 }
@@ -697,19 +629,14 @@ body i {
   left: 0;
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   content: "";
 }
 
 .status {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .status.bh-dot-waiting .color, .status.bh-dot-orange .color {
   background: var(--colorOrange);
@@ -737,12 +664,8 @@ body i {
 }
 
 .status-icn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .status-icn.bh-icon-green .icn {
   color: var(--colorGreen);
@@ -766,12 +689,8 @@ body i {
 }
 
 .status-pay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .status-pay.bh-pay-done .icn {
   color: var(--colorGreen);
@@ -792,12 +711,8 @@ body i {
 }
 
 .btn-print {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-print .icn {
   font-size: 12px;
@@ -814,12 +729,8 @@ body i {
 }
 
 .btn-history {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-history .icn {
   font-size: 12px;
@@ -836,12 +747,8 @@ body i {
 }
 
 .btn-sort-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-sort-table .icn {
   font-size: 12px;
@@ -860,23 +767,15 @@ body i {
 
 .btn-pin {
   padding: 0.786rem 1rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #ffffff;
   border: 1px solid #d8d6de;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Nucleo;
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .btn-pin.active, .btn-pin:hover {
   background: #ff9f43;
@@ -891,15 +790,9 @@ body i {
 }
 
 .btn-add {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .btn-add .icn {
   margin-left: 0.5rem;
@@ -938,8 +831,7 @@ body i {
 .input-group.bh-seacrh {
   background: #ffffff;
   border: 1px solid #d8d6de;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 0.5rem 1.1rem;
 }
@@ -949,20 +841,9 @@ body i {
   font-family: Roboto-Regular;
   font-size: 0.9rem;
   line-height: 1.1rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-.input-group.bh-seacrh .bh-input-search::-webkit-input-placeholder {
-  opacity: 0.5;
+  flex-grow: 1;
 }
 .input-group.bh-seacrh .bh-input-search::-moz-placeholder {
-  opacity: 0.5;
-}
-.input-group.bh-seacrh .bh-input-search:-ms-input-placeholder {
-  opacity: 0.5;
-}
-.input-group.bh-seacrh .bh-input-search::-ms-input-placeholder {
   opacity: 0.5;
 }
 .input-group.bh-seacrh .bh-input-search::placeholder {
@@ -970,8 +851,7 @@ body i {
 }
 .input-group.bh-seacrh .icn {
   display: block;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-left: 1rem;
   font-family: Nucleo;
   font-size: 1.1rem;
@@ -982,10 +862,8 @@ body i {
 .modal.right.fade .modal-dialog {
   width: 300px;
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   right: -300px;
-  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
   transition: opacity 0.3s linear, right 0.3s ease-out;
   margin: 0 0 0 auto;
 }
@@ -995,18 +873,11 @@ body i {
 }
 .modal.right.fade .modal-content {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .modal.right.fade .modal-body {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   max-height: 100%;
   padding: 0;
 }
@@ -1028,15 +899,9 @@ body i {
   height: 100%;
   z-index: 9999;
   background: rgba(255, 255, 255, 0.65);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .bh-loading:after {
   content: "";
@@ -1051,8 +916,7 @@ body i {
   border: 0.25em solid var(--colorPurple);
   border-right-color: transparent;
   border-radius: 50%;
-  -webkit-animation: 0.75s linear infinite spinner-border;
-          animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
 }
 
 .accordion [data-bs-toggle=collapse] i {
@@ -1080,8 +944,7 @@ body i {
   right: 10px;
   top: 50%;
   content: "Chọn";
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   color: #7367f0;
   z-index: 1;
@@ -1097,8 +960,7 @@ body i {
   width: 120px;
   color: var(--color111) !important;
   font-size: 0.9rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background: none !important;
   border: none !important;
   outline: none !important;
@@ -1117,16 +979,11 @@ body i {
   line-height: 140%;
   background: rgba(115, 103, 240, 0.08);
   border: 1px solid #7367f0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 53px;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #7367f0;
   padding: 3px 12px 4px;
 }
@@ -1134,16 +991,10 @@ body i {
 .tags-input-wrapper {
   width: 100%;
   padding: 11px 13px 10px 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #d8d6de;
   background: #fff;
@@ -1207,8 +1058,7 @@ body i {
   .main-menu.menu-shadow.menu-fixed {
     height: auto;
     border-right: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .main-menu.menu-shadow.menu-fixed .navbar-header {
     width: 160px;
@@ -1243,9 +1093,7 @@ body i {
     height: 70px;
     border-left: none;
     padding: 0 20px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
   }
   .header-fixed-top .text-black {
     display: none;
@@ -1273,8 +1121,7 @@ Generated using nucleoapp.com
   display: inline-block;
   font: normal normal normal 1em/1 "Nucleo";
   color: inherit;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1299,55 +1146,36 @@ Generated using nucleoapp.com
 
 /* rotate the icon infinitely */
 .icon-is-spinning {
-  -webkit-animation: icon-spin 1s infinite linear;
-          animation: icon-spin 1s infinite linear;
-}
-
-@-webkit-keyframes icon-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: icon-spin 1s infinite linear;
 }
 
 @keyframes icon-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* transform */
 .icon-rotate-90 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .icon-rotate-180 {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .icon-rotate-270 {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .icon-flip-y {
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 .icon-flip-x {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 /* icons */
@@ -2355,14 +2183,11 @@ Generated using nucleoapp.com
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1.2rem;
   color: #111111;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .manage-systems .list-manage-type {
   row-gap: 20px;
@@ -2381,10 +2206,8 @@ Generated using nucleoapp.com
 }
 .manage-systems .user-right {
   background: #F8F8F8;
-  -webkit-box-shadow: inset 1px 0px 1px #EFEFEF;
-          box-shadow: inset 1px 0px 1px #EFEFEF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
+  box-sizing: border-box;
   padding-top: 2rem;
 }
 .manage-systems .modal-add-user .modal-body {
@@ -2417,22 +2240,15 @@ Generated using nucleoapp.com
   bottom: 2px;
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   right: 2px;
   z-index: 2;
   width: 2.1rem;
   height: 2.1rem;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 0.9rem;
   font-family: Nucleo;
   color: #777;
@@ -2440,8 +2256,7 @@ Generated using nucleoapp.com
 .manage-systems .data-user {
   background: #FFFFFF;
   border: 1px solid #EBE9F1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px 5px 0px 0px;
   font-size: 0.9rem;
   padding: 0.9rem 0.6rem;
@@ -2499,12 +2314,8 @@ Generated using nucleoapp.com
   font-size: 0.8rem;
   margin: 0;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .modal-manage-group .modal-body .col-1 {
   padding: 0 0.5rem;
@@ -2548,9 +2359,7 @@ Generated using nucleoapp.com
 }
 
 .col-2-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 20%;
 }
 
@@ -2568,14 +2377,9 @@ Generated using nucleoapp.com
 
 .list-icon {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
 }
 .list-icon li {
@@ -2586,18 +2390,11 @@ Generated using nucleoapp.com
 .list-icon .icn-btn {
   width: 100%;
   height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #D8D6DE;
   background: #FFF;
@@ -2613,19 +2410,12 @@ Generated using nucleoapp.com
 .popup-icon-btn {
   margin-right: 1rem;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 38px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #D8D6DE;
   background: #FFF;
@@ -2641,20 +2431,14 @@ Generated using nucleoapp.com
 .cateBox {
   background: #F8F8F8;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px;
   gap: 15px;
 }
 
 .list-cate-child {
   margin-bottom: 0;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   max-height: 0;
   overflow: hidden;
@@ -2675,36 +2459,24 @@ Generated using nucleoapp.com
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 2;
 }
 
 .upload-food {
   width: 340px;
   padding-right: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .upload-food .upload-images {
   background: #F8F8F8;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 70px 0;
 }
 .upload-food .upload-images.uploaded {
@@ -2744,11 +2516,8 @@ Generated using nucleoapp.com
   width: 100%;
 }
 .upload-food .list-images.list-banner .images-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .upload-food .list-images.list-banner .images-fd {
   width: 100%;
@@ -2761,21 +2530,14 @@ Generated using nucleoapp.com
   width: 30px;
   height: 30px;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #fff;
   color: var(--colorPurple);
   font-family: Roboto-Medium;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -2801,19 +2563,12 @@ Generated using nucleoapp.com
   margin-bottom: 10px;
   background: #F8F8F8;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .upload-food .list-images .images-box.active .choose-ava {
   background: #7367F0;
@@ -2828,8 +2583,7 @@ Generated using nucleoapp.com
 .upload-food .list-images .images-fd {
   width: 90px;
   height: 64px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .upload-food .list-images .images-fd img {
   width: 100%;
@@ -2845,19 +2599,12 @@ Generated using nucleoapp.com
   height: 32px;
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 39px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .upload-food .list-images .choose-ava .icn {
   font-family: Nucleo;
@@ -2878,20 +2625,13 @@ Generated using nucleoapp.com
 .upload-food .list-images .upload-btn, .upload-food .list-images .remove-btn {
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .upload-food .list-images .upload-btn .icn, .upload-food .list-images .remove-btn .icn {
   font-family: Nucleo;
@@ -2901,29 +2641,16 @@ Generated using nucleoapp.com
 }
 
 .btn-remove-opts {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-add-opts {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .btn-add-opts .icn {
   font-family: Nucleo;
@@ -2970,8 +2697,7 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .active-sell.active, .active-sell:hover {
   border: 2px solid #2DC56D;
@@ -2988,8 +2714,7 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .stop-sell.active, .stop-sell:hover {
   border: 2px solid var(--colorRed);
@@ -3006,8 +2731,7 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .select-frame.active, .select-frame:hover {
   border: 2px solid #2DC56D;
@@ -3024,8 +2748,7 @@ Generated using nucleoapp.com
   font-size: 1rem;
   line-height: 100%;
   color: #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .no-frame.active, .no-frame:hover {
   border: 2px solid var(--colorRed);
@@ -3035,8 +2758,7 @@ Generated using nucleoapp.com
 
 .soon-sell {
   border: 2px solid #f8f8f8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   background: #F8F8F8;
   border-radius: 5px;
@@ -3055,7 +2777,6 @@ Generated using nucleoapp.com
   margin: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 100%;
   position: absolute;
@@ -3064,15 +2785,9 @@ Generated using nucleoapp.com
   z-index: 10;
   background: #FFEDED;
   height: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
   line-height: 100%;
 }
@@ -3088,15 +2803,9 @@ Generated using nucleoapp.com
   color: var(--colorRed);
   right: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: Nucleo;
   font-size: 16px;
 }
@@ -3105,28 +2814,21 @@ Generated using nucleoapp.com
   margin-right: 30px;
   padding: 20px 0 20px 1rem;
   width: 530px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .logs-edit {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #F8F8F8;
-  -webkit-box-shadow: inset 1px 0px 1px #EFEFEF;
-          box-shadow: inset 1px 0px 1px #EFEFEF;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
 }
 .logs-edit .list-logs-change {
   margin-top: 15px;
   padding-left: 1rem;
 }
 .logs-edit .list-logs-change .log-change {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   line-height: 180%;
@@ -3134,15 +2836,12 @@ Generated using nucleoapp.com
 }
 .logs-edit .list-logs-change .log-change .type {
   width: 100px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 20px;
   font-family: Roboto-Medium;
 }
 .logs-edit .list-logs-change .log-change i {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   display: block;
 }
 .logs-edit .logs-item {
@@ -3205,10 +2904,8 @@ Generated using nucleoapp.com
 .report-food {
   padding-left: 1rem;
   width: 495px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
   margin-right: 30px;
 }
 
@@ -3223,8 +2920,7 @@ Generated using nucleoapp.com
   border-top: 1px solid #EBE9F1;
   border-left: 1px solid #EBE9F1;
   border-right: 1px solid #EBE9F1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .list-data li:nth-child(1) {
   border-radius: 5px 5px 0 0;
@@ -3234,15 +2930,9 @@ Generated using nucleoapp.com
   border-bottom: 1px solid #EBE9F1;
 }
 .list-data .data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cate-name-drag {
@@ -3254,21 +2944,11 @@ Generated using nucleoapp.com
   height: 14px;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateY(-50%);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .cate-name-drag .icon i {
   width: 100%;
@@ -3292,12 +2972,8 @@ Generated using nucleoapp.com
   border: 1px solid #D8D6DE;
   background: #FFF;
   padding: 11px 17px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: #111;
   font-size: 14px;
   font-family: Roboto-Regular;
@@ -3314,8 +2990,7 @@ Generated using nucleoapp.com
   background: none;
   padding: 0;
   width: 19px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #111;
   font-size: 14px;
   font-family: Roboto-Regular;
@@ -3323,12 +2998,8 @@ Generated using nucleoapp.com
 }
 
 .edit-status-food {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 8px;
 }
 .edit-status-food.active .dot {
@@ -3364,14 +3035,9 @@ Generated using nucleoapp.com
   list-style-type: none;
 }
 .list-food-suggest .food-name-drag {
-  cursor: -webkit-grab;
   cursor: grab;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 2rem;
   padding: 0.8rem 2rem;
   border-bottom: 1px solid #EFEFEF;
@@ -3381,8 +3047,7 @@ Generated using nucleoapp.com
   height: 14px;
   position: relative;
   display: block;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .list-food-suggest .icon i {
   width: 100%;
@@ -3401,9 +3066,7 @@ Generated using nucleoapp.com
   bottom: 0;
 }
 .list-food-suggest .name-food {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   color: #111;
   font-family: Roboto-Regular;
   font-size: 14px;
@@ -3412,8 +3075,7 @@ Generated using nucleoapp.com
 }
 .list-food-suggest .remove-card {
   padding: 0.8rem 2rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .name-cusomter.unset {
@@ -3421,8 +3083,6 @@ Generated using nucleoapp.com
 }
 
 .tags-customer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .tags-customer-list.unset:before {
@@ -3433,18 +3093,11 @@ Generated using nucleoapp.com
 .tags-customer-list .tags-customer {
   background: rgba(115, 103, 240, 0.08);
   border: 1px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 53px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 3px 12px 4px;
   font-size: 12px;
   line-height: 140%;
@@ -3456,29 +3109,23 @@ Generated using nucleoapp.com
 
 .info-customer {
   padding-left: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 500px;
   margin-right: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .total-customer {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 1.2rem 1.5rem;
   background: #F8F8F8;
-  -webkit-box-shadow: inset 1px 0px 1px #EFEFEF;
-          box-shadow: inset 1px 0px 1px #EFEFEF;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
 }
 
 .bill-oder {
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -3487,11 +3134,9 @@ Generated using nucleoapp.com
   padding-top: 1rem;
   padding-left: 1rem;
   width: 520px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-right: 30px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .list-address-cus {
@@ -3519,8 +3164,6 @@ Generated using nucleoapp.com
   display: none;
 }
 .address-cus.active .userBox .addr-stt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .address-cus .str {
@@ -3534,8 +3177,7 @@ Generated using nucleoapp.com
   color: #111111;
   background: #FFFFFF;
   border: 1px solid #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   opacity: 0.5;
 }
@@ -3544,9 +3186,7 @@ Generated using nucleoapp.com
 }
 .address-cus .userBox .addr-stt {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .address-cus .userBox .addr-stt .icn {
   font-size: 12px;
@@ -3561,9 +3201,7 @@ Generated using nucleoapp.com
   padding: 11px 15px;
 }
 .form-date input {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   height: 100%;
   border: none;
   background: none;
@@ -3572,20 +3210,15 @@ Generated using nucleoapp.com
 .form-date .icn {
   font-size: 1rem;
   margin-right: 5px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .order-info {
   position: relative;
 }
 .order-info .order-id {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 9px;
 }
 .order-info .order-id .text {
@@ -3610,16 +3243,11 @@ Generated using nucleoapp.com
   font-size: 0.7rem;
   background: rgba(115, 103, 240, 0.08);
   border: 1px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 53px;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #7367F0;
   padding: 1px 5px;
 }
@@ -3628,8 +3256,6 @@ Generated using nucleoapp.com
   position: absolute;
   bottom: -5rem;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
@@ -3694,25 +3320,16 @@ Generated using nucleoapp.com
   border-radius: 5px;
 }
 .table-booking .filter-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 27px;
-  -webkit-box-shadow: inset 0px -1px 0px #EFEFEF;
-          box-shadow: inset 0px -1px 0px #EFEFEF;
+  box-shadow: inset 0px -1px 0px #EFEFEF;
   padding: 0 21px;
 }
 .table-booking .filter-btn {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 4px;
   padding: 15px 0;
   font-size: 14px;
@@ -3722,7 +3339,6 @@ Generated using nucleoapp.com
   opacity: 0.4;
 }
 .table-booking .filter-btn.active, .table-booking .filter-btn:hover {
-  -webkit-transition: all 0.15s;
   transition: all 0.15s;
   opacity: 1;
 }
@@ -3750,37 +3366,22 @@ Generated using nucleoapp.com
   display: none;
 }
 .table-booking .table-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 17px 21px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .table-booking .checkbox {
   width: 20px;
   margin-right: 21px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .table-booking .list-hd {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style-type: none;
   margin: 0;
 }
@@ -3804,32 +3405,19 @@ Generated using nucleoapp.com
   width: 310px;
 }
 .table-booking .tb-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 17px 21px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: inset 0px 1px 0px #EFEFEF;
-          box-shadow: inset 0px 1px 0px #EFEFEF;
+  justify-content: space-between;
+  box-shadow: inset 0px 1px 0px #EFEFEF;
 }
 .table-booking .detail-tb {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
   list-style-type: none;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .table-booking .detail-tb .info-booking {
   width: 180px;
@@ -3869,12 +3457,8 @@ Generated using nucleoapp.com
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 21px;
   white-space: nowrap;
 }
@@ -3914,21 +3498,14 @@ Generated using nucleoapp.com
 }
 .table-booking .detail-tb .funcs-book-group {
   width: 310px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 .table-booking .detail-tb .select-booking-stt {
   width: 147px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .menu-booking-popup {
@@ -3946,18 +3523,12 @@ Generated using nucleoapp.com
   border-top: 0.7px dashed #DFDFDF;
 }
 .list-food-booking .food-book {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
 }
 .list-food-booking .info {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   display: block;
 }
 .list-food-booking .name-food {
@@ -3978,8 +3549,7 @@ Generated using nucleoapp.com
   line-height: 120%;
   width: 18px;
   text-align: right;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   color: #666666;
 }
 .list-food-booking .price-final {
@@ -3987,8 +3557,7 @@ Generated using nucleoapp.com
   font-size: 15px;
   line-height: 100%;
   font-family: Roboto-Medium;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   text-align: right;
   color: #7367F0;
 }
@@ -4018,20 +3587,13 @@ Generated using nucleoapp.com
   margin-right: 10px;
 }
 .title-order .order-status {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 3px 12px;
   background: #F3FFF9;
   border: 1px solid #28C76F;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 53px;
   font-size: 12px;
   line-height: 140%;
@@ -4046,12 +3608,8 @@ Generated using nucleoapp.com
 }
 
 .btn-lock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-lock .icn {
   font-size: 11px;
@@ -4065,12 +3623,8 @@ Generated using nucleoapp.com
 }
 
 .btn-unlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-unlock .icn {
   font-size: 11px;
@@ -4088,8 +3642,6 @@ Generated using nucleoapp.com
 }
 
 .cart-order-list .cart-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .cart-order-list .cart-total + .cart-total {
@@ -4100,37 +3652,26 @@ Generated using nucleoapp.com
   height: 26px;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
   line-height: 130%;
   font-family: Roboto-Medium;
   text-align: center;
   color: #111111;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 15px;
 }
 .cart-order-list .food-total {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .cart-order-list .price-total {
   width: 90px;
   margin-left: 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .cart-order-list .name {
   font-size: 14px;
@@ -4158,16 +3699,9 @@ Generated using nucleoapp.com
   display: block;
 }
 .cart-order-list .price-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .cart-order-list .price-food {
   font-size: 14px;
@@ -4186,12 +3720,8 @@ Generated using nucleoapp.com
   border-top: 1px solid #EFEFEF;
 }
 .order-form-body .price-bill {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: auto;
 }
 .order-form-body .price-bill .text {
@@ -4208,12 +3738,8 @@ Generated using nucleoapp.com
 }
 
 .btn-add-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-add-order .icn {
   font-size: 14px;
@@ -4240,20 +3766,10 @@ Generated using nucleoapp.com
   display: block;
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
 }
-.order-note-textarea::-webkit-input-placeholder {
-  opacity: 0.3;
-}
 .order-note-textarea::-moz-placeholder {
-  opacity: 0.3;
-}
-.order-note-textarea:-ms-input-placeholder {
-  opacity: 0.3;
-}
-.order-note-textarea::-ms-input-placeholder {
   opacity: 0.3;
 }
 .order-note-textarea::placeholder {
@@ -4263,8 +3779,7 @@ Generated using nucleoapp.com
 .address-manage-oder {
   background: rgba(115, 103, 240, 0.08);
   border: 1.5px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 20px 95px 20px 20px;
   font-size: 13px;
@@ -4273,8 +3788,6 @@ Generated using nucleoapp.com
   color: #111111;
 }
 .address-manage-oder .addr-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .address-manage-oder .addr-total + .addr-total {
@@ -4283,28 +3796,19 @@ Generated using nucleoapp.com
 .address-manage-oder .type {
   width: 107px;
   margin-right: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   font-family: Roboto-Medium;
 }
 .address-manage-oder .text {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .address-manage-oder .remove-addr {
   font-size: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 20px;
   height: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -4327,15 +3831,10 @@ Generated using nucleoapp.com
   height: 100%;
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .picktime-order .icn {
   position: absolute;
@@ -4343,21 +3842,17 @@ Generated using nucleoapp.com
   right: 15px;
   top: 50%;
   display: block;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   color: #666;
 }
 .picktime-order input {
   padding: 11px 15px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   height: 100%;
   border: none;
   background: none;
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #111111;
   font-size: 14px;
   font-family: Roboto-Medium;
@@ -4377,9 +3872,7 @@ Generated using nucleoapp.com
 }
 
 .images-banking-box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 15px;
 }
@@ -4395,8 +3888,7 @@ Generated using nucleoapp.com
   padding-top: 88.2%;
   background: #F8F8F8;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   z-index: 1;
   display: block;
@@ -4406,23 +3898,15 @@ Generated using nucleoapp.com
   height: 32px;
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .images-banking-box .upload-images-banking .icn {
   font-size: 14px;
@@ -4452,8 +3936,7 @@ Generated using nucleoapp.com
   background-position: center center;
   display: block;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .images-banking-box .images-bk .remove-img {
@@ -4464,38 +3947,24 @@ Generated using nucleoapp.com
   right: -5px;
   width: 20px;
   height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 8px;
   color: #fff;
 }
 
 .btn-order-uncheck {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border: 1.5px solid #F8F8F8;
   background: #F8F8F8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 38px;
   width: 100%;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #111111;
 }
 .btn-order-uncheck.active, .btn-order-uncheck:hover {
@@ -4513,24 +3982,16 @@ Generated using nucleoapp.com
 }
 
 .btn-order-check {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border: 1.5px solid #F8F8F8;
   background: #F8F8F8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 38px;
   width: 100%;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #111111;
 }
 .btn-order-check.active, .btn-order-check:hover {
@@ -4549,24 +4010,16 @@ Generated using nucleoapp.com
 }
 
 .btn-order-df-check {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border: 1.5px solid #F8F8F8;
   background: #F8F8F8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 38px;
   width: 100%;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #111111;
 }
 .btn-order-df-check.active, .btn-order-df-check:hover {
@@ -4590,8 +4043,7 @@ Generated using nucleoapp.com
 .order-bill-total {
   background: #FFFFFF;
   border: 1.5px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
 }
 .order-bill-total .title-bill {
@@ -4612,8 +4064,6 @@ Generated using nucleoapp.com
   margin-bottom: 15px;
 }
 .order-bill-total .bill-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   line-height: 150%;
@@ -4624,15 +4074,12 @@ Generated using nucleoapp.com
 }
 .order-bill-total .bill-total .type {
   width: 110px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 17px;
   font-family: Roboto-Medium;
 }
 .order-bill-total .bill-total .text {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .order-bill-total .orderBox {
   border-bottom: 1px solid #111111;
@@ -4641,15 +4088,9 @@ Generated using nucleoapp.com
 }
 .order-bill-total .moneyTotal {
   padding-bottom: 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 200%;
   font-family: Roboto-Medium;
@@ -4664,8 +4105,7 @@ Generated using nucleoapp.com
 .inputCreateBill {
   background: #FFFFFF;
   border: 1.5px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   gap: 1rem;
 }
@@ -4680,8 +4120,6 @@ Generated using nucleoapp.com
   margin-bottom: 10px;
 }
 .inputCreateBill .inputCB {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 12px 15px;
   gap: 10px;
@@ -4690,44 +4128,28 @@ Generated using nucleoapp.com
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
   border-radius: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .inputCreateBill .inputCB input {
   width: 100%;
   background: none;
   border: none;
   line-height: 37px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   font-family: Roboto-Medium;
   font-size: 13px;
   color: #111;
   outline: none;
 }
-.inputCreateBill .inputCB input::-webkit-input-placeholder {
-  color: #666;
-}
 .inputCreateBill .inputCB input::-moz-placeholder {
-  color: #666;
-}
-.inputCreateBill .inputCB input:-ms-input-placeholder {
-  color: #666;
-}
-.inputCreateBill .inputCB input::-ms-input-placeholder {
   color: #666;
 }
 .inputCreateBill .inputCB input::placeholder {
   color: #666;
 }
 .inputCreateBill .inputCB .type-value {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   font-size: 13px;
   line-height: 101%;
   font-family: Roboto-Medium;
@@ -4735,8 +4157,6 @@ Generated using nucleoapp.com
 }
 
 .input-tools .inputCB {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 12px 15px;
   gap: 10px;
@@ -4744,45 +4164,29 @@ Generated using nucleoapp.com
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
   border-radius: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .input-tools .inputCB input {
   width: 100%;
   background: none;
   border: none;
   line-height: 120%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   font-family: Roboto-Medium;
   font-size: 16px;
   color: #111;
   outline: none;
   border-radius: 5px 5px 0px 0px;
 }
-.input-tools .inputCB input::-webkit-input-placeholder {
-  color: #666;
-}
 .input-tools .inputCB input::-moz-placeholder {
-  color: #666;
-}
-.input-tools .inputCB input:-ms-input-placeholder {
-  color: #666;
-}
-.input-tools .inputCB input::-ms-input-placeholder {
   color: #666;
 }
 .input-tools .inputCB input::placeholder {
   color: #666;
 }
 .input-tools .inputCB .type-value {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   font-size: 15px;
   line-height: 101%;
   font-family: Roboto-Medium;
@@ -4839,13 +4243,11 @@ Generated using nucleoapp.com
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.15s;
   transition: 0.15s;
 }
 .form-search-food .form-input-search {
   background: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
@@ -4862,16 +4264,7 @@ Generated using nucleoapp.com
 .form-search-food .form-input-search input:focus {
   border: 1px solid #7367F0;
 }
-.form-search-food .form-input-search input::-webkit-input-placeholder {
-  opacity: 0.3;
-}
 .form-search-food .form-input-search input::-moz-placeholder {
-  opacity: 0.3;
-}
-.form-search-food .form-input-search input:-ms-input-placeholder {
-  opacity: 0.3;
-}
-.form-search-food .form-input-search input::-ms-input-placeholder {
   opacity: 0.3;
 }
 .form-search-food .form-input-search input::placeholder {
@@ -4883,8 +4276,7 @@ Generated using nucleoapp.com
   color: #5E5873;
   right: 15px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
 }
 .form-search-food .list-food-search {
@@ -4895,8 +4287,7 @@ Generated using nucleoapp.com
   border-left: 1px solid #D8D6DE;
   border-right: 1px solid #D8D6DE;
   border-bottom: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 0 0 5px 5px;
 }
 .form-search-food .list-food-search::-webkit-scrollbar {
@@ -4912,12 +4303,8 @@ Generated using nucleoapp.com
   background: #F8F8F8;
 }
 .form-search-food .food-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 15px;
 }
 .form-search-food .food-link .name {
@@ -4942,35 +4329,27 @@ Generated using nucleoapp.com
 
 .add-foodBox {
   width: 550px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .add-foodBox .food-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
 .add-foodBox .food-total {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .add-foodBox .food-thumb {
   width: 110px;
   margin-left: 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .add-foodBox .food-thumb i {
   width: 100%;
   padding-top: 100%;
   border: 0.5px solid rgba(0, 0, 0, 0.15);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 6px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4986,12 +4365,8 @@ Generated using nucleoapp.com
   font-family: Roboto-Medium;
 }
 .add-foodBox .food-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 24px;
 }
 .add-foodBox .food-price .current {
@@ -5007,12 +4382,8 @@ Generated using nucleoapp.com
   margin-left: 13px;
 }
 .add-foodBox .number-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .add-foodBox .number-order .number-btn {
   opacity: 0.3;
@@ -5034,21 +4405,14 @@ Generated using nucleoapp.com
   height: 30px;
   background: #FFFFFF;
   border: 1px solid #E0E0E0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 14px;
   color: #222222;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .add-foodBox .form-opt {
   display: block;
@@ -5067,15 +4431,9 @@ Generated using nucleoapp.com
 .add-foodBox .form-opt label {
   position: relative;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .add-foodBox .form-opt label span {
   display: block;
@@ -5095,13 +4453,10 @@ Generated using nucleoapp.com
 }
 
 .note-foodBox {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 20px;
   background: #F8F8F8;
-  -webkit-box-shadow: inset 1px 0px 1px #EFEFEF;
-          box-shadow: inset 1px 0px 1px #EFEFEF;
+  box-shadow: inset 1px 0px 1px #EFEFEF;
 }
 
 .form-edit-address .customer-total {
@@ -5127,8 +4482,7 @@ Generated using nucleoapp.com
   border: 1.5px solid #F8F8F8;
   position: relative;
   padding: 11px 113px 11px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 13px;
   line-height: 150%;
   color: #111111;
@@ -5153,8 +4507,7 @@ Generated using nucleoapp.com
 .list-addr-saved .addr-saved .check-addrBox {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 15px;
 }
 .list-addr-saved .addr-saved .check-addrBox .icn {
@@ -5164,14 +4517,11 @@ Generated using nucleoapp.com
 }
 .list-addr-saved .addr-saved .check-addrBox .use-addr {
   opacity: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 8px 15px;
   background: #FFFFFF;
   border: 1px solid #111111;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   font-size: 14px;
   line-height: 101%;
@@ -5200,15 +4550,13 @@ Generated using nucleoapp.com
   position: absolute;
   right: 11px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
 }
 .select-address .input-select {
   background: #FFFFFF;
   border: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   outline: none;
   padding: 11px 15px;
@@ -5221,16 +4569,7 @@ Generated using nucleoapp.com
   border: 1px solid #7367F0;
   border-radius: 5px 5px 0 0;
 }
-.select-address .input-select::-webkit-input-placeholder {
-  color: var(--colorRed);
-}
 .select-address .input-select::-moz-placeholder {
-  color: var(--colorRed);
-}
-.select-address .input-select:-ms-input-placeholder {
-  color: var(--colorRed);
-}
-.select-address .input-select::-ms-input-placeholder {
   color: var(--colorRed);
 }
 .select-address .input-select::placeholder {
@@ -5249,18 +4588,13 @@ Generated using nucleoapp.com
   border-left: 1px solid #D8D6DE;
   border-right: 1px solid #D8D6DE;
   border-bottom: 1px solid #D8D6DE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 0 0 5px 5px;
 }
 .select-address .new-address {
   padding: 8px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .select-address .new-address .icn {
   font-size: 16px;
@@ -5323,12 +4657,8 @@ Generated using nucleoapp.com
 
 .sale-name {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px solid #D8D6DE;
   padding: 0 1.25rem;
   background: #FFFFFF;
@@ -5344,8 +4674,7 @@ Generated using nucleoapp.com
   width: 40px;
   height: 40px;
   margin-right: 1rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .form-chat .ava img {
   width: 100%;
@@ -5354,9 +4683,7 @@ Generated using nucleoapp.com
   border-radius: 50%;
 }
 .form-chat .form-input {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .form-chat .form-input input {
   width: 100%;
@@ -5364,13 +4691,10 @@ Generated using nucleoapp.com
 .form-chat .btn-submit {
   width: 90px;
   margin-left: 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .chatBox .userBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5rem;
 }
@@ -5378,8 +4702,7 @@ Generated using nucleoapp.com
   width: 40px;
   height: 40px;
   margin-right: 1rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .chatBox .ava img {
   width: 100%;
@@ -5388,12 +4711,8 @@ Generated using nucleoapp.com
   border-radius: 50%;
 }
 .chatBox .user-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 3px;
 }
 .chatBox .user-name {
@@ -5418,27 +4737,20 @@ Generated using nucleoapp.com
 }
 
 .momo-log {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 13px;
   line-height: 180%;
   color: #111;
 }
 .momo-log .type {
   width: 100px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 10px;
   font-family: Roboto-Medium;
 }
 .momo-log span {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   display: block;
 }
 
@@ -5446,15 +4758,9 @@ Generated using nucleoapp.com
   padding-bottom: 100px;
 }
 .content-booking-detail .logs-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   line-height: 101%;
   font-family: Roboto-Italic;
@@ -5474,22 +4780,19 @@ Generated using nucleoapp.com
 .content-booking-detail .heading {
   position: relative;
   background: #FFFFFF;
-  -webkit-box-shadow: inset 0px -1px 0px #EFEFEF;
-          box-shadow: inset 0px -1px 0px #EFEFEF;
+  box-shadow: inset 0px -1px 0px #EFEFEF;
   border-radius: 5px 5px 0 0;
   font-family: Roboto-Medium;
   font-size: 19px;
   line-height: 48px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #111111;
   padding-left: 20px;
 }
 .content-booking-detail .heading:before {
   width: 4px;
   height: 16px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   content: "";
   position: absolute;
@@ -5512,8 +4815,7 @@ html body .app-content.content:has(.scan-content_wrapper) {
   background: #fff;
   min-height: 100vh;
   min-height: 100dvh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .scan-content_wrapper {
@@ -5522,39 +4824,21 @@ html body .app-content.content:has(.scan-content_wrapper) {
 
 .scan-step-1 {
   height: calc(100vh - 200px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .scan-step-1 .button-scan {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
   border: 3px solid #7367f0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f4ff));
   background: linear-gradient(180deg, #fff 0%, #f5f4ff 100%);
-  -webkit-box-shadow: 0 4px 20px 0 rgba(135, 124, 255, 0.2);
-          box-shadow: 0 4px 20px 0 rgba(135, 124, 255, 0.2);
+  box-shadow: 0 4px 20px 0 rgba(135, 124, 255, 0.2);
   gap: 29px;
   padding: 50px 30px;
 }
@@ -5569,188 +4853,6 @@ html body .app-content.content:has(.scan-content_wrapper) {
   font-size: 25px;
   display: block;
   line-height: 100%; /* 25.809px */
-}
-
-.scan-step-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 32px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.scan-step-2 .back-sc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 12px;
-}
-.scan-step-2 .back-sc .icn {
-  display: block;
-  width: 7px;
-}
-.scan-step-2 .back-sc .icn svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.scan-step-2 .back-sc .txt {
-  color: #222;
-  font-family: "Roboto-Bold";
-  font-size: 13px;
-  line-height: 100%; /* 13px */
-  text-transform: uppercase;
-}
-.scan-step-2 .bill-sc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-}
-.scan-step-2 .bill-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 7px;
-  width: 100%;
-}
-.scan-step-2 .bill-info .txt {
-  color: #222;
-  text-align: center;
-  font-family: "Roboto-Medium";
-  font-size: 13px;
-  line-height: 100%; /* 13px */
-  text-transform: uppercase;
-}
-.scan-step-2 .bill-info .bill-code {
-  color: #7367f0;
-  text-align: center;
-  font-family: "Roboto-Bold";
-  font-size: 25.809px;
-  line-height: 100%; /* 25.809px */
-}
-.scan-step-2 .bill-total {
-  width: 100%;
-  padding-top: 20px;
-  border-top: 1px solid #d9d9d9;
-}
-.scan-step-2 .bill-total .type-gr .inf {
-  font-family: "Roboto-Medium";
-}
-.scan-step-2 .bill-total .type-gr .inf.pr-color {
-  color: #7367f0;
-}
-.scan-step-2 .bill-ship {
-  width: 100%;
-  padding-top: 20px;
-  border-top: 1px solid #d9d9d9;
-}
-.scan-step-2 .bill-ship .type-gr {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.scan-step-2 .type-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 11px;
-}
-.scan-step-2 .type-gr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 35px;
-}
-.scan-step-2 .type-gr .txt {
-  color: #666;
-  font-family: Roboto-Regular;
-  font-size: 13px;
-  line-height: 100%; /* 13px */
-  width: 90px;
-}
-.scan-step-2 .type-gr .inf {
-  color: #222;
-  text-align: right;
-  font-family: Roboto-Regular;
-  font-size: 13px;
-  line-height: 130%; /* 13px */
-}
-
-.btn-sc-fixed {
-  width: 100%;
-  padding: 10px 20px 30px 20px;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 999;
-  border-top: 1px solid #efefef;
-}
-.btn-sc-fixed .btn-sc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 11px 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  border-radius: 8px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  text-align: center;
-  font-family: Roboto-Bold;
-  font-size: 25.809px;
-  line-height: 100%; /* 25.809px */
-}
-.btn-sc-fixed .btn-sc.confirm {
-  background: #7367f0;
-}
-.btn-sc-fixed .btn-sc.cancel {
-  background: #ea5455;
 }
 
 .table-user-group .role.adm, .table-bh .role.adm {
@@ -5769,17 +4871,12 @@ html body .app-content.content:has(.scan-content_wrapper) {
   margin-right: 0.75rem;
 }
 .table-user-group .user-info, .table-bh .user-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .table-user-group .user-info .ava-user, .table-bh .user-info .ava-user {
   margin-right: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
@@ -5793,29 +4890,22 @@ html body .app-content.content:has(.scan-content_wrapper) {
      object-fit: cover;
 }
 .table-user-group .user-info .name-user, .table-bh .user-info .name-user {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   line-height: 101%;
   font-family: Roboto-Regular;
   font-size: 0.9rem;
   color: #111111;
 }
 .table-user-group .menu-total-product, .table-bh .menu-total-product {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .table-user-group .menu-total-product .ava, .table-bh .menu-total-product .ava {
   width: 40px;
   height: 40px;
   overflow: hidden;
   margin-right: 12px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .table-user-group .menu-total-product .ava img, .table-bh .menu-total-product .ava img {
   width: 100%;
@@ -5846,18 +4936,13 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 
 .filter-funcs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 .filter-funcs .cancel-filter {
   width: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 .filter-funcs .cancel-filter .icn {
@@ -5871,18 +4956,13 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 .filter-funcs .btn-filter-action {
   width: calc(100% - 115px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .btn-filter-adv {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .btn-filter-adv .txt {
   color: #111111;
@@ -5929,17 +5009,10 @@ html body .app-content.content:has(.scan-content_wrapper) {
 .btn-frame {
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .btn-frame svg {
   width: 20px;
@@ -5952,29 +5025,19 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 
 .list-food-voucher {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .list-food-voucher .food-card-voucher {
   border-bottom: 1px solid #EFEFEF;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   padding: 12px 0;
 }
 .list-food-voucher .thumb-food {
   width: 40px;
   height: 40px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .list-food-voucher .thumb-food img {
   border-radius: 5px;
@@ -5987,14 +5050,11 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 .list-food-voucher .name-food {
   padding: 0 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #111;
   font-family: Roboto-Regular;
   font-size: 14px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   line-height: 140%; /* 19.6px */
 }
 
@@ -6007,13 +5067,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 
 .voucher-note {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: #111;
   font-family: Roboto-Regular;
   font-size: 13px;
@@ -6042,8 +5097,7 @@ html body .app-content.content:has(.scan-content_wrapper) {
 .info-voucher-total {
   background: #FFFFFF;
   border: 1.5px solid #7367F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
 }
 .info-voucher-total .title-voucher {
@@ -6062,8 +5116,6 @@ html body .app-content.content:has(.scan-content_wrapper) {
   margin-bottom: 15px;
 }
 .info-voucher-total .voucher-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 13px;
   line-height: 150%;
@@ -6076,29 +5128,21 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 .info-voucher-total .voucher-total .type {
   width: 35%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 17px;
   font-family: Roboto-Medium;
 }
 .info-voucher-total .voucher-total .text {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .info-voucher-total .voucher-total .text span {
   color: #7367F0;
 }
 
 .input-slink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   width: 100%;
   padding: 0 1rem;
   font-size: 1rem;
@@ -6111,18 +5155,14 @@ html body .app-content.content:has(.scan-content_wrapper) {
      -moz-appearance: none;
           appearance: none;
   border-radius: 0.357rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   position: relative;
 }
 .input-slink .url-txt {
   position: absolute;
   left: 0.571rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 1;
 }
 .input-slink input.form-short-link {
@@ -6130,27 +5170,14 @@ html body .app-content.content:has(.scan-content_wrapper) {
   border: none;
   background: transparent;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-shadow: none;
+  flex-grow: 1;
+  box-sizing: border-box;
   position: relative;
   z-index: 2;
   color: #111;
 }
-.input-slink input.form-short-link::-webkit-input-placeholder {
-  color: #666;
-}
 .input-slink input.form-short-link::-moz-placeholder {
-  color: #666;
-}
-.input-slink input.form-short-link:-ms-input-placeholder {
-  color: #666;
-}
-.input-slink input.form-short-link::-ms-input-placeholder {
   color: #666;
 }
 .input-slink input.form-short-link::placeholder {
@@ -6158,10 +5185,6 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 .input-slink .val-txt {
   color: #111;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-shrink: 0;
   display: flex;
-}
-/*# sourceMappingURL=stye.css.map */
+}/*# sourceMappingURL=stye.css.map */
