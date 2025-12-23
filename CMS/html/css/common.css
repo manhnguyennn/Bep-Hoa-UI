@@ -1167,7 +1167,7 @@ body i {
   cursor: default;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .main-menu.menu-shadow.menu-fixed {
     height: auto;
     border-right: none;
