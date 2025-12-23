@@ -1191,6 +1191,12 @@ body i {
     height: 100%;
     width: 100%;
   }
+  .main-menu.menu-shadow.menu-fixed .navbar-header .navbar-brand .brand-logo img {
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .main-menu.menu-shadow.menu-fixed .navbar-header .navbar-brand .brand-text {
     padding-left: 6px;
   }

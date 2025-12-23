@@ -1219,15 +1219,19 @@ body {
             height: 100%;
             width: 100%;
           }
-        
-        }
-          .brand-text {
-            padding-left: 6px;
-            h4 {
-              margin-bottom: 0;
-              font-size: 18px;
-            }
+          img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
           }
+        }
+        .brand-text {
+          padding-left: 6px;
+          h4 {
+            margin-bottom: 0;
+            font-size: 18px;
+          }
+        }
       }
     }
     .main-menu-content {
