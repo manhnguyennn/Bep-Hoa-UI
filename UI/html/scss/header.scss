@@ -953,10 +953,11 @@
   .bh-main-header {
     &.tet26 {
       background-color: transparent;
-      background-image: url(../web_images/bgt26.png);
+      background-image: url('https://image.bephoa.vn/data/web/bgt26.png');
       background-size: 1px 100%;
       background-repeat: repeat-x;
       background-position: left top;
+      
       .searchBox .searchBtn .icn svg path {
         stroke: #c40d29;
       }
