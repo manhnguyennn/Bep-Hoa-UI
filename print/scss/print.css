@@ -80,15 +80,15 @@ body {
   margin-bottom: 5px;
 }
 .body-bill .total-bill .code {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .body-bill .total-bill .date {
-  font-size: 12px;
+  font-size: 14px;
 }
 .body-bill .qr-code {
-  width: 60px;
+  width: 90px;
 }
 .body-bill .qr-code img {
   width: 100%;

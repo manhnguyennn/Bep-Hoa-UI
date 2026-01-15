@@ -1753,7 +1753,7 @@ Generated using nucleoapp.com
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #B5292F;
+  background: #b5292f;
   overflow: hidden;
   -webkit-transition: 0.15s;
   transition: 0.15s;
@@ -1764,7 +1764,7 @@ Generated using nucleoapp.com
 .noti-header .noti-content {
   padding: 8px 20px;
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-family: BVNPro-Medium;
   font-size: 12.5px;
@@ -1812,8 +1812,8 @@ Generated using nucleoapp.com
 }
 
 .bh-main-header {
-  -webkit-box-shadow: inset 0px -1px 0px #E6E6E6;
-          box-shadow: inset 0px -1px 0px #E6E6E6;
+  -webkit-box-shadow: inset 0px -1px 0px #e6e6e6;
+          box-shadow: inset 0px -1px 0px #e6e6e6;
   position: sticky;
   top: 0;
   left: 0;
@@ -1951,7 +1951,7 @@ Generated using nucleoapp.com
           box-sizing: border-box;
 }
 .bh-main-header .searchBox .search-suggest .search-link:hover {
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 .bh-main-header .searchBox .search-suggest .sg-content {
   display: -webkit-box;
@@ -1970,7 +1970,7 @@ Generated using nucleoapp.com
           align-items: flex-start;
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background: #FFF;
+  background: #fff;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
@@ -2014,7 +2014,7 @@ Generated using nucleoapp.com
 .bh-main-header .searchBox .searchArea input {
   border-radius: 999px;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  background: #F9F9F9;
+  background: #f9f9f9;
   font-size: 14px;
   line-height: 40px;
   color: #222222;
@@ -2052,7 +2052,7 @@ Generated using nucleoapp.com
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #B5292F;
+  background: #b5292f;
   border-radius: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2065,7 +2065,7 @@ Generated using nucleoapp.com
           align-items: center;
   line-height: 100%;
   font-family: BVNPro-Regular;
-  color: #FFFFFF;
+  color: #ffffff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 22px;
@@ -2106,7 +2106,7 @@ Generated using nucleoapp.com
   cursor: pointer;
 }
 .bh-main-header .src-web:hover .txt {
-  color: #B5292F;
+  color: #b5292f;
 }
 .bh-main-header .src-web .icn {
   width: 16px;
@@ -2134,7 +2134,7 @@ Generated using nucleoapp.com
           align-items: center;
 }
 .bh-main-header .menu-link-fix:hover .txt {
-  color: #B5292F;
+  color: #b5292f;
 }
 .bh-main-header .menu-link-fix .icn {
   width: 16px;
@@ -2165,9 +2165,9 @@ Generated using nucleoapp.com
   visibility: visible;
 }
 .bh-main-header .list-menu-expand .menu-parent {
-  border-bottom: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
   -webkit-transition: max-height 0.3s;
   transition: max-height 0.3s;
   padding: 15px 0;
@@ -2191,7 +2191,7 @@ Generated using nucleoapp.com
 }
 .bh-main-header .list-menu-expand .menu-parent.active {
   height: 600px;
-  border-right: 0 solid #D9D9D9;
+  border-right: 0 solid #d9d9d9;
   max-height: calc(100vh - 110px);
 }
 .bh-main-header .list-menu-expand .menu-parent::-webkit-scrollbar {
@@ -2227,10 +2227,12 @@ Generated using nucleoapp.com
           align-items: center;
 }
 .bh-main-header .list-menu-expand .menu-parent-link:hover, .bh-main-header .list-menu-expand .menu-parent-link.active {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
-.bh-main-header .list-menu-expand .menu-parent-link:hover .icn, .bh-main-header .list-menu-expand .menu-parent-link:hover .txt, .bh-main-header .list-menu-expand .menu-parent-link.active .icn, .bh-main-header .list-menu-expand .menu-parent-link.active .txt {
-  color: #B5292F;
+.bh-main-header .list-menu-expand .menu-parent-link:hover .icn,
+.bh-main-header .list-menu-expand .menu-parent-link:hover .txt, .bh-main-header .list-menu-expand .menu-parent-link.active .icn,
+.bh-main-header .list-menu-expand .menu-parent-link.active .txt {
+  color: #b5292f;
 }
 .bh-main-header .list-menu-expand .menu-parent-link .icn {
   width: 18px;
@@ -2250,8 +2252,8 @@ Generated using nucleoapp.com
   display: block;
 }
 .bh-main-header .list-menu-expand .menu-child {
-  border-bottom: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
   -webkit-transition: max-width 0.3s;
   transition: max-width 0.3s;
   max-width: 0;
@@ -2260,7 +2262,7 @@ Generated using nucleoapp.com
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 20px 0;
-  background: #F5F5F5;
+  background: #f5f5f5;
   overflow-y: overlay;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2309,12 +2311,12 @@ Generated using nucleoapp.com
   line-height: 130%;
 }
 .bh-main-header .list-menu-expand .child-item:hover {
-  color: #B5292F;
+  color: #b5292f;
 }
 
 @media screen and (max-width: 760px) {
   .noti-header {
-    background: #8D2327;
+    background: #8d2327;
   }
   .bh-main-header {
     -webkit-box-shadow: none;
@@ -2401,7 +2403,7 @@ Generated using nucleoapp.com
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    background: #B5292F;
+    background: #b5292f;
   }
   .bh-main-header .menu-mob .header-mm .close-menu {
     width: 24px;
@@ -2413,7 +2415,7 @@ Generated using nucleoapp.com
     left: 20px;
   }
   .bh-main-header .menu-mob .header-mm .heading {
-    color: #FFE6CE;
+    color: #ffe6ce;
     text-align: center;
     font-size: 15px;
     font-family: BVNPro-Medium;
@@ -2437,7 +2439,7 @@ Generated using nucleoapp.com
     gap: 12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-bottom: 1px solid #EDEDED;
+    border-bottom: 1px solid #ededed;
   }
   .bh-main-header .menu-mob .nav-parent .icn {
     width: 20px;
@@ -2482,7 +2484,7 @@ Generated using nucleoapp.com
     gap: 12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-bottom: 1px solid #EDEDED;
+    border-bottom: 1px solid #ededed;
   }
   .bh-main-header .menu-mob .menu-box .nav-link-mob.active .pm-icn .plus {
     display: none;
@@ -2516,7 +2518,8 @@ Generated using nucleoapp.com
     position: relative;
     display: block;
   }
-  .bh-main-header .menu-mob .menu-box .nav-link-mob .pm-icn .plus, .bh-main-header .menu-mob .menu-box .nav-link-mob .pm-icn .minus {
+  .bh-main-header .menu-mob .menu-box .nav-link-mob .pm-icn .plus,
+  .bh-main-header .menu-mob .menu-box .nav-link-mob .pm-icn .minus {
     width: 100%;
     position: absolute;
     top: 0;
@@ -2538,7 +2541,7 @@ Generated using nucleoapp.com
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
   .bh-main-header .menu-mob .menu-box .list-nav-child .nav-child {
     color: #222;
@@ -2613,7 +2616,7 @@ Generated using nucleoapp.com
     margin: 0;
   }
   .bh-main-header .searchBox .searchBtn .icn svg path {
-    stroke: #FFE6CE;
+    stroke: #ffe6ce;
   }
   .bh-main-header .searchBox .searchBtn .txt {
     display: none;
@@ -2662,7 +2665,7 @@ Generated using nucleoapp.com
     width: 87px;
     height: 30px;
     font-size: 13px;
-    background: #78614B;
+    background: #78614b;
   }
   .bh-main-header .searchBox .searchSubmit .icn {
     display: none;
@@ -2678,7 +2681,7 @@ Generated using nucleoapp.com
     border: none;
     max-height: 350px;
     border-bottom: 0.7px solid rgba(0, 0, 0, 0.15);
-    background: #FFF;
+    background: #fff;
     -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   }
@@ -2688,25 +2691,28 @@ Generated using nucleoapp.com
     width: 14px;
     height: 14px;
   }
-  .bh-main-header.mid-autumn {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FAEBDE), to(#FFC6A3));
-    background: linear-gradient(180deg, #FAEBDE 0%, #FFC6A3 100%);
+  .bh-main-header.tet26 {
+    background-color: transparent;
+    background-image: url(../web_images/bgt26.png);
+    background-size: 1px 100%;
+    background-repeat: repeat-x;
+    background-position: left top;
   }
-  .bh-main-header.mid-autumn .searchBox .searchBtn .icn svg path {
-    stroke: #B5292F;
+  .bh-main-header.tet26 .searchBox .searchBtn .icn svg path {
+    stroke: #c40d29;
   }
-  .bh-main-header.mid-autumn .burger i {
-    background: #B5292F;
+  .bh-main-header.tet26 .burger i {
+    background: #c40d29;
   }
   .bh-main-header.xmas24 {
     background: #f0223d;
   }
   .bh-main-header.xmas25 {
-    background: #C3181D;
+    background: #c3181d;
   }
   .bh-main-header.tet24 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(-16.41%, #FDFFEA), to(#FFC1EA));
-    background: linear-gradient(180deg, #FDFFEA -16.41%, #FFC1EA 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-16.41%, #fdffea), to(#ffc1ea));
+    background: linear-gradient(180deg, #fdffea -16.41%, #ffc1ea 100%);
   }
   .bh-main-header.tet24 .searchBox .searchBtn .icn svg path {
     stroke: #e84b60;
@@ -2718,10 +2724,10 @@ Generated using nucleoapp.com
     background: #fff;
   }
   .bh-main-header.tt25 .searchBox .searchBtn .icn svg path {
-    stroke: #B5292F;
+    stroke: #b5292f;
   }
   .bh-main-header.tt25 .burger i {
-    background: #B5292F;
+    background: #b5292f;
   }
 }
 .bh-footer {
