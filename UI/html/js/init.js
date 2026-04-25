@@ -109,6 +109,62 @@
 
         }
     },
+    news: function () {
+        // Dropdown change location
+
+        $('.address-store').addClass('disable');
+
+        let me = this;
+
+        if (me.windowW > 800) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+        } else {
+            $(".btnPagination.btnPrev").insertBefore(".nf-left");
+
+        }
+    },
+
+    newsdetail: function () {
+        // Dropdown change location
+
+        $('.address-store').addClass('disable');
+
+        let me = this;
+
+        if (me.windowW > 800) {
+            $(window).scroll(function () {
+                let top = $(window).scrollTop();
+                let ruler = $('#trigger-header').offset().top;
+
+                if (top > ruler) {
+                    $('.bh-main-header').addClass('active');
+                } else {
+                    $('.bh-main-header').removeClass('active');
+                }
+            });
+
+            $(".food-card").each(function () {
+                $(this).find(".voucher").insertAfter($(this).find(".status"));
+            });
+
+        } else {
+
+        }
+    },
     listCate: function () {
         // Dropdown change location
 
@@ -153,7 +209,7 @@
                 autoplay: {
                     delay: 2000,
                     disableOnInteraction: true,
-                     allowTouchMove: false,
+                    allowTouchMove: false,
                 },
                 freeMode: true,
                 centeredSlides: true,
