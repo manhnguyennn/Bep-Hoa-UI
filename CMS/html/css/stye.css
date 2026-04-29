@@ -218,7 +218,8 @@ body i {
 .header-fixed-top .user-info .ava img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -255,6 +256,7 @@ body i {
 }
 .main-menu-content::-webkit-scrollbar-track {
   border-radius: 6px;
+  -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
 .bh-cms-wrapper .table-responsive {
@@ -315,16 +317,6 @@ body i {
   display: flex;
   align-items: center;
 }
-.bh-cms-wrapper .filter-table .filter {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  line-height: 100%;
-  font-family: Roboto-Regular;
-  color: #111111;
-  opacity: 0.4;
-}
 .bh-cms-wrapper .filter-table .filter + .filter {
   margin-left: 1rem;
 }
@@ -334,6 +326,16 @@ body i {
 }
 .bh-cms-wrapper .filter-table .filter.active .txt, .bh-cms-wrapper .filter-table .filter:hover .txt {
   font-family: Roboto-Medium;
+}
+.bh-cms-wrapper .filter-table .filter {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  line-height: 100%;
+  font-family: Roboto-Regular;
+  color: #111111;
+  opacity: 0.4;
 }
 .bh-cms-wrapper .filter-table .filter .icn {
   margin-left: 5px;
@@ -354,11 +356,6 @@ body i {
   color: var(--colorRed);
 }
 
-.selectBox {
-  background: #fff;
-  position: relative;
-  cursor: pointer;
-}
 .selectBox.active .list-select-type,
 .selectBox.active .list-selectBox {
   opacity: 1;
@@ -376,6 +373,11 @@ body i {
   border: 1px solid #7367f0;
   border-radius: 5px 5px 0px 0px;
   color: rgb(0, 0, 0);
+}
+.selectBox {
+  background: #fff;
+  position: relative;
+  cursor: pointer;
 }
 .selectBox .selected {
   height: 40px;
@@ -429,14 +431,6 @@ body i {
   font-family: Roboto-Regular;
   color: #111111;
 }
-.selectBox .selected .icn,
-.selectBox .select-type .icn {
-  flex-shrink: 0;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
 .selectBox .selected .icn.purple,
 .selectBox .select-type .icn.purple {
   background: var(--colorPurple);
@@ -456,6 +450,14 @@ body i {
 .selectBox .selected .icn.green,
 .selectBox .select-type .icn.green {
   background: var(--colorGreen);
+}
+.selectBox .selected .icn,
+.selectBox .select-type .icn {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .selectBox .list-select-type {
   opacity: 0;
@@ -544,6 +546,9 @@ body i {
   line-height: 16px;
   color: #111111;
 }
+.selectBox .list-selectBox input::-moz-placeholder {
+  opacity: 0.3;
+}
 .selectBox .list-selectBox input::placeholder {
   opacity: 0.3;
 }
@@ -571,6 +576,10 @@ body i {
   color: #fff;
 }
 
+.value-btn:hover .text {
+  color: #7367f0;
+  font-family: Roboto-Medium;
+}
 .value-btn {
   width: 100%;
   display: flex;
@@ -578,10 +587,6 @@ body i {
   box-sizing: border-box;
   font-size: 13px;
   line-height: 14px;
-}
-.value-btn:hover .text {
-  color: #7367f0;
-  font-family: Roboto-Medium;
 }
 .value-btn .total {
   flex-grow: 1;
@@ -604,14 +609,14 @@ body i {
   color: #ff9f43;
 }
 
+.btn-close-modal:hover {
+  opacity: 1;
+}
 .btn-close-modal {
   font-family: Nucleo;
   font-size: 1rem;
   color: #555;
   opacity: 0.5;
-}
-.btn-close-modal:hover {
-  opacity: 1;
 }
 
 .modal-header {
@@ -760,6 +765,13 @@ body i {
   font-weight: normal;
 }
 
+.btn-pin.active, .btn-pin:hover {
+  background: #ff9f43;
+  border: 1px solid #ff9f43;
+}
+.btn-pin.active span, .btn-pin:hover span {
+  color: #ffffff;
+}
 .btn-pin {
   padding: 0.786rem 1rem;
   transition: 0.3s;
@@ -771,13 +783,6 @@ body i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.btn-pin.active, .btn-pin:hover {
-  background: #ff9f43;
-  border: 1px solid #ff9f43;
-}
-.btn-pin.active span, .btn-pin:hover span {
-  color: #ffffff;
 }
 .btn-pin span {
   display: block;
@@ -838,6 +843,9 @@ body i {
   line-height: 1.1rem;
   flex-grow: 1;
 }
+.input-group.bh-seacrh .bh-input-search::-moz-placeholder {
+  opacity: 0.5;
+}
 .input-group.bh-seacrh .bh-input-search::placeholder {
   opacity: 0.5;
 }
@@ -856,9 +864,6 @@ body i {
   height: 100vh;
   box-sizing: border-box;
   right: -300px;
-  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
   transition: opacity 0.3s linear, right 0.3s ease-out;
   margin: 0 0 0 auto;
 }
@@ -1018,6 +1023,10 @@ body i {
   cursor: pointer;
 }
 
+.quantity-number.empty {
+  color: #ea5455;
+  font-family: Roboto-Bold;
+}
 .quantity-number {
   color: #111;
   display: block;
@@ -1027,10 +1036,6 @@ body i {
   font-style: normal;
   font-weight: 400;
   line-height: 101%; /* 13.13px */
-}
-.quantity-number.empty {
-  color: #ea5455;
-  font-family: Roboto-Bold;
 }
 
 .disable-action {
@@ -1075,7 +1080,8 @@ body i {
   .main-menu.menu-shadow.menu-fixed .navbar-header .navbar-brand .brand-logo img {
     width: 100%;
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .main-menu.menu-shadow.menu-fixed .navbar-header .navbar-brand .brand-text {
     padding-left: 6px;
@@ -2253,6 +2259,10 @@ Generated using nucleoapp.com
   font-family: Nucleo;
   color: #777;
 }
+.manage-systems .data-user + .data-user {
+  border-top: 0;
+  border-radius: 0px 0px 5px 5px;
+}
 .manage-systems .data-user {
   background: #FFFFFF;
   border: 1px solid #EBE9F1;
@@ -2260,10 +2270,6 @@ Generated using nucleoapp.com
   border-radius: 5px 5px 0px 0px;
   font-size: 0.9rem;
   padding: 0.9rem 0.6rem;
-}
-.manage-systems .data-user + .data-user {
-  border-top: 0;
-  border-radius: 0px 0px 5px 5px;
 }
 .manage-systems .data-user .txt {
   color: var(--colorPurple);
@@ -2291,12 +2297,12 @@ Generated using nucleoapp.com
   color: var(--colorPurple);
   padding: 0 1rem;
 }
-.modal-manage-group .modal-body .group-roles {
-  margin-bottom: 1rem;
-}
 .modal-manage-group .modal-body .group-roles + .group-roles {
   padding-top: 1.5rem;
   border-top: 1px solid #EFEFEF;
+}
+.modal-manage-group .modal-body .group-roles {
+  margin-bottom: 1rem;
 }
 .modal-manage-group .modal-body .roles-row + .roles-row {
   margin-top: 1rem;
@@ -2387,6 +2393,11 @@ Generated using nucleoapp.com
   padding: 0;
   list-style-type: none;
 }
+.list-icon .icn-btn:hover {
+  border-radius: 5px;
+  border: 1px solid #7367F0;
+  background: #FFF;
+}
 .list-icon .icn-btn {
   width: 100%;
   height: 3rem;
@@ -2401,12 +2412,12 @@ Generated using nucleoapp.com
   font-size: 24px;
   color: #222;
 }
-.list-icon .icn-btn:hover {
+
+.popup-icon-btn:hover {
   border-radius: 5px;
   border: 1px solid #7367F0;
   background: #FFF;
 }
-
 .popup-icon-btn {
   margin-right: 1rem;
   height: auto;
@@ -2422,11 +2433,6 @@ Generated using nucleoapp.com
   font-size: 24px;
   color: #222;
 }
-.popup-icon-btn:hover {
-  border-radius: 5px;
-  border: 1px solid #7367F0;
-  background: #FFF;
-}
 
 .cateBox {
   background: #F8F8F8;
@@ -2437,6 +2443,9 @@ Generated using nucleoapp.com
   gap: 15px;
 }
 
+.list-cate-child.active {
+  max-height: 1000px;
+}
 .list-cate-child {
   margin-bottom: 0;
   transition: all 0.5s;
@@ -2444,9 +2453,6 @@ Generated using nucleoapp.com
   overflow: hidden;
   padding-left: 56px;
   list-style-type: none;
-}
-.list-cate-child.active {
-  max-height: 1000px;
 }
 .list-cate-child li {
   padding-top: 1rem;
@@ -2468,17 +2474,6 @@ Generated using nucleoapp.com
   padding-right: 1rem;
   box-sizing: border-box;
 }
-.upload-food .upload-images {
-  background: #F8F8F8;
-  border: 1px solid #D8D6DE;
-  box-sizing: border-box;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 70px 0;
-}
 .upload-food .upload-images.uploaded {
   background: none;
   padding: 0;
@@ -2489,6 +2484,17 @@ Generated using nucleoapp.com
 }
 .upload-food .upload-images.upload-banner {
   padding: 25px 0;
+}
+.upload-food .upload-images {
+  background: #F8F8F8;
+  border: 1px solid #D8D6DE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
 }
 .upload-food .upload-images .upload-btn {
   width: 177px;
@@ -2553,21 +2559,14 @@ Generated using nucleoapp.com
   height: 100%;
   z-index: 1;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .upload-food .list-images li {
   list-style-type: none;
 }
 .upload-food .list-images .images-box {
   margin-bottom: 10px;
-  background: #F8F8F8;
-  border: 1px solid #D8D6DE;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .upload-food .list-images .images-box.active .choose-ava {
   background: #7367F0;
@@ -2579,6 +2578,16 @@ Generated using nucleoapp.com
 .upload-food .list-images .images-box.active .choose-ava .txt {
   color: #ffffff;
 }
+.upload-food .list-images .images-box {
+  background: #F8F8F8;
+  border: 1px solid #D8D6DE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .upload-food .list-images .images-fd {
   width: 90px;
   height: 64px;
@@ -2587,7 +2596,8 @@ Generated using nucleoapp.com
 .upload-food .list-images .images-fd img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 3px;
   display: block;
 }
@@ -2666,10 +2676,6 @@ Generated using nucleoapp.com
 
 .check-store-menu {
   margin-bottom: 2rem;
-  background: #F8F8F8;
-  border: 1.5px solid #F8F8F8;
-  border-radius: 5px;
-  padding: 20px;
 }
 .check-store-menu.active {
   background: #F3FFF9;
@@ -2677,6 +2683,12 @@ Generated using nucleoapp.com
 }
 .check-store-menu.active h5 {
   color: var(--colorGreen);
+}
+.check-store-menu {
+  background: #F8F8F8;
+  border: 1.5px solid #F8F8F8;
+  border-radius: 5px;
+  padding: 20px;
 }
 .check-store-menu h5 {
   color: #111111;
@@ -2686,6 +2698,11 @@ Generated using nucleoapp.com
   margin-top: 12px;
 }
 
+.active-sell.active, .active-sell:hover {
+  border: 2px solid #2DC56D;
+  color: #2DC56D;
+  background: #F3FFF9;
+}
 .active-sell {
   border: 2px solid #f8f8f8;
   display: block;
@@ -2697,12 +2714,12 @@ Generated using nucleoapp.com
   color: #111111;
   box-sizing: border-box;
 }
-.active-sell.active, .active-sell:hover {
-  border: 2px solid #2DC56D;
-  color: #2DC56D;
-  background: #F3FFF9;
-}
 
+.stop-sell.active, .stop-sell:hover {
+  border: 2px solid var(--colorRed);
+  color: var(--colorRed);
+  background: #FFF9F9;
+}
 .stop-sell {
   border: 2px solid #f8f8f8;
   display: block;
@@ -2714,12 +2731,12 @@ Generated using nucleoapp.com
   color: #111111;
   box-sizing: border-box;
 }
-.stop-sell.active, .stop-sell:hover {
-  border: 2px solid var(--colorRed);
-  color: var(--colorRed);
-  background: #FFF9F9;
-}
 
+.select-frame.active, .select-frame:hover {
+  border: 2px solid #2DC56D;
+  color: #2DC56D;
+  background: #F3FFF9;
+}
 .select-frame {
   border: 2px solid #f8f8f8;
   display: block;
@@ -2731,12 +2748,12 @@ Generated using nucleoapp.com
   color: #111111;
   box-sizing: border-box;
 }
-.select-frame.active, .select-frame:hover {
-  border: 2px solid #2DC56D;
-  color: #2DC56D;
-  background: #F3FFF9;
-}
 
+.no-frame.active, .no-frame:hover {
+  border: 2px solid var(--colorRed);
+  color: var(--colorRed);
+  background: #FFF9F9;
+}
 .no-frame {
   border: 2px solid #f8f8f8;
   display: block;
@@ -2748,12 +2765,12 @@ Generated using nucleoapp.com
   color: #111111;
   box-sizing: border-box;
 }
-.no-frame.active, .no-frame:hover {
-  border: 2px solid var(--colorRed);
-  color: var(--colorRed);
-  background: #FFF9F9;
-}
 
+.soon-sell.active, .soon-sell:hover {
+  border: 2px solid #FF9F43;
+  color: #FF9F43;
+  background: #FFF9F3;
+}
 .soon-sell {
   border: 2px solid #f8f8f8;
   box-sizing: border-box;
@@ -2765,12 +2782,11 @@ Generated using nucleoapp.com
   line-height: 100%;
   color: #111111;
 }
-.soon-sell.active, .soon-sell:hover {
-  border: 2px solid #FF9F43;
-  color: #FF9F43;
-  background: #FFF9F3;
-}
 
+.noti-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
 .noti-modal {
   margin: 0;
   opacity: 0;
@@ -2788,10 +2804,6 @@ Generated using nucleoapp.com
   justify-content: center;
   font-size: 13px;
   line-height: 100%;
-}
-.noti-modal.active {
-  opacity: 1;
-  visibility: visible;
 }
 .noti-modal .close-noti {
   position: absolute;
@@ -2890,13 +2902,15 @@ Generated using nucleoapp.com
 .logs-edit .logs-item .text {
   font-size: 13px;
   line-height: 120%;
-  color: #444444;
 }
 .logs-edit .logs-item .text span {
   color: var(--colorPurple);
 }
 .logs-edit .logs-item .text b {
   color: #111;
+}
+.logs-edit .logs-item .text {
+  color: #444444;
 }
 
 .report-food {
@@ -2911,6 +2925,13 @@ Generated using nucleoapp.com
   padding: 0;
   width: 100%;
 }
+.list-data li:nth-child(1) {
+  border-radius: 5px 5px 0 0;
+}
+.list-data li:nth-last-child(1) {
+  border-radius: 0 0 5px 5px;
+  border-bottom: 1px solid #EBE9F1;
+}
 .list-data li {
   padding: 13px 15px;
   list-style-type: none;
@@ -2919,13 +2940,6 @@ Generated using nucleoapp.com
   border-left: 1px solid #EBE9F1;
   border-right: 1px solid #EBE9F1;
   box-sizing: border-box;
-}
-.list-data li:nth-child(1) {
-  border-radius: 5px 5px 0 0;
-}
-.list-data li:nth-last-child(1) {
-  border-radius: 0 0 5px 5px;
-  border-bottom: 1px solid #EBE9F1;
 }
 .list-data .data {
   display: flex;
@@ -2976,10 +2990,10 @@ Generated using nucleoapp.com
   font-size: 14px;
   font-family: Roboto-Regular;
 }
-.countdown-box.active {
+.countdown-box.active input {
   color: #EA5455;
 }
-.countdown-box.active input {
+.countdown-box.active {
   color: #EA5455;
 }
 .countdown-box input {
@@ -3080,13 +3094,16 @@ Generated using nucleoapp.com
   opacity: 0.4;
 }
 
-.tags-customer-list {
-  display: flex;
-}
 .tags-customer-list.unset:before {
   content: "Chưa có";
   color: #666666;
   opacity: 0.4;
+}
+.tags-customer-list {
+  display: flex;
+}
+.tags-customer-list .tags-customer + .tags-customer {
+  margin-left: 6px;
 }
 .tags-customer-list .tags-customer {
   background: rgba(115, 103, 240, 0.08);
@@ -3100,9 +3117,6 @@ Generated using nucleoapp.com
   font-size: 12px;
   line-height: 140%;
   color: #7367F0;
-}
-.tags-customer-list .tags-customer + .tags-customer {
-  margin-left: 6px;
 }
 
 .info-customer {
@@ -3140,20 +3154,13 @@ Generated using nucleoapp.com
 .list-address-cus {
   padding: 0;
 }
-.list-address-cus li {
-  list-style-type: none;
-}
 .list-address-cus li + li {
   margin-top: 10px;
 }
-
-.address-cus {
-  padding: 10px 15px;
-  background: #F8F8F8;
-  border: 1.5px solid #F8F8F8;
-  border-radius: 5px;
-  font-size: 13px;
+.list-address-cus li {
+  list-style-type: none;
 }
+
 .address-cus.active {
   border: 1.5px solid #7367F0;
   background: rgba(115, 103, 240, 0.08);
@@ -3164,8 +3171,18 @@ Generated using nucleoapp.com
 .address-cus.active .userBox .addr-stt {
   display: flex;
 }
+.address-cus {
+  padding: 10px 15px;
+  background: #F8F8F8;
+  border: 1.5px solid #F8F8F8;
+  border-radius: 5px;
+  font-size: 13px;
+}
 .address-cus .str {
   font-family: Roboto-Medium;
+}
+.address-cus .userBox .use-addr:hover {
+  opacity: 1;
 }
 .address-cus .userBox .use-addr {
   font-size: 14px;
@@ -3178,9 +3195,6 @@ Generated using nucleoapp.com
   box-sizing: border-box;
   border-radius: 5px;
   opacity: 0.5;
-}
-.address-cus .userBox .use-addr:hover {
-  opacity: 1;
 }
 .address-cus .userBox .addr-stt {
   display: none;
@@ -3282,14 +3296,14 @@ Generated using nucleoapp.com
 .payment-stt .status-icn {
   margin-bottom: 10px;
 }
+.payment-stt .cash-back.active {
+  display: block;
+}
 .payment-stt .cash-back {
   padding-left: 16px;
   font-size: 10px;
   color: #E19D9D;
   display: none;
-}
-.payment-stt .cash-back.active {
-  display: block;
 }
 
 .arrange-order {
@@ -3324,22 +3338,6 @@ Generated using nucleoapp.com
   box-shadow: inset 0px -1px 0px #EFEFEF;
   padding: 0 21px;
 }
-.table-booking .filter-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 15px 0;
-  font-size: 14px;
-  line-height: 100%;
-  font-family: Roboto-Regular;
-  color: #111111;
-  opacity: 0.4;
-}
-.table-booking .filter-btn.active, .table-booking .filter-btn:hover {
-  transition: all 0.15s;
-  opacity: 1;
-}
 .table-booking .filter-btn.active .txt, .table-booking .filter-btn:hover .txt {
   font-family: Roboto-Medium;
 }
@@ -3353,9 +3351,25 @@ Generated using nucleoapp.com
   content: "";
   position: absolute;
 }
+.table-booking .filter-btn.active, .table-booking .filter-btn:hover {
+  transition: all 0.15s;
+  opacity: 1;
+}
 .table-booking .filter-btn.active .count {
   color: #7367F0;
   display: block;
+}
+.table-booking .filter-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: Roboto-Regular;
+  color: #111111;
+  opacity: 0.4;
 }
 .table-booking .filter-btn .txt {
   display: block;
@@ -3639,11 +3653,11 @@ Generated using nucleoapp.com
   width: calc((100% - 112px) / 5);
 }
 
-.cart-order-list .cart-total {
-  display: flex;
-}
 .cart-order-list .cart-total + .cart-total {
   margin-top: 15px;
+}
+.cart-order-list .cart-total {
+  display: flex;
 }
 .cart-order-list .count {
   width: 32px;
@@ -3711,11 +3725,11 @@ Generated using nucleoapp.com
   font-size: 13px;
 }
 
-.order-form-body {
-  padding: 20px;
-}
 .order-form-body + .order-form-body {
   border-top: 1px solid #EFEFEF;
+}
+.order-form-body {
+  padding: 20px;
 }
 .order-form-body .price-bill {
   display: flex;
@@ -3767,6 +3781,9 @@ Generated using nucleoapp.com
   box-sizing: border-box;
   border-radius: 5px;
 }
+.order-note-textarea::-moz-placeholder {
+  opacity: 0.3;
+}
 .order-note-textarea::placeholder {
   opacity: 0.3;
 }
@@ -3782,11 +3799,11 @@ Generated using nucleoapp.com
   position: relative;
   color: #111111;
 }
-.address-manage-oder .addr-total {
-  display: flex;
-}
 .address-manage-oder .addr-total + .addr-total {
   margin-top: 5px;
+}
+.address-manage-oder .addr-total {
+  display: flex;
 }
 .address-manage-oder .type {
   width: 107px;
@@ -3949,19 +3966,6 @@ Generated using nucleoapp.com
   color: #fff;
 }
 
-.btn-order-uncheck {
-  transition: 0.2s;
-  border: 1.5px solid #F8F8F8;
-  background: #F8F8F8;
-  box-sizing: border-box;
-  height: 38px;
-  width: 100%;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #111111;
-}
 .btn-order-uncheck.active, .btn-order-uncheck:hover {
   border: 1.5px solid #EA5455;
   font-family: Roboto-Medium;
@@ -3975,8 +3979,7 @@ Generated using nucleoapp.com
   border: 1.5px solid #F8F8F8;
   color: #111111;
 }
-
-.btn-order-check {
+.btn-order-uncheck {
   transition: 0.2s;
   border: 1.5px solid #F8F8F8;
   background: #F8F8F8;
@@ -3989,6 +3992,7 @@ Generated using nucleoapp.com
   justify-content: center;
   color: #111111;
 }
+
 .btn-order-check.active, .btn-order-check:hover {
   background: #F3FFF9;
   border: 1.5px solid #28C76F;
@@ -4003,8 +4007,7 @@ Generated using nucleoapp.com
   border: 1.5px solid #F8F8F8;
   color: #111111;
 }
-
-.btn-order-df-check {
+.btn-order-check {
   transition: 0.2s;
   border: 1.5px solid #F8F8F8;
   background: #F8F8F8;
@@ -4017,6 +4020,7 @@ Generated using nucleoapp.com
   justify-content: center;
   color: #111111;
 }
+
 .btn-order-df-check.active, .btn-order-df-check:hover {
   border: 1.5px solid #111;
   font-family: Roboto-Medium;
@@ -4027,6 +4031,19 @@ Generated using nucleoapp.com
 }
 .btn-order-df-check[disabled].active, .btn-order-df-check[disabled]:hover {
   border: 1.5px solid #F8F8F8;
+  color: #111111;
+}
+.btn-order-df-check {
+  transition: 0.2s;
+  border: 1.5px solid #F8F8F8;
+  background: #F8F8F8;
+  box-sizing: border-box;
+  height: 38px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #111111;
 }
 
@@ -4058,14 +4075,14 @@ Generated using nucleoapp.com
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+.order-bill-total .bill-total + .bill-total {
+  margin-top: 5px;
+}
 .order-bill-total .bill-total {
   display: flex;
   font-size: 13px;
   line-height: 150%;
   color: #111111;
-}
-.order-bill-total .bill-total + .bill-total {
-  margin-top: 5px;
 }
 .order-bill-total .bill-total .type {
   width: 110px;
@@ -4137,6 +4154,9 @@ Generated using nucleoapp.com
   color: #111;
   outline: none;
 }
+.inputCreateBill .inputCB input::-moz-placeholder {
+  color: #666;
+}
 .inputCreateBill .inputCB input::placeholder {
   color: #666;
 }
@@ -4170,6 +4190,9 @@ Generated using nucleoapp.com
   color: #111;
   outline: none;
   border-radius: 5px 5px 0px 0px;
+}
+.input-tools .inputCB input::-moz-placeholder {
+  color: #666;
 }
 .input-tools .inputCB input::placeholder {
   color: #666;
@@ -4240,6 +4263,9 @@ Generated using nucleoapp.com
   position: relative;
   overflow: hidden;
 }
+.form-search-food .form-input-search input:focus {
+  border: 1px solid #7367F0;
+}
 .form-search-food .form-input-search input {
   border-radius: 5px 5px 0px 0px;
   border: 1px solid #D8D6DE;
@@ -4250,8 +4276,8 @@ Generated using nucleoapp.com
   line-height: 16px;
   color: #111111;
 }
-.form-search-food .form-input-search input:focus {
-  border: 1px solid #7367F0;
+.form-search-food .form-input-search input::-moz-placeholder {
+  opacity: 0.3;
 }
 .form-search-food .form-input-search input::placeholder {
   opacity: 0.3;
@@ -4265,6 +4291,12 @@ Generated using nucleoapp.com
   transform: translateY(-50%);
   display: block;
 }
+.form-search-food .list-food-search::-webkit-scrollbar {
+  width: 6px;
+}
+.form-search-food .list-food-search::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
 .form-search-food .list-food-search {
   height: 351px;
   overflow-y: scroll;
@@ -4276,17 +4308,11 @@ Generated using nucleoapp.com
   box-sizing: border-box;
   border-radius: 0 0 5px 5px;
 }
-.form-search-food .list-food-search::-webkit-scrollbar {
-  width: 6px;
-}
-.form-search-food .list-food-search::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+.form-search-food .list-food-search li:hover {
+  background: #F8F8F8;
 }
 .form-search-food .list-food-search li {
   list-style-type: none;
-}
-.form-search-food .list-food-search li:hover {
-  background: #F8F8F8;
 }
 .form-search-food .food-link {
   display: flex;
@@ -4373,11 +4399,13 @@ Generated using nucleoapp.com
 }
 .add-foodBox .number-order .number-btn {
   opacity: 0.3;
-  width: 28px;
-  display: block;
 }
 .add-foodBox .number-order .number-btn.active {
   opacity: 1;
+}
+.add-foodBox .number-order .number-btn {
+  width: 28px;
+  display: block;
 }
 .add-foodBox .number-order .number-btn svg {
   width: 100%;
@@ -4400,19 +4428,19 @@ Generated using nucleoapp.com
   text-align: center;
   justify-content: center;
 }
-.add-foodBox .form-opt {
-  display: block;
-}
 .add-foodBox .form-opt + .form-opt {
   padding-top: 15px;
   margin-top: 15px;
   border-top: 1px solid #EFEFEF;
 }
-.add-foodBox .form-opt .form-check-input[type=checkbox] {
-  margin-top: 0;
+.add-foodBox .form-opt {
+  display: block;
 }
 .add-foodBox .form-opt .form-check-input[type=checkbox]:checked ~ label .txt {
   font-family: Roboto-Medium;
+}
+.add-foodBox .form-opt .form-check-input[type=checkbox] {
+  margin-top: 0;
 }
 .add-foodBox .form-opt label {
   position: relative;
@@ -4456,11 +4484,11 @@ Generated using nucleoapp.com
 .list-addr-saved {
   padding: 0;
 }
-.list-addr-saved li {
-  list-style-type: none;
-}
 .list-addr-saved li + li {
   margin-top: 10px;
+}
+.list-addr-saved li {
+  list-style-type: none;
 }
 .list-addr-saved .addr-saved {
   background: #F8F8F8;
@@ -4501,6 +4529,9 @@ Generated using nucleoapp.com
   color: var(--colorPurple);
   display: none;
 }
+.list-addr-saved .addr-saved .check-addrBox .use-addr:hover {
+  opacity: 1;
+}
 .list-addr-saved .addr-saved .check-addrBox .use-addr {
   opacity: 0.5;
   display: flex;
@@ -4513,13 +4544,7 @@ Generated using nucleoapp.com
   line-height: 101%;
   color: #111111;
 }
-.list-addr-saved .addr-saved .check-addrBox .use-addr:hover {
-  opacity: 1;
-}
 
-.select-address {
-  position: relative;
-}
 .select-address.active .input-select {
   border: 1px solid #7367F0;
   border-radius: 5px 5px 0 0;
@@ -4527,6 +4552,9 @@ Generated using nucleoapp.com
 .select-address.active .list-search-drop {
   opacity: 1;
   visibility: visible;
+}
+.select-address {
+  position: relative;
 }
 .select-address .select-input {
   position: relative;
@@ -4538,6 +4566,10 @@ Generated using nucleoapp.com
   top: 50%;
   transform: translateY(-50%);
   display: block;
+}
+.select-address .input-select:focus {
+  border: 1px solid #7367F0;
+  border-radius: 5px 5px 0 0;
 }
 .select-address .input-select {
   background: #FFFFFF;
@@ -4551,9 +4583,8 @@ Generated using nucleoapp.com
   line-height: 16px;
   color: #111111;
 }
-.select-address .input-select:focus {
-  border: 1px solid #7367F0;
-  border-radius: 5px 5px 0 0;
+.select-address .input-select::-moz-placeholder {
+  color: var(--colorRed);
 }
 .select-address .input-select::placeholder {
   color: var(--colorRed);
@@ -4592,15 +4623,15 @@ Generated using nucleoapp.com
   color: #7367F0;
   display: block;
 }
-.select-address .customers-addr {
-  display: block;
-  padding: 8px 15px;
-}
 .select-address .customers-addr:hover {
   background: #F2F1FF;
 }
 .select-address .customers-addr:hover .name {
   font-family: Roboto-Medium;
+}
+.select-address .customers-addr {
+  display: block;
+  padding: 8px 15px;
 }
 .select-address .customers-addr .name {
   font-size: 13px;
@@ -4638,6 +4669,9 @@ Generated using nucleoapp.com
   padding: 20px;
 }
 
+.sale-name.active {
+  color: #111;
+}
 .sale-name {
   height: 40px;
   display: flex;
@@ -4648,9 +4682,6 @@ Generated using nucleoapp.com
   position: relative;
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.3);
-}
-.sale-name.active {
-  color: #111;
 }
 
 .form-chat .ava {
@@ -5005,7 +5036,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
   width: 100%;
   display: block;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .table-user-group .user-info .name-user, .table-bh .user-info .name-user {
   flex-grow: 1;
@@ -5029,7 +5061,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 .table-user-group .menu-total-product .name, .table-bh .menu-total-product .name {
@@ -5042,11 +5075,13 @@ html body .app-content.content:has(.scan-content_wrapper) {
 
 .filter-adv .filter-group {
   padding: 1.5rem 1rem;
-  border-bottom: 1px solid #EFEFEF;
 }
 .filter-adv .filter-group h5 {
   font-size: 14px;
   margin-bottom: 1rem;
+}
+.filter-adv .filter-group {
+  border-bottom: 1px solid #EFEFEF;
 }
 .filter-adv .form-check + .form-check {
   margin-top: 12px;
@@ -5094,13 +5129,13 @@ html body .app-content.content:has(.scan-content_wrapper) {
   color: var(--colorPurple);
 }
 
+.frame-box .frame-img.active .frame {
+  display: block;
+}
 .frame-box .frame-img {
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
   position: relative;
-}
-.frame-box .frame-img.active .frame {
-  display: block;
 }
 .frame-box .frame-img .thumb {
   position: relative;
@@ -5162,7 +5197,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
   height: 100%;
   aspect-ratio: 1/1;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .list-food-voucher .name-food {
   padding: 0 18px;
@@ -5231,16 +5267,16 @@ html body .app-content.content:has(.scan-content_wrapper) {
 .info-voucher-total .voucherBox {
   margin-bottom: 15px;
 }
+.info-voucher-total .voucher-total + .voucher-total {
+  border-top: 1px solid #EFEFEF;
+  padding-top: 15px;
+  margin-top: 15px;
+}
 .info-voucher-total .voucher-total {
   display: flex;
   font-size: 13px;
   line-height: 150%;
   color: #111111;
-}
-.info-voucher-total .voucher-total + .voucher-total {
-  border-top: 1px solid #EFEFEF;
-  padding-top: 15px;
-  margin-top: 15px;
 }
 .info-voucher-total .voucher-total .type {
   width: 35%;
@@ -5267,7 +5303,9 @@ html body .app-content.content:has(.scan-content_wrapper) {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #d8d6de;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0.357rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   position: relative;
@@ -5291,6 +5329,9 @@ html body .app-content.content:has(.scan-content_wrapper) {
   z-index: 2;
   color: #111;
 }
+.input-slink input.form-short-link::-moz-placeholder {
+  color: #666;
+}
 .input-slink input.form-short-link::placeholder {
   color: #666;
 }
@@ -5305,6 +5346,14 @@ html body .app-content.content:has(.scan-content_wrapper) {
   padding-right: 1rem;
   box-sizing: border-box;
 }
+.upload-thumb .upload-images.uploaded {
+  background: none;
+  padding: 0;
+  border: none;
+}
+.upload-thumb .upload-images.upload-banner {
+  padding: 25px 0;
+}
 .upload-thumb .upload-images {
   background: #F8F8F8;
   border: 1px solid #D8D6DE;
@@ -5315,14 +5364,6 @@ html body .app-content.content:has(.scan-content_wrapper) {
   align-items: center;
   justify-content: center;
   padding: 30px 0;
-}
-.upload-thumb .upload-images.uploaded {
-  background: none;
-  padding: 0;
-  border: none;
-}
-.upload-thumb .upload-images.upload-banner {
-  padding: 25px 0;
 }
 .upload-thumb .upload-images .upload-btn {
   width: 60%;
@@ -5390,10 +5431,21 @@ html body .app-content.content:has(.scan-content_wrapper) {
   height: 100%;
   z-index: 1;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .upload-thumb .list-images li {
   list-style-type: none;
+}
+.upload-thumb .list-images .images-box.active .choose-ava {
+  background: #7367F0;
+  border: 1px solid #7367F0;
+}
+.upload-thumb .list-images .images-box.active .choose-ava .icn {
+  display: block;
+}
+.upload-thumb .list-images .images-box.active .choose-ava .txt {
+  color: #ffffff;
 }
 .upload-thumb .list-images .images-box {
   background: #F8F8F8;
@@ -5407,16 +5459,6 @@ html body .app-content.content:has(.scan-content_wrapper) {
   flex-direction: column;
   gap: 10px;
 }
-.upload-thumb .list-images .images-box.active .choose-ava {
-  background: #7367F0;
-  border: 1px solid #7367F0;
-}
-.upload-thumb .list-images .images-box.active .choose-ava .icn {
-  display: block;
-}
-.upload-thumb .list-images .images-box.active .choose-ava .txt {
-  color: #ffffff;
-}
 .upload-thumb .list-images .images-fd {
   width: 100%;
   height: 250px;
@@ -5424,7 +5466,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
 .upload-thumb .list-images .images-fd img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 3px;
   display: block;
 }
@@ -5652,6 +5695,9 @@ html body .app-content.content:has(.scan-content_wrapper) {
   outline: none;
   overflow: hidden;
 }
+.title-editor::-moz-placeholder {
+  opacity: 0.5;
+}
 .title-editor::placeholder {
   opacity: 0.5;
 }
@@ -5671,6 +5717,9 @@ html body .app-content.content:has(.scan-content_wrapper) {
   width: 100%;
   box-sizing: border-box;
   outline: none;
+}
+.sapo-editor::-moz-placeholder {
+  opacity: 0.5;
 }
 .sapo-editor::placeholder {
   opacity: 0.5;
@@ -5780,7 +5829,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
   width: 100%;
   display: block;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .total-news .title-news {
   font-size: 13px;
@@ -5877,6 +5927,10 @@ html body .app-content.content:has(.scan-content_wrapper) {
   box-sizing: border-box;
   border-radius: 5px;
 }
+.list-QA input + input {
+  border-top: 0;
+  border-radius: 0px 0px 5px 5px;
+}
 .list-QA input {
   outline: none;
   border-radius: 5px 5px 0px 0px;
@@ -5890,9 +5944,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
   display: block;
   box-sizing: border-box;
 }
-.list-QA input + input {
-  border-top: 0;
-  border-radius: 0px 0px 5px 5px;
+.list-QA input::-moz-placeholder {
+  opacity: 0.3;
 }
 .list-QA input::placeholder {
   opacity: 0.3;
@@ -5908,12 +5961,14 @@ html body .app-content.content:has(.scan-content_wrapper) {
 }
 .add-QA .icn {
   width: 14px;
-  display: block;
 }
 .add-QA .icn svg {
   width: 100%;
   display: block;
   height: auto;
+}
+.add-QA .icn {
+  display: block;
 }
 .add-QA .txt {
   font-size: 15px;
@@ -5949,6 +6004,5 @@ html body .app-content.content:has(.scan-content_wrapper) {
   transform: translateY(-50%);
   color: #7367F0;
   z-index: 1;
-}
-
+}/*# sourceMappingURL=stye.css.map */
 /*# sourceMappingURL=stye.css.map */

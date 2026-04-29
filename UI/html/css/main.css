@@ -275,6 +275,9 @@ svg {
 .breadcrumb .icn {
   width: 14px;
 }
+.breadcrumb .breadcrumb-link.active, .breadcrumb .breadcrumb-link:hover {
+  opacity: 1;
+}
 .breadcrumb .breadcrumb-link {
   font-size: 12px;
   line-height: 150%;
@@ -284,30 +287,14 @@ svg {
   color: #666666;
   opacity: 0.6;
 }
-.breadcrumb .breadcrumb-link.active, .breadcrumb .breadcrumb-link:hover {
-  opacity: 1;
-}
 
 /* Custom checkbox options order */
-.form-opt {
-  display: block;
-}
 .form-opt + .form-opt {
   padding-top: 15px;
   margin-top: 15px;
 }
-.form-opt label {
-  position: relative;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.form-opt {
+  display: block;
 }
 .form-opt label:before {
   content: "";
@@ -322,6 +309,19 @@ svg {
   vertical-align: middle;
   cursor: pointer;
   margin-right: 15px;
+}
+.form-opt label {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form-opt label span {
   display: block;
@@ -340,14 +340,6 @@ svg {
   font-family: BVNPro-Regular;
   text-align: right;
   color: #666666;
-}
-.form-opt input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
 }
 .form-opt input:checked + label:before {
   background: var(--colorRed);
@@ -369,6 +361,14 @@ svg {
 .form-opt input:checked + label .txt, .form-opt input:checked + label .price {
   font-family: BVNPro-Medium;
   color: #222222;
+}
+.form-opt input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
 }
 
 @-webkit-keyframes spinner-border {
@@ -546,6 +546,20 @@ svg {
   padding-top: 15px;
   margin-top: 15px;
 }
+.form-radio-opt label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1.5px solid #000000;
+  border-radius: 3px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
 .form-radio-opt label {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -561,20 +575,6 @@ svg {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-}
-.form-radio-opt label:before {
-  content: "";
-  -webkit-appearance: none;
-  background-color: transparent;
-  border: 1.5px solid #000000;
-  border-radius: 3px;
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-right: 15px;
 }
 .form-radio-opt label span {
   display: block;
@@ -1798,6 +1798,9 @@ Generated using nucleoapp.com
   content: "\eb5f";
 }
 
+.noti-header.active {
+  max-height: 100px;
+}
 .noti-header {
   position: relative;
   max-height: 0;
@@ -1809,8 +1812,8 @@ Generated using nucleoapp.com
   -webkit-transition: 0.15s;
   transition: 0.15s;
 }
-.noti-header.active {
-  max-height: 100px;
+.noti-header .noti-content:hover {
+  text-decoration: underline;
 }
 .noti-header .noti-content {
   padding: 8px 20px;
@@ -1823,9 +1826,6 @@ Generated using nucleoapp.com
   text-transform: uppercase;
   z-index: 1;
   position: relative;
-}
-.noti-header .noti-content:hover {
-  text-decoration: underline;
 }
 .noti-header .close-noti {
   position: absolute;
@@ -1862,6 +1862,16 @@ Generated using nucleoapp.com
   fill: #fff;
 }
 
+.news-page .menu-web {
+  display: none;
+}
+
+.bh-main-header.active .header-content {
+  height: 70px;
+}
+.bh-main-header.active .bh-logo {
+  width: 164px;
+}
 .bh-main-header {
   -webkit-box-shadow: inset 0px -1px 0px #e6e6e6;
           box-shadow: inset 0px -1px 0px #e6e6e6;
@@ -1871,12 +1881,6 @@ Generated using nucleoapp.com
   z-index: 9999 !important;
   background: #ffffff;
   width: 100%;
-}
-.bh-main-header.active .header-content {
-  height: 70px;
-}
-.bh-main-header.active .bh-logo {
-  width: 164px;
 }
 .bh-main-header .header-content {
   -webkit-transition: 0.15s ease-in-out;
@@ -1956,6 +1960,10 @@ Generated using nucleoapp.com
   width: 300px;
   position: relative;
 }
+.bh-main-header .searchBox .search-suggest.active {
+  opacity: 1;
+  visibility: visible;
+}
 .bh-main-header .searchBox .search-suggest {
   width: 100%;
   position: absolute;
@@ -1965,10 +1973,6 @@ Generated using nucleoapp.com
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-.bh-main-header .searchBox .search-suggest.active {
-  opacity: 1;
-  visibility: visible;
 }
 .bh-main-header .searchBox .search-suggest .list-linksearch {
   display: -webkit-box;
@@ -1987,6 +1991,9 @@ Generated using nucleoapp.com
   line-height: 130%; /* 14.3px */
   padding: 12px 15px;
 }
+.bh-main-header .searchBox .search-suggest .search-link:hover {
+  background: #f9f9f9;
+}
 .bh-main-header .searchBox .search-suggest .search-link {
   color: #222;
   font-family: BVNPro-Regular;
@@ -2000,9 +2007,6 @@ Generated using nucleoapp.com
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.bh-main-header .searchBox .search-suggest .search-link:hover {
-  background: #f9f9f9;
 }
 .bh-main-header .searchBox .search-suggest .sg-content {
   display: -webkit-box;
@@ -2062,6 +2066,10 @@ Generated using nucleoapp.com
           justify-content: space-between;
   align-items: center;
 }
+.bh-main-header .searchBox .searchArea input:focus, .bh-main-header .searchBox .searchArea input:hover {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
 .bh-main-header .searchBox .searchArea input {
   border-radius: 999px;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -2077,10 +2085,6 @@ Generated using nucleoapp.com
           box-sizing: border-box;
   padding: 0 33px 0 15px;
   z-index: 1;
-}
-.bh-main-header .searchBox .searchArea input:focus, .bh-main-header .searchBox .searchArea input:hover {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .bh-main-header .searchBox .searchArea input::-webkit-input-placeholder {
   opacity: 0.4;
@@ -2215,6 +2219,11 @@ Generated using nucleoapp.com
   opacity: 1;
   visibility: visible;
 }
+.bh-main-header .list-menu-expand .menu-parent.active {
+  height: 600px;
+  border-right: 0 solid #d9d9d9;
+  max-height: calc(100vh - 110px);
+}
 .bh-main-header .list-menu-expand .menu-parent {
   border-bottom: 1px solid #d9d9d9;
   border-left: 1px solid #d9d9d9;
@@ -2239,11 +2248,6 @@ Generated using nucleoapp.com
   overflow-x: hidden;
   overflow-y: overlay;
   box-sizing: border-box;
-}
-.bh-main-header .list-menu-expand .menu-parent.active {
-  height: 600px;
-  border-right: 0 solid #d9d9d9;
-  max-height: calc(100vh - 110px);
 }
 .bh-main-header .list-menu-expand .menu-parent::-webkit-scrollbar {
   width: 5px;
@@ -2277,13 +2281,13 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
 }
-.bh-main-header .list-menu-expand .menu-parent-link:hover, .bh-main-header .list-menu-expand .menu-parent-link.active {
-  background: #f5f5f5;
-}
 .bh-main-header .list-menu-expand .menu-parent-link:hover .icn,
 .bh-main-header .list-menu-expand .menu-parent-link:hover .txt, .bh-main-header .list-menu-expand .menu-parent-link.active .icn,
 .bh-main-header .list-menu-expand .menu-parent-link.active .txt {
   color: #b5292f;
+}
+.bh-main-header .list-menu-expand .menu-parent-link:hover, .bh-main-header .list-menu-expand .menu-parent-link.active {
+  background: #f5f5f5;
 }
 .bh-main-header .list-menu-expand .menu-parent-link .icn {
   width: 18px;
@@ -2302,6 +2306,9 @@ Generated using nucleoapp.com
   line-height: 130%;
   display: block;
 }
+.bh-main-header .list-menu-expand .menu-child.active {
+  max-width: 250px;
+}
 .bh-main-header .list-menu-expand .menu-child {
   border-bottom: 1px solid #d9d9d9;
   border-right: 1px solid #d9d9d9;
@@ -2317,9 +2324,6 @@ Generated using nucleoapp.com
   overflow-y: overlay;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.bh-main-header .list-menu-expand .menu-child.active {
-  max-width: 250px;
 }
 .bh-main-header .list-menu-expand .menu-child::-webkit-scrollbar {
   width: 5px;
@@ -2354,15 +2358,15 @@ Generated using nucleoapp.com
           flex-direction: column;
   padding: 0 20px;
 }
+.bh-main-header .list-menu-expand .child-item:hover {
+  color: #b5292f;
+}
 .bh-main-header .list-menu-expand .child-item {
   display: block;
   color: #222;
   font-size: 13px;
   font-family: BVNPro-Regular;
   line-height: 130%;
-}
-.bh-main-header .list-menu-expand .child-item:hover {
-  color: #b5292f;
 }
 
 @media screen and (max-width: 760px) {
@@ -2422,8 +2426,7 @@ Generated using nucleoapp.com
     top: 0;
     left: 0;
     background: rgba(18, 18, 18, 0.9);
-    -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -2513,16 +2516,16 @@ Generated using nucleoapp.com
     line-height: 130%;
     display: block;
   }
+  .bh-main-header .menu-mob .menu-box.active {
+    max-height: 600px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
   .bh-main-header .menu-mob .menu-box {
     max-height: 54px;
     overflow: hidden;
     -webkit-transition: max-height 0.3s ease;
     transition: max-height 0.3s ease;
-  }
-  .bh-main-header .menu-mob .menu-box.active {
-    max-height: 600px;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
   }
   .bh-main-header .menu-mob .menu-box .nav-link-mob {
     height: 54px;
@@ -2595,15 +2598,15 @@ Generated using nucleoapp.com
     gap: 20px;
     background: #f5f5f5;
   }
+  .bh-main-header .menu-mob .menu-box .list-nav-child .nav-child.active {
+    color: var(--colorRed);
+  }
   .bh-main-header .menu-mob .menu-box .list-nav-child .nav-child {
     color: #222;
     font-size: 14px;
     font-family: BVNPro-Regular;
     display: block;
     line-height: 130%;
-  }
-  .bh-main-header .menu-mob .menu-box .list-nav-child .nav-child.active {
-    color: var(--colorRed);
   }
   .bh-main-header .burger {
     width: 24px;
@@ -2673,6 +2676,10 @@ Generated using nucleoapp.com
   .bh-main-header .searchBox .searchBtn .txt {
     display: none;
   }
+  .bh-main-header .searchBox .searchGroup.active {
+    opacity: 1;
+    visibility: visible;
+  }
   .bh-main-header .searchBox .searchGroup {
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
@@ -2682,10 +2689,6 @@ Generated using nucleoapp.com
     visibility: hidden;
     left: 0;
     width: 100vw;
-  }
-  .bh-main-header .searchBox .searchGroup.active {
-    opacity: 1;
-    visibility: visible;
   }
   .bh-main-header .searchBox .searchArea {
     gap: 10px;
@@ -2870,12 +2873,12 @@ Generated using nucleoapp.com
   display: flex;
   margin-bottom: auto;
 }
+.bh-footer-content .social-link + .social-link {
+  margin-left: 8px;
+}
 .bh-footer-content .social-link {
   width: 24px;
   display: block;
-}
-.bh-footer-content .social-link + .social-link {
-  margin-left: 8px;
 }
 .bh-footer-content .policy {
   width: 159px;
@@ -3000,6 +3003,9 @@ Generated using nucleoapp.com
             flex-direction: column;
     gap: 0;
   }
+  .bh-footer-content .list-info-footer:nth-child(1) {
+    margin-bottom: 25px;
+  }
   .bh-footer-content .list-info-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3011,9 +3017,6 @@ Generated using nucleoapp.com
        -moz-column-gap: 60px;
             column-gap: 60px;
     margin-bottom: 30px;
-  }
-  .bh-footer-content .list-info-footer:nth-child(1) {
-    margin-bottom: 25px;
   }
   .bh-footer-content .info-footer {
     color: #111;
@@ -3111,11 +3114,11 @@ Generated using nucleoapp.com
     margin-left: 0;
   }
 }
-.address-store {
-  position: relative;
-}
 .address-store.disable {
   display: none;
+}
+.address-store {
+  position: relative;
 }
 .address-store .dropdown-btn {
   display: -webkit-inline-box;
@@ -3152,6 +3155,10 @@ Generated using nucleoapp.com
 .address-store .dropdown-btn .text-mob {
   display: none;
 }
+.address-store .dropdown-box.active {
+  opacity: 1;
+  visibility: visible;
+}
 .address-store .dropdown-box {
   z-index: 2;
   position: absolute;
@@ -3163,10 +3170,6 @@ Generated using nucleoapp.com
   width: 100%;
   min-width: 102px;
 }
-.address-store .dropdown-box.active {
-  opacity: 1;
-  visibility: visible;
-}
 .address-store .dropdown-box .droplist {
   padding: 10px;
   background: rgba(255, 255, 255, 0.85);
@@ -3174,15 +3177,7 @@ Generated using nucleoapp.com
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
-  -webkit-backdrop-filter: blur(22px);
-          backdrop-filter: blur(22px);
-}
-.address-store .dropdown-box .loca-change {
-  font-size: 14px;
-  line-height: 100%;
-  font-family: BVNPro-Medium;
-  color: #222222;
-  display: block;
+  backdrop-filter: blur(22px);
 }
 .address-store .dropdown-box .loca-change + .loca-change {
   margin-top: 8px;
@@ -3191,6 +3186,13 @@ Generated using nucleoapp.com
 }
 .address-store .dropdown-box .loca-change:hover {
   color: var(--colorRed);
+}
+.address-store .dropdown-box .loca-change {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: BVNPro-Medium;
+  color: #222222;
+  display: block;
 }
 
 .bh-home_bner-top {
@@ -3279,6 +3281,12 @@ Generated using nucleoapp.com
       -ms-flex-pack: center;
           justify-content: center;
 }
+.bh-home_bner-top .swiper-hbner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.bh-home_bner-top .swiper-hbner .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 8px;
+}
 .bh-home_bner-top .swiper-hbner .swiper-pagination .swiper-pagination-bullet {
   opacity: 0.3;
   background: #A08C78;
@@ -3286,13 +3294,10 @@ Generated using nucleoapp.com
   height: 5px;
   margin: 0;
 }
-.bh-home_bner-top .swiper-hbner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1;
-}
-.bh-home_bner-top .swiper-hbner .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
-  margin-left: 8px;
-}
 
+.bh-home-contact.disable {
+  display: none;
+}
 .bh-home-contact {
   background: #FFFFFF;
   width: 335px;
@@ -3302,9 +3307,6 @@ Generated using nucleoapp.com
   border-radius: 52px;
   position: relative;
   margin: 0 auto 33px;
-}
-.bh-home-contact.disable {
-  display: none;
 }
 .bh-home-contact .text {
   position: absolute;
@@ -3420,6 +3422,9 @@ Generated using nucleoapp.com
   color: #222222;
   display: block;
 }
+.bh-home-discount .view-all:hover {
+  border: 1px solid rgb(120, 97, 75);
+}
 .bh-home-discount .view-all {
   border-radius: 6px;
   border: 1px solid rgba(120, 97, 75, 0.3);
@@ -3448,9 +3453,6 @@ Generated using nucleoapp.com
       -ms-flex-pack: center;
           justify-content: center;
 }
-.bh-home-discount .view-all:hover {
-  border: 1px solid rgb(120, 97, 75);
-}
 .bh-home-discount .md-list {
   position: relative;
   padding: 0 20px;
@@ -3464,6 +3466,9 @@ Generated using nucleoapp.com
 .bh-home-discount .md-list .swiper-button-prev {
   left: -25px;
 }
+.bh-home-discount .md-list .swiper-button-next.swiper-button-disabled, .bh-home-discount .md-list .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.2;
+}
 .bh-home-discount .md-list .swiper-button-next, .bh-home-discount .md-list .swiper-button-prev {
   display: block;
   background: none;
@@ -3475,9 +3480,6 @@ Generated using nucleoapp.com
   width: 34px;
   height: 34px;
   opacity: 1;
-}
-.bh-home-discount .md-list .swiper-button-next.swiper-button-disabled, .bh-home-discount .md-list .swiper-button-prev.swiper-button-disabled {
-  opacity: 0.2;
 }
 .bh-home-discount .md-list .swiper-button-next svg, .bh-home-discount .md-list .swiper-button-prev svg {
   width: 100%;
@@ -3648,15 +3650,19 @@ Generated using nucleoapp.com
 .bh-home-menu .tagBox .menu__tags-list .swiper-wrapper::-webkit-scrollbar {
   display: none;
 }
-.bh-home-menu .tagBox .menu__tags-list .swiper-slide {
-  width: auto;
-  margin-left: 8px;
-}
 .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-child(1) {
   margin-left: 20px;
 }
 .bh-home-menu .tagBox .menu__tags-list .swiper-slide:nth-last-child(1) {
   margin-right: 20px;
+}
+.bh-home-menu .tagBox .menu__tags-list .swiper-slide {
+  width: auto;
+  margin-left: 8px;
+}
+.bh-home-menu .tagBox .menu__tags-list .tags-filter.active {
+  background: var(--colorRed);
+  color: #FFFFFF;
 }
 .bh-home-menu .tagBox .menu__tags-list .tags-filter {
   -webkit-transition: 0.3s;
@@ -3680,10 +3686,6 @@ Generated using nucleoapp.com
   text-align: center;
   color: #222222;
 }
-.bh-home-menu .tagBox .menu__tags-list .tags-filter.active {
-  background: var(--colorRed);
-  color: #FFFFFF;
-}
 
 .bh-menu-list.bh-loading {
   min-height: 70vh;
@@ -3691,6 +3693,7 @@ Generated using nucleoapp.com
 .bh-menu-list li {
   padding: 15px 20px;
 }
+
 .countdown-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3974,6 +3977,21 @@ Generated using nucleoapp.com
   display: block;
 }
 
+.bh-cart-total:before {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: block;
+  content: "";
+  background: rgb(241, 250, 237);
+  border-radius: 29px;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
 .bh-cart-total {
   position: relative;
   width: calc(100% - 65px);
@@ -3989,21 +4007,6 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.bh-cart-total:before {
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  display: block;
-  content: "";
-  background: rgb(241, 250, 237);
-  border-radius: 29px;
-  -webkit-filter: blur(30px);
-          filter: blur(30px);
 }
 .bh-cart-total .icn-web {
   display: none;
@@ -4044,6 +4047,10 @@ Generated using nucleoapp.com
   color: #111111;
   font-size: 15px;
 }
+.bh-cart-total .noti-atc.active {
+  opacity: 1;
+  visibility: visible;
+}
 .bh-cart-total .noti-atc {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -4068,10 +4075,6 @@ Generated using nucleoapp.com
           box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
 }
-.bh-cart-total .noti-atc.active {
-  opacity: 1;
-  visibility: visible;
-}
 .bh-cart-total .noti-atc .icn {
   width: 18px;
   display: block;
@@ -4083,6 +4086,10 @@ Generated using nucleoapp.com
   font-family: BVNPro-Regular;
   display: block;
   color: #629050;
+}
+.bh-cart-total .noti-fail.active {
+  opacity: 1;
+  visibility: visible;
 }
 .bh-cart-total .noti-fail {
   -webkit-transition: 0.3s ease;
@@ -4115,10 +4122,6 @@ Generated using nucleoapp.com
   font-family: BVNPro-Regular;
   text-align: center;
   color: #FE3E3E;
-}
-.bh-cart-total .noti-fail.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .bh-bner-footer {
@@ -4366,8 +4369,7 @@ Generated using nucleoapp.com
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     background: rgba(86, 86, 86, 0.7);
-    -webkit-backdrop-filter: blur(40px);
-            backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4429,8 +4431,7 @@ Generated using nucleoapp.com
     padding: 0;
     background: none;
     border: none;
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
+    backdrop-filter: none;
   }
   .bh-cart-total .icn-web {
     display: block;
@@ -4495,19 +4496,22 @@ Generated using nucleoapp.com
     left: auto;
     right: 0;
   }
+  .bh-home-menu .tagBox.active {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
   .bh-home-menu .tagBox {
     padding: 10px 0;
     top: 70px;
     margin: 20px 0 15px;
-  }
-  .bh-home-menu .tagBox.active {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .bh-home-menu .tagBox .swiper-button-next {
     right: -25px;
   }
   .bh-home-menu .tagBox .swiper-button-prev {
     left: -25px;
+  }
+  .bh-home-menu .tagBox .swiper-button-next.swiper-button-disabled, .bh-home-menu .tagBox .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.2;
   }
   .bh-home-menu .tagBox .swiper-button-next, .bh-home-menu .tagBox .swiper-button-prev {
     display: block;
@@ -4520,9 +4524,6 @@ Generated using nucleoapp.com
     width: 34px;
     height: 34px;
     opacity: 1;
-  }
-  .bh-home-menu .tagBox .swiper-button-next.swiper-button-disabled, .bh-home-menu .tagBox .swiper-button-prev.swiper-button-disabled {
-    opacity: 0.2;
   }
   .bh-home-menu .tagBox .swiper-button-next svg, .bh-home-menu .tagBox .swiper-button-prev svg {
     width: 100%;
@@ -4557,13 +4558,6 @@ Generated using nucleoapp.com
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
   }
-  .bh-menu-list li {
-    border: none;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 6px;
-    padding: 5px 0 0 0;
-  }
   .bh-menu-list li:hover {
     padding-top: 0;
     padding-bottom: 5px;
@@ -4573,8 +4567,19 @@ Generated using nucleoapp.com
   .bh-menu-list li:nth-child(1) {
     border: none;
   }
+  .bh-menu-list li {
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 6px;
+    padding: 5px 0 0 0;
+  }
   .go-to-top {
     margin-top: 30px;
+  }
+  .food-card:hover {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
   }
   .food-card {
     -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
@@ -4589,20 +4594,18 @@ Generated using nucleoapp.com
             box-sizing: border-box;
     background: #fff;
   }
-  .food-card:hover {
-    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
-  }
   .food-card .thumb {
     margin-right: 0;
     width: 100%;
   }
   .food-card .thumb i {
     border-radius: 6px 6px 0px 0px;
-    padding-top: 63.45%;
   }
   .food-card .thumb i:before {
     border-radius: 6px 6px 0px 0px;
+  }
+  .food-card .thumb i {
+    padding-top: 63.45%;
   }
   .food-card .thumb .frame-img {
     border-radius: 6px 6px 0px 0px;
@@ -4641,6 +4644,9 @@ Generated using nucleoapp.com
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .food-card .voucher + .voucher {
+    display: none;
+  }
   .food-card .voucher {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4654,9 +4660,6 @@ Generated using nucleoapp.com
     height: 40px;
     padding: 20px 7px 7px;
     width: 100%;
-  }
-  .food-card .voucher + .voucher {
-    display: none;
   }
   .food-card .voucher .icn svg path {
     fill: #FFE600;
@@ -4725,10 +4728,12 @@ Generated using nucleoapp.com
   }
   .food-card.vertical .thumb i {
     border-radius: 6px 6px 0px 0px;
-    padding-top: 63.45%;
   }
   .food-card.vertical .thumb i:before {
     border-radius: 6px 6px 0px 0px;
+  }
+  .food-card.vertical .thumb i {
+    padding-top: 63.45%;
   }
   .food-card.vertical .total-food {
     display: -webkit-box;
@@ -4760,6 +4765,9 @@ Generated using nucleoapp.com
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .food-card.vertical .voucher + .voucher {
+    display: none;
+  }
   .food-card.vertical .voucher {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4773,9 +4781,6 @@ Generated using nucleoapp.com
     height: 40px;
     padding: 20px 7px 7px;
     width: 100%;
-  }
-  .food-card.vertical .voucher + .voucher {
-    display: none;
   }
   .food-card.vertical .voucher .icn svg path {
     fill: #FFE600;
@@ -4839,16 +4844,15 @@ Generated using nucleoapp.com
   }
   .address-store .dropdown-box .droplist {
     background: #fff;
-    -webkit-backdrop-filter: blur(18px);
-            backdrop-filter: blur(18px);
-  }
-  .address-store .dropdown-box .loca-change {
-    font-size: 15px;
-    padding: 5px 0;
+    backdrop-filter: blur(18px);
   }
   .address-store .dropdown-box .loca-change + .loca-change {
     margin-top: 8px;
     padding-top: 10px;
+  }
+  .address-store .dropdown-box .loca-change {
+    font-size: 15px;
+    padding: 5px 0;
   }
   .bh-home_bner-top {
     padding: 0;
@@ -4871,8 +4875,7 @@ Generated using nucleoapp.com
     height: 15px;
     border-radius: 29px;
     background: rgba(0, 0, 0, 0.82);
-    -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     position: absolute;
     width: auto;
     height: 22px;
@@ -4917,13 +4920,15 @@ Generated using nucleoapp.com
     width: 104px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin-right: 10px;
   }
   .menu-tab-group.child-4 li:nth-child(1) {
     margin-left: 20px;
   }
   .menu-tab-group.child-4 li:nth-last-child(1) {
     margin-right: 20px;
+  }
+  .menu-tab-group.child-4 li {
+    margin-right: 10px;
   }
   .list-menu-tab {
     padding: 25px 20px;
@@ -5151,6 +5156,10 @@ Generated using nucleoapp.com
   display: block;
   color: #222222;
 }
+.PopUp-cart .footer-cart .payment.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 .PopUp-cart .footer-cart .payment {
   width: calc((100% - 15px) / 2);
   display: -webkit-box;
@@ -5171,10 +5180,6 @@ Generated using nucleoapp.com
   line-height: 100%;
   font-family: BVNPro-Medium;
   color: #FFFFFF;
-}
-.PopUp-cart .footer-cart .payment.disabled {
-  opacity: 0.5;
-  cursor: default;
 }
 .PopUp-cart .heading {
   display: -webkit-box;
@@ -5479,11 +5484,13 @@ Generated using nucleoapp.com
 }
 .PopUp-cart .swiper-suggest .swiper-slide {
   margin-left: 20px;
-  height: auto;
-  width: 200px;
 }
 .PopUp-cart .swiper-suggest .swiper-slide:nth-last-child(1) {
   margin-right: 20px;
+}
+.PopUp-cart .swiper-suggest .swiper-slide {
+  height: auto;
+  width: 200px;
 }
 .PopUp-cart .waiting-card {
   width: 100%;
@@ -5733,11 +5740,6 @@ Generated using nucleoapp.com
 .Popup-checkout .infoBox .title {
   padding: 15px 20px 15px 33px;
   position: relative;
-  font-size: 15px;
-  line-height: 100%;
-  font-family: BVNPro-SemiBold;
-  text-transform: uppercase;
-  color: #222222;
 }
 .Popup-checkout .infoBox .title:before {
   background: var(--colorRed);
@@ -5750,6 +5752,13 @@ Generated using nucleoapp.com
   display: block;
   content: "";
   position: absolute;
+}
+.Popup-checkout .infoBox .title {
+  font-size: 15px;
+  line-height: 100%;
+  font-family: BVNPro-SemiBold;
+  text-transform: uppercase;
+  color: #222222;
 }
 .Popup-checkout .contentBox {
   padding: 20px;
@@ -5773,6 +5782,18 @@ Generated using nucleoapp.com
           justify-content: space-between;
   gap: 15px;
 }
+.Popup-checkout .infoGroup .choose-type-order.shipping .icn {
+  background-image: url("https://image.bephoa.vn/data/web/shipping.png");
+}
+.Popup-checkout .infoGroup .choose-type-order.shipping.active .icn {
+  background-image: url("https://image.bephoa.vn/data/web/shipping-active.png");
+}
+.Popup-checkout .infoGroup .choose-type-order.pickup .icn {
+  background-image: url("https://image.bephoa.vn/data/web/pickup.png");
+}
+.Popup-checkout .infoGroup .choose-type-order.pickup.active .icn {
+  background-image: url("https://image.bephoa.vn/data/web/pickup-active.png");
+}
 .Popup-checkout .infoGroup .choose-type-order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5790,18 +5811,6 @@ Generated using nucleoapp.com
   background: #F6F6F6;
   border-bottom: 1.5px solid #F6F6F6;
   border-radius: 6px;
-}
-.Popup-checkout .infoGroup .choose-type-order.shipping .icn {
-  background-image: url("https://image.bephoa.vn/data/web/shipping.png");
-}
-.Popup-checkout .infoGroup .choose-type-order.shipping.active .icn {
-  background-image: url("https://image.bephoa.vn/data/web/shipping-active.png");
-}
-.Popup-checkout .infoGroup .choose-type-order.pickup .icn {
-  background-image: url("https://image.bephoa.vn/data/web/pickup.png");
-}
-.Popup-checkout .infoGroup .choose-type-order.pickup.active .icn {
-  background-image: url("https://image.bephoa.vn/data/web/pickup-active.png");
 }
 .Popup-checkout .infoGroup .choose-type-order.active, .Popup-checkout .infoGroup .choose-type-order:hover {
   background: #FFFFFF;
@@ -5868,6 +5877,9 @@ Generated using nucleoapp.com
 .Popup-checkout .infoGroup .date-order .pick-date .date {
   display: block;
 }
+.Popup-checkout .infoGroup .warning.active {
+  display: block;
+}
 .Popup-checkout .infoGroup .warning {
   display: none;
   margin-top: 10px;
@@ -5879,11 +5891,11 @@ Generated using nucleoapp.com
   padding: 10px 14px;
   font-family: BVNPro-Regular;
 }
-.Popup-checkout .infoGroup .warning.active {
-  display: block;
-}
 .Popup-checkout .infoGroup .warning b {
   font-family: BVNPro-SemiBold;
+}
+.Popup-checkout .infoGroup .choose-time-order + .choose-time-order {
+  margin-top: 15px;
 }
 .Popup-checkout .infoGroup .choose-time-order {
   display: -webkit-box;
@@ -5892,9 +5904,6 @@ Generated using nucleoapp.com
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.Popup-checkout .infoGroup .choose-time-order + .choose-time-order {
-  margin-top: 15px;
 }
 .Popup-checkout .infoGroup .select-timeBox {
   background: #FFFFFF;
@@ -5972,17 +5981,6 @@ Generated using nucleoapp.com
 .Popup-checkout .infoGroup .select-timeBox .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.85);
 }
-.Popup-checkout .infoGroup .select-timeBox .select2-container {
-  width: 100% !important;
-  background: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 6px;
-  height: 34px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .Popup-checkout .infoGroup .select-timeBox .select2-container.select2-container--open {
   width: auto !important;
 }
@@ -5996,13 +5994,24 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
 }
-.Popup-checkout .infoGroup .food-total {
+.Popup-checkout .infoGroup .select-timeBox .select2-container {
+  width: 100% !important;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  height: 34px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .Popup-checkout .infoGroup .food-total + .food-total {
   margin-top: 15px;
+}
+.Popup-checkout .infoGroup .food-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .Popup-checkout .infoGroup .food-total .count {
   width: 27px;
@@ -6071,17 +6080,6 @@ Generated using nucleoapp.com
 .Popup-checkout .infoGroup .note-order::placeholder {
   opacity: 0.5;
 }
-.Popup-checkout .dropdown-city {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  background: #FFFFFF;
-  border: 0.5px solid #C7C7C7;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 6px;
-  position: relative;
-  width: 100%;
-}
 .Popup-checkout .dropdown-city.mb-20 {
   margin-bottom: 20px;
 }
@@ -6094,6 +6092,17 @@ Generated using nucleoapp.com
 .Popup-checkout .dropdown-city.active .droplist-city {
   opacity: 1;
   visibility: visible;
+}
+.Popup-checkout .dropdown-city {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #FFFFFF;
+  border: 0.5px solid #C7C7C7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  width: 100%;
 }
 .Popup-checkout .dropdown-city .dropdown-btn {
   display: block;
@@ -6150,6 +6159,9 @@ Generated using nucleoapp.com
   font-family: BVNPro-Regular;
   color: #999;
 }
+.Popup-checkout .dropdown-city .droplist-city .city-btn:hover {
+  background: #f1f1f1;
+}
 .Popup-checkout .dropdown-city .droplist-city .city-btn {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -6160,9 +6172,6 @@ Generated using nucleoapp.com
   font-family: BVNPro-Regular;
   color: #222222;
   padding: 10px;
-}
-.Popup-checkout .dropdown-city .droplist-city .city-btn:hover {
-  background: #f1f1f1;
 }
 .Popup-checkout .form-input-user {
   padding: 20px;
@@ -6273,6 +6282,13 @@ Generated using nucleoapp.com
   opacity: 0.5;
   margin-left: 5px;
 }
+.Popup-checkout .form-input-user .select2.select2-container--open {
+  border-radius: 6px 6px 0 0;
+  border: 0.5px solid var(--colorRed);
+}
+.Popup-checkout .form-input-user .select2 > * {
+  outline: none;
+}
 .Popup-checkout .form-input-user .select2 {
   padding: 11px 13px 11px 3px;
   width: 100% !important;
@@ -6281,13 +6297,6 @@ Generated using nucleoapp.com
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
-}
-.Popup-checkout .form-input-user .select2.select2-container--open {
-  border-radius: 6px 6px 0 0;
-  border: 0.5px solid var(--colorRed);
-}
-.Popup-checkout .form-input-user .select2 > * {
-  outline: none;
 }
 .Popup-checkout .form-input-user .select2-container--default .select2-selection--single .select2-selection__arrow {
   display: none;
@@ -6338,6 +6347,10 @@ Generated using nucleoapp.com
   display: block;
   content: "";
 }
+.Popup-checkout .form-input-user .autofill-box.active {
+  opacity: 1;
+  visibility: visible;
+}
 .Popup-checkout .form-input-user .autofill-box {
   opacity: 0;
   visibility: hidden;
@@ -6348,10 +6361,6 @@ Generated using nucleoapp.com
   left: -1px;
   width: calc(100% + 2px);
   z-index: 2;
-}
-.Popup-checkout .form-input-user .autofill-box.active {
-  opacity: 1;
-  visibility: visible;
 }
 .Popup-checkout .form-input-user .list-address {
   background: #FFFFFF;
@@ -6411,10 +6420,12 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
   text-align: center;
   text-transform: uppercase;
-  color: #111111;
 }
 .Popup-checkout .remind-user .remind-text span {
   color: var(--colorRed);
+}
+.Popup-checkout .remind-user .remind-text {
+  color: #111111;
 }
 .Popup-checkout .payment-box {
   padding: 20px;
@@ -6424,6 +6435,13 @@ Generated using nucleoapp.com
 }
 .Popup-checkout .payment-box .list-payment li + li {
   margin-top: 10px;
+}
+.Popup-checkout .payment-box .payment-type.active, .Popup-checkout .payment-box .payment-type:hover {
+  border: 1.5px solid #B5292F;
+  background: #FFFFFF;
+}
+.Popup-checkout .payment-box .payment-type.active .txt, .Popup-checkout .payment-box .payment-type:hover .txt {
+  font-family: BVNPro-Medium;
 }
 .Popup-checkout .payment-box .payment-type {
   -webkit-transition: 0.2s;
@@ -6440,13 +6458,6 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
   padding: 16px 14px;
-}
-.Popup-checkout .payment-box .payment-type.active, .Popup-checkout .payment-box .payment-type:hover {
-  border: 1.5px solid #B5292F;
-  background: #FFFFFF;
-}
-.Popup-checkout .payment-box .payment-type.active .txt, .Popup-checkout .payment-box .payment-type:hover .txt {
-  font-family: BVNPro-Medium;
 }
 .Popup-checkout .payment-box .payment-type .icn {
   width: 18px;
@@ -6469,6 +6480,9 @@ Generated using nucleoapp.com
 .Popup-checkout .total-bill-order {
   margin-bottom: 20px;
 }
+.Popup-checkout .total-bill-order .priceFlx + .priceFlx {
+  margin-top: 15px;
+}
 .Popup-checkout .total-bill-order .priceFlx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6483,9 +6497,6 @@ Generated using nucleoapp.com
   line-height: 100%;
   font-family: BVNPro-Medium;
   color: #222222;
-}
-.Popup-checkout .total-bill-order .priceFlx + .priceFlx {
-  margin-top: 15px;
 }
 .Popup-checkout .total-bill-order .text {
   display: -webkit-box;
@@ -6506,49 +6517,51 @@ Generated using nucleoapp.com
   display: block;
   text-align: right;
 }
-.Popup-checkout .total-bill-order .price-detail .discount {
-  display: block;
-  color: #629050;
-}
 .Popup-checkout .total-bill-order .price-detail .discount + .discount {
   margin-top: 5px;
 }
-.Popup-checkout .total-bill-order .price-detail .voucher {
+.Popup-checkout .total-bill-order .price-detail .discount {
   display: block;
   color: #629050;
 }
 .Popup-checkout .total-bill-order .price-detail .voucher + .voucher {
   margin-top: 5px;
 }
+.Popup-checkout .total-bill-order .price-detail .voucher {
+  display: block;
+  color: #629050;
+}
 .Popup-checkout .policy-note {
   font-size: 12px;
   line-height: 140%;
   font-family: BVNPro-Regular;
   margin-top: 23px;
-  color: #666666;
 }
 .Popup-checkout .policy-note a {
   color: var(--colorRed);
+}
+.Popup-checkout .policy-note {
+  color: #666666;
+}
+.Popup-checkout .voucherBox + .voucherBox {
+  margin-top: 15px;
 }
 .Popup-checkout .voucherBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.Popup-checkout .voucherBox + .voucherBox {
-  margin-top: 15px;
-}
 .Popup-checkout .voucherBox .form-input-voucher {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.Popup-checkout .voucherBox .form-input-voucher.approved .remove-vc:hover {
+  opacity: 1;
+}
 .Popup-checkout .voucherBox .form-input-voucher.approved .remove-vc {
   opacity: 0.7;
   visibility: visible;
-}
-.Popup-checkout .voucherBox .form-input-voucher.approved .remove-vc:hover {
-  opacity: 1;
 }
 .Popup-checkout .voucherBox .form-input-voucher.approved .noti {
   display: block;
@@ -6557,12 +6570,12 @@ Generated using nucleoapp.com
 .Popup-checkout .voucherBox .form-input-voucher.wrong .input-voucher {
   border: 0.5px solid #FF9EA8;
 }
+.Popup-checkout .voucherBox .form-input-voucher.wrong .remove-vc:hover {
+  opacity: 1;
+}
 .Popup-checkout .voucherBox .form-input-voucher.wrong .remove-vc {
   opacity: 0.7;
   visibility: visible;
-}
-.Popup-checkout .voucherBox .form-input-voucher.wrong .remove-vc:hover {
-  opacity: 1;
 }
 .Popup-checkout .voucherBox .form-input-voucher.wrong .noti {
   display: block;
@@ -6629,6 +6642,10 @@ Generated using nucleoapp.com
   text-transform: none;
   opacity: 0.5;
 }
+.Popup-checkout .voucherBox .confirm-btn.disabled {
+  cursor: default;
+  opacity: 0.4;
+}
 .Popup-checkout .voucherBox .confirm-btn {
   margin-left: 10px;
   -ms-flex-negative: 0;
@@ -6650,10 +6667,6 @@ Generated using nucleoapp.com
   line-height: 140%;
   font-family: BVNPro-Medium;
   color: #FFFFFF;
-}
-.Popup-checkout .voucherBox .confirm-btn.disabled {
-  cursor: default;
-  opacity: 0.4;
 }
 .Popup-checkout .voucher-list {
   margin-top: 21px;
@@ -6867,16 +6880,6 @@ Generated using nucleoapp.com
   font-family: BVNPro-Bold;
   color: #333;
 }
-.votp-content .form-input-otp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 6px;
-}
 .votp-content .form-input-otp.correct input {
   color: #356721;
   background: #F7FFF4;
@@ -6895,6 +6898,16 @@ Generated using nucleoapp.com
   font-family: BVNPro-Regular;
   font-size: 12px;
   line-height: 140%; /* 16.8px */
+}
+.votp-content .form-input-otp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
 }
 .votp-content .form-input-otp input {
   border-radius: 6px;
@@ -7100,6 +7113,9 @@ Generated using nucleoapp.com
   font-family: BVNPro-Medium;
   color: #222222;
 }
+.PopUp-detail .atc-btn.save-edit, .PopUp-detail .buy-now.save-edit {
+  background: #222222;
+}
 .PopUp-detail .atc-btn, .PopUp-detail .buy-now {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -7111,9 +7127,6 @@ Generated using nucleoapp.com
   color: #FFFFFF;
   background: var(--colorRed);
   border-radius: 34px;
-}
-.PopUp-detail .atc-btn.save-edit, .PopUp-detail .buy-now.save-edit {
-  background: #222222;
 }
 .PopUp-detail .disalbe-cart {
   cursor: default;
@@ -7219,8 +7232,7 @@ Generated using nucleoapp.com
   bottom: 11px;
   padding: 6px 10px;
   background: rgba(0, 0, 0, 0.82);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   border-radius: 29px;
   z-index: 3;
 }
@@ -7321,6 +7333,22 @@ Generated using nucleoapp.com
   font-size: 11px;
   line-height: 135%; /* 14.85px */
 }
+.PopUp-detail .sapo.has-expand.active {
+  display: -webkit-box;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+.PopUp-detail .sapo.has-expand.active .show-more {
+  display: none;
+}
+.PopUp-detail .sapo.has-expand {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.PopUp-detail .sapo.has-expand .show-more {
+  display: block;
+}
 .PopUp-detail .sapo {
   margin-top: 15px;
   position: relative;
@@ -7332,21 +7360,9 @@ Generated using nucleoapp.com
   overflow: visible;
   -webkit-line-clamp: unset;
 }
-.PopUp-detail .sapo.has-expand {
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.PopUp-detail .sapo.has-expand.active {
-  display: -webkit-box;
-  overflow: visible;
-  -webkit-line-clamp: unset;
-}
-.PopUp-detail .sapo.has-expand.active .show-more {
-  display: none;
-}
-.PopUp-detail .sapo.has-expand .show-more {
-  display: block;
+.PopUp-detail .sapo .show-more:before {
+  content: "... ";
+  font-family: BVNPro-Regular;
 }
 .PopUp-detail .sapo .show-more {
   display: none;
@@ -7358,10 +7374,6 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
   background: #ffffff;
   color: #222222;
-}
-.PopUp-detail .sapo .show-more:before {
-  content: "... ";
-  font-family: BVNPro-Regular;
 }
 .PopUp-detail .list-voucher {
   margin-top: 22px;
@@ -7458,16 +7470,16 @@ Generated using nucleoapp.com
   line-height: 100%; /* 9px */
   margin-bottom: 20px;
 }
-.PopUp-detail .swiper-suggest .swiper-slide {
-  margin-left: 20px;
-  height: auto;
-  width: 240px;
-}
 .PopUp-detail .swiper-suggest .swiper-slide:nth-child(1) {
   margin-left: 20px;
 }
 .PopUp-detail .swiper-suggest .swiper-slide:nth-last-child(1) {
   margin-right: 20px;
+}
+.PopUp-detail .swiper-suggest .swiper-slide {
+  margin-left: 20px;
+  height: auto;
+  width: 240px;
 }
 .PopUp-detail .waiting-card {
   width: 100%;
@@ -7762,16 +7774,18 @@ Generated using nucleoapp.com
   .PopUp-detail .swiper-suggest .swiper-wrapper::-webkit-scrollbar {
     display: none;
   }
-  .PopUp-detail .swiper-suggest .swiper-slide {
-    margin-left: 0;
-    height: auto;
-    width: 200px;
-  }
   .PopUp-detail .swiper-suggest .swiper-slide:nth-child(1) {
     margin-left: 20px;
   }
+  .PopUp-detail .swiper-suggest .swiper-slide {
+    margin-left: 0;
+  }
   .PopUp-detail .swiper-suggest .swiper-slide:nth-last-child(1) {
     margin-right: 20px;
+  }
+  .PopUp-detail .swiper-suggest .swiper-slide {
+    height: auto;
+    width: 200px;
   }
   .PopUp-detail .suggest-card {
     border: 1px solid #e1e1e1;
@@ -7865,6 +7879,9 @@ Generated using nucleoapp.com
 .PopUp-location .list-loca li {
   border-bottom: 1px solid #f5f5f5;
 }
+.PopUp-location .loca-btn:hover {
+  background: #f9f9f9;
+}
 .PopUp-location .loca-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7874,9 +7891,6 @@ Generated using nucleoapp.com
           align-items: center;
   padding: 15px;
   gap: 11px;
-}
-.PopUp-location .loca-btn:hover {
-  background: #f9f9f9;
 }
 .PopUp-location .loca-btn .icn {
   width: 16px;
@@ -7895,11 +7909,11 @@ Generated using nucleoapp.com
   color: #222222;
 }
 
-.popup-loca-active {
-  overflow: hidden;
-}
 .popup-loca-active .fancybox-slide--html {
   padding: 0;
+}
+.popup-loca-active {
+  overflow: hidden;
 }
 .popup-loca-active .fancybox-content {
   padding: 0;
@@ -8005,6 +8019,9 @@ Generated using nucleoapp.com
     width: calc(100% - 40px);
   }
 }
+.bh-finish_wrapper.bh-wrapper {
+  padding-top: 30px;
+}
 .bh-finish_wrapper {
   padding-bottom: 60px;
   background: #fff;
@@ -8012,9 +8029,6 @@ Generated using nucleoapp.com
   min-height: -webkit-fill-available;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.bh-finish_wrapper.bh-wrapper {
-  padding-top: 30px;
 }
 .bh-finish_wrapper .funcsBox {
   width: 335px;
@@ -8030,11 +8044,6 @@ Generated using nucleoapp.com
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 33px;
-  margin-bottom: 16px;
 }
 .bh-finish_wrapper .fn-funcs.save-bill {
   background: #B5292F;
@@ -8054,6 +8063,13 @@ Generated using nucleoapp.com
 }
 .bh-finish_wrapper .fn-funcs.back-home .txt {
   color: #111111;
+}
+.bh-finish_wrapper .fn-funcs {
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 33px;
+  margin-bottom: 16px;
 }
 .bh-finish_wrapper .fn-funcs .icn {
   width: 14px;
@@ -8115,14 +8131,14 @@ Generated using nucleoapp.com
   color: #222222;
 }
 
+.fn-content.fn-print {
+  padding: 30px 0;
+}
 .fn-content {
   padding-top: 80px;
   width: 768px;
   margin: 0 auto;
   max-width: 100%;
-}
-.fn-content.fn-print {
-  padding: 30px 0;
 }
 .fn-content .icon-success {
   width: 86px;
@@ -8172,9 +8188,6 @@ Generated using nucleoapp.com
   text-align: center;
   color: #666666;
 }
-.fn-content .od-id {
-  margin-bottom: 34px;
-}
 .fn-content .od-id .text {
   font-size: 10px;
   line-height: 100%;
@@ -8199,6 +8212,9 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
   color: #356721;
   margin-bottom: 20px;
+}
+.fn-content .od-id {
+  margin-bottom: 34px;
 }
 .fn-content .warning {
   width: 100%;
@@ -8235,10 +8251,12 @@ Generated using nucleoapp.com
   line-height: 150%;
   font-family: BVNPro-SemiBold;
   text-transform: uppercase;
-  color: #111111;
 }
 .fn-content .warning .note-pickup span {
   color: #B5292F;
+}
+.fn-content .warning .note-pickup {
+  color: #111111;
 }
 .fn-content .warning .note-ship {
   padding: 0 25px;
@@ -8261,6 +8279,9 @@ Generated using nucleoapp.com
           flex-direction: column;
   gap: 11px;
 }
+.fn-content .money-bill .type-money.red-text {
+  color: var(--colorRed);
+}
 .fn-content .money-bill .type-money {
   margin-bottom: 2px;
   display: -webkit-box;
@@ -8277,9 +8298,6 @@ Generated using nucleoapp.com
   color: #666666;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-.fn-content .money-bill .type-money.red-text {
-  color: var(--colorRed);
 }
 .fn-content .money-bill .type-money .type {
   width: auto;
@@ -8301,13 +8319,13 @@ Generated using nucleoapp.com
   margin-bottom: 26px;
   color: #222222;
 }
+.fn-content .od-total .total-flx + .total-flx {
+  margin-top: 12px;
+}
 .fn-content .od-total .total-flx {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.fn-content .od-total .total-flx + .total-flx {
-  margin-top: 12px;
 }
 .fn-content .od-total .type {
   font-size: 13px;
@@ -8568,6 +8586,10 @@ Generated using nucleoapp.com
   margin: 0 auto;
   max-width: 100%;
 }
+.policy-wrapper .content-section + .content-section {
+  padding-top: 35px;
+  border-top: 1px solid #C4C4C4;
+}
 .policy-wrapper .content-section {
   margin-bottom: 35px;
   display: -webkit-box;
@@ -8579,20 +8601,10 @@ Generated using nucleoapp.com
           flex-direction: column;
   gap: 25px;
 }
-.policy-wrapper .content-section + .content-section {
-  padding-top: 35px;
-  border-top: 1px solid #C4C4C4;
-}
 .policy-wrapper .heading {
   font-size: 19px;
   line-height: 130%;
   font-family: BVNPro-SemiBold;
-  color: #222222;
-}
-.policy-wrapper p {
-  font-size: 14px;
-  line-height: 140%;
-  font-family: BVNPro-Regular;
   color: #222222;
 }
 .policy-wrapper p + p {
@@ -8603,6 +8615,12 @@ Generated using nucleoapp.com
 }
 .policy-wrapper p a {
   color: #B5292F;
+}
+.policy-wrapper p {
+  font-size: 14px;
+  line-height: 140%;
+  font-family: BVNPro-Regular;
+  color: #222222;
 }
 .policy-wrapper p.dot {
   padding-left: 20px;
@@ -8659,16 +8677,16 @@ Generated using nucleoapp.com
   grid-column-gap: 25px;
   grid-row-gap: 12px;
 }
+.list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
+  color: #B5292F;
+  font-family: BVNPro-Medium;
+}
 .list-cate-link .cate-link {
   color: #222;
   font-size: 13.5px;
   font-family: BVNPro-Regular;
   display: block;
   line-height: 130%;
-}
-.list-cate-link .cate-link:hover, .list-cate-link .cate-link.active {
-  color: #B5292F;
-  font-family: BVNPro-Medium;
 }
 
 .bh-list-cate_wrapper {
@@ -8731,12 +8749,12 @@ Generated using nucleoapp.com
   .list-cate-link .list-ctl::-webkit-scrollbar {
     display: none;
   }
+  .list-cate-link .list-ctl li:nth-child(1) {
+    margin-left: 20px;
+  }
   .list-cate-link .list-ctl li {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-  }
-  .list-cate-link .list-ctl li:nth-child(1) {
-    margin-left: 20px;
   }
   .list-cate-link .list-ctl li:nth-last-child(1) {
     margin-right: 20px;
@@ -8796,10 +8814,6 @@ Generated using nucleoapp.com
   position: relative;
   display: block;
   position: relative;
-  border-radius: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: hidden;
 }
 .food-detail_wrapper .galleryBox .images-food:before {
   display: block;
@@ -8813,6 +8827,12 @@ Generated using nucleoapp.com
   z-index: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.food-detail_wrapper .galleryBox .images-food {
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 .food-detail_wrapper .galleryBox .images-food:before {
   border-radius: 10px;
@@ -8879,8 +8899,7 @@ Generated using nucleoapp.com
   bottom: 11px;
   padding: 6px 10px;
   background: rgba(0, 0, 0, 0.82);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   border-radius: 29px;
   z-index: 3;
 }
@@ -8976,6 +8995,22 @@ Generated using nucleoapp.com
   gap: 19px;
   margin-bottom: 24px;
 }
+.food-detail_wrapper .infoBox .sapo.has-expand.active {
+  display: -webkit-box;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+.food-detail_wrapper .infoBox .sapo.has-expand.active .show-more {
+  display: none;
+}
+.food-detail_wrapper .infoBox .sapo.has-expand {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.food-detail_wrapper .infoBox .sapo.has-expand .show-more {
+  display: block;
+}
 .food-detail_wrapper .infoBox .sapo {
   margin-top: 15px;
   position: relative;
@@ -8987,21 +9022,9 @@ Generated using nucleoapp.com
   overflow: visible;
   -webkit-line-clamp: unset;
 }
-.food-detail_wrapper .infoBox .sapo.has-expand {
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.food-detail_wrapper .infoBox .sapo.has-expand.active {
-  display: -webkit-box;
-  overflow: visible;
-  -webkit-line-clamp: unset;
-}
-.food-detail_wrapper .infoBox .sapo.has-expand.active .show-more {
-  display: none;
-}
-.food-detail_wrapper .infoBox .sapo.has-expand .show-more {
-  display: block;
+.food-detail_wrapper .infoBox .sapo .show-more:before {
+  content: "... ";
+  font-family: BVNPro-Regular;
 }
 .food-detail_wrapper .infoBox .sapo .show-more {
   display: none;
@@ -9013,10 +9036,6 @@ Generated using nucleoapp.com
   font-family: BVNPro-SemiBold;
   background: #ffffff;
   color: #222222;
-}
-.food-detail_wrapper .infoBox .sapo .show-more:before {
-  content: "... ";
-  font-family: BVNPro-Regular;
 }
 .food-detail_wrapper .infoBox .list-voucher {
   margin-top: 22px;
@@ -9112,13 +9131,13 @@ Generated using nucleoapp.com
   line-height: 100%; /* 9px */
   margin-bottom: 20px;
 }
+.food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-child(1) {
+  margin-left: 0;
+}
 .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
   margin-left: 10px;
   height: auto;
   width: 240px;
-}
-.food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-child(1) {
-  margin-left: 0;
 }
 .food-detail_wrapper .infoBox .waiting-card {
   width: 100%;
@@ -9342,6 +9361,9 @@ Generated using nucleoapp.com
   display: flex;
   gap: 12px;
 }
+.food-detail_wrapper .funcsFixed .atc-btn:hover {
+  background: #A3272D;
+}
 .food-detail_wrapper .funcsFixed .atc-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -9354,8 +9376,8 @@ Generated using nucleoapp.com
   background: var(--colorRed);
   border-radius: 34px;
 }
-.food-detail_wrapper .funcsFixed .atc-btn:hover {
-  background: #A3272D;
+.food-detail_wrapper .funcsFixed .buy-now:hover {
+  background: #333333;
 }
 .food-detail_wrapper .funcsFixed .buy-now {
   display: -webkit-inline-box;
@@ -9368,9 +9390,6 @@ Generated using nucleoapp.com
   color: #FFFFFF;
   border-radius: 34px;
   background: #444;
-}
-.food-detail_wrapper .funcsFixed .buy-now:hover {
-  background: #333333;
 }
 .food-detail_wrapper .funcsFixed .disalbe-cart {
   cursor: default;
@@ -9495,15 +9514,15 @@ Generated using nucleoapp.com
   .food-detail_wrapper .infoBox .swiper-suggest .swiper-wrapper::-webkit-scrollbar {
     display: none;
   }
-  .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
-    height: auto;
-    width: 200px;
-  }
   .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-child(1) {
     margin-left: 20px;
   }
   .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide:nth-last-child(1) {
     margin-right: 20px;
+  }
+  .food-detail_wrapper .infoBox .swiper-suggest .swiper-slide {
+    height: auto;
+    width: 200px;
   }
   .food-detail_wrapper .infoBox .suggest-card {
     border-radius: 6px;
@@ -9623,13 +9642,13 @@ Generated using nucleoapp.com
 .menuBox-Tet .bh-home-menu .tagBox {
   background: #A71616;
 }
-.menuBox-Tet .bh-home-menu .tagBox .tags-filter {
-  color: #FFFFFF;
-  background: #CC2C2C;
-}
 .menuBox-Tet .bh-home-menu .tagBox .tags-filter.active {
   background: #FFBF3D;
   color: #111111;
+}
+.menuBox-Tet .bh-home-menu .tagBox .tags-filter {
+  color: #FFFFFF;
+  background: #CC2C2C;
 }
 .menuBox-Tet .bh-home-menu .swiper-button-prev.swiper-button-disabled, .menuBox-Tet .bh-home-menu .swiper-button-next.swiper-button-disabled {
   opacity: 0.2;
@@ -9662,13 +9681,13 @@ Generated using nucleoapp.com
     background: #A71616;
     margin-bottom: 10px;
   }
-  .menuBox-Tet .bh-home-menu .tagBox .tags-filter {
-    color: #FFFFFF;
-    background: #CC2C2C;
-  }
   .menuBox-Tet .bh-home-menu .tagBox .tags-filter.active {
     background: #FFBF3D;
     color: #111111;
+  }
+  .menuBox-Tet .bh-home-menu .tagBox .tags-filter {
+    color: #FFFFFF;
+    background: #CC2C2C;
   }
   .menuBox-Tet .bh-menu-list {
     background: #fff;
@@ -9749,6 +9768,9 @@ Generated using nucleoapp.com
           flex-direction: column;
   gap: 22px;
 }
+.sb-wrapper .money-bill .type-money.red-text {
+  color: var(--colorRed);
+}
 .sb-wrapper .money-bill .type-money {
   margin-bottom: 5px;
   display: -webkit-box;
@@ -9766,9 +9788,6 @@ Generated using nucleoapp.com
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.sb-wrapper .money-bill .type-money.red-text {
-  color: var(--colorRed);
-}
 .sb-wrapper .money-bill .type-money .type {
   width: auto;
   font-family: BVNPro-Regular;
@@ -9785,13 +9804,13 @@ Generated using nucleoapp.com
   margin-bottom: 31px;
   color: #222222;
 }
+.sb-wrapper .total-flx + .total-flx {
+  margin-top: 24px;
+}
 .sb-wrapper .total-flx {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.sb-wrapper .total-flx + .total-flx {
-  margin-top: 24px;
 }
 .sb-wrapper .type {
   font-size: 24px;
@@ -9966,7 +9985,7 @@ Generated using nucleoapp.com
 }
 
 .news-wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -9984,7 +10003,7 @@ Generated using nucleoapp.com
           flex-direction: column;
 }
 .news-content .nc-wrapper .hotnews {
-  background: #B5292F;
+  background: #b5292f;
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -10030,7 +10049,7 @@ Generated using nucleoapp.com
 .news-content .nc-wrapper .hotnews .hotnews-info h2 .info-title {
   font-size: 28px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "BVNPro-SemiBold";
 }
 .news-content .nc-wrapper .hotnews .hotnews-info .btn-clickhere {
@@ -10050,7 +10069,7 @@ Generated using nucleoapp.com
 .news-content .nc-wrapper .hotnews .hotnews-info .btn-clickhere .txt {
   font-size: 13px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "BVNPro-SemiBold";
 }
 .news-content .nc-wrapper .grid-news {
@@ -10072,8 +10091,8 @@ Generated using nucleoapp.com
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
-  border: 1px solid #EFEFEF;
+  background: #ffffff;
+  border: 1px solid #efefef;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10176,8 +10195,8 @@ Generated using nucleoapp.com
           justify-content: space-between;
 }
 .news-content .nc-wrapper .news-footer .nf-left .select-page {
-  background: #FFFFFF;
-  border: 1px solid #E6E6E6;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10233,7 +10252,7 @@ Generated using nucleoapp.com
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 0 0 5px 5px;
 }
 .news-content .nc-wrapper .news-footer .nf-left .select-page .droplist-page .label {
@@ -10289,6 +10308,11 @@ Generated using nucleoapp.com
       -ms-flex-align: center;
           align-items: center;
 }
+.news-content .nc-wrapper .news-footer .btnPagination.active {
+  background: #b5292f;
+  opacity: 1;
+  cursor: pointer;
+}
 .news-content .nc-wrapper .news-footer .btnPagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10307,17 +10331,12 @@ Generated using nucleoapp.com
   margin-right: 15px;
   cursor: default;
 }
-.news-content .nc-wrapper .news-footer .btnPagination.active {
-  background: #B5292F;
-  opacity: 1;
-  cursor: pointer;
-}
 .news-content .nc-wrapper .news-footer .btnPagination:nth-last-child(1) {
   margin-right: 0;
 }
 
 .newsDetail-wrapper {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .newsDetail-wrapper .cosoDetail-wrapper {
   background: none;
@@ -10358,7 +10377,7 @@ Generated using nucleoapp.com
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
-  color: #B5292F;
+  color: #b5292f;
   font-family: "BVNPro-SemiBold";
   margin-bottom: 20px;
 }
@@ -10518,12 +10537,12 @@ Generated using nucleoapp.com
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   border-radius: 5px;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-questions .list-questions .questions-item {
   position: relative;
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #dfdfdf;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-questions .list-questions .questions-item:nth-last-child(1) {
   border-bottom: 0;
@@ -10603,7 +10622,7 @@ Generated using nucleoapp.com
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-right .csdcr-latest-news .list-latest-news .item-content {
   padding: 15px 0;
-  border-bottom: 0.7px dashed #DFDFDF;
+  border-bottom: 0.7px dashed #dfdfdf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10620,7 +10639,7 @@ Generated using nucleoapp.com
   transition: all 0.25s ease;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-right .csdcr-latest-news .list-latest-news .item-content .title:hover {
-  color: #B5292F;
+  color: #b5292f;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-right .csdcr-latest-news .list-latest-news .item-content .thumb {
   display: block;
@@ -10640,7 +10659,7 @@ Generated using nucleoapp.com
      object-fit: cover;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-right .csdcr-latest-news .list-latest-news .item-content:first-child {
-  border-top: 0.7px dashed #DFDFDF;
+  border-top: 0.7px dashed #dfdfdf;
 }
 .newsDetail-wrapper .cosoDetail-content .csdc-wrapper .csdc-right .sidebar {
   position: sticky;
@@ -10667,9 +10686,39 @@ Generated using nucleoapp.com
   font-size: 26px;
   line-height: 110%;
   letter-spacing: -0.02em;
-  color: #B5292F;
+  color: #b5292f;
   font-family: "BVNPro-Bold";
   margin-bottom: 30px;
+}
+
+.bh-news-cate {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  z-index: 99999;
+  background: #ffffff;
+  padding: 12px 0;
+}
+.bh-news-cate .news-cate_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.bh-news-cate .news-cate_wrapper .news-cate_item {
+  font-size: 13px;
+  line-height: 100%;
+  color: #222;
+  font-family: "BVNPro-Regular";
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  padding: 11px 15px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+.bh-news-cate .news-cate_wrapper .news-cate_item.active, .bh-news-cate .news-cate_wrapper .news-cate_item:hover {
+  background-color: #b5292f;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -10895,6 +10944,40 @@ Generated using nucleoapp.com
   .newsDetail-wrapper .news-content .nc-wrapper .grid-news-container .grid-news .grid-news-item:nth-last-child(1) {
     margin-right: 20px;
   }
+  .bh-news-cate {
+    background: #ffe6ce;
+    top: 60px;
+    padding: 0;
+  }
+  .bh-news-cate .news-cate_wrapper {
+    padding: 0 20px;
+    gap: 15px;
+  }
+  .bh-news-cate .news-cate_wrapper .news-cate_item {
+    padding: 11px 0;
+    background: none;
+    font-family: BVNPro-Medium;
+    text-transform: uppercase;
+    position: relative;
+    color: #222;
+  }
+  .bh-news-cate .news-cate_wrapper .news-cate_item:before {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    display: none;
+    content: "";
+    background: #1b4e30;
+    position: absolute;
+  }
+  .bh-news-cate .news-cate_wrapper .news-cate_item.active, .bh-news-cate .news-cate_wrapper .news-cate_item:hover {
+    color: #222;
+    background: none;
+  }
+  .bh-news-cate .news-cate_wrapper .news-cate_item.active::before, .bh-news-cate .news-cate_wrapper .news-cate_item:hover::before {
+    display: block;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .news-content {
@@ -10906,15 +10989,15 @@ html {
 }
 
 .cosoDetail-wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .cosoDetail-content {
   padding: 20px 0;
 }
 .cosoDetail-content .csdc-wrapper {
-  background: #FFFFFF;
-  border: 1px solid #EFEFEF;
+  background: #ffffff;
+  border: 1px solid #efefef;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -10965,21 +11048,21 @@ html {
   display: block;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top.status-type-3 .csdcb-listActionLink .action-link-item.disableOrder .action-link {
-  background: #F5F5F5;
+  background: #f5f5f5;
   cursor: default;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top.status-type-3 .csdcb-listActionLink .action-link-item.disableOrder .action-link .icn svg path {
-  fill: #CECECE;
+  fill: #cecece;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top.status-type-3 .csdcb-listActionLink .action-link-item.disableOrder .action-link .txt {
-  color: #CECECE;
+  color: #cecece;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-address {
   font-size: 38px;
   line-height: 110%;
   font-family: "TiltWarp-Regular";
   letter-spacing: -0.02em;
-  color: #1B4E30;
+  color: #1b4e30;
   margin-bottom: 15px;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-phone {
@@ -11036,20 +11119,20 @@ html {
   font-family: "BVNPro-Bold";
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 4px 7px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-status .status-noti .noti-green {
-  background: #23C346;
+  background: #23c346;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-status .status-noti .noti-red {
-  background: #FF3A3A;
+  background: #ff3a3a;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-status .status-noti .noti-orange {
-  background: #F87C37;
+  background: #f87c37;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-status .time-txt {
   font-size: 13px;
@@ -11091,7 +11174,7 @@ html {
       -ms-flex-align: start;
           align-items: start;
   width: 120px;
-  border-right: 1px solid #E1E1E1;
+  border-right: 1px solid #e1e1e1;
   padding-left: 20px;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-about .aboutCol:first-child {
@@ -11141,7 +11224,7 @@ html {
   height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 5px;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
@@ -11167,7 +11250,7 @@ html {
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-listActionLink .action-link-item .action-link .txt {
   font-size: 16px;
   line-height: 100%;
-  color: #1B4E30;
+  color: #1b4e30;
   font-family: "BVNPro-SemiBold";
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-top .csdcb-phone .phoneNumber {
@@ -11339,8 +11422,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFBF4;
-  border: 0.5px solid #C7C7C7;
+  background: #fffbf4;
+  border: 0.5px solid #c7c7c7;
   border-radius: 10px;
   margin-bottom: 30px;
   -webkit-transition: 0.4s ease;
@@ -11362,8 +11445,8 @@ html {
   display: none;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-toc .toc-header {
-  background: #FFFFFF;
-  border-bottom: 0.5px solid #C7C7C7;
+  background: #ffffff;
+  border-bottom: 0.5px solid #c7c7c7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11470,7 +11553,7 @@ html {
   line-height: 170%;
   margin-bottom: 15px;
   font-family: "BVNPro-SemiBold";
-  color: #21A256;
+  color: #21a256;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-bottom h2 {
   font-size: 24px;
@@ -11487,7 +11570,7 @@ html {
   margin-bottom: 15px;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-bottom hr {
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   margin: 15px 0;
 }
 .cosoDetail-content .csdc-wrapper .csdc-body .csdcb-bottom img {
@@ -11573,7 +11656,7 @@ html {
   padding: 8px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #F1F1F1;
+  background: #f1f1f1;
   font-size: 13px;
   line-height: 150%;
   font-family: "BVNPro-Italic";
@@ -11620,7 +11703,7 @@ html {
   padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #1B4E30;
+  background: #1b4e30;
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -11645,7 +11728,7 @@ html {
 .cosoDetail-content .ordernowBox .ob-left .title {
   font-size: 28px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "BVNPro-SemiBold";
   margin-bottom: 10px;
 }
@@ -11662,7 +11745,7 @@ html {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "BVNPro-SemiBold";
   margin-right: 12px;
 }
@@ -11672,7 +11755,7 @@ html {
   font-family: "TiltWarp-Regular";
   text-align: center;
   text-transform: uppercase;
-  color: #FFA827;
+  color: #ffa827;
 }
 .cosoDetail-content .ordernowBox .ob-right {
   display: -webkit-box;
@@ -11688,17 +11771,17 @@ html {
   display: flex;
 }
 .cosoDetail-content .ordernowBox .ob-right .btn-ordernow:hover a {
-  background: #FFA827;
-  color: #1B4E30;
+  background: #ffa827;
+  color: #1b4e30;
 }
 .cosoDetail-content .ordernowBox .ob-right .btn-ordernow a {
-  border: 2px solid #FFA827;
+  border: 2px solid #ffa827;
   border-radius: 10px;
   padding: 17px 47px;
   font-size: 20px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "BVNPro-SemiBold";
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
@@ -11891,7 +11974,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+.widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image, .bh-news-cate .news-cate_wrapper {
   min-width: 1080px;
   max-width: 100%;
   margin: 0 auto;
@@ -11903,19 +11986,18 @@ body.no-scroll {
   .bh-wrapper {
     padding: 0;
   }
-  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image, .bh-news-cate .news-cate_wrapper {
     width: 1080px;
     padding: 0 20px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image, .bh-news-cate .news-cate_wrapper {
     width: 63.17vw;
   }
 }
 @media screen and (max-width: 760px) {
-  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image {
+  .widthCT, .bh-main-header .header-content, .bh-main-header .menu-web, .bh-footer-content, .bh-footer-last, .bh-home_bner-top .bnerBox, .bh-home-discount .heading, .bh-home-discount .md-list, .bh-home-menu .heading, .bh-home-menu .tagBox .swiperBox, .bh-menu-list, .bh-bner-footer, .menu-tab-group, .Popup-checkout .popup-content, .search-wrapper, .list-cate-link .cate-ct, .food-detail_wrapper, .coverTet .cover-image, .bh-news-cate .news-cate_wrapper {
     min-width: 100%;
   }
 }
-/*# sourceMappingURL=main.css.map */

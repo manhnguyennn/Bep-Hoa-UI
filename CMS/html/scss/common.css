@@ -281,16 +281,6 @@ body i {
   display: flex;
   align-items: center;
 }
-.bh-cms-wrapper .filter-table .filter {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  line-height: 100%;
-  font-family: Roboto-Regular;
-  color: #111111;
-  opacity: 0.4;
-}
 .bh-cms-wrapper .filter-table .filter + .filter {
   margin-left: 1rem;
 }
@@ -300,6 +290,16 @@ body i {
 }
 .bh-cms-wrapper .filter-table .filter.active .txt, .bh-cms-wrapper .filter-table .filter:hover .txt {
   font-family: Roboto-Medium;
+}
+.bh-cms-wrapper .filter-table .filter {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  line-height: 100%;
+  font-family: Roboto-Regular;
+  color: #111111;
+  opacity: 0.4;
 }
 .bh-cms-wrapper .filter-table .filter .icn {
   margin-left: 5px;
@@ -320,11 +320,6 @@ body i {
   color: var(--colorRed);
 }
 
-.selectBox {
-  background: #fff;
-  position: relative;
-  cursor: pointer;
-}
 .selectBox.active .list-select-type,
 .selectBox.active .list-selectBox {
   opacity: 1;
@@ -342,6 +337,11 @@ body i {
   border: 1px solid #7367f0;
   border-radius: 5px 5px 0px 0px;
   color: rgb(0, 0, 0);
+}
+.selectBox {
+  background: #fff;
+  position: relative;
+  cursor: pointer;
 }
 .selectBox .selected {
   height: 40px;
@@ -395,14 +395,6 @@ body i {
   font-family: Roboto-Regular;
   color: #111111;
 }
-.selectBox .selected .icn,
-.selectBox .select-type .icn {
-  flex-shrink: 0;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
 .selectBox .selected .icn.purple,
 .selectBox .select-type .icn.purple {
   background: var(--colorPurple);
@@ -422,6 +414,14 @@ body i {
 .selectBox .selected .icn.green,
 .selectBox .select-type .icn.green {
   background: var(--colorGreen);
+}
+.selectBox .selected .icn,
+.selectBox .select-type .icn {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .selectBox .list-select-type {
   opacity: 0;
@@ -540,6 +540,10 @@ body i {
   color: #fff;
 }
 
+.value-btn:hover .text {
+  color: #7367f0;
+  font-family: Roboto-Medium;
+}
 .value-btn {
   width: 100%;
   display: flex;
@@ -547,10 +551,6 @@ body i {
   box-sizing: border-box;
   font-size: 13px;
   line-height: 14px;
-}
-.value-btn:hover .text {
-  color: #7367f0;
-  font-family: Roboto-Medium;
 }
 .value-btn .total {
   flex-grow: 1;
@@ -573,14 +573,14 @@ body i {
   color: #ff9f43;
 }
 
+.btn-close-modal:hover {
+  opacity: 1;
+}
 .btn-close-modal {
   font-family: Nucleo;
   font-size: 1rem;
   color: #555;
   opacity: 0.5;
-}
-.btn-close-modal:hover {
-  opacity: 1;
 }
 
 .modal-header {
@@ -729,6 +729,13 @@ body i {
   font-weight: normal;
 }
 
+.btn-pin.active, .btn-pin:hover {
+  background: #ff9f43;
+  border: 1px solid #ff9f43;
+}
+.btn-pin.active span, .btn-pin:hover span {
+  color: #ffffff;
+}
 .btn-pin {
   padding: 0.786rem 1rem;
   transition: 0.3s;
@@ -740,13 +747,6 @@ body i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.btn-pin.active, .btn-pin:hover {
-  background: #ff9f43;
-  border: 1px solid #ff9f43;
-}
-.btn-pin.active span, .btn-pin:hover span {
-  color: #ffffff;
 }
 .btn-pin span {
   display: block;
@@ -987,6 +987,10 @@ body i {
   cursor: pointer;
 }
 
+.quantity-number.empty {
+  color: #ea5455;
+  font-family: Roboto-Bold;
+}
 .quantity-number {
   color: #111;
   display: block;
@@ -996,10 +1000,6 @@ body i {
   font-style: normal;
   font-weight: 400;
   line-height: 101%; /* 13.13px */
-}
-.quantity-number.empty {
-  color: #ea5455;
-  font-family: Roboto-Bold;
 }
 
 .disable-action {

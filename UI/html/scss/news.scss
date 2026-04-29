@@ -1,5 +1,5 @@
 .news-wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -12,7 +12,7 @@
     flex-direction: column;
 
     .hotnews {
-      background: #B5292F;
+      background: #b5292f;
       border-radius: 10px;
       overflow: hidden;
       display: flex;
@@ -52,7 +52,7 @@
           .info-title {
             font-size: 28px;
             line-height: 140%;
-            color: #FFFFFF;
+            color: #ffffff;
             font-family: "BVNPro-SemiBold";
           }
         }
@@ -69,7 +69,7 @@
           .txt {
             font-size: 13px;
             line-height: 120%;
-            color: #FFFFFF;
+            color: #ffffff;
             font-family: "BVNPro-SemiBold";
           }
         }
@@ -86,8 +86,8 @@
       .grid-news-item {
         display: flex;
         flex-direction: column;
-        background: #FFFFFF;
-        border: 1px solid #EFEFEF;
+        background: #ffffff;
+        border: 1px solid #efefef;
         border-radius: 10px;
         box-sizing: border-box;
 
@@ -96,7 +96,6 @@
             h3 {
               a {
                 color: #666;
-
               }
             }
           }
@@ -137,17 +136,12 @@
             height: auto;
             margin-bottom: auto;
             flex-grow: 1;
-
           }
 
           .title {
-
-
           }
 
           a {
-
-
             font-size: 16px;
             line-height: 150%;
             color: #222222;
@@ -189,8 +183,8 @@
 
       .nf-left {
         .select-page {
-          background: #FFFFFF;
-          border: 1px solid #E6E6E6;
+          background: #ffffff;
+          border: 1px solid #e6e6e6;
           border-radius: 5px;
           display: flex;
           position: relative;
@@ -236,10 +230,10 @@
             overflow-y: scroll;
             visibility: hidden;
             opacity: 0;
-            transition: .3s ease;
+            transition: 0.3s ease;
             display: flex;
             flex-direction: column;
-            border: 1px solid #E6E6E6;
+            border: 1px solid #e6e6e6;
             // border-left: 1px solid #E6E6E6;
             // border-right: 1px solid #E6E6E6;
             // border-bottom: 1px solid #E6E6E6;
@@ -261,7 +255,7 @@
 
                 .page-item {
                   .pick-page {
-                    transition: .3s ease;
+                    transition: 0.3s ease;
                     background: #fff;
                     display: block;
                     font-size: 14px;
@@ -289,7 +283,7 @@
             }
 
             &::-webkit-scrollbar-thumb {
-              background: rgba(0, 0, 0, .5);
+              background: rgba(0, 0, 0, 0.5);
             }
           }
         }
@@ -302,7 +296,7 @@
 
       .btnPagination {
         &.active {
-          background: #B5292F;
+          background: #b5292f;
           opacity: 1;
           cursor: pointer;
         }
@@ -327,7 +321,7 @@
 }
 
 .newsDetail-wrapper {
-  background: #FFFFFF;
+  background: #ffffff;
 
   .cosoDetail-wrapper {
     background: none;
@@ -366,7 +360,7 @@
             font-size: 14px;
             line-height: 150%;
             text-transform: uppercase;
-            color: #B5292F;
+            color: #b5292f;
             font-family: "BVNPro-SemiBold";
             margin-bottom: 20px;
           }
@@ -535,12 +529,12 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            border: 1px solid #DFDFDF;
+            border: 1px solid #dfdfdf;
             border-radius: 5px;
 
             .questions-item {
               position: relative;
-              border-bottom: 1px solid #DFDFDF;
+              border-bottom: 1px solid #dfdfdf;
 
               &:nth-last-child(1) {
                 border-bottom: 0;
@@ -565,7 +559,7 @@
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
-                transition: all .3s;
+                transition: all 0.3s;
 
                 .txt {
                   font-size: 16px;
@@ -614,7 +608,7 @@
 
             .item-content {
               padding: 15px 0;
-              border-bottom: 0.7px dashed #DFDFDF;
+              border-bottom: 0.7px dashed #dfdfdf;
               display: flex;
 
               .title {
@@ -626,7 +620,7 @@
                 transition: all 0.25s ease;
 
                 &:hover {
-                  color: #B5292F;
+                  color: #b5292f;
                 }
               }
 
@@ -648,7 +642,7 @@
               }
 
               &:first-child {
-                border-top: 0.7px dashed #DFDFDF;
+                border-top: 0.7px dashed #dfdfdf;
               }
             }
           }
@@ -686,9 +680,38 @@
         font-size: 26px;
         line-height: 110%;
         letter-spacing: -0.02em;
-        color: #B5292F;
+        color: #b5292f;
         font-family: "BVNPro-Bold";
         margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.bh-news-cate {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  z-index: 99999;
+  background: #ffffff;
+  padding: 12px 0;
+  .news-cate_wrapper {
+    @extend .widthCT;
+    display: flex;
+    gap: 10px;
+    .news-cate_item {
+      font-size: 13px;
+      line-height: 100%;
+      color: #222;
+      font-family: "BVNPro-Regular";
+      transition: all 0.25s ease;
+      padding: 11px 15px;
+      background-color: #f6f6f6;
+      border-radius: 20px;
+      &.active,
+      &:hover {
+        background-color: #b5292f;
+        color: #ffffff;
       }
     }
   }
@@ -736,7 +759,6 @@
             padding: 12px 15px 25px 15px;
 
             h3 {
-
             }
 
             a {
@@ -993,6 +1015,42 @@
       }
     }
   }
+
+  .bh-news-cate {
+    background: #ffe6ce;
+    top: 60px;
+    padding: 0;
+    .news-cate_wrapper {
+      padding: 0 20px;
+      gap: 15px;
+      .news-cate_item {
+        padding: 11px 0;
+        background: none;
+        font-family: BVNPro-Medium;
+        text-transform: uppercase;
+        position: relative;
+        color: #222;
+        &:before {
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          display: none;
+          content: "";
+          background: #1b4e30;
+          position: absolute;
+        }
+        &.active,
+        &:hover {
+          color: #222;
+          background: none;
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
@@ -1006,15 +1064,15 @@ html {
 }
 
 .cosoDetail-wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .cosoDetail-content {
   padding: 20px 0;
 
   .csdc-wrapper {
-    background: #FFFFFF;
-    border: 1px solid #EFEFEF;
+    background: #ffffff;
+    border: 1px solid #efefef;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -1079,19 +1137,19 @@ html {
             .action-link-item {
               &.disableOrder {
                 .action-link {
-                  background: #F5F5F5;
+                  background: #f5f5f5;
                   cursor: default;
 
                   .icn {
                     svg {
                       path {
-                        fill: #CECECE;
+                        fill: #cecece;
                       }
                     }
                   }
 
                   .txt {
-                    color: #CECECE;
+                    color: #cecece;
                   }
                 }
               }
@@ -1104,7 +1162,7 @@ html {
           line-height: 110%;
           font-family: "TiltWarp-Regular";
           letter-spacing: -0.02em;
-          color: #1B4E30;
+          color: #1b4e30;
           margin-bottom: 15px;
         }
 
@@ -1155,22 +1213,22 @@ html {
               font-family: "BVNPro-Bold";
               text-align: center;
               text-transform: uppercase;
-              color: #FFFFFF;
+              color: #ffffff;
               padding: 4px 7px;
               box-sizing: border-box;
               border-radius: 25px;
             }
 
             .noti-green {
-              background: #23C346;
+              background: #23c346;
             }
 
             .noti-red {
-              background: #FF3A3A;
+              background: #ff3a3a;
             }
 
             .noti-orange {
-              background: #F87C37;
+              background: #f87c37;
             }
           }
 
@@ -1200,7 +1258,7 @@ html {
             flex-direction: column;
             align-items: start;
             width: 120px;
-            border-right: 1px solid #E1E1E1;
+            border-right: 1px solid #e1e1e1;
             padding-left: 20px;
 
             &:first-child {
@@ -1242,7 +1300,7 @@ html {
               padding: 15px 35px;
               height: 50px;
               box-sizing: border-box;
-              background: #F5F5F5;
+              background: #f5f5f5;
               border-radius: 5px;
               transition: 0.25s ease;
 
@@ -1271,7 +1329,7 @@ html {
               .txt {
                 font-size: 16px;
                 line-height: 100%;
-                color: #1B4E30;
+                color: #1b4e30;
                 font-family: "BVNPro-SemiBold";
               }
             }
@@ -1487,8 +1545,8 @@ html {
       .csdcb-toc {
         display: flex;
         flex-direction: column;
-        background: #FFFBF4;
-        border: 0.5px solid #C7C7C7;
+        background: #fffbf4;
+        border: 0.5px solid #c7c7c7;
         border-radius: 10px;
         margin-bottom: 30px;
         transition: 0.4s ease;
@@ -1512,8 +1570,8 @@ html {
         }
 
         .toc-header {
-          background: #FFFFFF;
-          border-bottom: 0.5px solid #C7C7C7;
+          background: #ffffff;
+          border-bottom: 0.5px solid #c7c7c7;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -1566,7 +1624,7 @@ html {
 
               &::before {
                 position: absolute;
-                content: '';
+                content: "";
                 top: 10px;
                 left: 6px;
                 width: 4px;
@@ -1615,7 +1673,6 @@ html {
           line-height: 170%;
           color: #333333;
           font-family: "BVNPro-Italic";
-
         }
 
         a {
@@ -1623,7 +1680,7 @@ html {
           line-height: 170%;
           margin-bottom: 15px;
           font-family: "BVNPro-SemiBold";
-          color: #21A256;
+          color: #21a256;
         }
 
         h2 {
@@ -1643,7 +1700,7 @@ html {
         }
 
         hr {
-          border: 1px solid #DFDFDF;
+          border: 1px solid #dfdfdf;
           margin: 15px 0;
         }
 
@@ -1733,7 +1790,7 @@ html {
           .thumb-txt {
             padding: 8px 10px;
             box-sizing: border-box;
-            background: #F1F1F1;
+            background: #f1f1f1;
             font-size: 13px;
             line-height: 150%;
             font-family: "BVNPro-Italic";
@@ -1760,7 +1817,7 @@ html {
 
             &::before {
               position: absolute;
-              content: '';
+              content: "";
               top: 12px;
               left: 8px;
               width: 3px;
@@ -1779,7 +1836,7 @@ html {
     justify-content: space-between;
     padding: 40px;
     box-sizing: border-box;
-    background: #1B4E30;
+    background: #1b4e30;
     border-radius: 10px;
     margin-bottom: 30px;
 
@@ -1801,7 +1858,7 @@ html {
       .title {
         font-size: 28px;
         line-height: 140%;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "BVNPro-SemiBold";
         margin-bottom: 10px;
       }
@@ -1815,7 +1872,7 @@ html {
           line-height: 18px;
           text-align: center;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           font-family: "BVNPro-SemiBold";
           margin-right: 12px;
         }
@@ -1826,7 +1883,7 @@ html {
           font-family: "TiltWarp-Regular";
           text-align: center;
           text-transform: uppercase;
-          color: #FFA827;
+          color: #ffa827;
         }
       }
     }
@@ -1840,19 +1897,19 @@ html {
 
         &:hover {
           a {
-            background: #FFA827;
-            color: #1B4E30;
+            background: #ffa827;
+            color: #1b4e30;
           }
         }
 
         a {
-          border: 2px solid #FFA827;
+          border: 2px solid #ffa827;
           border-radius: 10px;
           padding: 17px 47px;
           font-size: 20px;
           line-height: 25px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           font-family: "BVNPro-SemiBold";
           transition: 0.15s ease;
         }

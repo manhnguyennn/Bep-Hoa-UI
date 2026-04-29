@@ -342,12 +342,12 @@ a {
   transition: 0.15s;
   border-radius: 4px;
 }
+.menu-box .funcs-box .add-to-cart:hover {
+  background: #F04D61;
+}
 .menu-box .funcs-box .add-to-cart {
   opacity: 1;
   visibility: visible;
-}
-.menu-box .funcs-box .add-to-cart:hover {
-  background: #F04D61;
 }
 .menu-box .funcs-box .reset-cart {
   opacity: 0;
@@ -598,6 +598,10 @@ a {
 }
 
 /* Modal Styles */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 .modal-overlay {
   transition: 0.3s;
   position: fixed;
@@ -612,10 +616,6 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 99999;
-}
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
 .modal-overlay .modal {
   background: white;
@@ -734,10 +734,12 @@ a {
 .modal-overlay .bill-total .note {
   color: #666;
   font-size: 12px;
-  line-height: 140%; /* 16.8px */
 }
 .modal-overlay .bill-total .note span {
   color: #F04D61;
+}
+.modal-overlay .bill-total .note {
+  line-height: 140%; /* 16.8px */
 }
 .modal-overlay .food-item {
   display: flex;
@@ -808,9 +810,6 @@ a {
   display: block;
   content: "";
 }
-.modal-overlay .cs-infoBox .form-input {
-  width: 100%;
-}
 .modal-overlay .cs-infoBox .form-input.wrong .noti {
   display: block;
   color: #B5292F;
@@ -818,12 +817,18 @@ a {
 .modal-overlay .cs-infoBox .form-input.wrong .input-tet, .modal-overlay .cs-infoBox .form-input.wrong .sl-tet {
   border: 0.5px solid #FF9EA8;
 }
+.modal-overlay .cs-infoBox .form-input {
+  width: 100%;
+}
 .modal-overlay .cs-infoBox .form-input .noti {
   margin-top: 9px;
   font-size: 10px;
   line-height: 140%;
   font-family: BVNPro-Regular;
   display: none;
+}
+.modal-overlay .cs-infoBox .input-tet:hover, .modal-overlay .cs-infoBox .input-tet:focus, .modal-overlay .cs-infoBox .sl-tet:hover, .modal-overlay .cs-infoBox .sl-tet:focus {
+  border: 0.5px solid #B49464;
 }
 .modal-overlay .cs-infoBox .input-tet, .modal-overlay .cs-infoBox .sl-tet {
   height: 40px;
@@ -837,14 +842,14 @@ a {
   font-size: 14px;
   font-family: "BVNPro-Regular";
 }
-.modal-overlay .cs-infoBox .input-tet:hover, .modal-overlay .cs-infoBox .input-tet:focus, .modal-overlay .cs-infoBox .sl-tet:hover, .modal-overlay .cs-infoBox .sl-tet:focus {
-  border: 0.5px solid #B49464;
-}
 .modal-overlay .cs-infoBox .input-tet::-moz-placeholder, .modal-overlay .cs-infoBox .sl-tet::-moz-placeholder {
   opacity: 0.5;
 }
 .modal-overlay .cs-infoBox .input-tet::placeholder, .modal-overlay .cs-infoBox .sl-tet::placeholder {
   opacity: 0.5;
+}
+.modal-overlay .cs-infoBox .textarea-tet:hover, .modal-overlay .cs-infoBox .textarea-tet:focus {
+  border: 0.5px solid #B49464;
 }
 .modal-overlay .cs-infoBox .textarea-tet {
   min-height: 70px;
@@ -857,9 +862,6 @@ a {
   color: #222;
   font-size: 14px;
   font-family: "BVNPro-Regular";
-}
-.modal-overlay .cs-infoBox .textarea-tet:hover, .modal-overlay .cs-infoBox .textarea-tet:focus {
-  border: 0.5px solid #B49464;
 }
 .modal-overlay .cs-infoBox .textarea-tet::-moz-placeholder {
   opacity: 0.5;
@@ -994,12 +996,12 @@ a {
     width: 100%;
   }
   /* Modal Styles */
-  .modal-overlay {
-    align-items: flex-end;
-  }
   .modal-overlay.active .modal {
     transform: translateY(0);
     transition: 0.5s;
+  }
+  .modal-overlay {
+    align-items: flex-end;
   }
   .modal-overlay .modal {
     max-height: 90vh;

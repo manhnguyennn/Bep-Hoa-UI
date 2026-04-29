@@ -107,8 +107,7 @@
   font-size: 2.1vw;
   margin-bottom: 26px;
   background: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 .about-section .titl {
   color: #111;
@@ -165,8 +164,7 @@
   font-family: PlusJaS-Regular;
   font-size: 2.1vw;
   background: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 .brand-section .list-brand {
   display: flex;
@@ -174,11 +172,11 @@
   gap: 35px;
   padding: 0 65px;
 }
-.brand-section .list-brand li {
-  padding-top: 35px;
-}
 .brand-section .list-brand li + li {
   border-top: 1px solid #E7E7E7;
+}
+.brand-section .list-brand li {
+  padding-top: 35px;
 }
 .brand-section .brand {
   display: flex;
@@ -265,15 +263,15 @@
   font-size: 4.2vh;
   margin-bottom: 7.2vh;
 }
-.number-section .numb-gr {
-  width: 86vh;
-  gap: 12vh;
-  display: flex;
-}
 .number-section .numb-gr + .numb-gr {
   margin-top: 15px;
   padding-top: 15px;
   border-top: 1px solid #991F24;
+}
+.number-section .numb-gr {
+  width: 86vh;
+  gap: 12vh;
+  display: flex;
 }
 .number-section .type-gr {
   width: 71vh;
@@ -354,6 +352,10 @@
   margin-bottom: 25px;
   opacity: 0.6999999881;
 }
+.contact-section .view-job:hover {
+  color: #BF1818;
+  background: #fff;
+}
 .contact-section .view-job {
   transition: 0.15s;
   display: inline-flex;
@@ -367,10 +369,6 @@
   font-size: 2.2vh;
   line-height: 140%;
 }
-.contact-section .view-job:hover {
-  color: #BF1818;
-  background: #fff;
-}
 .contact-section .title {
   color: #FFF;
   font-family: PlusJaS-SemiBold;
@@ -379,14 +377,14 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+.contact-section .info-type + .info-type {
+  margin-top: 30px;
+}
 .contact-section .info-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-}
-.contact-section .info-type + .info-type {
-  margin-top: 30px;
 }
 .contact-section .info-type .type {
   opacity: 0.7;
@@ -454,9 +452,6 @@
   }
   .about-section {
     position: relative;
-    padding: 25px;
-    flex-direction: column;
-    gap: 25px;
   }
   .about-section:before {
     height: 1px;
@@ -477,6 +472,11 @@
     position: absolute;
     bottom: 0;
     content: "";
+  }
+  .about-section {
+    padding: 25px;
+    flex-direction: column;
+    gap: 25px;
   }
   .about-section .txt-left, .about-section .txt-right {
     width: 100%;
@@ -640,16 +640,16 @@
     content: "";
     background: #FFF;
   }
+  .number-section .numb-gr + .numb-gr {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+  }
   .number-section .numb-gr {
     width: 100%;
     flex-direction: column;
     gap: 0;
     border: none;
-  }
-  .number-section .numb-gr + .numb-gr {
-    margin-top: 0;
-    border-top: 0;
-    padding-top: 0;
   }
   .number-section .type-gr {
     width: 100%;

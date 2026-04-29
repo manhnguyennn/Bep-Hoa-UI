@@ -3,13 +3,16 @@
   opacity: 0.4;
 }
 
-.tags-customer-list {
-  display: flex;
-}
 .tags-customer-list.unset:before {
   content: "Chưa có";
   color: #666666;
   opacity: 0.4;
+}
+.tags-customer-list {
+  display: flex;
+}
+.tags-customer-list .tags-customer + .tags-customer {
+  margin-left: 6px;
 }
 .tags-customer-list .tags-customer {
   background: rgba(115, 103, 240, 0.08);
@@ -23,9 +26,6 @@
   font-size: 12px;
   line-height: 140%;
   color: #7367F0;
-}
-.tags-customer-list .tags-customer + .tags-customer {
-  margin-left: 6px;
 }
 
 .info-customer {
@@ -63,20 +63,13 @@
 .list-address-cus {
   padding: 0;
 }
-.list-address-cus li {
-  list-style-type: none;
-}
 .list-address-cus li + li {
   margin-top: 10px;
 }
-
-.address-cus {
-  padding: 10px 15px;
-  background: #F8F8F8;
-  border: 1.5px solid #F8F8F8;
-  border-radius: 5px;
-  font-size: 13px;
+.list-address-cus li {
+  list-style-type: none;
 }
+
 .address-cus.active {
   border: 1.5px solid #7367F0;
   background: rgba(115, 103, 240, 0.08);
@@ -87,8 +80,18 @@
 .address-cus.active .userBox .addr-stt {
   display: flex;
 }
+.address-cus {
+  padding: 10px 15px;
+  background: #F8F8F8;
+  border: 1.5px solid #F8F8F8;
+  border-radius: 5px;
+  font-size: 13px;
+}
 .address-cus .str {
   font-family: Roboto-Medium;
+}
+.address-cus .userBox .use-addr:hover {
+  opacity: 1;
 }
 .address-cus .userBox .use-addr {
   font-size: 14px;
@@ -101,9 +104,6 @@
   box-sizing: border-box;
   border-radius: 5px;
   opacity: 0.5;
-}
-.address-cus .userBox .use-addr:hover {
-  opacity: 1;
 }
 .address-cus .userBox .addr-stt {
   display: none;

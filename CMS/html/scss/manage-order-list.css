@@ -85,14 +85,14 @@
 .payment-stt .status-icn {
   margin-bottom: 10px;
 }
+.payment-stt .cash-back.active {
+  display: block;
+}
 .payment-stt .cash-back {
   padding-left: 16px;
   font-size: 10px;
   color: #E19D9D;
   display: none;
-}
-.payment-stt .cash-back.active {
-  display: block;
 }
 
 .arrange-order {
@@ -127,22 +127,6 @@
   box-shadow: inset 0px -1px 0px #EFEFEF;
   padding: 0 21px;
 }
-.table-booking .filter-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 15px 0;
-  font-size: 14px;
-  line-height: 100%;
-  font-family: Roboto-Regular;
-  color: #111111;
-  opacity: 0.4;
-}
-.table-booking .filter-btn.active, .table-booking .filter-btn:hover {
-  transition: all 0.15s;
-  opacity: 1;
-}
 .table-booking .filter-btn.active .txt, .table-booking .filter-btn:hover .txt {
   font-family: Roboto-Medium;
 }
@@ -156,9 +140,25 @@
   content: "";
   position: absolute;
 }
+.table-booking .filter-btn.active, .table-booking .filter-btn:hover {
+  transition: all 0.15s;
+  opacity: 1;
+}
 .table-booking .filter-btn.active .count {
   color: #7367F0;
   display: block;
+}
+.table-booking .filter-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: Roboto-Regular;
+  color: #111111;
+  opacity: 0.4;
 }
 .table-booking .filter-btn .txt {
   display: block;

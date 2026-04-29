@@ -48,12 +48,12 @@ body {
 .body-bill .total .contact-flex {
   display: flex;
 }
+.body-bill .total .contact-total + .contact-total {
+  margin-left: 14px;
+}
 .body-bill .total .contact-total {
   display: flex;
   align-items: center;
-}
-.body-bill .total .contact-total + .contact-total {
-  margin-left: 14px;
 }
 .body-bill .total .icn {
   width: 11px;
@@ -105,11 +105,13 @@ body {
 }
 .body-bill .detail-bill .list-order {
   margin: 2px 0;
-  list-style-type: none;
-  padding: 0;
 }
 .body-bill .detail-bill .list-order li + li {
   margin-top: 2px;
+}
+.body-bill .detail-bill .list-order {
+  list-style-type: none;
+  padding: 0;
 }
 .body-bill .detail-bill .order-info {
   flex-grow: 1;
@@ -186,13 +188,6 @@ body {
   border-bottom: 1px solid #000;
   margin-bottom: 5px;
 }
-.body-bill .money-bill .type-money {
-  font-weight: 700;
-  margin-bottom: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .body-bill .money-bill .type-money.big-type {
   margin: 2px 0;
 }
@@ -205,6 +200,13 @@ body {
 .body-bill .money-bill .type-money.italic-type {
   font-style: italic;
   font-weight: 500;
+}
+.body-bill .money-bill .type-money {
+  font-weight: 700;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .body-bill .money-bill .type-money .type {
   font-size: 12px;
