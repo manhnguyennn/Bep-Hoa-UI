@@ -7,6 +7,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
 
 .scan-content_wrapper {
   min-height: 100%;
+  padding-bottom: 150px;
+  box-sizing: border-box;
 }
 
 .scan-step-1 {
@@ -119,6 +121,12 @@ html body .app-content.content:has(.scan-content_wrapper) {
     border-top: 1px solid #d9d9d9;
     .type-gr {
       justify-content: flex-start;
+      .txt{
+        width: 90px;
+      }
+      .inf{
+        text-align: left;
+      }
     }
   }
   .type-box {
@@ -136,7 +144,8 @@ html body .app-content.content:has(.scan-content_wrapper) {
       font-family: Roboto-Regular;
       font-size: 13px;
       line-height: 100%; /* 13px */
-      width: 90px;
+      width: 150px;
+      flex-shrink: 0;
     }
     .inf {
       color: #222;
@@ -144,6 +153,7 @@ html body .app-content.content:has(.scan-content_wrapper) {
       font-family: Roboto-Regular;
       font-size: 13px;
       line-height: 130%; /* 13px */
+      flex-grow: 1;
     }
   }
 }
